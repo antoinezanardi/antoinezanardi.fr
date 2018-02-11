@@ -1,3 +1,103 @@
 .fa-btn {
     padding-top: 13px;
 }
+
+.progress {
+    background: lightgrey !important;
+}
+
+.progress-badge>span {
+    color: dimgray;
+}
+
+#badge-html {
+    color: #E44D26;
+}
+
+#progress-html {
+    background: #E44D26;
+}
+
+#badge-css {
+    color: #0063B1;
+}
+
+#progress-css {
+    background: #0063B1;
+}
+
+#badge-js {
+    color: #EFC725;
+}
+
+#progress-js {
+    background: #EFC725;
+}
+
+#badge-vuejs {
+    color: #35495E;
+}
+
+#progress-vuejs {
+    background: #35495E;
+}
+
+#badge-php {
+    color: #777CB5;
+}
+
+#progress-php {
+    background: #777CB5;
+}
+
+#badge-codeigniter {
+    color: #EE4222;
+}
+
+#progress-codeigniter {
+    background: #EE4222;
+}
+
+#badge-mysql {
+    color: #007395;
+}
+
+#progress-mysql {
+    background: #007395;
+}
+
+#badge-mongodb {
+    color: #4F9546;
+}
+
+#progress-mongodb {
+    background: #4F9546;
+}
+
+.progress-value {
+    color: dimgrey !important;
+}
+
+.my-tool {
+    cursor: pointer;
+}
+
+#tool-git {
+    color: #F05033;
+}
+
+#tool-node {
+    color: #539E43;
+}
+
+#tool-css {
+    color: #0063B1;
+}
+
+.firm-logo {
+    position: fixed;
+    width: 15%;
+    max-width: 90px;
+    bottom: 3%;
+    right: 7%;
+}
