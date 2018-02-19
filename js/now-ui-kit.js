@@ -40,12 +40,12 @@ $(document).ready(function() {
     // Activate the image for the navbar-collapse
     nowuiKit.initNavbarImage();
 
-    $navbar = $('.navbar[color-on-scroll]');
-    scroll_distance = $navbar.attr('color-on-scroll') || 500;
+    $navbar = $('.navbar[data-color-on-scroll]');
+    scroll_distance = $navbar.attr('data-color-on-scroll') || 500;
 
-    // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
+    // Check if we have the class "navbar-data-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
 
-    if ($('.navbar[color-on-scroll]').length != 0) {
+    if ($('.navbar[data-color-on-scroll]').length != 0) {
         nowuiKit.checkScrollForTransparentNavbar();
         $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
     }
@@ -142,12 +142,12 @@ nowuiKit = {
         if ($(document).scrollTop() > scroll_distance) {
             if (transparent) {
                 transparent = false;
-                $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+                $('.navbar[data-color-on-scroll]').removeClass('navbar-transparent');
             }
         } else {
             if (!transparent) {
                 transparent = true;
-                $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+                $('.navbar[data-color-on-scroll]').addClass('navbar-transparent');
             }
         }
     }, 17),
