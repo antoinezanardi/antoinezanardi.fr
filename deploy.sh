@@ -6,3 +6,4 @@ chmod 600 ~/.ssh/deploy_key.pem
 ssh-add ~/.ssh/deploy_key.pem
 git remote add deploy ssh://root@vps514431.ovh.net/home/git/antoinezanardi.git
 git push deploy +master:refs/head/master
+git push deploy
