@@ -2258,7 +2258,6 @@ fieldset[disabled]
 .input-group-addon {
   background-color: #FFFFFF;
   border: 1px solid #E3E3E3;
-  border-radius: 30px;
   color: #555555;
   padding: -0.5rem 0 -0.5rem -0.3rem;
   -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -3919,8 +3918,8 @@ Created using IcoMoon - icomoon.io
 -------------------------------- */
 @font-face {
   font-family: 'Nucleo Outline';
-  src: url("../fonts/nucleo-outline.eot");
-  src: url("../fonts/nucleo-outline.eot") format("embedded-opentype"), url("../fonts/nucleo-outline.woff2") format("woff2"), url("../fonts/nucleo-outline.woff") format("woff"), url("../fonts/nucleo-outline.ttf") format("truetype");
+  src: url("~now-ui-kit/assets/fonts/nucleo-outline.eot");
+  src: url("~now-ui-kit/assets/fonts/nucleo-outline.eot") format("embedded-opentype"), url("~now-ui-kit/assets/fonts/nucleo-outline.woff2") format("woff2"), url("~now-ui-kit/assets/fonts/nucleo-outline.woff") format("woff"), url("~now-ui-kit/assets/fonts/nucleo-outline.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -5140,12 +5139,13 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header .page-header-image {
+  filter: blur(2px);
   position: absolute;
   background-size: cover;
   background-position: center center;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .page-header footer {

@@ -4,9 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import "bootstrap";
-import "now-ui-kit/assets/js/now-ui-kit.js";
-import "./assets/scripts/main";
-import "./assets/scripts/custom";
+import "aos";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "aos/dist/aos.css"
+import "@/assets/css/main.css";
+import "@/assets/css/custom.css";
+import "@/assets/scripts/now-ui-kit.js";
+import "@/assets/scripts/main";
+import "@/assets/scripts/custom";
 
 Vue.config.productionTip = false;
 
