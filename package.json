@@ -11,6 +11,7 @@
     "deploy": "npm install && npm run build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "ajv": "^6.5.0",
     "aos": "^2.2.0",
     "bootstrap": "^4.1.1",
