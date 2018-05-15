@@ -127,11 +127,13 @@
               <i id="tool-linux" class="my-tool fab fa-linux fa-3x" data-toggle="tooltip"
                  title="Je travaille et déploie mes travaux web sur Linux, considéré comme le meilleur système d'exploitation pour le web"></i>
               <i id="tool-git" class="my-tool fab fa-git fa-3x" data-toggle="tooltip"
-                 title="J'utilise Git pour le versioning de mes projets"></i>
+                 title="J'utilise Git pour le version control de mes projets"></i>
               <i id="tool-node" class="my-tool fab fa-node-js fa-3x" data-toggle="tooltip"
                  title="NodeJS est un atout indispensable pour tous mes projets en Javascript"></i>
               <i id="tool-css" class="my-tool fab fa-css3-alt fa-3x" data-toggle="tooltip"
-                 title="J'ai énormément d'outil de design à ma disposition comme Bootstrap, MaterializeCSS ou encore Font Awesome"></i>
+                 title="J'ai énormément d'outils de design à ma disposition comme Bootstrap, MaterializeCSS ou encore Font Awesome"></i>
+              <i id="tool-github" class="my-tool fab fa-github-alt fa-3x" data-toggle="tooltip"
+                 title="Je travaille sur GitHub et utilise Travis comme outil d'intégration continue"></i>
             </div>
           </div>
         </div>
@@ -141,9 +143,9 @@
 </template>
 
 <script>
-    export default {
-        name: "Skills"
-    }
+  export default {
+    name: "Skills"
+  }
 </script>
 
 <style scoped>
