@@ -12,7 +12,7 @@
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">À propos de moi</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about" @click="scrollTo()">À propos de moi</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Compétences</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
               <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Expérience</a></li>
@@ -26,9 +26,14 @@
 </template>
 
 <script>
-    export default {
-        name: "Navbar"
+  export default {
+    name: "Navbar",
+    methods: {
+      scrollTo() {
+        location.hash = "";
+      }
     }
+  }
 </script>
 
 <style scoped>

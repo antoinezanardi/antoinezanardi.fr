@@ -1,5 +1,5 @@
 <template>
-  <div class="section" id="about">
+  <div class="section" ref="about" id="about">
     <div class="container">
       <div class="card" data-aos="fade-up" data-aos-offset="10">
         <div class="row">
