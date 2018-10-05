@@ -10,7 +10,7 @@
             <div class="h2 title">Antoine Zanardi</div>
             <p class="category text-white">Développeur Web Full-Stack</p>
             <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-               data-aos-anchor="data-aos-anchor">Me contacter</a>
+               data-aos-anchor="data-aos-anchor" v-smooth-scroll="{duration: 1000}">Me contacter</a>
             <!--<a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Mon CV</a>-->
           </div>
         </div>

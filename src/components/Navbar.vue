@@ -12,11 +12,21 @@
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about" @click="scrollTo()">À propos de moi</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Compétences</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Expérience</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" v-smooth-scroll="{duration: 1000}" href="#about">À propos de moi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" v-smooth-scroll="{duration: 1000}" href="#skill">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" v-smooth-scroll="{duration: 1000}" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" v-smooth-scroll="{duration: 1000}" href="#experience">Expérience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link smooth-scroll" v-smooth-scroll="{duration: 1000}" href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -26,14 +36,9 @@
 </template>
 
 <script>
-  export default {
-    name: "Navbar",
-    methods: {
-      scrollTo() {
-        location.hash = "";
-      }
-    }
-  }
+export default {
+  name: "Navbar",
+}
 </script>
 
 <style scoped>

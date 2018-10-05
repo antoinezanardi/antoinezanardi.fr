@@ -5139,7 +5139,6 @@ Created using IcoMoon - icomoon.io
 }
 
 .page-header .page-header-image {
-  filter: blur(2px);
   position: absolute;
   background-size: cover;
   background-position: center center;

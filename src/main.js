@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vueSmoothScroll from 'vue2-smooth-scroll';
 import "bootstrap";
 import "aos";
 import "@fortawesome/fontawesome-free-webfonts/css/fontawesome.css";
@@ -18,11 +19,11 @@ import "@/assets/scripts/main";
 import "@/assets/scripts/custom";
 
 Vue.config.productionTip = false;
+Vue.use(vueSmoothScroll);
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   components: {App},
   template: '<App/>'
-})
+});
