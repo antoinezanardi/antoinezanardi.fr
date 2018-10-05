@@ -18,24 +18,28 @@
           <div class="ml-auto mr-auto">
             <div class="row">
               <div class="col-md-6">
-                <!--TODO add URL for the portfolio-->
                 <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                     data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                     data-aos-anchor-placement="top-bottom"><a target='_blank' href="https://www.antoinezanardi.fr">
                   <figure class="cc-effect"><img :src="portfolioThumbnail"
                                                  alt="Image"/>
                     <figcaption>
                       <div class="h4">Mon portfolio</div>
-                      <p>Site Web Statique</p>
+                      <p class="project-desc">Présentation de mon travail</p>
                     </figcaption>
                   </figure>
                 </a></div>
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">-->
-                <!--<figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Startup Project</div>-->
-                <!--<p>Web Development</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
+              </div>
+              <div class="col-md-6">
+                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                     data-aos-anchor-placement="top-bottom"><a target='_blank' href="https://lejusteprix.sobook.fr/">
+                  <figure class="cc-effect"><img :src="sobookQuotationThumbnail"
+                                                 alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Le Juste Prix SoBook</div>
+                      <p class="project-desc">Calcul de devis en ligne interactif</p>
+                    </figcaption>
+                  </figure>
+                </a></div>
               </div>
               <div class="col-md-6">
                 <div class="cc-porfolio-image img-raised" data-aos="fade-up"
@@ -48,13 +52,6 @@
                     </figcaption>
                   </figure>
                 </a></div>
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">-->
-                <!--<figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Web Advertising Project</div>-->
-                <!--<p>Web Development</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
               </div>
             </div>
           </div>
@@ -142,18 +139,22 @@
 
 <script>
   import portfolioThumbnail from "@/assets/images/portfolio-thumbnail.png";
+  import sobookQuotationThumbnail from "@/assets/images/sobook-quotation-thumbnail.png";
   import githubThumbnail from "@/assets/images/github.jpg";
   export default {
     name: "Portfolio",
     data: function() {
       return {
         portfolioThumbnail,
-        githubThumbnail
+        githubThumbnail,
+        sobookQuotationThumbnail,
       }
     }
   }
 </script>
 
 <style scoped>
-
+.project-desc {
+  text-shadow: 1px 1px 1px black;
+}
 </style>
