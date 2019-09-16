@@ -82,15 +82,15 @@
 </template>
 
 <script>
-  import mapBackground from "@/assets/images/staticmap.png";
-  export default {
+import mapBackground from "@/assets/images/staticmap.png";
+export default {
     name: "Contact",
     data: function() {
-      return {
-        mapBackground
-      }
-    }
-  }
+        return {
+            mapBackground,
+        };
+    },
+};
 </script>
 
 <style scoped>

@@ -69,9 +69,9 @@
 </template>
 
 <script>
-  export default {
-    name: "References"
-  }
+export default {
+    name: "References",
+};
 </script>
 
 <style scoped>

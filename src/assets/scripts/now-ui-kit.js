@@ -1,4 +1,4 @@
-/*!
+/* !
 
  =========================================================
  * Now-ui-kit - v1.1.0
@@ -16,206 +16,206 @@
 
  */
 
-var transparent = true;
+import $ from "jquery";
 
-var transparentDemo = true;
-var fixedTop = false;
+let transparent = true;
 
-var navbar_initialized,
+const transparentDemo = true;
+const fixedTop = false;
+
+let navbar_initialized,
     backgroundOrange = false,
     toggle_initialized = false;
 
 $(document).ready(function() {
     //  Activate the Tooltips
-    $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
+    $("[data-toggle=\"tooltip\"], [rel=\"tooltip\"]").tooltip();
 
     // Activate Popovers and set color for popovers
-    $('[data-toggle="popover"]').each(function() {
-        color_class = $(this).data('color');
+    $("[data-toggle=\"popover\"]").each(function() {
+        color_class = $(this).data("color");
         $(this).popover({
-            template: '<div class="popover popover-' + color_class + '" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+            template: `<div class="popover popover-${color_class}" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>`,
         });
     });
 
     // Activate the image for the navbar-collapse
     nowuiKit.initNavbarImage();
 
-    $navbar = $('.navbar[data-color-on-scroll]');
-    scroll_distance = $navbar.attr('data-color-on-scroll') || 500;
+    const $navbar = $(".navbar[data-color-on-scroll]");
+    const scroll_distance = $navbar.attr("data-color-on-scroll") || 500;
 
     // Check if we have the class "navbar-data-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
 
-    if ($('.navbar[data-color-on-scroll]').length != 0) {
+    if ($(".navbar[data-color-on-scroll]").length != 0) {
         nowuiKit.checkScrollForTransparentNavbar();
-        $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
+        $(window).on("scroll", nowuiKit.checkScrollForTransparentNavbar);
     }
 
-    $('.form-control').on("focus", function() {
-        $(this).parent('.input-group').addClass("input-group-focus");
+    $(".form-control").on("focus", function() {
+        $(this).parent(".input-group").addClass("input-group-focus");
     }).on("blur", function() {
         $(this).parent(".input-group").removeClass("input-group-focus");
     });
 
     // Activate bootstrapSwitch
-    $('.bootstrap-switch').each(function() {
+    $(".bootstrap-switch").each(function() {
         $this = $(this);
-        data_on_label = $this.data('on-label') || '';
-        data_off_label = $this.data('off-label') || '';
+        data_on_label = $this.data("on-label") || "";
+        data_off_label = $this.data("off-label") || "";
 
         $this.bootstrapSwitch({
             onText: data_on_label,
-            offText: data_off_label
+            offText: data_off_label,
         });
     });
 
     if ($(window).width() >= 992) {
-        big_image = $('.page-header-image[data-parallax="true"]');
+        big_image = $(".page-header-image[data-parallax=\"true\"]");
 
-        $(window).on('scroll', nowuiKitDemo.checkScrollForParallax);
+        $(window).on("scroll", nowuiKitDemo.checkScrollForParallax);
     }
 
     // Activate Carousel
-    $('.carousel').carousel({
-        interval: 4000
+    $(".carousel").carousel({
+        interval: 4000,
     });
 
-    $('.date-picker').each(function() {
+    $(".date-picker").each(function() {
         $(this).datepicker({
             templates: {
-                leftArrow: '<i class="now-ui-icons arrows-1_minimal-left"></i>',
-                rightArrow: '<i class="now-ui-icons arrows-1_minimal-right"></i>'
-            }
-        }).on('show', function() {
-            $('.datepicker').addClass('open');
+                leftArrow: "<i class=\"now-ui-icons arrows-1_minimal-left\"></i>",
+                rightArrow: "<i class=\"now-ui-icons arrows-1_minimal-right\"></i>",
+            },
+        }).on("show", function() {
+            $(".datepicker").addClass("open");
 
-            datepicker_color = $(this).data('datepicker-color');
+            datepicker_color = $(this).data("datepicker-color");
             if (datepicker_color.length != 0) {
-                $('.datepicker').addClass('datepicker-' + datepicker_color + '');
+                $(".datepicker").addClass(`datepicker-${datepicker_color}`);
             }
-        }).on('hide', function() {
-            $('.datepicker').removeClass('open');
+        }).on("hide", function() {
+            $(".datepicker").removeClass("open");
         });
     });
 
-
 });
 
-$(window).on('resize', function() {
+$(window).on("resize", function() {
     nowuiKit.initNavbarImage();
 });
 
-$(document).on('click', '.navbar-toggler', function() {
+$(document).on("click", ".navbar-toggler", function() {
     $toggle = $(this);
 
     if (nowuiKit.misc.navbar_menu_visible == 1) {
-        $('html').removeClass('nav-open');
+        $("html").removeClass("nav-open");
         nowuiKit.misc.navbar_menu_visible = 0;
-        $('#bodyClick').remove();
+        $("#bodyClick").remove();
         setTimeout(function() {
-            $toggle.removeClass('toggled');
+            $toggle.removeClass("toggled");
         }, 550);
     } else {
         setTimeout(function() {
-            $toggle.addClass('toggled');
+            $toggle.addClass("toggled");
         }, 580);
-        div = '<div id="bodyClick"></div>';
-        $(div).appendTo('body').click(function() {
-            $('html').removeClass('nav-open');
+        div = "<div id=\"bodyClick\"></div>";
+        $(div).appendTo("body").click(function() {
+            $("html").removeClass("nav-open");
             nowuiKit.misc.navbar_menu_visible = 0;
             setTimeout(function() {
-                $toggle.removeClass('toggled');
-                $('#bodyClick').remove();
+                $toggle.removeClass("toggled");
+                $("#bodyClick").remove();
             }, 550);
         });
 
-        $('html').addClass('nav-open');
+        $("html").addClass("nav-open");
         nowuiKit.misc.navbar_menu_visible = 1;
     }
 });
 
-nowuiKit = {
+const nowuiKit = {
     misc: {
-        navbar_menu_visible: 0
+        navbar_menu_visible: 0,
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
+        const $navbar = $(".navbar[data-color-on-scroll]");
+        const scroll_distance = $navbar.attr("data-color-on-scroll") || 500;
         if ($(document).scrollTop() > scroll_distance) {
             if (transparent) {
                 transparent = false;
-                $('.navbar[data-color-on-scroll]').removeClass('navbar-transparent');
+                $(".navbar[data-color-on-scroll]").removeClass("navbar-transparent");
             }
-        } else {
-            if (!transparent) {
-                transparent = true;
-                $('.navbar[data-color-on-scroll]').addClass('navbar-transparent');
-            }
+        } else if (!transparent) {
+            transparent = true;
+            $(".navbar[data-color-on-scroll]").addClass("navbar-transparent");
         }
     }, 17),
 
     initNavbarImage: function() {
-        var $navbar = $('.navbar').find('.navbar-translate').siblings('.navbar-collapse');
-        var background_image = $navbar.data('nav-image');
+        const $navbar = $(".navbar").find(".navbar-translate").siblings(".navbar-collapse");
+        const background_image = $navbar.data("nav-image");
 
-        if ($(window).width() < 991 || $('body').hasClass('burger-menu')) {
+        if ($(window).width() < 991 || $("body").hasClass("burger-menu")) {
             if (background_image != undefined) {
-                $navbar.css('background', "url('" + background_image + "')")
-                    .removeAttr('data-nav-image')
-                    .css('background-size', "cover")
-                    .addClass('has-image');
+                $navbar.css("background", `url('${background_image}')`)
+                    .removeAttr("data-nav-image")
+                    .css("background-size", "cover")
+                    .addClass("has-image");
             }
         } else if (background_image != undefined) {
-            $navbar.css('background', "")
-                .attr('data-nav-image', '' + background_image + '')
-                .css('background-size', "")
-                .removeClass('has-image');
+            $navbar.css("background", "")
+                .attr("data-nav-image", `${background_image}`)
+                .css("background-size", "")
+                .removeClass("has-image");
         }
     },
 
     initSliders: function() {
         // Sliders for demo purpose in refine cards section
-        var slider = document.getElementById('sliderRegular');
+        const slider = document.getElementById("sliderRegular");
 
         noUiSlider.create(slider, {
             start: 40,
             connect: [true, false],
             range: {
                 min: 0,
-                max: 100
-            }
+                max: 100,
+            },
         });
 
-        var slider2 = document.getElementById('sliderDouble');
+        const slider2 = document.getElementById("sliderDouble");
 
         noUiSlider.create(slider2, {
             start: [20, 60],
             connect: true,
             range: {
                 min: 0,
-                max: 100
-            }
+                max: 100,
+            },
         });
-    }
-}
+    },
+};
 
-
-var big_image;
+let big_image;
 
 // Javascript just for Demo purpose, remove it from your project
-nowuiKitDemo = {
+const nowuiKitDemo = {
     checkScrollForParallax: debounce(function() {
-        var current_scroll = $(this).scrollTop();
+        const current_scroll = $(this).scrollTop();
 
-        oVal = ($(window).scrollTop() / 3);
+        const oVal = $(window).scrollTop() / 3;
         big_image.css({
-            'transform': 'translate3d(0,' + oVal + 'px,0)',
-            '-webkit-transform': 'translate3d(0,' + oVal + 'px,0)',
-            '-ms-transform': 'translate3d(0,' + oVal + 'px,0)',
-            '-o-transform': 'translate3d(0,' + oVal + 'px,0)'
+            "transform": `translate3d(0,${oVal}px,0)`,
+            "-webkit-transform": `translate3d(0,${oVal}px,0)`,
+            "-ms-transform": `translate3d(0,${oVal}px,0)`,
+            "-o-transform": `translate3d(0,${oVal}px,0)`,
         });
 
-    }, 6)
+    }, 6),
 
-}
+};
 
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
@@ -223,15 +223,19 @@ nowuiKitDemo = {
 // leading edge, instead of the trailing.
 
 function debounce(func, wait, immediate) {
-    var timeout;
+    let timeout;
     return function() {
-        var context = this,
+        const context = this,
             args = arguments;
         clearTimeout(timeout);
         timeout = setTimeout(function() {
             timeout = null;
-            if (!immediate) func.apply(context, args);
+            if (!immediate) {
+                func.apply(context, args);
+            }
         }, wait);
-        if (immediate && !timeout) func.apply(context, args);
+        if (immediate && !timeout) {
+            func.apply(context, args);
+        }
     };
-};
+}
