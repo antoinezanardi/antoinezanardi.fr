@@ -36,12 +36,13 @@
                             <div class="col-md-6">
                                 <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                      data-aos-anchor-placement="top-bottom"><a target='_blank'
-                                                                               href="https://lejusteprix.sobook.fr/">
-                                    <figure class="cc-effect"><img :src="soBookQuotationThumbnail"
+                                                                               href="https://werewolves-assistant.antoinezanardi.fr/">
+                                    <figure class="cc-effect"><img :src="werewolvesAssistantThumbnail"
                                                                    alt="Image"/>
                                         <figcaption>
-                                            <div class="h4">Le Juste Prix SoBook</div>
-                                            <p class="project-desc">Calcul de devis en ligne interactif</p>
+                                            <div class="h4">Assistant Loups-Garous</div>
+                                            <p class="project-desc">L'outil idéal pour le maître du jeu des Loups-Garous
+                                                de Thiercelieux</p>
                                         </figcaption>
                                     </figure>
                                 </a></div>
@@ -49,7 +50,7 @@
                             <div class="col-md-6">
                                 <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                      data-aos-anchor-placement="top-bottom">
-                                    <a target='_blank' href="https://lejusteprix.sobook.fr/">
+                                    <a target='_blank' href="https://humensis.catalogue.oh-my-code.io/">
                                         <figure class="cc-effect">
                                             <img :src="distributionThumbnail" alt="Image"/>
                                             <figcaption>
@@ -158,7 +159,7 @@
 
 <script>
 import portfolioThumbnail from "../assets/images/portfolio-thumbnail.png";
-import soBookQuotationThumbnail from "../assets/images/sobook-quotation-thumbnail.png";
+import werewolvesAssistantThumbnail from "../assets/images/werewolves-assistant-thumbnail.png";
 import distributionThumbnail from "../assets/images/distribution-thumbnail.png";
 import githubThumbnail from "../assets/images/github.jpg";
 
@@ -168,15 +169,15 @@ export default {
         return {
             portfolioThumbnail,
             githubThumbnail,
-            soBookQuotationThumbnail,
             distributionThumbnail,
+            werewolvesAssistantThumbnail,
         };
     },
 };
 </script>
 
 <style scoped>
-    .project-desc {
-        text-shadow: 1px 1px 1px black;
-    }
+.project-desc {
+    text-shadow: 1px 1px 1px black;
+}
 </style>
