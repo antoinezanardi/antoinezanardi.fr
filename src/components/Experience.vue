@@ -23,7 +23,7 @@
                             <div class="h5">Ingénieur Recherche & Développement Informatique</div>
                             <p>
                                 Suite logique après mes nombreux stages dans la société, j'ai décroché un CDI en sortant
-                                de l'école et rejoins définitivement l'équipe en tant qu'ingénieur en R&D et développeur
+                                de l'école et rejoint définitivement l'équipe en tant qu'ingénieur en R&D et développeur
                                 Full Stack. Aujourd'hui, je possède de nombreuses casquettes : chef de projet,
                                 développeur full-stack, maquetteur, testeur, reviewer... J'accompagne chacun de mes clients
                                 avec mon expertise tout en les guidant sur la meilleure marche à suivre pour faire
@@ -34,12 +34,12 @@
                                 appliquant une répartition des tâches suivant les capacités et compétences de chacun, tout
                                 en écoutant leurs besoins, techniques ou humains.<br/>
                                 Je priorise de même les débuts d'un projet : une écoute attentive du besoin client,
-                                une période suffisante de réflexion des flux et une gestion des risques aboutie sont
+                                une période suffisante de réflexion des flux et une gestion des risques complète sont
                                 pour moi les points clefs pour démarrer correctement un projet. Les fondations doivent
                                 être les plus solides possible.
                             </p>
                             <p>
-                                En tant que développeur, j'applique mon expertise et ma technicité toutes deux appris
+                                En tant que développeur, j'applique mon expertise et ma technicité toutes deux apprises
                                 durant mon cursus pour livrer des fonctionnalités robustes, ergonomiques et en phase
                                 avec le besoin client. J'essaye sans cesse de remettre en question mes idées afin
                                 d'évoluer et de ne pas m'enfermer dans ma zone de confort.
@@ -73,7 +73,7 @@
                                 chacune des parties en m’assurant que le client final soit satisfait.
                             </p>
                             <p>
-                                Ce stage de fin d’études a permi de valider mes compétences d’expert informatique auprès de la société,
+                                Ce stage de fin d’études a permis de valider mes compétences d’expert informatique auprès de la société,
                                 l’EPITECH et moi-même.
                             </p>
                         </div>
@@ -131,7 +131,7 @@
                                 pendant 1 an en tant qu'auto-entrepreneur.
                             </p>
                             <p>
-                                Mes responsabilités se sont vite multipliées : Améliorer et maintenir mon module de
+                                Mes responsabilités se sont vite multipliées : améliorer et maintenir mon module de
                                 stocks, créer une interface de traduction, assister les autres développeurs dans leurs
                                 projets et bien plus.
                             </p>

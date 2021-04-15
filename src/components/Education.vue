@@ -21,10 +21,10 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Master en Informatique</div>
+                            <div class="h5">Master en Informatique - Titre d'Expert</div>
                             <p class="category">EPITECH, Lille</p>
                             <p>
-                                Mes 3 première années à Epitech m'ont permis de découvrir de nombreux langages de
+                                Mes 3 premières années à Epitech m'ont permis de découvrir de nombreux langages de
                                 programmation: C, C++, PHP, JavaScript, Python, Java... Cette école m'a appris à gérer
                                 un projet, manager une équipe et réaliser un travail atteignant les qualités attendues
                                 par un client.

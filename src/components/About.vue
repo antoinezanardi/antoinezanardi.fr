@@ -16,7 +16,7 @@
                                 l'intelligence artificielle
                                 et les innovations en tout genre.</p>
                             <p>Mes diplômes acquis pendant <b><a href="#education" v-smooth-scroll="{ duration: 1000 }">mon cursus scolaire</a></b>
-                                couplés à <b><a href="#experience" v-smooth-scroll="{ duration: 1000 }">mon parcours professionel</a></b>
+                                couplés à <b><a href="#experience" v-smooth-scroll="{ duration: 1000 }">mon parcours professionnel</a></b>
                                 me permettent d'avoir un <b>esprit d'équipe</b> fort ainsi que des compétences <b>techniques et managériales</b>
                                 avancées.</p>
                             <p>Ma passion et mon perfectionnisme me poussent à aller au bout de mes projets en y
