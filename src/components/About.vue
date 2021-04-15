@@ -10,7 +10,7 @@
                                 Qui suis-je?
                             </div>
                             <hr/>
-                            <p>Hello ! Je suis <b>Antoine Zanardi</b> et bienvenue sur mon profil. Je suis <b>expert
+                            <p>Hello 👋 ! Je suis <b>Antoine Zanardi</b> et bienvenue sur mon profil. Je suis <b>expert
                                 informatique spécialisé
                                 dans le web</b> et passionné par les nouvelles technologies, la robotique,
                                 l'intelligence artificielle

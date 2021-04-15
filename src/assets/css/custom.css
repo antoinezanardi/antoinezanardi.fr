@@ -86,6 +86,10 @@
     color: #F05033;
 }
 
+#tool-architecture {
+    color: #007eb8;
+}
+
 #tool-node {
     color: #539E43;
 }
@@ -96,6 +100,26 @@
 
 #tool-npm {
     color: #C63635;
+}
+
+#tool-vuejs {
+    color: #3EB37F;
+}
+
+#tool-lint {
+    color: #00b819;
+}
+
+#tool-tests {
+    color: dimgray;
+}
+
+.white-logo {
+    filter: brightness(0) invert(1);
+}
+
+.text-black-shadow {
+    text-shadow: 1px 1px 1px black;
 }
 
 .firm-logo {

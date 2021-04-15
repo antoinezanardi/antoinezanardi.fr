@@ -4,16 +4,9 @@
             <div class="row">
                 <div class="col-md-6 ml-auto mr-auto">
                     <div class="h4 text-center mb-4 title">
-                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"/>
                         Portfolio
                     </div>
-                    <!--<div class="nav-align-center">-->
-                    <!--<ul class="nav nav-pills nav-pills-primary" role="tablist">-->
-                    <!--<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>-->
-                    <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>-->
-                    <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>-->
-                    <!--</ul>-->
-                    <!--</div>-->
                 </div>
             </div>
             <div class="tab-content gallery">
@@ -21,40 +14,40 @@
                     <div class="ml-auto mr-auto">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                     data-aos-anchor-placement="top-bottom"><a target='_blank'
-                                                                               href="https://www.antoinezanardi.fr">
-                                    <figure class="cc-effect"><img :src="portfolioThumbnail"
-                                                                   alt="Image"/>
-                                        <figcaption>
-                                            <div class="h4">Mon portfolio</div>
-                                            <p class="project-desc">Présentation de mon travail</p>
-                                        </figcaption>
-                                    </figure>
-                                </a></div>
+                                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                    <a target='_blank' href="https://www.antoinezanardi.fr">
+                                        <figure class="cc-effect">
+                                            <img :src="portfolioThumbnail" alt="Image"/>
+                                            <figcaption>
+                                                <div class="h4">Mon portfolio</div>
+                                                <p class="project-desc">Présentation de mon travail</p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                     data-aos-anchor-placement="top-bottom"><a target='_blank'
-                                                                               href="https://werewolves-assistant.antoinezanardi.fr/">
-                                    <figure class="cc-effect"><img :src="werewolvesAssistantThumbnail"
-                                                                   alt="Image"/>
-                                        <figcaption>
-                                            <div class="h4">Assistant Loups-Garous</div>
-                                            <p class="project-desc">L'outil idéal pour le maître du jeu des Loups-Garous
-                                                de Thiercelieux</p>
-                                        </figcaption>
-                                    </figure>
-                                </a></div>
+                                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                    <a target='_blank' href="https://werewolves-assistant.antoinezanardi.fr/">
+                                        <figure class="cc-effect">
+                                            <img :src="werewolvesAssistantThumbnail" alt="Image"/>
+                                            <figcaption>
+                                                <div class="h4">Assistant Loups-Garous</div>
+                                                <p class="project-desc">
+                                                    L'outil idéal pour le maître du jeu des Loups-Garous de Thiercelieux™
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                     data-aos-anchor-placement="top-bottom">
-                                    <a target='_blank' href="https://humensis.catalogue.oh-my-code.io/">
+                                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                    <a target='_blank' href="https://www.airvey-editions.fr/">
                                         <figure class="cc-effect">
                                             <img :src="distributionThumbnail" alt="Image"/>
                                             <figcaption>
-                                                <div class="h4">Distribution</div>
+                                                <div class="h4">Boutique de livres</div>
                                                 <p class="project-desc">Boutique en ligne de distribution de livres</p>
                                             </figcaption>
                                         </figure>
@@ -62,106 +55,31 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                     data-aos-anchor-placement="top-bottom"><a
-                                    href="https://github.com/antoinezanardi" target="_blank">
-                                    <figure class="cc-effect"><img :src="githubThumbnail" alt="Image"/>
-                                        <figcaption>
-                                            <div class="h4">Découvrez mes autres projets</div>
-                                            <p></p>
-                                        </figcaption>
-                                    </figure>
-                                </a></div>
+                                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                                    <a href="https://github.com/antoinezanardi" target="_blank">
+                                        <figure class="cc-effect">
+                                            <img :src="githubThumbnail" alt="Image"/>
+                                            <figcaption>
+                                                <div class="h4">Découvrez mes autres projets</div>
+                                                <p>Et n'hésitez pas à me suivre sur GitHub !</p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div class="tab-pane" id="graphic-design" role="tabpanel">-->
-                <!--<div class="ml-auto mr-auto">-->
-                <!--<div class="row">-->
-                <!--<div class="col-md-6">-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">-->
-                <!--<figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Triangle Pattern</div>-->
-                <!--<p>Graphic Design</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">-->
-                <!--<figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Abstract Umbrella</div>-->
-                <!--<p>Graphic Design</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--</div>-->
-                <!--<div class="col-md-6">-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">-->
-                <!--<figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Cube Surface Texture</div>-->
-                <!--<p>Graphic Design</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">-->
-                <!--<figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Abstract Line</div>-->
-                <!--<p>Graphic Design</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--<div class="tab-pane" id="Photography" role="tabpanel">-->
-                <!--<div class="ml-auto mr-auto">-->
-                <!--<div class="row">-->
-                <!--<div class="col-md-6">-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">-->
-                <!--<figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Photoshoot</div>-->
-                <!--<p>Photography</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">-->
-                <!--<figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Wedding Photoshoot</div>-->
-                <!--<p>Photography</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--</div>-->
-                <!--<div class="col-md-6">-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">-->
-                <!--<figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Beach Photoshoot</div>-->
-                <!--<p>Photography</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--<div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">-->
-                <!--<figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image"/>-->
-                <!--<figcaption>-->
-                <!--<div class="h4">Nature Photoshoot</div>-->
-                <!--<p>Photography</p>-->
-                <!--</figcaption>-->
-                <!--</figure></a></div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import portfolioThumbnail from "../assets/images/portfolio-thumbnail.png";
-import werewolvesAssistantThumbnail from "../assets/images/werewolves-assistant-thumbnail.png";
-import distributionThumbnail from "../assets/images/distribution-thumbnail.png";
-import githubThumbnail from "../assets/images/github.jpg";
+import portfolioThumbnail from "@/assets/images/portfolio-thumbnail.png";
+import werewolvesAssistantThumbnail from "@/assets/images/werewolves-assistant-thumbnail.png";
+import distributionThumbnail from "@/assets/images/distribution-thumbnail.png";
+import githubThumbnail from "@/assets/images/github.jpg";
 
 export default {
     name: "Portfolio",
