@@ -58,8 +58,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-sm-4"><strong class="text-uppercase">Adresse:</strong></div>
-                                <div class="col-sm-8">96 rue Ratisbonne, Lille, France
-                                </div>
+                                <div class="col-sm-8">103 rue d'Haubourdin, 59155 Faches-Thumesnil, FRANCE</div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col-sm-4"><strong class="text-uppercase">Langues:</strong></div>
