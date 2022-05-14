@@ -1,18 +1,22 @@
 <template>
-    <div class="section" id="experience">
+    <div id="experience" class="section">
         <div class="container cc-experience">
             <div class="h4 text-center mb-4 title">
-                <i class="fa fa-tasks mr-2"></i>
+                <i class="fa fa-tasks mr-2"/>
                 Expérience Professionnelle
             </div>
             <div class="card">
                 <div class="row">
                     <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body cc-experience-header">
-                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo">
-                            <div class="experience-date">Aujourd'hui</div>
+                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo"/>
+                            <div class="experience-date">
+                                Aujourd'hui
+                            </div>
                             <i class="fa fa-arrow-up fa-2x my-1"/>
-                            <div class="experience-date">Septembre 2019</div>
+                            <div class="experience-date">
+                                Septembre 2019
+                            </div>
                             <div class="font-weight-bold mt-2">
                                 ( {{ currentJobMonths }} mois )
                             </div>
@@ -20,7 +24,9 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Ingénieur Recherche & Développement Informatique</div>
+                            <div class="h5">
+                                Ingénieur Recherche & Développement Informatique
+                            </div>
                             <p>
                                 Suite logique après mes nombreux stages dans la société, j'ai décroché un CDI en sortant
                                 de l'école et rejoint définitivement l'équipe en tant qu'ingénieur en R&D et développeur
@@ -53,10 +59,14 @@
                     <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
                          data-aos-duration="500">
                         <div class="card-body cc-experience-header">
-                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo">
-                            <div class="experience-date">Août 2019</div>
+                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo"/>
+                            <div class="experience-date">
+                                Août 2019
+                            </div>
                             <i class="fa fa-arrow-up fa-2x my-1"/>
-                            <div class="experience-date">Septembre 2018</div>
+                            <div class="experience-date">
+                                Septembre 2018
+                            </div>
                             <div class="font-weight-bold mt-2">
                                 ( 12 mois )
                             </div>
@@ -64,7 +74,9 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Stagiaire Développeur Full-Stack</div>
+                            <div class="h5">
+                                Stagiaire Développeur Full-Stack
+                            </div>
                             <p>
                                 Durant ce stage d’un an, la société m’a confié la responsabilité de grands projets comme la
                                 réalisation d’une boutique de distribution de livres à l’international.
@@ -85,10 +97,14 @@
                     <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
                          data-aos-duration="500">
                         <div class="card-body cc-experience-header">
-                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo">
-                            <div class="experience-date">Avril 2017</div>
+                            <img class="white-logo company-logo mb-3" alt="Logo OhMyCode" :src="omcLogo"/>
+                            <div class="experience-date">
+                                Avril 2017
+                            </div>
                             <i class="fa fa-arrow-up fa-2x my-1"/>
-                            <div class="experience-date">Septembre 2016</div>
+                            <div class="experience-date">
+                                Septembre 2016
+                            </div>
                             <div class="font-weight-bold mt-2">
                                 ( 8 mois )
                             </div>
@@ -96,7 +112,9 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Stagiaire Développeur Full-Stack</div>
+                            <div class="h5">
+                                Stagiaire Développeur Full-Stack
+                            </div>
                             <p>
                                 Première expérience dans la toute nouvelle branche informatique de SoBook, ma
                                 principale mission était de penser et développer un système de gestion de projets et de
@@ -114,10 +132,14 @@
                     <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
                          data-aos-duration="500">
                         <div class="card-body cc-experience-header">
-                            <img class="white-logo company-logo mb-3" alt="Logo SoBook" :src="sobookLogo">
-                            <div class="experience-date">Août 2016</div>
+                            <img class="white-logo company-logo mb-3" alt="Logo SoBook" :src="sobookLogo"/>
+                            <div class="experience-date">
+                                Août 2016
+                            </div>
                             <i class="fa fa-arrow-up fa-2x my-1"/>
-                            <div class="experience-date">Février 2016</div>
+                            <div class="experience-date">
+                                Février 2016
+                            </div>
                             <div class="font-weight-bold mt-2">
                                 ( 7 mois )
                             </div>
@@ -125,7 +147,9 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Auto-Entrepreneur Développeur Web Full-Stack</div>
+                            <div class="h5">
+                                Auto-Entrepreneur Développeur Web Full-Stack
+                            </div>
                             <p>
                                 Ma première expérience chez SoBook ayant été enrichissante, j'ai décidé de la réitérer
                                 pendant 1 an en tant qu'auto-entrepreneur.
@@ -144,10 +168,14 @@
                     <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
                          data-aos-duration="500">
                         <div class="card-body cc-experience-header">
-                            <img class="white-logo company-logo mb-3" alt="Logo SoBook" :src="sobookLogo">
-                            <div class="experience-date">Décembre 2015</div>
+                            <img class="white-logo company-logo mb-3" alt="Logo SoBook" :src="sobookLogo"/>
+                            <div class="experience-date">
+                                Décembre 2015
+                            </div>
                             <i class="fa fa-arrow-up fa-2x my-1"/>
-                            <div class="experience-date">Juillet 2015</div>
+                            <div class="experience-date">
+                                Juillet 2015
+                            </div>
                             <div class="font-weight-bold mt-2">
                                 ( 6 mois )
                             </div>
@@ -155,7 +183,9 @@
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                         <div class="card-body">
-                            <div class="h5">Stagiaire Développeur Full-Stack</div>
+                            <div class="h5">
+                                Stagiaire Développeur Full-Stack
+                            </div>
                             <p>
                                 Durant mon tout premier stage en tant que développeur web, j'ai eu la responsabilité
                                 de développer le module de stocks des livres produits par l'entreprise de A à Z. Par
@@ -193,7 +223,6 @@ export default {
 </script>
 
 <style scoped>
-
 .cc-experience-header {
     padding-top: 25px !important;
 }
@@ -212,5 +241,4 @@ export default {
 .experience-date {
     font-size: 1rem;
 }
-
 </style>

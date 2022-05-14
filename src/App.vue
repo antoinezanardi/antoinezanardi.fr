@@ -1,42 +1,32 @@
 <template>
-  <div id="app">
-    <Navbar/>
-    <div class="page-content">
-      <Profile/>
-      <About/>
-      <Skills/>
-      <Portfolio/>
-      <Experience/>
-      <Education/>
-<!--      <Contact/>-->
+    <div id="app">
+        <NavBar/>
+        <div class="page-content">
+            <MyProfile/>
+            <AboutMe/>
+            <MySkills/>
+            <MyPortfolio/>
+            <MyExperience/>
+            <MyEducation/>
+        </div>
+        <PageFooter/>
     </div>
-    <Footer/>
-  </div>
 </template>
 
-<script>
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Portfolio from "./components/Portfolio";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Footer from "./components/Footer";
+<script setup>
+import { onMounted } from "vue";
+import { Tooltip } from "bootstrap";
+import NavBar from "./components/NavBar";
+import MyProfile from "./components/MyProfile";
+import AboutMe from "./components/AboutMe";
+import MySkills from "./components/MySkills";
+import MyPortfolio from "./components/MyPortfolio";
+import MyExperience from "./components/MyExperience";
+import MyEducation from "./components/MyEducation";
+import PageFooter from "./components/PageFooter";
 
-export default {
-    name: "app",
-    components: {
-        Footer,
-        Education,
-        Experience,
-        Portfolio,
-        Skills,
-        About,
-        Profile,
-        Navbar,
-    },
-};
+onMounted(() => {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll("[data-bs-toggle=\"tooltip\"]"));
+    tooltipTriggerList.map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl));
+});
 </script>
-
-<style></style>
