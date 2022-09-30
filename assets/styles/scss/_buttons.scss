@@ -1,0 +1,13 @@
+.btn {
+  color: white;
+
+  &:hover {
+    color: white !important;
+  }
+
+  .fa-btn {
+    &.fa-2x {
+      margin-top: 12px;
+    }
+  }
+}

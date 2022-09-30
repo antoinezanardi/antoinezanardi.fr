@@ -2,10 +2,17 @@
 node_modules
 /dist
 .idea/
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+dist
 
 # local env files
 .env.local
 .env.*.local
+.env
 
 # Log files
 npm-debug.log*
