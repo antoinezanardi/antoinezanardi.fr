@@ -1,0 +1,14 @@
+{
+  "shared": {
+    "antoineZanardi": "Antoine Zanardi"
+  },
+  "MyProfile": {
+    "profilePicture": "Photo de profil",
+    "itConsultant": "Consultant en Informatique",
+    "fullStackWebExpert": "Expert Web FullStack",
+    "cv": "CV",
+    "myCv": "Mon CV",
+    "joinMyNetwork": "Rejoignez mon réseau",
+    "discoverMyProjects": "Découvrez mes projets"
+  }
+}

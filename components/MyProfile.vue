@@ -11,40 +11,33 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img id="profile-pic" src="assets/images/antoine.png" alt="Image"/>
+                <img id="profile-pic" src="assets/images/antoine.png" :alt="$t('MyProfile.profilePicture')"/>
               </a>
             </div>
-            <div class="h2 title text-shadow">
-              Antoine Zanardi
-            </div>
-            <p class="category text-white text-shadow mb-1">
-              Consultant en Informatique
-            </p>
-            <p class="category text-white text-shadow">
-              Expert Web FullStack
-            </p>
+            <div class="h2 title text-shadow" v-html="$t('shared.antoineZanardi')"/>
+            <p class="category text-white text-shadow mb-1" v-html="$t('MyProfile.itConsultant')"/>
+            <p class="category text-white text-shadow" v-html="$t('MyProfile.fullStackWebExpert')"/>
             <a
               id="my-cv"
               class="btn btn-primary"
-              href="CV.pdf"
-              download="CV Antoine ZANARDI.pdf"
+              href="/CV.pdf"
+              :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
               data-aos="zoom-in"
               data-aos-anchor="data-aos-anchor"
-            >
-              Mon CV
-            </a>
+              v-html="$t('MyProfile.myCv')"
+            />
           </div>
         </div>
         <div class="section">
           <div class="container">
             <div class="button-container">
               <a
-                class="btn btn-info btn-round btn-lg btn-icon mr-3"
+                class="btn btn-info btn-round btn-lg btn-icon me-3"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/antoinezanardi/"
                 data-bs-toggle="tooltip"
-                title="Rejoignez mon réseau"
+                :title="$t('MyProfile.joinMyNetwork')"
               >
                 <i class="fa-brands fa-linkedin-in fa-2x fa-btn"/>
               </a>
@@ -54,7 +47,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 data-bs-toggle="tooltip"
-                title="Découvrez mes projets"
+                :title="$t('MyProfile.discoverMyProjects')"
               >
                 <i class="fa-brands fa-github fa-2x fa-btn"/>
               </a>

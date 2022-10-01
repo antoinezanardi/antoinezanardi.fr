@@ -1034,8 +1034,14 @@ module.exports = {
         "import/no-default-export": OFF,
       },
     }, {
-      files: ["nuxt.config.ts", "./plugins/**/*"],
+      files: ["./plugins/**/*"],
       rules: { "import/no-default-export": OFF },
+    }, {
+      files: ["nuxt.config.ts"],
+      rules: {
+        "import/no-default-export": OFF,
+        "import/no-nodejs-modules": OFF,
+      },
     },
   ],
 };
