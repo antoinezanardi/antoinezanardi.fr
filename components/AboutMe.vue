@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-sm-8">
                   <a href="https://www.daveo.fr/" target="_blank" rel="noopener noreferrer">
-                    <img class="daveo-logo" :src="DaveoLogo" :alt="$t('shared.daveo')" width="150"/>
+                    <img class="daveo-logo" src="~/assets/images/daveoLogo.png" :alt="$t('shared.daveo')"/>
                   </a>
                 </div>
               </div>
@@ -104,7 +104,6 @@
 
 <script lang="ts" setup>
 import { computed, useRuntimeConfig } from "#imports";
-import DaveoLogo from "~/assets/images/daveoLogo.png";
 import type { EnvConfig } from "~/models/EnvConfig";
 
 const config: EnvConfig = useRuntimeConfig();
@@ -123,5 +122,6 @@ const formattedPhoneNumber = computed<string>(() => {
 <style lang="scss">
 .daveo-logo {
   margin-left: -5px;
+  width: 150px;
 }
 </style>
