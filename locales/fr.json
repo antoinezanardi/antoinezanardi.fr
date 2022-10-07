@@ -1,6 +1,7 @@
 {
   "shared": {
-    "antoineZanardi": "Antoine Zanardi"
+    "antoineZanardi": "Antoine Zanardi",
+    "daveo": "Daveo"
   },
   "MyProfile": {
     "profilePicture": "Photo de profil",
@@ -10,5 +11,30 @@
     "myCv": "Mon CV",
     "joinMyNetwork": "Rejoignez mon réseau",
     "discoverMyProjects": "Découvrez mes projets"
+  },
+  "AboutMe": {
+    "whoAmI": "Qui suis-je?",
+    "welcomeOnMyProfile": "Hello {emoji} ! Je suis <b>Antoine Zanardi</b> et bienvenue sur mon profil. Je suis <b> expert informatique spécialisé dans le web</b> et passionné par les nouvelles technologies, la robotique, l'intelligence artificielle et les innovations en tout genre.",
+    "myDiplomas": "Mes diplômes acquis pendant <b>",
+    "myEducation": "mon cursus scolaire",
+    "bindWith": "</b> couplés à <b>",
+    "myExperience": "mon parcours professionnel",
+    "giveMeManagementAndTechnicalSkills": "</b> me permettent d'avoir un <b> esprit d'équipe </b> fort ainsi que des compétences <b> techniques et managériales</b> avancées.",
+    "myPassionAndPerfectionism": "Ma passion et mon perfectionnisme me poussent à aller au bout de mes projets en y apportant <b>ma rigueur et mon savoir</b> pour les terminer dans les temps et dans<b> la qualité attendue</b>.",
+    "myTechnologyWatch": "Ma veille technologique me permet d'être à la page sur les nouveautés du web et de les appliquer dans mes projets.",
+    "personalInfo": "Informations personnelles",
+    "genre": "Sexe",
+    "male": "Homme",
+    "age": "Age",
+    "yearsOld": "{age} ans",
+    "email": "email",
+    "phone": "Téléphone",
+    "address": "Adresse postale",
+    "languages": "Langues",
+    "englishAndFrench": "Anglais et Français",
+    "licenses": "Permis",
+    "car": "Voiture",
+    "boat": "Bateau",
+    "workingAt": "Travaille chez"
   }
 }

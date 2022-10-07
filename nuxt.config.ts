@@ -14,5 +14,10 @@ export default defineNuxtConfig({
       include: ["../.eslintrc.js"],
     },
   },
+  publicRuntimeConfig: {
+    EMAIL: process.env.EMAIL,
+    PHONE_NUMBER: process.env.PHONE_NUMBER,
+    ADDRESS: process.env.ADDRESS,
+  },
   vite: { plugins: [vueI18nVitePlugin({ include: [resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json")] })] },
 });

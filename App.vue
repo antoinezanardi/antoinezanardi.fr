@@ -1,11 +1,13 @@
 <template>
   <div class="app-content">
     <MyProfile/>
+    <AboutMe/>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { onMounted, useNuxtApp } from "#imports";
+import AboutMe from "~/components/AboutMe.vue.vue";
 import MyProfile from "~/components/MyProfile.vue";
 
 const { $bootstrap } = useNuxtApp();
