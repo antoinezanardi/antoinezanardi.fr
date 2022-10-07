@@ -11,7 +11,7 @@ import aos from "aos";
 import { onMounted, useNuxtApp } from "#imports";
 import AboutMe from "~/components/AboutMe.vue";
 import MyProfile from "~/components/MyProfile.vue";
-import MySkills from "~/components/MySkills.vue";
+import MySkills from "~/components/MySkills/MySkills.vue";
 
 const { $bootstrap } = useNuxtApp();
 

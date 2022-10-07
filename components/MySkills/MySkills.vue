@@ -8,95 +8,11 @@
       <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="card-body">
           <div class="row">
-            <div class="col-md-6">
-              <div class="progress-container">
-                <span id="badge-html" class="progress-badge">
-                  <i class="fab fa-html5 mr-2"/>
-                  <b>
-                    <a class="text-muted" href="https://fr.wikipedia.org/wiki/HTML5" target="_blank">
-                      HTML
-                    </a>
-                  </b>
-                </span>
-                <div class="progress">
-                  <div
-                    id="progress-html"
-                    class="progress-bar progress-bar-primary"
-                    data-aos="progress-full"
-                    data-aos-offset="10"
-                    data-aos-duration="2000"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 95%;"
-                  />
-                  <span class="progress-value">
-                    95%
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="progress-container progress-primary">
-                <span id="badge-css" class="progress-badge">
-                  <i class="fab fa-css3-alt mr-2"/>
-                  <b>
-                    <a class="text-muted" href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">
-                      CSS
-                    </a>
-                  </b>
-                </span>
-                <div class="progress">
-                  <div
-                    id="progress-css"
-                    class="progress-bar progress-bar-primary"
-                    data-aos="progress-full"
-                    data-aos-offset="10"
-                    data-aos-duration="2000"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 90%;"
-                  />
-                  <span class="progress-value">
-                    90%
-                  </span>
-                </div>
-              </div>
+            <div v-for="skill of skills" :key="skill.name" class="col-md-6">
+              <SkillProgressBar :skill="skill"/>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="progress-container progress-primary">
-                <span id="badge-js" class="progress-badge">
-                  <i class="fab fa-js mr-2"/>
-                  <b>
-                    <a class="text-muted" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank">
-                      JavaScript
-                    </a>
-                  </b>
-                </span>
-                <div class="progress">
-                  <div
-                    id="progress-js"
-                    class="progress-bar progress-bar-primary"
-                    data-aos="progress-full"
-                    data-aos-offset="10"
-                    data-aos-duration="2000"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 95%;"
-                  />
-                  <span class="progress-value">
-                    95%
-                  </span>
-                </div>
-              </div>
-            </div>
             <div class="col-md-6">
               <div class="progress-container progress-primary">
                 <span id="badge-vuejs" class="progress-badge">
@@ -335,3 +251,17 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { useI18n } from "vue-i18n";
+import SkillProgressBar from "~/components/MySkills/SkillProgressBar.vue";
+import type { Skill } from "~/models/Skill";
+
+const { t } = useI18n();
+
+const skills: Skill[] = [
+  { name: t("MySkills.html"), iconClasses: "fab fa-html5", color: "#E44D27", percent: "95%" },
+  { name: t("MySkills.css"), iconClasses: "fab fa-css3-alt", color: "#0162B0", percent: "90%" },
+  { name: t("MySkills.javaScript"), iconClasses: "fab fa-js", color: "#EFC624", percent: "95%" },
+];
+</script>
