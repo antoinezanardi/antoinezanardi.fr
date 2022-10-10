@@ -36,5 +36,32 @@
     "car": "Voiture",
     "boat": "Bateau",
     "workingAt": "Travaille chez"
+  },
+  "MySkills": {
+    "itSkills": "Compétences techniques",
+    "html": "HTML",
+    "css": "CSS",
+    "javascript": "Javascript",
+    "typescript": "Typescript",
+    "vue": "Vue 3",
+    "nuxt": "Nuxt 3",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "myTools": "Mes outils",
+    "hoverIconsForDetails": "Survolez les icônes pour plus de détails",
+    "linuxForServers": "Je déploie mes travaux web sur des serveurs sous Linux (Debian). Je m'occupe moi-même de la configuration de l'hébergement des applications sur le serveur grâce à une CI/CD robuste.",
+    "microServicesArchitecture": "J'organise mes applications Web en micro-services : les API(s) communiquent avec l'interface pour la servir à chaque demande des utilisateurs. Tout est séparé en galaxie de services.",
+    "gitForVersionControl": "J'utilise Git pour le version control de mes projets.",
+    "multipleEnvs": "Pour tous mes projets, je mets en place plusieurs environnements (une production couplée à une pré-production au minimum) grâce au système de branches de Git et des flows séparés de CI/CD.",
+    "gitHubAndActions": "Je travaille sur GitHub et utilise GitHub Actions comme outil de CI/CD pour tester le code et déployer les productions, tout cela de manière automatisée et sécurisée.",
+    "nodeJsForProjects": "NodeJS est un environnement indispensable pour tous mes projets en Typescript. Je l'utilise à la fois pour mes APIs et mes interfaces web.",
+    "cssFrameworks": "Je maîtrise plusieurs frameworks de design comme Bootstrap, MaterializeCSS ou encore Font Awesome pour parfaire mes interfaces.",
+    "vueJsWithNuxt": "J'utilise le framework VueJS 3 couplé à NuxtJS 3 pour construire l'interface web de mes projets, allant de simples sites vitrines à des backoffices complets et ergonomiques.",
+    "openSourceNpm": "Je soutiens l'open-source en intégrant des modules NPM à mes projets. Je suis leurs prochaines releases sur GitHub.",
+    "esLintForGoodPractises": "Mon code est soumis à une norme stricte (W3School pour HTML et ESLint pour JS / TS / Vue) afin qu'il reste maintenable, homogène et lisible.",
+    "unitTests": "Je m'efforce d'écrire le maximum de tests unitaires et E2E sur mes projets afin de prouver leur robustesse."
+  },
+  "MyPortfolio": {
+    "portfolio": "Portfolio"
   }
 }

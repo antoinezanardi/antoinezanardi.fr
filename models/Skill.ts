@@ -3,6 +3,7 @@ interface Skill {
   percent: string;
   iconClasses: string;
   color: string;
+  url: string;
 }
 
 export type { Skill };

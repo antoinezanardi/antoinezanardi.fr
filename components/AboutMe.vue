@@ -18,10 +18,7 @@
                 <a href="#experience" v-html="$t('AboutMe.myExperience')"/>
                 <span v-html="$t('AboutMe.giveMeManagementAndTechnicalSkills')"/>
               </p>
-              <p>
-                <span v-html="$t('AboutMe.myPassionAndPerfectionism')"/>
-                <span v-html="$t('AboutMe.myTechnologyWatch')"/>
-              </p>
+              <p v-html="`${$t('AboutMe.myPassionAndPerfectionism')} ${$t('AboutMe.myTechnologyWatch')}`"/>
             </div>
           </div>
           <div class="col-lg-6 col-md-12">

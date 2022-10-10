@@ -3,15 +3,14 @@
     <MyProfile/>
     <AboutMe/>
     <MySkills/>
+    <MyPortfolio/>
   </div>
 </template>
 
 <script lang="ts" setup>
 import aos from "aos";
+import { AboutMe, MyProfile, MySkills, MyPortfolio } from "#components";
 import { onMounted, useNuxtApp } from "#imports";
-import AboutMe from "~/components/AboutMe.vue";
-import MyProfile from "~/components/MyProfile.vue";
-import MySkills from "~/components/MySkills/MySkills.vue";
 
 const { $bootstrap } = useNuxtApp();
 

@@ -5,7 +5,7 @@
       <b>
         <a
           class="text-muted"
-          href="https://fr.wikipedia.org/wiki/HTML5"
+          :href="skill.url"
           target="_blank"
           rel="noopener noreferrer"
           v-html="skill.name"
