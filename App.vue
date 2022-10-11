@@ -4,12 +4,13 @@
     <AboutMe/>
     <MySkills/>
     <MyPortfolio/>
+    <MyExperience/>
   </div>
 </template>
 
 <script lang="ts" setup>
 import aos from "aos";
-import { AboutMe, MyProfile, MySkills, MyPortfolio } from "#components";
+import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience } from "#components";
 import { onMounted, useNuxtApp } from "#imports";
 
 const { $bootstrap } = useNuxtApp();

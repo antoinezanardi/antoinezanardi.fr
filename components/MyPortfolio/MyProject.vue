@@ -3,7 +3,7 @@
     <a target="_blank" rel="noopener noreferrer" :href="project.url">
       <figure class="cc-effect">
         <img :src="`/assets/images/${project.image}`" :alt="project.name"/>
-        <figcaption>
+        <figcaption class="project-metadata">
           <div class="h4" v-html="project.name"/>
           <p class="project-desc" v-html="project.description"/>
         </figcaption>
@@ -21,7 +21,7 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.project-desc {
-  text-shadow: 1px 1px 1px black;
+.project-metadata {
+  text-shadow: 2px 2px 15px black;
 }
 </style>

@@ -13,9 +13,9 @@
               <p v-html="$t('AboutMe.welcomeOnMyProfile', { emoji: '👋' })"/>
               <p>
                 <span v-html="$t('AboutMe.myDiplomas')"/>
-                <a href="#education" v-html="$t('AboutMe.myEducation')"/>
+                <a href="#education" class="mx-1" v-html="$t('AboutMe.myEducation')"/>
                 <span v-html="$t('AboutMe.bindWith')"/>
-                <a href="#experience" v-html="$t('AboutMe.myExperience')"/>
+                <a href="#experience" class="mx-1" v-html="$t('AboutMe.myExperience')"/>
                 <span v-html="$t('AboutMe.giveMeManagementAndTechnicalSkills')"/>
               </p>
               <p v-html="`${$t('AboutMe.myPassionAndPerfectionism')} ${$t('AboutMe.myTechnologyWatch')}`"/>
@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-sm-8">
                   <a href="https://www.daveo.fr/" target="_blank" rel="noopener noreferrer">
-                    <img class="daveo-logo" src="~/assets/images/daveoLogo.png" :alt="$t('shared.daveo')"/>
+                    <img class="daveo-logo" src="~/assets/images/daveo-logo.png" :alt="$t('shared.daveo')"/>
                   </a>
                 </div>
               </div>

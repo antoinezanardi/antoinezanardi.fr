@@ -1,7 +1,11 @@
 {
   "shared": {
     "antoineZanardi": "Antoine Zanardi",
-    "daveo": "Daveo"
+    "daveo": "Daveo",
+    "ohMyCode": "OhMyCode",
+    "soBook": "SoBook",
+    "months": "{monthCount} mois",
+    "today": "Aujourd'hui"
   },
   "MyProfile": {
     "profilePicture": "Photo de profil",
@@ -15,11 +19,11 @@
   "AboutMe": {
     "whoAmI": "Qui suis-je?",
     "welcomeOnMyProfile": "Hello {emoji} ! Je suis <b>Antoine Zanardi</b> et bienvenue sur mon profil. Je suis <b> expert informatique spécialisé dans le web</b> et passionné par les nouvelles technologies, la robotique, l'intelligence artificielle et les innovations en tout genre.",
-    "myDiplomas": "Mes diplômes acquis pendant <b>",
+    "myDiplomas": "Mes diplômes acquis pendant",
     "myEducation": "mon cursus scolaire",
-    "bindWith": "</b> couplés à <b>",
+    "bindWith": "couplés à",
     "myExperience": "mon parcours professionnel",
-    "giveMeManagementAndTechnicalSkills": "</b> me permettent d'avoir un <b> esprit d'équipe </b> fort ainsi que des compétences <b> techniques et managériales</b> avancées.",
+    "giveMeManagementAndTechnicalSkills": "me permettent d'avoir un <b> esprit d'équipe </b> fort ainsi que des compétences <b> techniques et managériales</b> avancées.",
     "myPassionAndPerfectionism": "Ma passion et mon perfectionnisme me poussent à aller au bout de mes projets en y apportant <b>ma rigueur et mon savoir</b> pour les terminer dans les temps et dans<b> la qualité attendue</b>.",
     "myTechnologyWatch": "Ma veille technologique me permet d'être à la page sur les nouveautés du web et de les appliquer dans mes projets.",
     "personalInfo": "Informations personnelles",
@@ -62,6 +66,27 @@
     "unitTests": "Je m'efforce d'écrire le maximum de tests unitaires et E2E sur mes projets afin de prouver leur robustesse."
   },
   "MyPortfolio": {
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "projects": {
+      "portfolio": {
+        "name": "Mon portfolio",
+        "description": "Présentation de mon travail"
+      },
+      "werewolvesAssistant": {
+        "name": "Assistant Loups-Garous",
+        "description": "L'outil idéal pour le maître du jeu des Loups-Garous de Thiercelieux™"
+      },
+      "distribution": {
+        "name": "Boutique de livres",
+        "description": "Boutique en ligne de distribution de livres"
+      },
+      "gitHub": {
+        "name": "Découvrez mes autres projets",
+        "description": "Et n'hésitez pas à me suivre sur GitHub !"
+      }
+    }
+  },
+  "MyExperience": {
+    "professionalExperience": "Expérience professionnelle"
   }
 }

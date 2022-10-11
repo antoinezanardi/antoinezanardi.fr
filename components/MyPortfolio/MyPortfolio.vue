@@ -11,7 +11,7 @@
       </div>
       <div class="tab-content gallery">
         <div id="web-development" class="tab-pane active">
-          <div class="ml-auto mr-auto">
+          <div class="ms-auto me-auto">
             <div class="row align-items-center">
               <div v-for="project of projects" :key="project.name" class="col-md-6">
                 <MyProject :project="project"/>
@@ -25,31 +25,35 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import { MyProject } from "#components";
 import type { Project } from "~/models/Project";
 
+const { t } = useI18n();
+
+const i18nProjectPath = "MyPortfolio.projects";
 const projects: Project[] = [
   {
-    name: "Mon portfolio",
-    description: "Présentation de mon travail",
+    name: t(`${i18nProjectPath}.portfolio.name`),
+    description: t(`${i18nProjectPath}.portfolio.description`),
     image: "portfolio-thumbnail.png",
     url: "https://www.antoinezanardi.fr",
   },
   {
-    name: "Assistant Loups-Garous",
-    description: "L'outil idéal pour le maître du jeu des Loups-Garous de Thiercelieux™",
+    name: t(`${i18nProjectPath}.werewolvesAssistant.name`),
+    description: t(`${i18nProjectPath}.werewolvesAssistant.description`),
     image: "werewolves-assistant-thumbnail.png",
     url: "https://werewolves-assistant.antoinezanardi.fr",
   },
   {
-    name: "Boutique de livres",
-    description: "Boutique en ligne de distribution de livres",
+    name: t(`${i18nProjectPath}.distribution.name`),
+    description: t(`${i18nProjectPath}.distribution.description`),
     image: "distribution-thumbnail.png",
     url: "https://www.airvey-editions.fr",
   },
   {
-    name: "Découvrez mes autres projets",
-    description: "Et n'hésitez pas à me suivre sur GitHub !",
+    name: t(`${i18nProjectPath}.gitHub.name`),
+    description: t(`${i18nProjectPath}.gitHub.description`),
     image: "github.jpeg",
     url: "https://github.com/antoinezanardi",
   },
