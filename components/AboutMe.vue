@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-sm-8">
                   <a href="https://www.daveo.fr/" target="_blank" rel="noopener noreferrer">
-                    <img class="daveo-logo" src="~/assets/images/daveo-logo.png" :alt="$t('shared.daveo')"/>
+                    <img class="daveo-logo" src="~/assets/images/daveo-logo.png" :alt="COMPANY_NAMES.DAVEO"/>
                   </a>
                 </div>
               </div>
@@ -101,6 +101,7 @@
 
 <script lang="ts" setup>
 import { computed, useRuntimeConfig } from "#imports";
+import { COMPANY_NAMES } from "~/models/Company";
 import type { EnvConfig } from "~/models/EnvConfig";
 
 const config: EnvConfig = useRuntimeConfig();

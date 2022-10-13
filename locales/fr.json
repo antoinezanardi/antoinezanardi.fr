@@ -1,10 +1,9 @@
 {
   "shared": {
     "antoineZanardi": "Antoine Zanardi",
-    "daveo": "Daveo",
-    "ohMyCode": "OhMyCode",
-    "soBook": "SoBook",
     "months": "{monthCount} mois",
+    "years": "{yearCount} an | {yearCount} ans",
+    "and": "et",
     "today": "Aujourd'hui"
   },
   "MyProfile": {

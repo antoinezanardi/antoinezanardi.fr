@@ -222,26 +222,50 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import ProfessionalExperienceCard from "~/components/MyExperience/ProfessionalExperienceCard.vue";
-import type { ProfessionalExperience, Company } from "~/models/ProfessionalExperience";
-
-const { t } = useI18n();
-
-const ohMyCode: Company = {
-  name: t("shared.ohMyCode"),
-  url: "https://www.sobook.fr/oh-my-code/",
-  image: "daveo-logo.png",
-};
+import { companies, COMPANY_NAMES } from "~/models/Company";
+import type { ProfessionalExperience } from "~/models/ProfessionalExperience";
 
 const professionalExperiences: ProfessionalExperience[] = [
   {
     job: {
       name: "Test",
       description: ["lol", "mdr"],
-      startedAt: new Date(2019, 8),
+      startedAt: new Date("2019-09-01"),
     },
-    company: ohMyCode,
+    company: companies[COMPANY_NAMES.OH_MY_CODE],
+  }, {
+    job: {
+      name: "Test",
+      description: ["lol", "mdr"],
+      startedAt: new Date("2018-09-01"),
+      finishedAt: new Date("2019-08-30"),
+    },
+    company: companies[COMPANY_NAMES.OH_MY_CODE],
+  }, {
+    job: {
+      name: "Test",
+      description: ["lol", "mdr"],
+      startedAt: new Date("2016-09-01"),
+      finishedAt: new Date("2017-04-30"),
+    },
+    company: companies[COMPANY_NAMES.OH_MY_CODE],
+  }, {
+    job: {
+      name: "Test",
+      description: ["lol", "mdr"],
+      startedAt: new Date("2016-02-01"),
+      finishedAt: new Date("2016-08-30"),
+    },
+    company: companies[COMPANY_NAMES.SOBOOK],
+  }, {
+    job: {
+      name: "Test",
+      description: ["lol", "mdr"],
+      startedAt: new Date("2019-07-01"),
+      finishedAt: new Date("2019-12-31"),
+    },
+    company: companies[COMPANY_NAMES.SOBOOK],
   },
 ];
 </script>

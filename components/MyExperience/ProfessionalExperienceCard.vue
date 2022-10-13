@@ -10,11 +10,11 @@
               :src="`/assets/images/${professionalExperience.company.image}`"
             />
           </a>
-          <hr class="my-2"/>
+          <hr class="my-3"/>
           <div class="experience-date" v-html="formattedJobFinishedAt"/>
           <i class="fa fa-arrow-up fa-2x my-3"/>
           <div class="experience-date" v-html="formattedJobStartedAt"/>
-          <div class="font-weight-bold mt-2" v-html="formattedJobPeriod"/>
+          <div class="font-weight-bold font-italic small mt-4" v-html="formattedJobPeriod"/>
         </div>
       </div>
       <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
@@ -38,12 +38,22 @@ const props = defineProps<{
 }>();
 
 const { t } = useI18n();
-const { getMonthFullName, getMonthsDifference } = useDates();
+const { getMonthFullName, getPeriod } = useDates();
 
 const formattedJobPeriod = computed<string>(() => {
   const finishedAt = props.professionalExperience.job.finishedAt ?? new Date();
-  const monthsDifference = getMonthsDifference(props.professionalExperience.job.startedAt, finishedAt);
-  return t("shared.months", { monthCount: monthsDifference });
+  const period = getPeriod(props.professionalExperience.job.startedAt, finishedAt);
+  let periodText = "";
+  if (period.year) {
+    periodText += t("shared.years", { yearCount: period.year }, period.year);
+  }
+  if (period.month && period.year) {
+    periodText += ` ${t("shared.and")} `;
+  }
+  if (period.month) {
+    periodText += t("shared.months", { monthCount: period.month });
+  }
+  return `( ${periodText} )`;
 });
 const formattedJobStartedAt = computed<string>(() => {
   const { startedAt } = props.professionalExperience.job;

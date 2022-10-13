@@ -1,8 +1,4 @@
-interface Company {
-  name: string;
-  image: string;
-  url: string;
-}
+import type { Company } from "~/models/Company";
 
 interface Job {
   name: string;
@@ -16,4 +12,4 @@ interface ProfessionalExperience {
   company: Company;
 }
 
-export type { ProfessionalExperience, Company, Job };
+export type { ProfessionalExperience, Job };
