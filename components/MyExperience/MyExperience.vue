@@ -1,10 +1,7 @@
 <template>
   <div id="experience" class="section">
     <div class="container cc-experience">
-      <div class="h4 text-center mb-4 title">
-        <i class="fa fa-tasks me-2"/>
-        <span v-html="$t('MyExperience.professionalExperience')"/>
-      </div>
+      <SectionTitle icon="fa fa-briefcase" icon-color="#4D9344" :title="$t('MyExperience.professionalExperience')"/>
       <ProfessionalExperienceCard
         v-for="(professionalExperience, index) of professionalExperiences"
         :key="index"
@@ -222,21 +219,25 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import ProfessionalExperienceCard from "~/components/MyExperience/ProfessionalExperienceCard.vue";
+import SectionTitle from "~/components/shared/SectionTitle.vue";
 import { companies, COMPANY_NAMES } from "~/models/Company";
 import type { ProfessionalExperience } from "~/models/ProfessionalExperience";
+
+const { t } = useI18n();
 
 const professionalExperiences: ProfessionalExperience[] = [
   {
     job: {
-      name: "Test",
+      name: t("MyExperience.itR&DEngineer"),
       description: ["lol", "mdr"],
       startedAt: new Date("2019-09-01"),
     },
     company: companies[COMPANY_NAMES.OH_MY_CODE],
   }, {
     job: {
-      name: "Test",
+      name: t("MyExperience.internFullStackDeveloper"),
       description: ["lol", "mdr"],
       startedAt: new Date("2018-09-01"),
       finishedAt: new Date("2019-08-30"),
@@ -244,7 +245,7 @@ const professionalExperiences: ProfessionalExperience[] = [
     company: companies[COMPANY_NAMES.OH_MY_CODE],
   }, {
     job: {
-      name: "Test",
+      name: t("MyExperience.internFullStackDeveloper"),
       description: ["lol", "mdr"],
       startedAt: new Date("2016-09-01"),
       finishedAt: new Date("2017-04-30"),
@@ -252,7 +253,7 @@ const professionalExperiences: ProfessionalExperience[] = [
     company: companies[COMPANY_NAMES.OH_MY_CODE],
   }, {
     job: {
-      name: "Test",
+      name: t("MyExperience.freelanceFullStackDeveloper"),
       description: ["lol", "mdr"],
       startedAt: new Date("2016-02-01"),
       finishedAt: new Date("2016-08-30"),
@@ -260,7 +261,7 @@ const professionalExperiences: ProfessionalExperience[] = [
     company: companies[COMPANY_NAMES.SOBOOK],
   }, {
     job: {
-      name: "Test",
+      name: t("MyExperience.internFullStackDeveloper"),
       description: ["lol", "mdr"],
       startedAt: new Date("2019-07-01"),
       finishedAt: new Date("2019-12-31"),

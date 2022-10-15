@@ -1,10 +1,7 @@
 <template>
   <div id="skill" class="section">
     <div class="container">
-      <div class="h4 text-center mb-4 title">
-        <i class="fa fa-code me-2"/>
-        <span v-html="$t('MySkills.itSkills')"/>
-      </div>
+      <SectionTitle icon="fa fa-code" icon-color="#007EB8" :title="$t('MySkills.itSkills')"/>
       <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="card-body">
           <div class="row">
@@ -39,6 +36,7 @@
 import { useI18n } from "vue-i18n";
 import MyTool from "~/components/MySkills/MyTool.vue";
 import SkillProgressBar from "~/components/MySkills/SkillProgressBar.vue";
+import SectionTitle from "~/components/shared/SectionTitle.vue";
 import type { Skill } from "~/models/Skill";
 import type { Tool } from "~/models/Tool";
 

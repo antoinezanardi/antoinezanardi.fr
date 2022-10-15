@@ -19,7 +19,8 @@
       </div>
       <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
         <div class="card-body">
-          <div class="h5" v-html="professionalExperience.job.name"/>
+          <div class="h4" v-html="professionalExperience.job.name"/>
+          <hr/>
           <p v-for="(paragraph, index) of professionalExperience.job.description" :key="index" v-html="paragraph"/>
         </div>
       </div>

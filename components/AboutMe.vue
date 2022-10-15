@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
-              <div class="h4 mt-0 title">
+              <div class="h3 mt-0 title">
                 <i class="fa fa-user-circle me-2"/>
                 <span v-html="$t('AboutMe.whoAmI')"/>
               </div>
@@ -23,7 +23,7 @@
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
-              <div class="h4 mt-0 title">
+              <div class="h3 mt-0 title">
                 <i class="fa fa-id-card me-2"/>
                 <span v-html="$t('AboutMe.personalInfo')"/>
               </div>

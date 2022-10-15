@@ -86,6 +86,9 @@
     }
   },
   "MyExperience": {
-    "professionalExperience": "Expérience professionnelle"
+    "professionalExperience": "Expérience professionnelle",
+    "itR&DEngineer": "Ingénieur Recherche & Développement Informatique",
+    "internFullStackDeveloper": "Stagiaire Développeur Web Full-Stack",
+    "freelanceFullStackDeveloper": "Auto-Entrepreneur Développeur Web Full-Stack"
   }
 }

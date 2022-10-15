@@ -1,14 +1,7 @@
 <template>
   <div id="portfolio" class="section">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 ms-auto me-auto">
-          <div class="h4 text-center mb-4 title">
-            <i class="fa fa-star me-2"/>
-            <span v-html="$t('MyPortfolio.portfolio')"/>
-          </div>
-        </div>
-      </div>
+      <SectionTitle icon="fa fa-star" icon-color="#EEC624" :title="$t('MyPortfolio.portfolio')"/>
       <div class="tab-content gallery">
         <div id="web-development" class="tab-pane active">
           <div class="ms-auto me-auto">
@@ -27,6 +20,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { MyProject } from "#components";
+import SectionTitle from "~/components/shared/SectionTitle.vue";
 import type { Project } from "~/models/Project";
 
 const { t } = useI18n();
