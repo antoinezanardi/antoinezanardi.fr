@@ -2,7 +2,7 @@
   <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <a target="_blank" rel="noopener noreferrer" :href="project.url">
       <figure class="cc-effect">
-        <img :src="`/assets/images/${project.image}`" :alt="project.name"/>
+        <img :src="`assets/images/${project.image}`" :alt="project.name"/>
         <figcaption class="project-metadata">
           <div class="h4" v-html="project.name"/>
           <p class="project-desc" v-html="project.description"/>

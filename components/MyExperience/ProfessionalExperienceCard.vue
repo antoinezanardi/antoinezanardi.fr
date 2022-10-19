@@ -7,7 +7,7 @@
             <img
               class="white-logo company-logo"
               :alt="professionalExperience.company.image"
-              :src="`/assets/images/${professionalExperience.company.image}`"
+              :src="`assets/images/${professionalExperience.company.image}`"
             />
           </a>
           <hr class="my-3"/>

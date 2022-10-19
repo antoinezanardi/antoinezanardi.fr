@@ -11,7 +11,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img id="profile-pic" src="assets/images/antoine.png" :alt="$t('MyProfile.profilePicture')"/>
+                <img id="profile-pic" src="~/assets/images/antoine.png" :alt="$t('MyProfile.profilePicture')"/>
               </a>
             </div>
             <div class="h2 title text-shadow" v-html="$t('shared.antoineZanardi')"/>
