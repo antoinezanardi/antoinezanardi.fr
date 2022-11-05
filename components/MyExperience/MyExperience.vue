@@ -23,6 +23,18 @@ const { t } = useI18n();
 const professionalExperiences: ProfessionalExperience[] = [
   {
     job: {
+      name: t("MyExperience.fullStackDeveloperConsultant"),
+      description: [
+        t("MyExperience.iJoinedDaveo"),
+        t("MyExperience.whatIsConsulting"),
+        t("MyExperience.myMissionsAsConsultant"),
+        t("MyExperience.cloudProductCertifications"),
+      ],
+      startedAt: new Date("2022-04-01"),
+    },
+    company: companies[COMPANY_NAMES.DAVEO],
+  }, {
+    job: {
       name: t("MyExperience.itR&DEngineer"),
       description: [
         t("MyExperience.firstPermanentContract"),
@@ -31,6 +43,7 @@ const professionalExperiences: ProfessionalExperience[] = [
         t("MyExperience.expertiseAndTechnicalSkills"),
       ],
       startedAt: new Date("2019-09-01"),
+      finishedAt: new Date("2022-03-31"),
     },
     company: companies[COMPANY_NAMES.OH_MY_CODE],
   }, {

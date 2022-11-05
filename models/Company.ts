@@ -23,7 +23,7 @@ const companies: Record<COMPANY_NAMES, Company> = {
   },
   [COMPANY_NAMES.DAVEO]: {
     name: COMPANY_NAMES.DAVEO,
-    url: "https://www.sobook.fr/oh-my-code/",
+    url: "https://www.daveo.fr/",
     image: "daveo-logo.png",
   },
 };
