@@ -31,26 +31,8 @@
         <div class="section">
           <div class="container">
             <div class="button-container">
-              <a
-                class="btn btn-info btn-round btn-lg btn-icon me-3"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/antoinezanardi/"
-                data-bs-toggle="tooltip"
-                :title="$t('MyProfile.joinMyNetwork')"
-              >
-                <i class="fa-brands fa-linkedin-in fa-2x fa-btn"/>
-              </a>
-              <a
-                class="btn btn-primary btn-round btn-lg btn-icon"
-                href="https://github.com/antoinezanardi"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-bs-toggle="tooltip"
-                :title="$t('MyProfile.discoverMyProjects')"
-              >
-                <i class="fa-brands fa-github fa-2x fa-btn"/>
-              </a>
+              <LinkedInButton class="me-2"/>
+              <GitHubButton/>
             </div>
           </div>
         </div>
@@ -58,6 +40,11 @@
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import GitHubButton from "~/components/shared/Buttons/GitHubButton.vue";
+import LinkedInButton from "~/components/shared/Buttons/LinkedInButton.vue";
+</script>
 
 <style lang="scss" scoped>
 .title {
@@ -74,7 +61,7 @@
 }
 
 .page-header-image {
-  background-image: url("assets/images/background.png");
+  background-image: url("../../assets/images/background.png");
 }
 .text-shadow {
   text-shadow: #394036 1px 1px;

@@ -4,7 +4,8 @@
       <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
         <div class="card-body cc-experience-header">
           <PeriodTimeline
-            :company="professionalExperience.company"
+            :url="professionalExperience.company.url"
+            :image="professionalExperience.company.image"
             :started-at="professionalExperience.job.startedAt"
             :finished-at="professionalExperience.job.finishedAt"
           />

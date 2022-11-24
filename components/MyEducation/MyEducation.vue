@@ -2,12 +2,18 @@
   <div id="education" class="section">
     <div class="container cc-education">
       <SectionTitle icon="fa fa-graduation-cap" icon-color="#F05033" :title="$t('MyEducation.education')"/>
+      <EducationDegreeCard
+        v-for="(educationDegree, index) of educationDegrees"
+        :key="index"
+        :education-degree="educationDegree"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
+import EducationDegreeCard from "~/components/MyEducation/EducationDegreeCard.vue";
 import SectionTitle from "~/components/shared/SectionTitle.vue";
 import type { EducationDegree } from "~/models/EducationDegree";
 import { SCHOOL_NAMES, schools } from "~/models/School";
@@ -33,7 +39,7 @@ const educationDegrees: EducationDegree[] = [
         t("MyEducation.lastYearsInEpitech"),
       ],
       startedAt: new Date("2014-01-01"),
-      obtainedAt: new Date("2015-12-31"),
+      obtainedAt: new Date("2019-01-01"),
     },
     school: {
       ...schools[SCHOOL_NAMES.EPITECH],
@@ -47,7 +53,7 @@ const educationDegrees: EducationDegree[] = [
         t("MyEducation.softManagementSkills"),
       ],
       startedAt: new Date("2017-01-01"),
-      obtainedAt: new Date("2018-12-31"),
+      obtainedAt: new Date("2018-01-01"),
     },
     school: {
       ...schools[SCHOOL_NAMES.LAVAL],
@@ -58,7 +64,7 @@ const educationDegrees: EducationDegree[] = [
       name: t(`Degrees.highSchoolDiploma`),
       description: [t("MyEducation.scientistHighSchoolDiploma")],
       startedAt: new Date("2011-01-01"),
-      obtainedAt: new Date("2014-12-31"),
+      obtainedAt: new Date("2014-01-01"),
     },
     school: {
       ...schools[SCHOOL_NAMES.VIMEU],
