@@ -1,4 +1,5 @@
 <template>
+  <NavBar/>
   <div class="app-content">
     <MyProfile/>
     <AboutMe/>
@@ -12,7 +13,7 @@
 
 <script lang="ts" setup>
 import aos from "aos";
-import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter } from "#components";
+import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
 import { onMounted, useNuxtApp } from "#imports";
 
 const { $bootstrap } = useNuxtApp();
