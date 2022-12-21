@@ -23,6 +23,16 @@ const { t } = useI18n();
 const educationDegrees: EducationDegree[] = [
   {
     degree: {
+      name: t(`Degrees.gcpACE`),
+      description: [t("MyEducation.gcpACECertification")],
+      obtainedAt: new Date("2022-12-01"),
+    },
+    school: {
+      ...schools[SCHOOL_NAMES.GOOGLE],
+      translatedName: t(`Schools.${SCHOOL_NAMES.GOOGLE}`),
+    },
+  }, {
+    degree: {
       name: t(`Degrees.CKAD`),
       description: [t("MyEducation.kubernetesCertification")],
       obtainedAt: new Date("2022-08-01"),

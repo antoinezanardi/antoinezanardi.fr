@@ -1,5 +1,11 @@
 <template>
-  <img class="country-flag" :src="`assets/images/${countryFlagSrc}`" :alt="`${country} flag`"/>
+  <img
+    class="country-flag"
+    :src="`assets/images/${countryFlagSrc}`"
+    :alt="`${country} flag`"
+    data-bs-toggle="tooltip"
+    :title="$t(`Countries.${country}`)"
+  />
 </template>
 
 <script setup lang="ts">

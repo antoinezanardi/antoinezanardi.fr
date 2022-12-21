@@ -5,6 +5,7 @@ enum SCHOOL_NAMES {
   EPITECH = "epitech",
   LAVAL = "laval",
   CLOUD_NATIVE_COMPUTED_FOUNDATION = "cloudNativeComputedFoundation",
+  GOOGLE = "google",
 }
 
 interface School {
@@ -42,6 +43,12 @@ const schools: Record<SCHOOL_NAMES, School> = {
     country: COUNTRIES.USA,
     url: "https://www.cncf.io/",
     image: "cloud-native-computed-foundation-logo.png",
+  },
+  [SCHOOL_NAMES.GOOGLE]: {
+    name: SCHOOL_NAMES.GOOGLE,
+    country: COUNTRIES.USA,
+    url: "https://cloud.google.com/",
+    image: "google-cloud-platform-logo.png",
   },
 };
 

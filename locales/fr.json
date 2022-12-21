@@ -106,16 +106,23 @@
     "cloudProductCertifications": "En parallèle, Daveo m’offre la possibilité de passer des certifications dans le Cloud Product Management : AWS, GCP, Azure ou encore Kubernetes. Je peux ainsi étendre mes compétences dans le DevOps et proposer une expertise encore plus complète aux clients."
   },
   "Schools": {
+    "google": "Google",
     "cloudNativeComputedFoundation": "Cloud Native Computed Foundation",
     "laval": "Université Laval",
     "epitech": "Epitech",
     "vimeu": "Lycée du Vimeu"
   },
   "Degrees": {
+    "gcpACE": "Google Associate Cloud Engineer (ACE)",
     "CKAD": "Certified Kubernetes Application Developer (CKAD)",
     "ITMasterDegree": "Master en Informatique - Titre d'Expert",
     "ITCertification": "Certificat en Technologies de l'Information (Double diplôme)",
     "highSchoolDiploma": "Baccalauréat Scientifique"
+  },
+  "Countries": {
+    "USA": "États-Unis",
+    "FRANCE": "France",
+    "CANADA": "Canada"
   },
   "MyEducation": {
     "education": "Formation & Certifications",
@@ -124,7 +131,8 @@
     "softManagementSkills": "Ces études à l'étranger m'ont aussi permis d'élargir mes compétences de ma formation purement technique de l’EPITECH.",
     "firstThreeYearsInEpitech": "Mes 3 premières années à Epitech m'ont permis de découvrir de nombreux langages de programmation: C, C++, PHP, JavaScript, Python, Java... Cette école m'a appris à gérer un projet, manager une équipe et réaliser un travail atteignant les qualités attendues par un client.",
     "lastYearsInEpitech": "Durant mes 2 dernières années, j'ai travaillé sur mon projet de fin d'études qui m'a emmené au CES de Las Vegas 2017 pour le présenter en tant que grand projet d'aide aux sans-abris.",
-    "kubernetesCertification": "Grâce à la certification CKAD, je peux conseiller mes clients dans leur architecture Kubernetes, mettre en place ou améliorer leurs clusters et les accompagner dans leur besoins DevOps."
+    "kubernetesCertification": "Grâce à la certification CKAD, je peux conseiller mes clients dans leur architecture Kubernetes, mettre en place ou améliorer leurs clusters et les accompagner dans leur besoins DevOps.",
+    "gcpACECertification": "Pour continuer mon apprentissage de l'univers du DevOps, j'ai obtenu la certification Google ACE pour connaître et maîtriser chacun des produits de leur univers Cloud."
   },
   "GitHubButton": {
     "discoverMyProjects": "Découvrez mes projets"
