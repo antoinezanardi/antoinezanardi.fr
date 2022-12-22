@@ -1,0 +1,28 @@
+name: Time's Up by Play-IT Web Deployment on Production Server Workflow
+on:
+    push:
+        branches:
+            - master
+jobs:
+    deployment:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setup GitHub repository 🔧
+              uses: actions/checkout@v2
+            - name: Setup NodeJS v14 ✨
+              uses: actions/setup-node@v2
+              with:
+                node-version: '14'
+            - name: Install project dependencies 📦
+              run: npm install
+            - name: Check and lint code 🔍
+              run: npm run lint
+            - name: Build app ✨
+              run: npm run build
+            - name: Install SSH Key 🔑
+              uses: shimataro/ssh-key-action@v2
+              with:
+                key: ${{ secrets.TIMES_UP_PRODUCTION_SERVER_SSH_PRIVATE_KEY }}
+                known_hosts: ${{ secrets.TIMES_UP_KNOWN_HOSTS }}
+            - name: Deploy to production server 🚀️
+              run: ./deploy/deploy.sh master ${{ secrets.TIMES_UP_PRODUCTION_SERVER_SSH_USER }} ${{ secrets.PRODUCTION_SERVER_SSH_URL }}
