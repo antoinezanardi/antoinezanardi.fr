@@ -6,6 +6,11 @@
     "and": "et",
     "today": "Aujourd'hui"
   },
+  "App": {
+    "meta": {
+      "description": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences."
+    }
+  },
   "MyProfile": {
     "profilePicture": "Photo de profil",
     "itConsultant": "Consultant en Informatique",

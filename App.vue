@@ -13,10 +13,17 @@
 
 <script lang="ts" setup>
 import aos from "aos";
+import { useI18n } from "vue-i18n";
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
-import { onMounted, useNuxtApp } from "#imports";
+import { onMounted, useNuxtApp, useHead } from "#imports";
 
+const { t } = useI18n();
 const { $bootstrap } = useNuxtApp();
+
+useHead({
+  title: "Antoine ZANARDI",
+  meta: [{ name: "description", content: t("App.meta.description") }],
+});
 
 onMounted((): void => {
   aos.init();
