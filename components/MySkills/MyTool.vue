@@ -1,13 +1,16 @@
 <template>
-  <i
-    class="tool fa-3x mx-1"
-    :class="tool.iconClasses"
+  <WrappedFontAwesomeIcon
     data-bs-toggle="tooltip"
     :title="tool.description"
+    class="tool mx-1"
+    :icon="tool.iconClasses"
+    :icon-color="tool.color"
+    size="3x"
   />
 </template>
 
 <script setup lang="ts">
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
 import type { Tool } from "~/models/Tool";
 
 defineProps<{
@@ -17,7 +20,6 @@ defineProps<{
 
 <style lang="scss" scoped>
   .tool {
-    color: v-bind("tool.color");
     cursor: pointer;
   }
 </style>

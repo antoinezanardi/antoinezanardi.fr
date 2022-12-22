@@ -22,7 +22,7 @@
             />
           </div>
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center d-flex justify-content-center">
               <MyTool v-for="tool of tools" :key="tool.iconClasses" :tool="tool"/>
             </div>
           </div>

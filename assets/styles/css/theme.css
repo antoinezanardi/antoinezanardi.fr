@@ -1,29 +1,3 @@
-/*!
-
- =========================================================
- * Now-ui-kit - v1.1.0
- =========================================================
-
- * Product Page: http://www.creative-tim.com/product/now-ui-kit
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-/*     brand Colors              */
-/*      light colors         */
-/* ========================================================================
- * bootstrap-switch - v3.3.2
- * http://www.bootstrap-switch.org
- * ========================================================================
- * Copyright 2012-2013 Mattia Larentis
- * http://www.apache.org/licenses/LICENSE-2.0
- */
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -1446,7 +1420,7 @@ fieldset[disabled]
   height: 2.375rem;
   min-width: 2.375rem;
   width: 2.375rem;
-  padding: 0;
+  padding: 11px 0 0;
   font-size: 0.9375rem;
   overflow: hidden;
   position: relative;
@@ -2112,7 +2086,7 @@ fieldset[disabled]
 
 .has-success:after,
 .has-danger:after {
-  font-family: 'Nucleo Outline';
+
   content: "\ea22";
   display: inline-block;
   position: absolute;
@@ -2397,7 +2371,6 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .checkbox label::after {
-  font-family: 'Nucleo Outline';
   content: "\ea22";
   top: 0;
   text-align: center;
@@ -3908,13 +3881,6 @@ License - nucleoapp.com/license/
 Created using IcoMoon - icomoon.io
 
 -------------------------------- */
-@font-face {
-  font-family: 'Nucleo Outline';
-  src: url("~now-ui-kit/assets/fonts/nucleo-outline.eot");
-  src: url("~now-ui-kit/assets/fonts/nucleo-outline.eot") format("embedded-opentype"), url("~now-ui-kit/assets/fonts/nucleo-outline.woff2") format("woff2"), url("~now-ui-kit/assets/fonts/nucleo-outline.woff") format("woff"), url("~now-ui-kit/assets/fonts/nucleo-outline.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 /*------------------------
 	base class definition

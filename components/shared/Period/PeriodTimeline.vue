@@ -4,14 +4,14 @@
       <img
         class="white-logo logo"
         :alt="image"
-        :src="`assets/images/${image}`"
+        :src="`/images/logos/${image}`"
       />
     </a>
     <hr class="my-3"/>
     <div class="d-flex flex-column flex-grow-1">
       <div id="period-dates" class="d-flex flex-column flex-grow-1 justify-content-center align-items-center">
         <div class="period-date" v-html="formattedFinishedAt"/>
-        <i v-if="doesPeriodHaveTwoDates" class="fa fa-arrow-up fa-2x my-3"/>
+        <WrappedFontAwesomeIcon v-if="doesPeriodHaveTwoDates" icon="fa-arrow-up" size="2x" icon-color="#00000" classes="my-3"/>
         <div v-if="formattedStartedAt" class="period-date" v-html="formattedStartedAt"/>
       </div>
       <div v-if="formattedPeriod" id="period-label" class="d-flex flex-column align-items-center">
@@ -25,6 +25,7 @@
 <script lang="ts" setup>
 import { useI18n } from "vue-i18n";
 import { computed } from "#imports";
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
 import { useDates } from "~/composables/useDates";
 import { Period } from "~/models/Period";
 

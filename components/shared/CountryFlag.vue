@@ -1,7 +1,7 @@
 <template>
   <img
     class="country-flag"
-    :src="`assets/images/${countryFlagSrc}`"
+    :src="`/images/flags/${countryFlagSrc}`"
     :alt="`${country} flag`"
     data-bs-toggle="tooltip"
     :title="$t(`Countries.${country}`)"

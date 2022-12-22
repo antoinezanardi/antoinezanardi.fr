@@ -7,6 +7,10 @@
     data-bs-toggle="tooltip"
     :title="$t('LinkedInButton.joinMyNetwork')"
   >
-    <i class="fa-brands fa-linkedin-in fa-2x fa-btn"/>
+    <WrappedFontAwesomeIcon icon="fa-brands fa-linkedin-in" size="2x" icon-color="#00000"/>
   </a>
 </template>
+
+<script setup lang="ts">
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
+</script>

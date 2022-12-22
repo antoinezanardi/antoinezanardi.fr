@@ -1,7 +1,7 @@
 <template>
   <div class="progress-container">
     <span id="badge-html" class="progress-badge">
-      <i class="me-2" :class="skill.iconClasses"/>
+      <WrappedFontAwesomeIcon :icon="skill.iconClasses" :icon-color="skill.color" classes="me-2"/>
       <b>
         <a
           class="text-muted"
@@ -22,12 +22,13 @@
         aria-valuemin="0"
         aria-valuemax="100"
       />
-      <span class="progress-value" v-html="skill.percent"/>
+      <span class="progress-value font-weight-bold" v-html="skill.percent"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
 import type { Skill } from "~/models/Skill";
 
 defineProps<{
@@ -36,11 +37,6 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-.progress-badge {
-  i {
-    color: v-bind("skill.color");
-  }
-}
 .progress {
   .progress-bar {
     width: v-bind("skill.percent");

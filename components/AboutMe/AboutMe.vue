@@ -6,7 +6,7 @@
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
               <div class="h3 mt-0 title">
-                <i class="fa fa-user-circle me-2"/>
+                <WrappedFontAwesomeIcon icon="fa-user-circle" classes="me-2"/>
                 <span v-html="$t('AboutMe.whoAmI')"/>
               </div>
               <hr/>
@@ -24,7 +24,7 @@
           <div class="col-lg-6 col-md-12">
             <div class="card-body">
               <div class="h3 mt-0 title">
-                <i class="fa fa-id-card me-2"/>
+                <WrappedFontAwesomeIcon icon="fa-id-card" classes="me-2"/>
                 <span v-html="$t('AboutMe.personalInfo')"/>
               </div>
               <hr/>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-sm-8">
                   <b>
-                    <a :href="`mailto:${config.EMAIL}`" v-html="config.EMAIL"/>
+                    <a :href="`mailto:${config.public.email}`" v-html="config.public.email"/>
                   </b>
                 </div>
               </div>
@@ -56,7 +56,7 @@
                 </div>
                 <div class="col-sm-8">
                   <b>
-                    <a :href="`tel:${config.PHONE_NUMBER}`" v-html="formattedPhoneNumber"/>
+                    <a :href="`tel:${config.public.phoneNumber}`" v-html="formattedPhoneNumber"/>
                   </b>
                 </div>
               </div>
@@ -64,7 +64,7 @@
                 <div class="col-sm-4">
                   <b class="text-uppercase" v-html="`${$t('AboutMe.address')} :`"/>
                 </div>
-                <div class="col-sm-8" v-html="config.ADDRESS"/>
+                <div class="col-sm-8" v-html="config.public.address"/>
               </div>
               <div class="row mt-3">
                 <div class="col-sm-4">
@@ -76,9 +76,9 @@
                 <div class="col-sm-4">
                   <b class="text-uppercase" v-html="`${$t('AboutMe.licenses')} :`"/>
                 </div>
-                <div class="col-sm-8">
-                  <i data-bs-toggle="tooltip" :title="$t('AboutMe.car')" class="fa fa-car fa-2x me-2"/>
-                  <i data-bs-toggle="tooltip" :title="$t('AboutMe.boat')" class="fa fa-anchor fa-2x"/>
+                <div class="col-sm-8 d-flex">
+                  <WrappedFontAwesomeIcon data-bs-toggle="tooltip" :title="$t('AboutMe.car')" class="me-2" icon="fa-car" size="2x"/>
+                  <WrappedFontAwesomeIcon data-bs-toggle="tooltip" :title="$t('AboutMe.boat')" class="me-2" icon="fa-anchor" size="2x"/>
                 </div>
               </div>
               <div class="row align-items-center mt-3">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-sm-8">
                   <a href="https://www.daveo.fr/" target="_blank" rel="noopener noreferrer">
-                    <img class="daveo-logo" src="~/assets/images/daveo-logo.png" :alt="COMPANY_NAMES.DAVEO"/>
+                    <img class="daveo-logo" src="~/public/images/logos/daveo-logo.png" :alt="COMPANY_NAMES.DAVEO"/>
                   </a>
                 </div>
               </div>
@@ -101,18 +101,17 @@
 
 <script lang="ts" setup>
 import { computed, useRuntimeConfig } from "#imports";
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
 import { COMPANY_NAMES } from "~/models/Company";
-import type { EnvConfig } from "~/models/EnvConfig";
 
-const config: EnvConfig = useRuntimeConfig();
-
+const config = useRuntimeConfig();
 const age = computed<number>(() => {
   const birthday = new Date("1996-04-14");
   const epochYear = 1970;
   return new Date(Date.now() - birthday.getTime()).getUTCFullYear() - epochYear;
 });
 const formattedPhoneNumber = computed<string>(() => {
-  const matches = config.PHONE_NUMBER.match(/.{2}/gu);
+  const matches = config.public.phoneNumber.match(/.{2}/gu);
   return matches ? matches.join(" ") : "?";
 });
 </script>

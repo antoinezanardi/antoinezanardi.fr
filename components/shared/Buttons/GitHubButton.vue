@@ -7,6 +7,10 @@
     data-bs-toggle="tooltip"
     :title="$t('GitHubButton.discoverMyProjects')"
   >
-    <i class="fa-brands fa-github fa-2x fa-btn"/>
+    <WrappedFontAwesomeIcon icon="fa-brands fa-github" size="2x" icon-color="#00000"/>
   </a>
 </template>
+
+<script setup lang="ts">
+import WrappedFontAwesomeIcon from "~/components/shared/WrappedFontAwesomeIcon.vue";
+</script>
