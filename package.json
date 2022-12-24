@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "build": "nuxi typecheck && nuxi generate",
+    "build": "nuxi typecheck && nuxi generate && cp .appengine/app.yaml .output/public",
     "dev": "nuxi dev -o",
     "lint": "eslint --ext .js,.vue,.ts .eslintrc.js components plugins App.vue nuxt.config.ts",
     "lint:fix": "eslint --ext .js,.vue,.ts .eslintrc.js components plugins App.vue nuxt.config.ts --fix",
