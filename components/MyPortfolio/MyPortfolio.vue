@@ -30,19 +30,19 @@ const projects: Project[] = [
   {
     name: t(`${i18nProjectPath}.portfolio.name`),
     description: t(`${i18nProjectPath}.portfolio.description`),
-    image: "portfolio-thumbnail.png",
+    image: "portfolio-thumbnail.jpg",
     url: "https://www.antoinezanardi.fr",
   },
   {
     name: t(`${i18nProjectPath}.werewolvesAssistant.name`),
     description: t(`${i18nProjectPath}.werewolvesAssistant.description`),
-    image: "werewolves-assistant-thumbnail.png",
+    image: "werewolves-assistant-thumbnail.jpg",
     url: "https://werewolves-assistant.antoinezanardi.fr",
   },
   {
     name: t(`${i18nProjectPath}.distribution.name`),
     description: t(`${i18nProjectPath}.distribution.description`),
-    image: "distribution-thumbnail.png",
+    image: "distribution-thumbnail.jpeg",
     url: "https://www.airvey-editions.fr",
   },
   {

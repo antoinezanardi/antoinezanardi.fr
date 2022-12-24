@@ -11,7 +11,7 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img id="profile-pic" src="~/assets/images/antoine.png" :alt="$t('MyProfile.profilePicture')"/>
+                <img id="profile-pic" src="~/assets/images/antoine.jpg" :alt="$t('MyProfile.profilePicture')"/>
               </a>
             </div>
             <div class="h2 title text-shadow" v-html="$t('shared.antoineZanardi')"/>
@@ -61,7 +61,7 @@ import LinkedInButton from "~/components/shared/Buttons/LinkedInButton.vue";
 }
 
 .page-header-image {
-  background-image: url("../../assets/images/background.png");
+  background-image: url("../../assets/images/background.jpg");
 }
 .text-shadow {
   text-shadow: #394036 1px 1px;
