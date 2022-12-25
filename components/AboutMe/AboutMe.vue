@@ -77,8 +77,22 @@
                   <b class="text-uppercase" v-html="`${$t('AboutMe.licenses')} :`"/>
                 </div>
                 <div class="col-sm-8 d-flex">
-                  <WrappedFontAwesomeIcon data-bs-toggle="tooltip" :title="$t('AboutMe.car')" class="me-2" icon="fa-car" size="2x"/>
-                  <WrappedFontAwesomeIcon data-bs-toggle="tooltip" :title="$t('AboutMe.boat')" class="me-2" icon="fa-anchor" size="2x"/>
+                  <WrappedFontAwesomeIcon
+                    data-bs-toggle="tooltip"
+                    :title="$t('AboutMe.car')"
+                    class="me-2"
+                    icon="fa-car"
+                    size="2x"
+                    role="alertdialog"
+                  />
+                  <WrappedFontAwesomeIcon
+                    data-bs-toggle="tooltip"
+                    :title="$t('AboutMe.boat')"
+                    class="me-2"
+                    icon="fa-anchor"
+                    size="2x"
+                    role="alertdialog"
+                  />
                 </div>
               </div>
               <div class="row align-items-center mt-3">
@@ -87,7 +101,12 @@
                 </div>
                 <div class="col-sm-8">
                   <a href="https://www.daveo.fr/" target="_blank" rel="noopener noreferrer">
-                    <img class="daveo-logo" src="~/public/images/logos/daveo-logo.png" :alt="COMPANY_NAMES.DAVEO"/>
+                    <NuxtImg
+                      class="daveo-logo"
+                      src="/images/logos/daveo-logo.png"
+                      format="svg"
+                      :alt="COMPANY_NAMES.DAVEO"
+                    />
                   </a>
                 </div>
               </div>

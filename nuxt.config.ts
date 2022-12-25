@@ -4,6 +4,7 @@ import vueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
+  modules: ["@nuxt/image-edge"],
   css: [
     "@fortawesome/fontawesome-svg-core/styles.css",
     "~/assets/styles/scss/main.scss",
@@ -27,6 +28,7 @@ export default defineNuxtConfig({
       address: process.env.ADDRESS,
     },
   },
+  nitro: { compressPublicAssets: true },
   build: { transpile: ["@fortawesome"] },
   vite: { plugins: [vueI18nVitePlugin({ include: [resolve(dirname(fileURLToPath(import.meta.url)), "./locales/*.json")] })] },
 });

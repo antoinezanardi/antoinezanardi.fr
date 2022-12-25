@@ -1,10 +1,11 @@
 <template>
   <div id="period-timeline" class="d-flex flex-column h-100">
     <a :href="url" target="_blank" rel="noopener noreferrer">
-      <img
+      <NuxtImg
         class="white-logo logo"
-        :alt="image"
         :src="`/images/logos/${image}`"
+        :alt="image"
+        format="svg"
       />
     </a>
     <hr class="my-3"/>

@@ -801,7 +801,7 @@ module.exports = {
     "vue/no-static-inline-styles": ERROR,
     "vue/no-template-target-blank": ERROR,
     "vue/no-this-in-before-route-enter": ERROR,
-    "vue/no-undef-components": ERROR,
+    "vue/no-undef-components": [ERROR, { ignorePatterns: ["NuxtImg"] }],
     "vue/no-undef-properties": ERROR,
     "vue/no-unsupported-features": ERROR,
     "vue/no-unused-properties": ERROR,

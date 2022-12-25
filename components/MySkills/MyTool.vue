@@ -6,6 +6,7 @@
     :icon="tool.iconClasses"
     :icon-color="tool.color"
     size="3x"
+    role="alertdialog"
   />
 </template>
 

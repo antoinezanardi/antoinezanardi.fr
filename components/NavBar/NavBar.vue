@@ -46,6 +46,7 @@
 <style lang="scss">
   .navbar {
     box-shadow: 0px -5px 20px 5px black;
+    background-color: #2F7C36 !important;
   }
 
   .nav-item {

@@ -11,7 +11,12 @@
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img id="profile-pic" src="~/assets/images/antoine.jpg" :alt="$t('MyProfile.profilePicture')"/>
+                <NuxtImg
+                  id="profile-pic"
+                  src="/images/antoine.jpg"
+                  format="webp"
+                  :alt="$t('MyProfile.profilePicture')"
+                />
               </a>
             </div>
             <div class="h2 title text-shadow" v-html="$t('shared.antoineZanardi')"/>

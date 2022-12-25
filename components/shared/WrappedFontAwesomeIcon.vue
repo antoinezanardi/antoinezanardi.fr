@@ -1,6 +1,6 @@
 <template>
   <span>
-    <FontAwesomeIcon class="font-awesome-icon" :icon="icon" :size="size" :class="classes"/>
+    <FontAwesomeIcon class="font-awesome-icon" :icon="icon" :size="size" :class="classes" role="button"/>
   </span>
 </template>
 

@@ -21,6 +21,7 @@
         role="progressbar"
         aria-valuemin="0"
         aria-valuemax="100"
+        :aria-label="skill.name"
       />
       <span class="progress-value font-weight-bold" v-html="skill.percent"/>
     </div>
