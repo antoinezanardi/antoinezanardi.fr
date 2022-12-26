@@ -32,8 +32,8 @@ jobs:
       - name: Auth to GCP ☁️
         uses: 'google-github-actions/auth@v1'
         with:
-          workload_identity_provider: 'projects/76872011325/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
-          service_account: 'github-actions-app-engine@antoine-zanardi-portfolio.iam.gserviceaccount.com'
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
       - name: Deploy 🚀
         uses: 'google-github-actions/deploy-appengine@v1'
         with:
