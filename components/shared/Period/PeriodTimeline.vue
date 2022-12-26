@@ -5,7 +5,7 @@
         class="white-logo logo"
         :src="`/images/logos/${image}`"
         :alt="image"
-        format="svg"
+        format="webp"
       />
     </a>
     <hr class="my-3"/>
