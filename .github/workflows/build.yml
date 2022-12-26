@@ -39,4 +39,4 @@ jobs:
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           working_directory: .output/public
-          flags: "--service-account=github-actions-app-engine@antoine-zanardi-portfolio.iam.gserviceaccount.com"
+          flags: "--service-account=${{ secrets.GCP_SERVICE_ACCOUNT }}"
