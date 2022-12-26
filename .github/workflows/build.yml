@@ -8,9 +8,6 @@ on:
       - 'master'
 jobs:
   build:
-    permissions:
-      contents: 'read'
-      id-token: 'write'
     runs-on: ubuntu-latest
     env:
       EMAIL: ${{ secrets.EMAIL }}
@@ -29,14 +26,3 @@ jobs:
         run: npm run lint
       - name: Build app ✨
         run: npm run build
-      - name: Auth to GCP ☁️
-        uses: 'google-github-actions/auth@v1'
-        with:
-          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
-          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
-      - name: Deploy 🚀
-        uses: 'google-github-actions/deploy-appengine@v1'
-        with:
-          project_id: ${{ secrets.GCP_PROJECT_ID }}
-          working_directory: .output/public
-          flags: "--service-account=${{ secrets.GCP_SERVICE_ACCOUNT }}"
