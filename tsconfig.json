@@ -1,7 +1,7 @@
 {
-  // https://v3.nuxtjs.org/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "strictNullChecks": true
-  }
+    "strictNullChecks": true,
+    "types": ["@intlify/unplugin-vue-i18n"]
+  },
 }

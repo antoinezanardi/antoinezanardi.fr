@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install project dependencies 📦
-        run: npm install
+        run: npm ci
       - name: Build app ✨
         run: npm run build
       - name: Auth to GCP ☁️

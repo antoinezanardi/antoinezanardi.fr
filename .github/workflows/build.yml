@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: '18'
       - name: Install project dependencies 📦
-        run: npm install
+        run: npm ci
       - name: Check and lint code 🔍
         run: npm run lint
       - name: Build app ✨
