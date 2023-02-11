@@ -1,8 +1,7 @@
-import { resolve, dirname } from "node:path";
+import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import vueI18nVitePlugin from "@intlify/unplugin-vue-i18n/vite";
 
-// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   modules: ["@nuxt/image-edge"],
   css: [
@@ -23,9 +22,9 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      email: process.env.EMAIL,
-      phoneNumber: process.env.PHONE_NUMBER,
-      address: process.env.ADDRESS,
+      email: "?",
+      phoneNumber: "?",
+      address: "?",
     },
   },
   nitro: { compressPublicAssets: true },

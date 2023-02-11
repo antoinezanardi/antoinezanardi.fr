@@ -3,7 +3,6 @@ const MAX_NESTED_CALLBACK = 5;
 const MAX_PARAMS = 6;
 const INDENT_SPACE_COUNT = 2;
 const ERROR = "error";
-const WARNING = "warn";
 const OFF = "off";
 const MAX_LENGTH_DEFAULT_CONFIG = {
   code: MAX_LENGTH,
@@ -40,6 +39,8 @@ module.exports = {
     "plugin:@typescript-eslint/base",
   ],
   plugins: ["@typescript-eslint", "import"],
+  ignorePatterns: ["node_modules/", ".nuxt/", ".output/", "assets/", "dist/"],
+  globals: { defineNuxtConfig: "readonly" },
   parserOptions: {
     project: ["tsconfig.json"],
     parser: "@typescript-eslint/parser",
@@ -61,7 +62,7 @@ module.exports = {
     "no-constant-condition": ERROR,
     "no-constructor-return": ERROR,
     "no-control-regex": ERROR,
-    "no-debugger": process.env.nodeEnv === "production" ? ERROR : WARNING,
+    "no-debugger": ERROR,
     "no-dupe-args": ERROR,
     // rule below is OFF because it is overridden by "@typescript-eslint/no-dupe-class-members"
     "no-dupe-class-members": OFF,
@@ -159,7 +160,7 @@ module.exports = {
     "no-caller": ERROR,
     "no-case-declarations": ERROR,
     "no-confusing-arrow": [ERROR, { allowParens: true }],
-    "no-console": process.env.nodeEnv === "production" ? ERROR : OFF,
+    "no-console": ERROR,
     "no-continue": ERROR,
     "no-delete-var": ERROR,
     "no-div-regex": ERROR,
