@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      EMAIL: ${{ secrets.EMAIL }}
-      PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
-      ADDRESS: ${{ secrets.ADDRESS }}
+      NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
+      NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
+      NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     steps:
       - name: Setup GitHub repository 🔧
         uses: actions/checkout@v2
