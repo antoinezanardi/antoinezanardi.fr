@@ -33,12 +33,19 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "pnpm"
 
+      - name: Restore pnpm dependencies from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+
       - name: Install project dependencies 📦
         run: pnpm install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
 
-      - name: Build app ✨
-        run: pnpm run build
+      - name: Generate app ✨
+        run: pnpm run generate
 
       - name: Auth to GCP ☁️
         uses: 'google-github-actions/auth@v2'
