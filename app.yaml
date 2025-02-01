@@ -1,4 +1,4 @@
-runtime: node20
+runtime: nodejs20
 
 handlers:
   - url: /
