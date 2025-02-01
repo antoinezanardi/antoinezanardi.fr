@@ -1,0 +1,88 @@
+<template>
+  <div class="card">
+    <div class="row">
+      <div
+        class="bg-primary col-md-3"
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-offset="50"
+      >
+        <div class="card-body cc-education-header">
+          <PeriodTimeline
+            does-show-year-only
+            :finished-at="educationDegree.degree.obtainedAt"
+            :image="schoolImage"
+            :started-at="educationDegree.degree.startedAt"
+            :url="educationDegree.school.url"
+          />
+        </div>
+      </div>
+
+      <div
+        class="col-md-9"
+        data-aos="fade-left"
+        data-aos-duration="500"
+        data-aos-offset="50"
+      >
+        <div class="card-body">
+          <div
+            class="h4"
+          >
+            {{ educationDegree.degree.name }}
+          </div>
+
+          <div class="d-flex">
+            <p
+              class="category mb-0"
+            >
+              {{ schoolLabel }}
+            </p>
+
+            <CountryFlag
+              class="ms-2"
+              :country="educationDegree.school.country"
+            />
+          </div>
+
+          <hr>
+
+          <p
+            v-for="(paragraph, index) in educationDegree.degree.description"
+            :key="index"
+          >
+            {{ paragraph }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import type { EducationDegreeCardProps } from "~/components/MyEducation/EducationDegreeCard/education-degree-card.types";
+import CountryFlag from "~/components/shared/Images/CountryFlag/CountryFlag.vue";
+import PeriodTimeline from "~/components/shared/Period/PeriodTimeline.vue";
+
+const props = defineProps<EducationDegreeCardProps>();
+
+const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.png");
+const schoolLabel = computed<string>(() => {
+  const { school } = props.educationDegree;
+  let label = school.translatedName ?? "?";
+  if (school.city !== undefined) {
+    label += `, ${school.city}`;
+  }
+  return label;
+});
+</script>
+
+<style lang="scss" scoped>
+.cc-education-header {
+  padding-top: 25px !important;
+}
+@media (max-width: 768px) {
+  .cc-education-header {
+    padding-right: 1.25rem !important;
+  }
+}
+</style>

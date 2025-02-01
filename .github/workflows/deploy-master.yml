@@ -16,19 +16,24 @@ jobs:
     steps:
       - name: Setup GitHub repository 🔧
         uses: actions/checkout@v2
+
       - name: Setup NodeJS v18 ✨
         uses: actions/setup-node@v2
         with:
           node-version: '18'
+
       - name: Install project dependencies 📦
         run: npm ci
+
       - name: Build app ✨
         run: npm run build
+
       - name: Auth to GCP ☁️
         uses: 'google-github-actions/auth@v1'
         with:
           workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
       - name: Deploy 🚀
         uses: 'google-github-actions/deploy-appengine@v1'
         with:
