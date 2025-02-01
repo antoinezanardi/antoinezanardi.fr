@@ -6,6 +6,7 @@
       <script value="lint:staged:fix" />
     </scripts>
     <node-interpreter value="project" />
+    <package-manager value="/opt/homebrew/bin/pnpm" />
     <envs />
     <method v="2" />
   </configuration>

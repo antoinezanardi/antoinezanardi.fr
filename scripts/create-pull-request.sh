@@ -15,7 +15,7 @@ while true; do
   fi
 done
 
-base_branch=${1:-develop}
+base_branch=${1:-master}
 current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 if [ "$(git rev-list --count "$base_branch".."$current_branch")" -gt 0 ]; then

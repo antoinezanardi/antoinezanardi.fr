@@ -6,6 +6,7 @@
       <script value="script:create-branch" />
     </scripts>
     <node-interpreter value="project" />
+    <package-manager value="pnpm" />
     <envs />
     <method v="2" />
   </configuration>

@@ -4,6 +4,7 @@
     <command value="audit" />
     <arguments value="fix" />
     <node-interpreter value="project" />
+    <package-manager value="pnpm" />
     <envs />
     <method v="2" />
   </configuration>
