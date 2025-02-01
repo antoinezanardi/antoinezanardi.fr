@@ -1,11 +1,12 @@
-runtime: python37
+runtime: nodejs20
 
 handlers:
-  - url: /
-    static_files: index.html
-    upload: index.html
-    secure: always
   - url: /(.*)
-    static_files: \1
-    upload: (.*)
+    static_files: .output/public/\1
+    upload: .output/public/(.*)
+    secure: always
+
+  - url: /
+    static_files: .output/public/index.html
+    upload: .output/public/index.html
     secure: always
