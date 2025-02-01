@@ -51,7 +51,7 @@ const projects: Project[] = [
     name: t(`${i18nProjectPath}.werewolvesAssistant.name`),
     description: t(`${i18nProjectPath}.werewolvesAssistant.description`),
     image: "werewolves-assistant-thumbnail.jpg",
-    url: "https://werewolves-assistant.antoinezanardi.fr",
+    url: "https://werewolves-assistant.com",
   },
   {
     name: t(`${i18nProjectPath}.distribution.name`),
