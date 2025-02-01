@@ -10,7 +10,7 @@
   >
     <WrappedFontAwesomeIcon
       icon="fa-brands fa-github"
-      icon-color="#000000"
+      icon-color="white"
       size="2x"
     />
   </a>

@@ -26,6 +26,6 @@ withDefaults(defineProps<WrappedFontAwesomeIconProps>(), {
 
 <style lang="scss" scoped>
   .font-awesome-icon {
-    color: v-bind(iconColor);
+    color: v-bind(iconColor) !important;
   }
 </style>
