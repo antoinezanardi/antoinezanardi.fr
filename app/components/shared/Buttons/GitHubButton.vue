@@ -19,3 +19,9 @@
 <script setup lang="ts">
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
 </script>
+
+<style lang="scss" scoped>
+.btn-icon {
+  padding-top: 0.8rem;
+}
+</style>

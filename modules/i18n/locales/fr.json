@@ -32,7 +32,10 @@
     "licenses": "Permis",
     "car": "Voiture",
     "boat": "Bateau",
-    "workingAt": "Travaille chez"
+    "workingAt": "Travaille chez",
+    "emailLink": "Envoyez-moi un email à {email}",
+    "phoneLink": "Appelez-moi au {phone}",
+    "companyLink": "Visitez le site de {company}"
   },
   "AboutMyProfile": {
     "whoAmI": "Qui suis-je ?",
@@ -114,7 +117,7 @@
   },
   "Schools": {
     "google": "Google",
-    "cloudNativeComputedFoundation": "Cloud Native Computed Foundation",
+    "cloudNativeComputingFoundation": "Cloud Native Computing Foundation",
     "laval": "Université Laval",
     "epitech": "Epitech",
     "vimeu": "Lycée du Vimeu"

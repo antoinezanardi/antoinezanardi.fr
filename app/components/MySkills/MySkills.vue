@@ -82,9 +82,9 @@ const skills: Skill[] = [
   { name: t("MySkills.html"), iconClasses: "fab fa-html5", color: "#E44D27", percent: "95%", url: htmlUrl },
   { name: t("MySkills.css"), iconClasses: "fab fa-css3-alt", color: "#0162B0", percent: "90%", url: cssUrl },
   { name: t("MySkills.javascript"), iconClasses: "fab fa-js", color: "#EFC624", percent: "95%", url: jsUrl },
-  { name: t("MySkills.typescript"), iconClasses: "fas fa-rocket", color: "#3077C6", percent: "80%", url: tsUrl },
+  { name: t("MySkills.typescript"), iconClasses: "fas fa-rocket", color: "#3077C6", percent: "85%", url: tsUrl },
   { name: t("MySkills.vue"), iconClasses: "fab fa-vuejs", color: "#38956A", percent: "95%", url: vueUrl },
-  { name: t("MySkills.nuxt"), iconClasses: "fas fa-mountain-sun", color: "#00DC81", percent: "80%", url: nuxtUrl },
+  { name: t("MySkills.nuxt"), iconClasses: "fas fa-mountain-sun", color: "#00DC81", percent: "90%", url: nuxtUrl },
   { name: t("MySkills.mysql"), iconClasses: "fas fa-database", color: "#017395", percent: "85%", url: mysqlUrl },
   { name: t("MySkills.mongodb"), iconClasses: "fas fa-leaf", color: "#4E9445", percent: "90%", url: mongodbUrl },
 ];
