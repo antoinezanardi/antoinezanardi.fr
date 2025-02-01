@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   deployment:
     permissions:
@@ -15,22 +20,41 @@ jobs:
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     steps:
       - name: Setup GitHub repository 🔧
-        uses: actions/checkout@v2
-      - name: Setup NodeJS v18 ✨
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v4
+
+      - name: Install pnpm 🏗️
+        uses: pnpm/action-setup@v4
         with:
-          node-version: '18'
+          run_install: false
+
+      - name: Setup NodeJS ✨
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: "pnpm"
+
+      - name: Restore pnpm dependencies from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+
       - name: Install project dependencies 📦
-        run: npm ci
-      - name: Build app ✨
-        run: npm run build
+        run: pnpm install
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+
+      - name: Generate app ✨
+        run: pnpm run generate
+
       - name: Auth to GCP ☁️
-        uses: 'google-github-actions/auth@v1'
+        uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+
       - name: Deploy 🚀
-        uses: 'google-github-actions/deploy-appengine@v1'
+        uses: 'google-github-actions/deploy-appengine@v2'
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           working_directory: .output/public

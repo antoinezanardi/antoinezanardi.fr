@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Audit Fix" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/package.json" />
+    <command value="audit" />
+    <arguments value="fix" />
+    <node-interpreter value="project" />
+    <package-manager value="pnpm" />
+    <envs />
+    <method v="2" />
+  </configuration>
+</component>
