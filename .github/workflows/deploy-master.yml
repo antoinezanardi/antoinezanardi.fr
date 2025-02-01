@@ -47,6 +47,9 @@ jobs:
       - name: Generate app ✨
         run: pnpm run generate
 
+      - name: Copy App Engine configuration 📄
+        run: cp app.yaml .output/public
+
       - name: Auth to GCP ☁️
         uses: 'google-github-actions/auth@v2'
         with:
@@ -56,7 +59,6 @@ jobs:
       - name: Deploy 🚀
         uses: 'google-github-actions/deploy-appengine@v2'
         with:
-          deliverables: "../../app.yaml"
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           working_directory: .output/public
           flags: "--service-account=${{ secrets.GCP_SERVICE_ACCOUNT }}"
