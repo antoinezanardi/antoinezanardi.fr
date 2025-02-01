@@ -9,7 +9,6 @@
           <div class="navbar-translate">
             <a
               class="navbar-brand text-uppercase"
-              data-bs-toggle="tooltip"
               href="#"
             >
               {{ $t('shared.antoineZanardi') }}
@@ -19,8 +18,8 @@
               aria-controls="navigation"
               :aria-expanded="false"
               class="navbar-toggler navbar-toggler"
-              data-target="#navigation"
-              data-toggle="collapse"
+              data-bs-target="#navigation"
+              data-bs-toggle="collapse"
               type="button"
             >
               <span class="bar1 navbar-toggler-bar"/>

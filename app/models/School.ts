@@ -4,7 +4,7 @@ enum SchoolNames {
   VIMEU = "vimeu",
   EPITECH = "epitech",
   LAVAL = "laval",
-  CLOUD_NATIVE_COMPUTED_FOUNDATION = "cloudNativeComputedFoundation",
+  CLOUD_NATIVE_COMPUTING_FOUNDATION = "cloudNativeComputingFoundation",
   GOOGLE = "google",
 }
 
@@ -38,8 +38,8 @@ const SCHOOLS: Record<SchoolNames, School> = {
     url: "https://www.ulaval.ca/",
     image: "laval-logo.png",
   },
-  [SchoolNames.CLOUD_NATIVE_COMPUTED_FOUNDATION]: {
-    name: SchoolNames.CLOUD_NATIVE_COMPUTED_FOUNDATION,
+  [SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION]: {
+    name: SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION,
     country: Countries.USA,
     url: "https://www.cncf.io/",
     image: "cloud-native-computed-foundation-logo.png",

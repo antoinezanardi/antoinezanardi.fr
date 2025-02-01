@@ -60,6 +60,7 @@
         <div class="col-sm-8">
           <b>
             <a
+              :aria-label="$t('AboutMyPersonalInfo.emailLink', { 'email': config.public.email })"
               :href="`mailto:${config.public.email}`"
             >
               {{ config.public.email }}
@@ -80,6 +81,7 @@
         <div class="col-sm-8">
           <b>
             <a
+              :aria-label="$t('AboutMyPersonalInfo.phoneLink', { 'phone': formattedPhoneNumber })"
               :href="`tel:${config.public.phoneNumber}`"
             >
               {{ formattedPhoneNumber }}
@@ -131,19 +133,21 @@
 
         <div class="col-sm-8 d-flex">
           <WrappedFontAwesomeIcon
+            :aria-label="$t('AboutMyPersonalInfo.car')"
             class="me-2"
             data-bs-toggle="tooltip"
             icon="fa-car"
-            role="alertdialog"
+            role="img"
             size="2x"
             :title="$t('AboutMyPersonalInfo.car')"
           />
 
           <WrappedFontAwesomeIcon
+            :aria-label="$t('AboutMyPersonalInfo.boat')"
             class="me-2"
             data-bs-toggle="tooltip"
             icon="fa-anchor"
-            role="alertdialog"
+            role="img"
             size="2x"
             :title="$t('AboutMyPersonalInfo.boat')"
           />
@@ -161,6 +165,7 @@
 
         <div class="col-sm-8">
           <a
+            :aria-label="$t('AboutMyPersonalInfo.companyLink', { 'company': CompanyNames.DAVEO })"
             href="https://www.daveo.fr/"
             rel="noopener noreferrer"
             target="_blank"

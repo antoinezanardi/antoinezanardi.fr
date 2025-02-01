@@ -9,7 +9,7 @@
   >
     <WrappedFontAwesomeIcon
       icon="fa-brands fa-linkedin-in"
-      icon-color="#00000"
+      icon-color="#000000"
       size="2x"
     />
   </a>

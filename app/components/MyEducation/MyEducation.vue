@@ -45,8 +45,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2022-08-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.CLOUD_NATIVE_COMPUTED_FOUNDATION],
-      translatedName: t(`Schools.${SchoolNames.CLOUD_NATIVE_COMPUTED_FOUNDATION}`),
+      ...SCHOOLS[SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION],
+      translatedName: t(`Schools.${SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION}`),
     },
   }, {
     degree: {

@@ -15,9 +15,9 @@
 // it should be removed when fixed https://github.com/FortAwesome/vue-fontawesome/issues/384
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import type { WrappedFondAwesomeIconProps } from "~/components/shared/Icons/WrappedFontAwesomeIcon/wrapped-fond-awesome-icon.types";
+import type { WrappedFontAwesomeIconProps } from "~/components/shared/Icons/WrappedFontAwesomeIcon/wrapped-font-awesome-icon.types";
 
-withDefaults(defineProps<WrappedFondAwesomeIconProps>(), {
+withDefaults(defineProps<WrappedFontAwesomeIconProps>(), {
   iconColor: "#000000",
   size: undefined,
   classes: "",

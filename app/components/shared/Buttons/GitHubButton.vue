@@ -1,5 +1,6 @@
 <template>
   <a
+    :aria-label="$t('GitHubButton.discoverMyProjects')"
     class="btn btn-icon btn-lg btn-primary btn-round"
     data-bs-toggle="tooltip"
     href="https://github.com/antoinezanardi"
@@ -9,7 +10,7 @@
   >
     <WrappedFontAwesomeIcon
       icon="fa-brands fa-github"
-      icon-color="#00000"
+      icon-color="#000000"
       size="2x"
     />
   </a>
