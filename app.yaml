@@ -1,12 +1,12 @@
-runtime: nodejs20
+runtime: node20
 
 handlers:
-  - url: /(.*)
-    static_files: .output/public/\1
-    upload: .output/public/(.*)
+  - url: /
+    static_files: index.html
+    upload: index.html
     secure: always
 
-  - url: /
-    static_files: .output/public/index.html
-    upload: .output/public/index.html
+  - url: /(.*)
+    static_files: \1
+    upload: (.*)
     secure: always
