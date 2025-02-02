@@ -36,6 +36,7 @@ const professionalExperiences: ProfessionalExperience[] = [
         t("MyExperience.whatIsConsulting"),
         t("MyExperience.myMissionsAsConsultant"),
         t("MyExperience.cloudProductCertifications"),
+        t("MyExperience.conferenceAndWorkshops"),
       ],
       startedAt: new Date("2022-04-01"),
     },

@@ -47,7 +47,7 @@
           </div>
 
           <div class="row">
-            <div class="col-md-12 d-flex justify-content-center text-center">
+            <div class="col-md-12 d-flex flex-wrap gap-1 justify-content-center text-center">
               <MyTool
                 v-for="tool in tools"
                 :key="tool.iconClasses"
@@ -101,5 +101,7 @@ const tools: Tool[] = [
   { description: t("MySkills.openSourceNpm"), iconClasses: "fab fa-npm", color: "#C63635" },
   { description: t("MySkills.esLintForGoodPractises"), iconClasses: "fas fa-spell-check", color: "#00B819" },
   { description: t("MySkills.unitTests"), iconClasses: "fas fa-tasks", color: "#35485E" },
+  { description: t("MySkills.openSource"), iconClasses: "fas fa-hand-holding-heart", color: "#C41B1B" },
+  { description: t("MySkills.docker"), iconClasses: "fab fa-docker", color: "#2F87E3" },
 ];
 </script>
