@@ -13,7 +13,7 @@
   },
   "MyProfile": {
     "profilePicture": "Photo de profil",
-    "itConsultant": "Consultant en Informatique",
+    "itConsultant": "Consultant Tech Lead",
     "fullStackWebExpert": "Expert Web FullStack",
     "cv": "CV",
     "myCv": "Mon CV"
@@ -59,7 +59,7 @@
     "mysql": "MySQL",
     "mongodb": "MongoDB",
     "myTools": "Mes outils",
-    "hoverIconsForDetails": "Survolez les icônes pour plus de détails",
+    "hoverIconsForDetails": "Survolez ou cliquez sur les icônes pour plus de détails",
     "linuxForServers": "Je déploie mes travaux web sur des serveurs sous Linux (Debian). Je m'occupe moi-même de la configuration de l'hébergement des applications sur le serveur grâce à une CI/CD robuste.",
     "microServicesArchitecture": "J'organise mes applications Web en micro-services : les API(s) communiquent avec l'interface pour la servir à chaque demande des utilisateurs. Tout est séparé en galaxie de services.",
     "gitForVersionControl": "J'utilise Git pour le version control de mes projets.",
@@ -70,7 +70,9 @@
     "vueJsWithNuxt": "J'utilise le framework VueJS 3 couplé à NuxtJS 3 pour construire l'interface web de mes projets, allant de simples sites vitrines à des backoffices complets et ergonomiques.",
     "openSourceNpm": "Je soutiens l'open-source en intégrant des modules NPM à mes projets. Je suis leurs prochaines releases sur GitHub.",
     "esLintForGoodPractises": "Mon code est soumis à une norme stricte (W3School pour HTML et ESLint pour JS / TS / Vue) afin qu'il reste maintenable, homogène et lisible.",
-    "unitTests": "Je m'efforce d'écrire le maximum de tests unitaires et E2E sur mes projets afin de prouver leur robustesse."
+    "unitTests": "Je m'efforce d'écrire le maximum de tests unitaires et E2E sur mes projets afin de prouver leur robustesse.",
+    "docker": "Je déploie mes applications dans des conteneurs Docker pour garantir une portabilité et une sécurité maximale.",
+    "openSource": "Je suis un ferveur défenseur de l'open-source et je contribue régulièrement à des projets qui me tiennent à coeur."
   },
   "MyPortfolio": {
     "portfolio": "Portfolio",
@@ -98,7 +100,7 @@
     "itR&DEngineer": "Ingénieur Recherche & Développement Informatique",
     "internFullStackDeveloper": "Stagiaire Développeur Web Full-Stack",
     "freelanceFullStackDeveloper": "Auto-Entrepreneur Développeur Web Full-Stack",
-    "fullStackDeveloperConsultant": "Consultant Web Full-Stack",
+    "fullStackDeveloperConsultant": "Consultant Tech Lead Web Full-Stack",
     "firstInternship": "Durant mon tout premier stage en tant que développeur web, j'ai eu la responsabilité de développer le module de stocks des livres produits par l'entreprise de A à Z. Par la suite, j'ai maintenu ce module tout en apportant mon aide sur les autres projets de l'équipe informatique.",
     "reiterateAsFreelance": "Ma première mission chez SoBook ayant été enrichissante, j'ai décidé de la réitérer pendant 1 an en tant qu'auto-entrepreneur.",
     "moreResponsibilities": "Mes responsabilités se sont vite multipliées : améliorer et maintenir mon module de stocks, créer une interface de traduction, assister les autres développeurs dans leurs projets et bien plus.",
@@ -113,7 +115,8 @@
     "iJoinedDaveo": "Après avoir fait mes armes chez SoBook dans les technologies du web, j’ai rejoint l’ESN Daveo afin de proposer à leurs clients mon expertise Full-Stack Web en tant que consultant et développeur sénior.",
     "whatIsConsulting": "Le consulting chez ces grands groupes comme Norauto, Décathlon ou Kiabi me permet de découvrir et me familiariser avec les architectures complexes et avancées mises en place depuis plusieurs années maintenant. Je m’adapte aux système existants tout en étant force de proposition dans mes rapports de consultant pour les faire évoluer.",
     "myMissionsAsConsultant": "Mes missions se résument en trois points majeurs : industrialiser la codebase pour accroître la vélocité de développement, sécuriser les projets en run en appliquant les bonnes pratiques du métier et enfin pousser au maximum le travail d’équipe en suivant la méthodologie Agile qui a su faire ses preuves dans le développement informatique.",
-    "cloudProductCertifications": "En parallèle, Daveo m’offre la possibilité de passer des certifications dans le Cloud Product Management : AWS, GCP, Azure ou encore Kubernetes. Je peux ainsi étendre mes compétences dans le DevOps et proposer une expertise encore plus complète aux clients."
+    "cloudProductCertifications": "En parallèle, Daveo m’offre la possibilité de passer des certifications dans le Cloud Product Management : AWS, GCP, Azure ou encore Kubernetes. Je peux ainsi étendre mes compétences dans le DevOps et proposer une expertise encore plus complète aux clients.",
+    "conferenceAndWorkshops": "J'organise régulièrement des conférences et des workshops à la fois pour les clients de Daveo et pour les consultants de l'entreprise. Ces événements me permettent de partager mes connaissances et de les transmettre à un plus grand nombre de personnes, tout en apprenant de nouvelles techniques et méthodes de travail."
   },
   "Schools": {
     "google": "Google",

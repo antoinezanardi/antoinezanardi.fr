@@ -97,6 +97,7 @@ const formattedPeriod = computed<string | undefined>(() => {
   }
   return `( ${periodText} )`;
 });
+
 const formattedStartedAt = computed<string | undefined>(() => {
   const { startedAt, doesShowYearOnly } = props;
   if (!startedAt) {
@@ -107,6 +108,7 @@ const formattedStartedAt = computed<string | undefined>(() => {
 
   return doesShowYearOnly ? startedAtYear : `${startedAtMonth} ${startedAtYear}`;
 });
+
 const formattedFinishedAt = computed<string>(() => {
   const { finishedAt, doesShowYearOnly } = props;
   if (finishedAt) {
@@ -116,6 +118,7 @@ const formattedFinishedAt = computed<string>(() => {
   }
   return t("shared.today");
 });
+
 const doesPeriodHaveTwoDates = computed<boolean>(() => formattedStartedAt.value !== undefined);
 </script>
 
