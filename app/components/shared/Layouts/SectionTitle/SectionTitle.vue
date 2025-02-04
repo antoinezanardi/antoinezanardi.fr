@@ -1,6 +1,7 @@
 <template>
   <div class="h2 mb-5 text-center title">
     <WrappedFontAwesomeIcon
+      id="section-title-icon"
       classes="section-icon me-2"
       :icon="icon"
       :icon-color="iconColor"

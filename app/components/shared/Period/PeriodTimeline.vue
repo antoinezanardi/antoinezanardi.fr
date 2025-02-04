@@ -4,11 +4,13 @@
     class="d-flex flex-column h-100"
   >
     <a
+      id="timeline-logo"
       :href="url"
       rel="noopener noreferrer"
       target="_blank"
     >
       <NuxtImg
+        id="timeline-logo-image"
         :alt="image"
         class="logo white-logo"
         format="webp"
@@ -24,6 +26,7 @@
         class="align-items-center d-flex flex-column flex-grow-1 justify-content-center"
       >
         <div
+          id="finished-at-date"
           class="period-date"
         >
           {{ formattedFinishedAt }}
@@ -31,6 +34,7 @@
 
         <WrappedFontAwesomeIcon
           v-if="doesPeriodHaveTwoDates"
+          id="arrow-up-icon"
           classes="my-3"
           icon="fa-arrow-up"
           icon-color="#00000"
@@ -39,6 +43,7 @@
 
         <div
           v-if="formattedStartedAt"
+          id="started-at-date"
           class="period-date"
         >
           {{ formattedStartedAt }}

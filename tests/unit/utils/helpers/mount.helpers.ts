@@ -1,7 +1,7 @@
 import { mountSuspended } from "@nuxt/test-utils/runtime";
-import { mount } from "@vue/test-utils";
+import type { mount } from "@vue/test-utils";
 import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
-import { clone, construct, crush } from "radash";
+import { clone } from "radash";
 
 function getDefaultMountingOptions<T>(): ComponentMountingOptions<T> {
   return {
@@ -16,10 +16,10 @@ function computeComponentMountingOptions<T>(options: ComponentMountingOptions<T>
     clonedOptions.global.plugins = undefined;
   }
   const defaultMountingOptions = getDefaultMountingOptions<T>();
-  const mergedOptions = construct({
-    ...crush(defaultMountingOptions),
-    ...crush(options),
-  }) as ComponentMountingOptions<T>;
+  const mergedOptions = {
+    ...defaultMountingOptions,
+    ...options,
+  } as ComponentMountingOptions<T>;
   mergedOptions.props = options.props;
   if (mergedOptions.global) {
     mergedOptions.global.plugins = plugins;
@@ -33,13 +33,6 @@ async function mountSuspendedComponent<T>(component: T, options: ComponentMounti
   return mountSuspended(component, mergedOptions);
 }
 
-function mountComponent<T>(component: T, options: ComponentMountingOptions<T> = {}): ReturnType<typeof mount<T>> {
-  const mergedOptions = computeComponentMountingOptions(options);
-
-  return mount(component, mergedOptions);
-}
-
 export {
-  mountComponent,
   mountSuspendedComponent,
 };

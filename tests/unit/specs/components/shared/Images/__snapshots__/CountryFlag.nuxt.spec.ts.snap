@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Country Flag Component > should match snapshot when rendered. 1`] = `"<nuxt-img-stub data-v-605a4f92="" alt="FRANCE flag" format="webp" src="/images/flags/france-flag.jpg" preload="false" crossorigin="false" placeholder="false" custom="false" class="country-flag" data-bs-toggle="tooltip" title="France"></nuxt-img-stub>"`;

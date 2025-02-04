@@ -28,7 +28,7 @@ export default defineVitestConfig({
     watch: false,
     include: ["./tests/unit/**/*.spec.ts"],
     coverage: {
-      provider: "istanbul",
+      provider: "v8",
       exclude: [
         "nuxt.config.ts",
         "tests/**/*",
