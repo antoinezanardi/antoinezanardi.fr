@@ -42,7 +42,10 @@ export default defineNuxtConfig({
       strictMessage: false,
     },
   },
-  nitro: { compressPublicAssets: true },
+  nitro: {
+    compressPublicAssets: true,
+    debug: true,
+  },
   plugins: [
     {
       src: "~/plugins/bootstrap.ts",

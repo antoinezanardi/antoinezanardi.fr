@@ -32,7 +32,7 @@ const { $bootstrap } = useNuxtApp();
 useHead({
   title: "Antoine ZANARDI",
   meta: [{ name: "description", content: t("App.meta.description") }],
-  htmlAttrs: { lang: locale },
+  htmlAttrs: { lang: locale.value },
 });
 
 onMounted((): void => {
