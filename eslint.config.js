@@ -14,6 +14,7 @@ import { ESLINT_IMPORT_CONFIG } from "./config/eslint/flat-configs/eslint.import
 import { ESLINT_PLUGINS_CONFIG } from "./config/eslint/flat-configs/eslint.plugins-config.mjs";
 import { ESLINT_DECLARATIONS_CONFIG } from "./config/eslint/flat-configs/eslint.declarations-config.mjs";
 import { ESLINT_SERVER_FILES_CONFIG } from "./config/eslint/flat-configs/eslint.server-files.config.mjs";
+import { ESLINT_TESTS_CONFIG } from "./config/eslint/flat-configs/eslint.tests-config.mjs";
 
 export default [
   {
@@ -35,4 +36,5 @@ export default [
   ESLINT_PLUGINS_CONFIG,
   ESLINT_NUXT_CONFIG_FILE_CONFIG,
   ESLINT_SERVER_FILES_CONFIG,
+  ESLINT_TESTS_CONFIG,
 ];
