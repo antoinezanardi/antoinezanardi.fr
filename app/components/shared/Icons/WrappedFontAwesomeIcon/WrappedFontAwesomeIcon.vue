@@ -6,6 +6,7 @@
       :icon="icon"
       role="button"
       :size="size"
+      :style="{ 'color': iconColor }"
     />
   </span>
 </template>
