@@ -45,6 +45,7 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
     debug: true,
+    logLevel: 5,
   },
   plugins: [
     {

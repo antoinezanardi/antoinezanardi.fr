@@ -10,9 +10,8 @@
       target="_blank"
     >
       <NuxtImg
-        id="timeline-logo-image"
         :alt="image"
-        class="logo white-logo"
+        class="logo timeline-logo-image white-logo"
         format="webp"
         :src="`/images/logos/${image}`"
       />
