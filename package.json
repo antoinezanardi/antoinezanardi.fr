@@ -27,7 +27,7 @@
     "start": "npm run dev",
     "dev": "nuxt dev --port 4000",
     "typecheck": "nuxt typecheck",
-    "build": "nuxi typecheck && nuxi generate && cp .appengine/app.yaml .output/public",
+    "build": "nuxi build",
     "lint": "npx eslint --config eslint.config.js .",
     "lint:fix": "npx eslint --config eslint.config.js --fix .",
     "lint:staged:fix": "lint-staged -c config/lint-staged/.lintstagedrc.eslint.json",

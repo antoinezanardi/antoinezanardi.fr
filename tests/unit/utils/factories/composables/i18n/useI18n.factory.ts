@@ -1,3 +1,4 @@
+import { isObject } from "radash";
 import type { Mock } from "vitest";
 
 import fr from "@modules/i18n/locales/fr.json";
@@ -16,7 +17,7 @@ function createFakeI18n(i18n: Partial<MockedI18n> = {}): MockedI18n {
     messages: ref({
       fr,
     }),
-    t: vi.fn((...args: unknown[]) => args.map(arg => (typeof arg === "object" ? JSON.stringify(arg) : arg)).join(", ")),
+    t: vi.fn((...args: unknown[]) => args.map(arg => (isObject(arg) ? JSON.stringify(arg) : arg)).join(", ")),
     ...i18n,
   };
 }
