@@ -26,13 +26,13 @@ import aos from "aos";
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
 import { onMounted, useNuxtApp, useHead } from "#imports";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const { $bootstrap } = useNuxtApp();
 
 useHead({
   title: "Antoine ZANARDI",
   meta: [{ name: "description", content: t("App.meta.description") }],
-  htmlAttrs: { lang: "fr" },
+  htmlAttrs: { lang: locale },
 });
 
 onMounted((): void => {
