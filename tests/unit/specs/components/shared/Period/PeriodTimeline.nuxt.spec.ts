@@ -38,7 +38,7 @@ describe("Period Timeline Component", () => {
     });
 
     it("should set logo image source when rendered.", () => {
-      const logoImg = wrapper.findComponent<typeof NuxtImg>("#timeline-logo-image");
+      const logoImg = wrapper.findComponent<typeof NuxtImg>(".timeline-logo-image");
 
       expect(logoImg.props("src")).toBe("/images/logos/image");
     });

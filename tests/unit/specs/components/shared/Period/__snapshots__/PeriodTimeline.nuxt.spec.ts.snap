@@ -2,7 +2,7 @@
 
 exports[`Period Timeline Component > should match snapshot when rendered. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="image" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" id="timeline-logo-image" class="logo white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="image" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">

@@ -2,6 +2,8 @@ import { fileURLToPath } from "node:url";
 
 import { defineVitestConfig } from "@nuxt/test-utils/config";
 
+import { TEST_NUXT_RUNTIME_CONFIG } from "../../tests/unit/utils/constants/nuxt-test.constants";
+
 export default defineVitestConfig({
   test: {
     pool: "threads",
@@ -11,13 +13,7 @@ export default defineVitestConfig({
       nuxt: {
         rootDir: fileURLToPath(new URL("../../", import.meta.url)),
         overrides: {
-          runtimeConfig: {
-            public: {
-              email: "john@doe.com",
-              phoneNumber: "1234567890",
-              address: "1234 Elm Street",
-            },
-          },
+          runtimeConfig: TEST_NUXT_RUNTIME_CONFIG,
         },
       },
     },
@@ -53,10 +49,7 @@ export default defineVitestConfig({
       ],
       all: true,
       thresholds: {
-        lines: 100,
-        functions: 100,
-        branches: 100,
-        statements: 100,
+        100: true,
       },
     },
     globals: true,

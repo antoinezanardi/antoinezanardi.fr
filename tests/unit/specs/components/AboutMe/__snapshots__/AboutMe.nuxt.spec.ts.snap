@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`About Me Component > should match snapshot when rendered. 1`] = `
+"<div id="about" class="section">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <about-my-profile-stub class="col-lg-6 col-md-12"></about-my-profile-stub>
+        <about-my-personal-info-stub class="col-lg-6 col-md-12"></about-my-personal-info-stub>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

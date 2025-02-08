@@ -81,6 +81,7 @@
         <div class="col-sm-8">
           <b>
             <a
+              id="phone-number"
               :aria-label="$t('AboutMyPersonalInfo.phoneLink', { 'phone': formattedPhoneNumber })"
               :href="`tel:${config.public.phoneNumber}`"
             >
@@ -100,6 +101,7 @@
         </div>
 
         <div
+          id="address"
           class="col-sm-8"
         >
           {{ config.public.address }}
@@ -188,12 +190,14 @@ import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesome
 import { CompanyNames } from "~/models/Company";
 
 const config = useRuntimeConfig();
+
 const age = computed<number>(() => {
   const birthday = new Date("1996-04-14");
   const epochYear = 1970;
 
   return new Date(Date.now() - birthday.getTime()).getUTCFullYear() - epochYear;
 });
+
 const formattedPhoneNumber = computed<string>(() => {
   const matches = config.public.phoneNumber.match(/.{2}/gu);
 
