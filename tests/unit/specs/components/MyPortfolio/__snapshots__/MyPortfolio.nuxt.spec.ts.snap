@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`My Portfolio Component > should match snapshot when rendered. 1`] = `
+"<div id="portfolio" class="section">
+  <div class="container">
+    <section-title-stub icon="fa fa-star" title="Portfolio" iconcolor="#EEC624"></section-title-stub>
+    <div class="gallery tab-content">
+      <div id="web-development" class="active tab-pane">
+        <div class="me-auto ms-auto">
+          <div class="align-items-center row">
+            <div class="col-md-6">
+              <my-project-stub project="[object Object]" class="project"></my-project-stub>
+            </div>
+            <div class="col-md-6">
+              <my-project-stub project="[object Object]" class="project"></my-project-stub>
+            </div>
+            <div class="col-md-6">
+              <my-project-stub project="[object Object]" class="project"></my-project-stub>
+            </div>
+            <div class="col-md-6">
+              <my-project-stub project="[object Object]" class="project"></my-project-stub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

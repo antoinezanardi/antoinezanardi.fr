@@ -22,7 +22,10 @@
                 :key="project.name"
                 class="col-md-6"
               >
-                <MyProject :project="project"/>
+                <MyProject
+                  class="project"
+                  :project="project"
+                />
               </div>
             </div>
           </div>

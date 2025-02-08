@@ -13,6 +13,7 @@
       <ProfessionalExperienceCard
         v-for="(professionalExperience, index) in professionalExperiences"
         :key="index"
+        class="professional-experience-card"
         :professional-experience="professionalExperience"
       />
     </div>
@@ -82,8 +83,8 @@ const professionalExperiences: ProfessionalExperience[] = [
     job: {
       name: t("MyExperience.internFullStackDeveloper"),
       description: [t("MyExperience.firstInternship")],
-      startedAt: new Date("2019-07-01"),
-      finishedAt: new Date("2019-12-31"),
+      startedAt: new Date("2015-07-01"),
+      finishedAt: new Date("2015-12-31"),
     },
     company: COMPANIES[CompanyNames.SOBOOK],
   },

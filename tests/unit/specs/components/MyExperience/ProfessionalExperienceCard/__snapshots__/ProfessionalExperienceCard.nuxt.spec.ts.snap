@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Professional Experience Card Component > should match snapshot when rendered. 1`] = `
+"<div data-v-ceaf3c35="" class="card">
+  <div data-v-ceaf3c35="" class="row">
+    <div data-v-ceaf3c35="" class="bg-primary col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-offset="50">
+      <div data-v-ceaf3c35="" class="card-body cc-experience-header">
+        <period-timeline-stub data-v-ceaf3c35="" image="omc-logo.png" url="https://www.sobook.fr/oh-my-code/" doesshowyearonly="false" startedat="Sat Sep 01 2018 02:00:00 GMT+0200 (Central European Summer Time)" finishedat="Fri Aug 30 2019 02:00:00 GMT+0200 (Central European Summer Time)" class="experience-timeline"></period-timeline-stub>
+      </div>
+    </div>
+    <div data-v-ceaf3c35="" class="col-md-9" data-aos="fade-left" data-aos-duration="500" data-aos-offset="50">
+      <div data-v-ceaf3c35="" class="card-body">
+        <div data-v-ceaf3c35="" class="h4 job-name">MyExperience.internFullStackDeveloper</div>
+        <hr data-v-ceaf3c35="">
+        <p data-v-ceaf3c35="" class="job-description">MyExperience.distributionProject</p>
+        <p data-v-ceaf3c35="" class="job-description">MyExperience.thisFinalInternship</p>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

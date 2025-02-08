@@ -13,6 +13,7 @@
       <EducationDegreeCard
         v-for="(educationDegree, index) in educationDegrees"
         :key="index"
+        class="education-degree-card"
         :education-degree="educationDegree"
       />
     </div>

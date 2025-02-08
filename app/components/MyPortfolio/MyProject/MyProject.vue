@@ -5,6 +5,7 @@
     data-aos-anchor-placement="top-bottom"
   >
     <a
+      class="project-link"
       :href="project.url"
       rel="noopener noreferrer"
       target="_blank"
@@ -12,13 +13,14 @@
       <figure class="cc-effect">
         <NuxtImg
           :alt="project.name"
+          class="project-image"
           format="webp"
           :src="`/images/projects/${project.image}`"
         />
 
         <figcaption class="project-metadata">
           <div
-            class="h4"
+            class="h4 project-name"
           >
             {{ project.name }}
           </div>

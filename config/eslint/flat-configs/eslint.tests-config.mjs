@@ -64,6 +64,7 @@ const ESLINT_TESTS_CONFIG = {
     "vitest/prefer-mock-promise-shorthand": ERROR,
     "vitest/prefer-snapshot-hint": ERROR,
     "vitest/prefer-spy-on": ERROR,
+    "vitest/prefer-strict-boolean-matchers": OFF,
     "vitest/prefer-strict-equal": ERROR,
     "vitest/prefer-to-be": ERROR,
     "vitest/prefer-to-be-falsy": ERROR,
@@ -82,6 +83,7 @@ const ESLINT_TESTS_CONFIG = {
     "vitest/require-to-throw-message": ERROR,
     "vitest/require-top-level-describe": ERROR,
     "vitest/valid-describe-callback": ERROR,
+    "vitest/valid-expect-in-promise": ERROR,
     "vitest/valid-expect": ERROR,
     "vitest/valid-title": [
       ERROR, {
