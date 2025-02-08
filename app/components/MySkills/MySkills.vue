@@ -22,7 +22,10 @@
               :key="skill.name"
               class="col-md-6"
             >
-              <SkillProgressBar :skill="skill"/>
+              <SkillProgressBar
+                class="skill"
+                :skill="skill"
+              />
             </div>
           </div>
 
@@ -51,6 +54,7 @@
               <MyTool
                 v-for="tool in tools"
                 :key="tool.iconClasses"
+                class="tool"
                 :tool="tool"
               />
             </div>
@@ -79,29 +83,129 @@ const nuxtUrl = "https://v3.nuxtjs.org/";
 const mysqlUrl = "https://www.mysql.com/fr/";
 const mongodbUrl = "https://www.mongodb.com/";
 const skills: Skill[] = [
-  { name: t("MySkills.html"), iconClasses: "fab fa-html5", color: "#E44D27", percent: "95%", url: htmlUrl },
-  { name: t("MySkills.css"), iconClasses: "fab fa-css3-alt", color: "#0162B0", percent: "90%", url: cssUrl },
-  { name: t("MySkills.javascript"), iconClasses: "fab fa-js", color: "#EFC624", percent: "95%", url: jsUrl },
-  { name: t("MySkills.typescript"), iconClasses: "fas fa-rocket", color: "#3077C6", percent: "85%", url: tsUrl },
-  { name: t("MySkills.vue"), iconClasses: "fab fa-vuejs", color: "#38956A", percent: "95%", url: vueUrl },
-  { name: t("MySkills.nuxt"), iconClasses: "fas fa-mountain-sun", color: "#00DC81", percent: "90%", url: nuxtUrl },
-  { name: t("MySkills.mysql"), iconClasses: "fas fa-database", color: "#017395", percent: "85%", url: mysqlUrl },
-  { name: t("MySkills.mongodb"), iconClasses: "fas fa-leaf", color: "#4E9445", percent: "90%", url: mongodbUrl },
+  {
+    name: t("MySkills.html"),
+    iconClasses: "fab fa-html5",
+    color: "#E44D27",
+    percent: "95%",
+    url: htmlUrl,
+  },
+  {
+    name: t("MySkills.css"),
+    iconClasses: "fab fa-css3-alt",
+    color: "#0162B0",
+    percent: "90%",
+    url: cssUrl,
+  },
+  {
+    name: t("MySkills.javascript"),
+    iconClasses: "fab fa-js",
+    color: "#EFC624",
+    percent: "95%",
+    url: jsUrl,
+  },
+  {
+    name: t("MySkills.typescript"),
+    iconClasses: "fas fa-rocket",
+    color: "#3077C6",
+    percent: "85%",
+    url: tsUrl,
+  },
+  {
+    name: t("MySkills.vue"),
+    iconClasses: "fab fa-vuejs",
+    color: "#38956A",
+    percent: "95%",
+    url: vueUrl,
+  },
+  {
+    name: t("MySkills.nuxt"),
+    iconClasses: "fas fa-mountain-sun",
+    color: "#00DC81",
+    percent: "90%",
+    url: nuxtUrl,
+  },
+  {
+    name: t("MySkills.mysql"),
+    iconClasses: "fas fa-database",
+    color: "#017395",
+    percent: "85%",
+    url: mysqlUrl,
+  },
+  {
+    name: t("MySkills.mongodb"),
+    iconClasses: "fas fa-leaf",
+    color: "#4E9445",
+    percent: "90%",
+    url: mongodbUrl,
+  },
 ];
 
 const tools: Tool[] = [
-  { description: t("MySkills.linuxForServers"), iconClasses: "fab fa-linux", color: "#2C2C2C" },
-  { description: t("MySkills.microServicesArchitecture"), iconClasses: "fas fa-sitemap", color: "#007EB8" },
-  { description: t("MySkills.gitForVersionControl"), iconClasses: "fab fa-git", color: "#F05033" },
-  { description: t("MySkills.multipleEnvs"), iconClasses: "fas fa-code-branch", color: "#6C757D" },
-  { description: t("MySkills.gitHubAndActions"), iconClasses: "fab fa-github ", color: "#000000" },
-  { description: t("MySkills.nodeJsForProjects"), iconClasses: "fab fa-node-js ", color: "#539E43" },
-  { description: t("MySkills.cssFrameworks"), iconClasses: "fab fa-css3-alt ", color: "#0162B0" },
-  { description: t("MySkills.vueJsWithNuxt"), iconClasses: "fab fa-vuejs", color: "#38956A" },
-  { description: t("MySkills.openSourceNpm"), iconClasses: "fab fa-npm", color: "#C63635" },
-  { description: t("MySkills.esLintForGoodPractises"), iconClasses: "fas fa-spell-check", color: "#00B819" },
-  { description: t("MySkills.unitTests"), iconClasses: "fas fa-tasks", color: "#35485E" },
-  { description: t("MySkills.openSource"), iconClasses: "fas fa-hand-holding-heart", color: "#C41B1B" },
-  { description: t("MySkills.docker"), iconClasses: "fab fa-docker", color: "#2F87E3" },
+  {
+    description: t("MySkills.linuxForServers"),
+    iconClasses: "fab fa-linux",
+    color: "#2C2C2C",
+  },
+  {
+    description: t("MySkills.microServicesArchitecture"),
+    iconClasses: "fas fa-sitemap",
+    color: "#007EB8",
+  },
+  {
+    description: t("MySkills.gitForVersionControl"),
+    iconClasses: "fab fa-git",
+    color: "#F05033",
+  },
+  {
+    description: t("MySkills.multipleEnvs"),
+    iconClasses: "fas fa-code-branch",
+    color: "#6C757D",
+  },
+  {
+    description: t("MySkills.gitHubAndActions"),
+    iconClasses: "fab fa-github ",
+    color: "#000000",
+  },
+  {
+    description: t("MySkills.nodeJsForProjects"),
+    iconClasses: "fab fa-node-js ",
+    color: "#539E43",
+  },
+  {
+    description: t("MySkills.cssFrameworks"),
+    iconClasses: "fab fa-css3-alt ",
+    color: "#0162B0",
+  },
+  {
+    description: t("MySkills.vueJsWithNuxt"),
+    iconClasses: "fab fa-vuejs",
+    color: "#38956A",
+  },
+  {
+    description: t("MySkills.openSourceNpm"),
+    iconClasses: "fab fa-npm",
+    color: "#C63635",
+  },
+  {
+    description: t("MySkills.esLintForGoodPractises"),
+    iconClasses: "fas fa-spell-check",
+    color: "#00B819",
+  },
+  {
+    description: t("MySkills.unitTests"),
+    iconClasses: "fas fa-tasks",
+    color: "#35485E",
+  },
+  {
+    description: t("MySkills.openSource"),
+    iconClasses: "fas fa-hand-holding-heart",
+    color: "#C41B1B",
+  },
+  {
+    description: t("MySkills.docker"),
+    iconClasses: "fab fa-docker",
+    color: "#2F87E3",
+  },
 ];
 </script>

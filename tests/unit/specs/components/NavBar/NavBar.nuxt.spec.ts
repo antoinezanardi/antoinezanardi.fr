@@ -19,4 +19,39 @@ describe("NavBar Component", () => {
     expect(wrapper).toBeTruthy();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  describe("Navigation", () => {
+    it("should not have show class when rendered.", () => {
+      const nav = wrapper.find<HTMLDivElement>("#navigation");
+
+      expect(nav.classes()).not.toContain("show");
+    });
+
+    it("should toggle show class when clicked on a navbar toggler.", async() => {
+      const nav = wrapper.find<HTMLDivElement>("#navigation");
+      const toggler = wrapper.find<HTMLButtonElement>(".navbar-toggler");
+      await toggler.trigger("click");
+
+      expect(nav.classes()).toContain("show");
+    });
+
+    it("should remove show class when clicked on a navbar toggler after toggling.", async() => {
+      const nav = wrapper.find<HTMLDivElement>("#navigation");
+      const toggler = wrapper.find<HTMLButtonElement>(".navbar-toggler");
+      await toggler.trigger("click");
+      await toggler.trigger("click");
+
+      expect(nav.classes()).not.toContain("show");
+    });
+
+    it("should remove show class when clicked on a nav link after toggling.", async() => {
+      const nav = wrapper.find<HTMLDivElement>("#navigation");
+      const toggler = wrapper.find<HTMLButtonElement>(".navbar-toggler");
+      await toggler.trigger("click");
+      const navLink = wrapper.find<HTMLAnchorElement>(".nav-link");
+      await navLink.trigger("click");
+
+      expect(nav.classes()).not.toContain("show");
+    });
+  });
 });

@@ -15,8 +15,8 @@ describe("Education Degree Card Component", () => {
       degree: {
         name: `Degrees.ITMasterDegree`,
         description: ["MyEducation.firstThreeYearsInEpitech", "MyEducation.lastYearsInEpitech"],
-        startedAt: new Date("2014-01-01"),
-        obtainedAt: new Date("2019-01-01"),
+        startedAt: new Date("2014-01-01T00:00:00.000Z"),
+        obtainedAt: new Date("2019-01-01T00:00:00.000Z"),
       },
       school: {
         ...SCHOOLS[SchoolNames.EPITECH],

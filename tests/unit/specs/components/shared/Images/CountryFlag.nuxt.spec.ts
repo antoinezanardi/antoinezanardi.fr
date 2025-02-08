@@ -50,7 +50,7 @@ describe("Country Flag Component", () => {
       {
         country: Countries.USA,
         expectedFlag: "/images/flags/usa-flag.jpg",
-        test: "should render Germany flag when country is USA.",
+        test: "should render USA flag when country is USA.",
       },
       {
         country: Countries.CANADA,

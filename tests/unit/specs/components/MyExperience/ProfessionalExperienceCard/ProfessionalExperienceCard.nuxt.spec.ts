@@ -13,8 +13,8 @@ describe("Professional Experience Card Component", () => {
       job: {
         name: "MyExperience.internFullStackDeveloper",
         description: ["MyExperience.distributionProject", "MyExperience.thisFinalInternship"],
-        startedAt: new Date("2018-09-01"),
-        finishedAt: new Date("2019-08-30"),
+        startedAt: new Date("2018-09-01T00:00:00.000Z"),
+        finishedAt: new Date("2019-08-30T00:00:00.000Z"),
       },
       company: COMPANIES[CompanyNames.OH_MY_CODE],
     },
