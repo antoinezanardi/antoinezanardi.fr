@@ -1,4 +1,4 @@
-import type { Company } from "~/models/Company";
+import type { Company } from "~/models/company/company.types";
 
 type Job = {
   name: string;

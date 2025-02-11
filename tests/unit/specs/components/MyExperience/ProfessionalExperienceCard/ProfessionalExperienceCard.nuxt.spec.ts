@@ -3,9 +3,9 @@ import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
 
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
 import type { ProfessionalExperienceCardProps } from "~/components/MyExperience/ProfessionalExperienceCard/professional-experience-card.types";
-import { COMPANIES, CompanyNames } from "~/models/Company";
 import ProfessionalExperienceCard from "~/components/MyExperience/ProfessionalExperienceCard/ProfessionalExperienceCard.vue";
 import type PeriodTimeline from "~/components/shared/Period/PeriodTimeline.vue";
+import { COMPANIES } from "~/models/company/company.constants";
 
 describe("Professional Experience Card Component", () => {
   const defaultProps: ProfessionalExperienceCardProps = {
@@ -16,7 +16,7 @@ describe("Professional Experience Card Component", () => {
         startedAt: new Date("2018-09-01T00:00:00.000Z"),
         finishedAt: new Date("2019-08-30T00:00:00.000Z"),
       },
-      company: COMPANIES[CompanyNames.OH_MY_CODE],
+      company: COMPANIES.OhMyCode,
     },
   };
   let wrapper: ReturnType<typeof mount<typeof ProfessionalExperienceCard>>;

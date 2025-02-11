@@ -133,9 +133,9 @@
     "highSchoolDiploma": "Baccalauréat Scientifique"
   },
   "Countries": {
-    "USA": "États-Unis",
-    "FRANCE": "France",
-    "CANADA": "Canada"
+    "usa": "États-Unis",
+    "france": "France",
+    "canada": "Canada"
   },
   "MyEducation": {
     "education": "Formation & Certifications",
