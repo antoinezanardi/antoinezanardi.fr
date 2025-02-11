@@ -69,8 +69,8 @@
 <script lang="ts" setup>
 import type { PeriodTimelineProps } from "~/components/shared/Period/period-timeline.types";
 import { useDates } from "~/composables/useDates";
-import { Period } from "~/models/Period";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
+import { Period } from "~/models/period/period.class";
 
 const props = withDefaults(defineProps<PeriodTimelineProps>(), {
   doesShowYearOnly: false,

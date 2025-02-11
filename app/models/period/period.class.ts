@@ -11,7 +11,7 @@ class Period {
     this.month -= this.year * monthsInYear;
   }
 
-  public static getMonthsDifference(from: Date, to: Date): number {
+  private static getMonthsDifference(from: Date, to: Date): number {
     const monthCountInYear = 12;
 
     return to.getMonth() - from.getMonth() + monthCountInYear * (to.getFullYear() - from.getFullYear());

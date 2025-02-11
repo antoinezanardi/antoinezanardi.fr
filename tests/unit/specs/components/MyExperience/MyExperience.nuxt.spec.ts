@@ -4,8 +4,8 @@ import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
 import type ProfessionalExperienceCard from "~/components/MyExperience/ProfessionalExperienceCard/ProfessionalExperienceCard.vue";
 import { MyExperience } from "#components";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
-import type { ProfessionalExperience } from "~/models/ProfessionalExperience";
 import { COMPANIES } from "~/models/company/company.constants";
+import type { ProfessionalExperience } from "~/models/professional-experience/professional-experience.types";
 
 describe("My Experience Component", () => {
   let wrapper: ReturnType<typeof mount<typeof MyExperience>>;

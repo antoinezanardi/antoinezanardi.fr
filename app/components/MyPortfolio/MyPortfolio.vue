@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import MyProject from "~/components/MyPortfolio/MyProject/MyProject.vue";
 import SectionTitle from "~/components/shared/Layouts/SectionTitle/SectionTitle.vue";
-import type { Project } from "~/models/Project";
+import type { Project } from "~/models/project/project.types";
 
 const { t } = useI18n();
 

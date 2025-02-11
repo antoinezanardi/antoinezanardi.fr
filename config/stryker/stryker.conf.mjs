@@ -35,6 +35,7 @@ export default {
     ".output/",
     ".run/",
     ".idea/",
+    "dist/",
     "config/commitlint",
     "config/cucumber",
     "config/eslint",

@@ -5,8 +5,8 @@ import { MySkills } from "#components";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
 import type MyTool from "~/components/MySkills/MyTool/MyTool.vue";
 import type SkillProgressBar from "~/components/MySkills/SkillProgressBar/SkillProgressBar.vue";
-import type { Skill } from "~/models/Skill";
-import type { Tool } from "~/models/Tool";
+import type { Skill } from "~/models/skill/skill.types";
+import type { Tool } from "~/models/tool/tool.types";
 
 describe("My Skills Component", () => {
   let wrapper: ReturnType<typeof mount<typeof MySkills>>;

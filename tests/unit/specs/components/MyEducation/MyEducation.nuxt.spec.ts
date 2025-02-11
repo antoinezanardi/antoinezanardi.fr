@@ -3,9 +3,9 @@ import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
 
 import { MyEducation } from "#components";
 import type EducationDegreeCard from "~/components/MyEducation/EducationDegreeCard/EducationDegreeCard.vue";
+import { SCHOOLS } from "~/models/school/school.constants";
+import type { EducationDegree } from "~/models/education-degree/education-degree.types";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
-import type { EducationDegree } from "~/models/EducationDegree";
-import { SchoolNames, SCHOOLS } from "~/models/School";
 
 describe("MyEducation Component", () => {
   let wrapper: ReturnType<typeof mount<typeof MyEducation>>;
@@ -39,8 +39,8 @@ describe("MyEducation Component", () => {
           obtainedAt: new Date("2022-12-01"),
         },
         school: {
-          ...SCHOOLS[SchoolNames.GOOGLE],
-          translatedName: `Schools.${SchoolNames.GOOGLE}`,
+          ...SCHOOLS.google,
+          translatedName: `Schools.${SCHOOLS.google.name}`,
         },
       };
 
@@ -56,8 +56,8 @@ describe("MyEducation Component", () => {
           obtainedAt: new Date("2022-08-01"),
         },
         school: {
-          ...SCHOOLS[SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION],
-          translatedName: `Schools.${SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION}`,
+          ...SCHOOLS.cloudNativeComputingFoundation,
+          translatedName: `Schools.${SCHOOLS.cloudNativeComputingFoundation.name}`,
         },
       };
 
@@ -74,8 +74,8 @@ describe("MyEducation Component", () => {
           obtainedAt: new Date("2019-01-01"),
         },
         school: {
-          ...SCHOOLS[SchoolNames.EPITECH],
-          translatedName: `Schools.${SchoolNames.EPITECH}`,
+          ...SCHOOLS.epitech,
+          translatedName: `Schools.${SCHOOLS.epitech.name}`,
         },
       };
 
@@ -92,8 +92,8 @@ describe("MyEducation Component", () => {
           obtainedAt: new Date("2018-01-01"),
         },
         school: {
-          ...SCHOOLS[SchoolNames.LAVAL],
-          translatedName: `Schools.${SchoolNames.LAVAL}`,
+          ...SCHOOLS.laval,
+          translatedName: `Schools.${SCHOOLS.laval.name}`,
         },
       };
 
@@ -110,8 +110,8 @@ describe("MyEducation Component", () => {
           obtainedAt: new Date("2014-01-01"),
         },
         school: {
-          ...SCHOOLS[SchoolNames.VIMEU],
-          translatedName: `Schools.${SchoolNames.VIMEU}`,
+          ...SCHOOLS.vimeu,
+          translatedName: `Schools.${SCHOOLS.vimeu.name}`,
         },
       };
 

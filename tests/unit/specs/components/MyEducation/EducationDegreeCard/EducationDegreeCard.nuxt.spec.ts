@@ -5,9 +5,9 @@ import type PeriodTimeline from "~/components/shared/Period/PeriodTimeline.vue";
 import type { EducationDegreeCardProps } from "~/components/MyEducation/EducationDegreeCard/education-degree-card.types";
 import EducationDegreeCard from "~/components/MyEducation/EducationDegreeCard/EducationDegreeCard.vue";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
-import type { EducationDegree } from "~/models/EducationDegree";
-import { SchoolNames, SCHOOLS } from "~/models/School";
 import type CountryFlag from "~/components/shared/Images/CountryFlag/CountryFlag.vue";
+import { SCHOOLS } from "~/models/school/school.constants";
+import type { EducationDegree } from "~/models/education-degree/education-degree.types";
 
 describe("Education Degree Card Component", () => {
   const defaultProps: EducationDegreeCardProps = {
@@ -19,8 +19,8 @@ describe("Education Degree Card Component", () => {
         obtainedAt: new Date("2019-01-01T00:00:00.000Z"),
       },
       school: {
-        ...SCHOOLS[SchoolNames.EPITECH],
-        translatedName: `Schools.${SchoolNames.EPITECH}`,
+        ...SCHOOLS.epitech,
+        translatedName: `Schools.${SCHOOLS.epitech.name}`,
       },
     },
   };
@@ -66,7 +66,7 @@ describe("Education Degree Card Component", () => {
       const educationDegreeWithoutImage: EducationDegree = {
         ...defaultProps.educationDegree,
         school: {
-          ...SCHOOLS[SchoolNames.EPITECH],
+          ...SCHOOLS.epitech,
           image: undefined,
         },
       };

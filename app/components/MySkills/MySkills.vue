@@ -69,8 +69,8 @@
 import MyTool from "~/components/MySkills/MyTool/MyTool.vue";
 import SkillProgressBar from "~/components/MySkills/SkillProgressBar/SkillProgressBar.vue";
 import SectionTitle from "~/components/shared/Layouts/SectionTitle/SectionTitle.vue";
-import type { Skill } from "~/models/Skill";
-import type { Tool } from "~/models/Tool";
+import type { Skill } from "~/models/skill/skill.types";
+import type { Tool } from "~/models/tool/tool.types";
 
 const { t } = useI18n();
 

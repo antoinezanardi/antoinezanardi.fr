@@ -15,6 +15,11 @@ describe("Wrapped Font Awesome Icon Component", () => {
   Promise<ReturnType<typeof mount<typeof WrappedFontAwesomeIcon>>> {
     return mountSuspendedComponent(WrappedFontAwesomeIcon, {
       props: defaultProps,
+      global: {
+        stubs: {
+          ClientOnly: false,
+        },
+      },
       ...options,
     });
   }

@@ -24,7 +24,7 @@
 import ProfessionalExperienceCard from "~/components/MyExperience/ProfessionalExperienceCard/ProfessionalExperienceCard.vue";
 import SectionTitle from "~/components/shared/Layouts/SectionTitle/SectionTitle.vue";
 import { COMPANIES } from "~/models/company/company.constants";
-import type { ProfessionalExperience } from "~/models/ProfessionalExperience";
+import type { ProfessionalExperience } from "~/models/professional-experience/professional-experience.types";
 
 const { t } = useI18n();
 

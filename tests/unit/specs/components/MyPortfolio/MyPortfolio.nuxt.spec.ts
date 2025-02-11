@@ -4,7 +4,7 @@ import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
 import type MyProject from "~/components/MyPortfolio/MyProject/MyProject.vue";
 import { MyPortfolio } from "#components";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
-import type { Project } from "~/models/Project";
+import type { Project } from "~/models/project/project.types";
 
 describe("My Portfolio Component", () => {
   let wrapper: ReturnType<typeof mount<typeof MyPortfolio>>;

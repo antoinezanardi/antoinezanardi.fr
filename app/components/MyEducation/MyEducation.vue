@@ -21,10 +21,10 @@
 </template>
 
 <script setup lang="ts">
+import type { EducationDegree } from "~/models/education-degree/education-degree.types";
+import { SCHOOLS } from "~/models/school/school.constants";
 import EducationDegreeCard from "~/components/MyEducation/EducationDegreeCard/EducationDegreeCard.vue";
 import SectionTitle from "~/components/shared/Layouts/SectionTitle/SectionTitle.vue";
-import type { EducationDegree } from "~/models/EducationDegree";
-import { SchoolNames, SCHOOLS } from "~/models/School";
 
 const { t } = useI18n();
 
@@ -36,8 +36,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2022-12-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.GOOGLE],
-      translatedName: t(`Schools.${SchoolNames.GOOGLE}`),
+      ...SCHOOLS.google,
+      translatedName: t(`Schools.${SCHOOLS.google.name}`),
     },
   }, {
     degree: {
@@ -46,8 +46,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2022-08-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION],
-      translatedName: t(`Schools.${SchoolNames.CLOUD_NATIVE_COMPUTING_FOUNDATION}`),
+      ...SCHOOLS.cloudNativeComputingFoundation,
+      translatedName: t(`Schools.${SCHOOLS.cloudNativeComputingFoundation.name}`),
     },
   }, {
     degree: {
@@ -60,8 +60,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2019-01-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.EPITECH],
-      translatedName: t(`Schools.${SchoolNames.EPITECH}`),
+      ...SCHOOLS.epitech,
+      translatedName: t(`Schools.${SCHOOLS.epitech.name}`),
     },
   }, {
     degree: {
@@ -74,8 +74,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2018-01-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.LAVAL],
-      translatedName: t(`Schools.${SchoolNames.LAVAL}`),
+      ...SCHOOLS.laval,
+      translatedName: t(`Schools.${SCHOOLS.laval.name}`),
     },
   }, {
     degree: {
@@ -85,8 +85,8 @@ const educationDegrees: EducationDegree[] = [
       obtainedAt: new Date("2014-01-01"),
     },
     school: {
-      ...SCHOOLS[SchoolNames.VIMEU],
-      translatedName: t(`Schools.${SchoolNames.VIMEU}`),
+      ...SCHOOLS.vimeu,
+      translatedName: t(`Schools.${SCHOOLS.vimeu.name}`),
     },
   },
 ];
