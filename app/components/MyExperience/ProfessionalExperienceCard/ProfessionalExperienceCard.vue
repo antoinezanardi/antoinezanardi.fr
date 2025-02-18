@@ -9,6 +9,7 @@
       >
         <div class="card-body cc-experience-header">
           <PeriodTimeline
+            class="experience-timeline"
             :finished-at="professionalExperience.job.finishedAt"
             :image="professionalExperience.company.image"
             :started-at="professionalExperience.job.startedAt"
@@ -25,7 +26,7 @@
       >
         <div class="card-body">
           <div
-            class="h4"
+            class="h4 job-name"
           >
             {{ professionalExperience.job.name }}
           </div>
@@ -35,6 +36,7 @@
           <p
             v-for="(paragraph, index) in professionalExperience.job.description"
             :key="index"
+            class="job-description"
           >
             {{ paragraph }}
           </p>

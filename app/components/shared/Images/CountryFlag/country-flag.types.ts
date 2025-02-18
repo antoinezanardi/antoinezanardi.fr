@@ -1,7 +1,7 @@
-import type { Countries } from "~/models/Country";
+import type { Country } from "~/models/country/country.types";
 
 type CountryFlagProps = {
-  country: Countries;
+  country: Country;
 };
 
 export type { CountryFlagProps };

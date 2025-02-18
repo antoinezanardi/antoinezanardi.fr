@@ -1,4 +1,4 @@
-import type { School } from "~/models/School";
+import type { School } from "~/models/school/school.types";
 
 type Degree = {
   name: string;

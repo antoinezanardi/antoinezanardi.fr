@@ -1,9 +1,12 @@
+import Vitest from "@vitest/eslint-plugin";
+
 import { ERROR, OFF, MAX_NESTED_CALLBACK, MAX_PARAMS, ALWAYS, NEVER, READONLY, MAX_LINES_PER_FUNCTION_DEFAULT_CONFIG } from "../eslint.constants.mjs";
 
 const ESLINT_GLOBAL_CONFIG = Object.freeze({
   name: "global",
   languageOptions: {
     globals: {
+      ...Vitest.environments.env.globals,
       global: READONLY,
       window: READONLY,
       process: READONLY,

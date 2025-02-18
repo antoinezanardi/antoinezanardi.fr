@@ -81,6 +81,7 @@
         <div class="col-sm-8">
           <b>
             <a
+              id="phone-number"
               :aria-label="$t('AboutMyPersonalInfo.phoneLink', { 'phone': formattedPhoneNumber })"
               :href="`tel:${config.public.phoneNumber}`"
             >
@@ -100,6 +101,7 @@
         </div>
 
         <div
+          id="address"
           class="col-sm-8"
         >
           {{ config.public.address }}
@@ -165,13 +167,13 @@
 
         <div class="col-sm-8">
           <a
-            :aria-label="$t('AboutMyPersonalInfo.companyLink', { 'company': CompanyNames.DAVEO })"
+            :aria-label="$t('AboutMyPersonalInfo.companyLink', { 'company': 'Daveo' })"
             href="https://www.daveo.fr/"
             rel="noopener noreferrer"
             target="_blank"
           >
             <NuxtImg
-              :alt="CompanyNames.DAVEO"
+              alt="Daveo"
               class="daveo-logo"
               format="svg"
               src="/images/logos/daveo-logo.png"
@@ -185,15 +187,16 @@
 
 <script setup lang="ts">
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
-import { CompanyNames } from "~/models/Company";
 
 const config = useRuntimeConfig();
+
 const age = computed<number>(() => {
   const birthday = new Date("1996-04-14");
   const epochYear = 1970;
 
   return new Date(Date.now() - birthday.getTime()).getUTCFullYear() - epochYear;
 });
+
 const formattedPhoneNumber = computed<string>(() => {
   const matches = config.public.phoneNumber.match(/.{2}/gu);
 

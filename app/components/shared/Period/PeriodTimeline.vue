@@ -4,13 +4,14 @@
     class="d-flex flex-column h-100"
   >
     <a
+      id="timeline-logo"
       :href="url"
       rel="noopener noreferrer"
       target="_blank"
     >
       <NuxtImg
         :alt="image"
-        class="logo white-logo"
+        class="logo timeline-logo-image white-logo"
         format="webp"
         :src="`/images/logos/${image}`"
       />
@@ -24,6 +25,7 @@
         class="align-items-center d-flex flex-column flex-grow-1 justify-content-center"
       >
         <div
+          id="finished-at-date"
           class="period-date"
         >
           {{ formattedFinishedAt }}
@@ -31,6 +33,7 @@
 
         <WrappedFontAwesomeIcon
           v-if="doesPeriodHaveTwoDates"
+          id="arrow-up-icon"
           classes="my-3"
           icon="fa-arrow-up"
           icon-color="#00000"
@@ -39,6 +42,7 @@
 
         <div
           v-if="formattedStartedAt"
+          id="started-at-date"
           class="period-date"
         >
           {{ formattedStartedAt }}
@@ -65,8 +69,8 @@
 <script lang="ts" setup>
 import type { PeriodTimelineProps } from "~/components/shared/Period/period-timeline.types";
 import { useDates } from "~/composables/useDates";
-import { Period } from "~/models/Period";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
+import { Period } from "~/models/period/period.class";
 
 const props = withDefaults(defineProps<PeriodTimelineProps>(), {
   doesShowYearOnly: false,
@@ -77,9 +81,9 @@ const props = withDefaults(defineProps<PeriodTimelineProps>(), {
 const { t } = useI18n();
 const { getMonthFullName } = useDates();
 
-const formattedPeriod = computed<string | undefined>(() => {
+const formattedPeriod = computed<string>(() => {
   if (!props.startedAt) {
-    return undefined;
+    return "";
   }
   const finishedAt = props.finishedAt ?? new Date();
   const period = new Period(props.startedAt, finishedAt);
@@ -98,10 +102,10 @@ const formattedPeriod = computed<string | undefined>(() => {
   return `( ${periodText} )`;
 });
 
-const formattedStartedAt = computed<string | undefined>(() => {
+const formattedStartedAt = computed<string>(() => {
   const { startedAt, doesShowYearOnly } = props;
   if (!startedAt) {
-    return undefined;
+    return "";
   }
   const startedAtMonth = getMonthFullName(startedAt);
   const startedAtYear = startedAt.getFullYear().toString();
@@ -119,7 +123,7 @@ const formattedFinishedAt = computed<string>(() => {
   return t("shared.today");
 });
 
-const doesPeriodHaveTwoDates = computed<boolean>(() => formattedStartedAt.value !== undefined);
+const doesPeriodHaveTwoDates = computed<boolean>(() => !!formattedStartedAt.value);
 </script>
 
 <style lang="scss" scoped>

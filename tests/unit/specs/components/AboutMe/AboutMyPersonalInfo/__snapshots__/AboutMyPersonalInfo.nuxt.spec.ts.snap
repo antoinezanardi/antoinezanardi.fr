@@ -1,0 +1,49 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AboutMyPersonalInfo Component > should match snapshot when rendered. 1`] = `
+"<div data-v-b7a042bc="">
+  <div data-v-b7a042bc="" class="card-body">
+    <div data-v-b7a042bc="" class="h3 mt-0 title">
+      <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-id-card" iconcolor="#000000" classes="me-2"></wrapped-font-awesome-icon-stub><span data-v-b7a042bc="">Informations personnelles</span>
+    </div>
+    <hr data-v-b7a042bc="">
+    <div data-v-b7a042bc="" class="row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Sexe :</b></div>
+      <div data-v-b7a042bc="" id="genre" class="col-sm-8">Homme</div>
+    </div>
+    <div data-v-b7a042bc="" class="mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Age :</b></div>
+      <div data-v-b7a042bc="" id="age" class="col-sm-8">25 ans</div>
+    </div>
+    <div data-v-b7a042bc="" class="mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">email :</b></div>
+      <div data-v-b7a042bc="" class="col-sm-8"><b data-v-b7a042bc=""><a data-v-b7a042bc="" aria-label="Envoyez-moi un email à john@doe.com" href="mailto:john@doe.com">john@doe.com</a></b></div>
+    </div>
+    <div data-v-b7a042bc="" class="mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Téléphone :</b></div>
+      <div data-v-b7a042bc="" class="col-sm-8"><b data-v-b7a042bc=""><a data-v-b7a042bc="" id="phone-number" aria-label="Appelez-moi au 12 34 56 78 90" href="tel:1234567890">12 34 56 78 90</a></b></div>
+    </div>
+    <div data-v-b7a042bc="" class="mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Adresse postale :</b></div>
+      <div data-v-b7a042bc="" id="address" class="col-sm-8">1234 Elm Street</div>
+    </div>
+    <div data-v-b7a042bc="" class="mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Langues :</b></div>
+      <div data-v-b7a042bc="" class="col-sm-8">Anglais et Français</div>
+    </div>
+    <div data-v-b7a042bc="" class="align-items-center mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Permis :</b></div>
+      <div data-v-b7a042bc="" class="col-sm-8 d-flex">
+        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-car" iconcolor="#000000" size="2x" classes="" aria-label="Voiture" class="me-2" data-bs-toggle="tooltip" role="img" title="Voiture"></wrapped-font-awesome-icon-stub>
+        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-anchor" iconcolor="#000000" size="2x" classes="" aria-label="Bateau" class="me-2" data-bs-toggle="tooltip" role="img" title="Bateau"></wrapped-font-awesome-icon-stub>
+      </div>
+    </div>
+    <div data-v-b7a042bc="" class="align-items-center mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Travaille chez :</b></div>
+      <div data-v-b7a042bc="" class="col-sm-8"><a data-v-b7a042bc="" aria-label="Visitez le site de Daveo" href="https://www.daveo.fr/" rel="noopener noreferrer" target="_blank">
+          <nuxt-img-stub data-v-b7a042bc="" alt="Daveo" format="svg" src="/images/logos/daveo-logo.png" preload="false" crossorigin="false" placeholder="false" custom="false" class="daveo-logo"></nuxt-img-stub>
+        </a></div>
+    </div>
+  </div>
+</div>"
+`;

@@ -1,4 +1,4 @@
-import type { Tool } from "~/models/Tool";
+import type { Tool } from "~/models/tool/tool.types";
 
 type MyToolProps = {
   tool: Tool;

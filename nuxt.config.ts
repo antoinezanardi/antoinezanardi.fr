@@ -25,6 +25,7 @@ export default defineNuxtConfig({
   },
   modules: [
     "@nuxtjs/i18n",
+    "@nuxt/test-utils/module",
     "@nuxt/image",
   ],
   i18n: {
@@ -41,7 +42,9 @@ export default defineNuxtConfig({
       strictMessage: false,
     },
   },
-  nitro: { compressPublicAssets: true },
+  nitro: {
+    compressPublicAssets: true,
+  },
   plugins: [
     {
       src: "~/plugins/bootstrap.ts",
@@ -61,6 +64,7 @@ export default defineNuxtConfig({
     strict: true,
     tsConfig: {
       compilerOptions: {
+        types: ["vitest/globals"],
         strictPropertyInitialization: false,
         esModuleInterop: true,
         module: "ESNext",

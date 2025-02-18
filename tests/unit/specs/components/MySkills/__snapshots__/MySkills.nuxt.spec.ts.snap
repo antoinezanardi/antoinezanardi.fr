@@ -1,0 +1,65 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`My Skills Component > should match snapshot when rendered. 1`] = `
+"<div id="skill" class="section">
+  <div class="container">
+    <section-title-stub icon="fa fa-code" title="Compétences techniques" iconcolor="#007EB8"></section-title-stub>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h5 class="mb-0">Mes outils</h5>
+          </div>
+        </div>
+        <div class="mb-2 row">
+          <div class="col-12 font-italic my-1 small text-center text-muted">(Survolez ou cliquez sur les icônes pour plus de détails)</div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex flex-wrap gap-1 justify-content-center text-center">
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+            <my-tool-stub tool="[object Object]" class="tool"></my-tool-stub>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

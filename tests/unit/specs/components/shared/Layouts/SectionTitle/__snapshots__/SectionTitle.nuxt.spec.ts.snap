@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Section Title Component > should match snapshot when rendered. 1`] = `
+"<div class="h2 mb-5 text-center title">
+  <wrapped-font-awesome-icon-stub icon="icon" iconcolor="#000000" classes="section-icon me-2" id="section-title-icon"></wrapped-font-awesome-icon-stub><span class="section-title-text">title</span>
+</div>"
+`;

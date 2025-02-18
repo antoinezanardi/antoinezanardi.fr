@@ -1,4 +1,4 @@
-import type { Skill } from "~/models/Skill";
+import type { Skill } from "~/models/skill/skill.types";
 
 type SkillProgressBarProps = {
   skill: Skill;

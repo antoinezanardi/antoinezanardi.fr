@@ -9,6 +9,7 @@
       >
         <div class="card-body cc-education-header">
           <PeriodTimeline
+            class="education-timeline"
             does-show-year-only
             :finished-at="educationDegree.degree.obtainedAt"
             :image="schoolImage"
@@ -26,20 +27,20 @@
       >
         <div class="card-body">
           <div
-            class="h4"
+            class="degree-name h4"
           >
             {{ educationDegree.degree.name }}
           </div>
 
           <div class="d-flex">
             <p
-              class="category mb-0"
+              class="category mb-0 school-name"
             >
               {{ schoolLabel }}
             </p>
 
             <CountryFlag
-              class="ms-2"
+              class="ms-2 school-flag"
               :country="educationDegree.school.country"
             />
           </div>
@@ -49,6 +50,7 @@
           <p
             v-for="(paragraph, index) in educationDegree.degree.description"
             :key="index"
+            class="degree-description"
           >
             {{ paragraph }}
           </p>
@@ -66,6 +68,7 @@ import PeriodTimeline from "~/components/shared/Period/PeriodTimeline.vue";
 const props = defineProps<EducationDegreeCardProps>();
 
 const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.png");
+
 const schoolLabel = computed<string>(() => {
   const { school } = props.educationDegree;
   let label = school.translatedName ?? "?";

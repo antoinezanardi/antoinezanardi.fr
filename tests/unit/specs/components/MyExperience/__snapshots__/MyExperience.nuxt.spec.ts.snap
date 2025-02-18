@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`My Experience Component > should match snapshot when rendered. 1`] = `
+"<div id="experience" class="section">
+  <div class="cc-experience container">
+    <section-title-stub icon="fa fa-briefcase" title="Expérience professionnelle" iconcolor="#4D9344"></section-title-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+    <professional-experience-card-stub professionalexperience="[object Object]" class="professional-experience-card"></professional-experience-card-stub>
+  </div>
+</div>"
+`;

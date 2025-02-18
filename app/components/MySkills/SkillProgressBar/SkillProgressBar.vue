@@ -5,6 +5,7 @@
       class="progress-badge"
     >
       <WrappedFontAwesomeIcon
+        class="skill-icon"
         classes="me-2"
         :icon="skill.iconClasses"
         :icon-color="skill.color"
@@ -12,7 +13,7 @@
 
       <b>
         <a
-          class="text-muted"
+          class="skill-name text-muted"
           :href="skill.url"
           rel="noopener noreferrer"
           target="_blank"
@@ -32,6 +33,7 @@
         data-aos-duration="2000"
         data-aos-offset="10"
         role="progressbar"
+        :style="progressBarStyle"
       />
 
       <span
@@ -47,14 +49,10 @@
 import type { SkillProgressBarProps } from "~/components/MySkills/SkillProgressBar/skill-progress-bar.types";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
 
-defineProps<SkillProgressBarProps>();
-</script>
+const props = defineProps<SkillProgressBarProps>();
 
-<style lang="scss" scoped>
-.progress {
-  .progress-bar {
-    width: v-bind("skill.percent");
-    background-color: v-bind("skill.color");
-  }
-}
-</style>
+const progressBarStyle = computed<Record<string, string>>(() => ({
+  width: props.skill.percent,
+  backgroundColor: props.skill.color,
+}));
+</script>

@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page Footer Component > should match snapshot when rendered. 1`] = `
+"<footer class="footer py-1">
+  <div class="container text-center">
+    <linked-in-button-stub class="me-2"></linked-in-button-stub>
+    <git-hub-button-stub></git-hub-button-stub>
+  </div>
+  <div class="font-italic h4 my-2 text-center text-muted title"><span>Antoine Zanardi</span><span> - 2022</span></div>
+</footer>"
+`;

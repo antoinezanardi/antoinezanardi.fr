@@ -1,4 +1,4 @@
-import type { EducationDegree } from "~/models/EducationDegree";
+import type { EducationDegree } from "~/models/education-degree/education-degree.types";
 
 type EducationDegreeCardProps = {
   educationDegree: EducationDegree;

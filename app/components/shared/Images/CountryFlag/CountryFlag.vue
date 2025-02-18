@@ -11,15 +11,15 @@
 
 <script setup lang="ts">
 import type { CountryFlagProps } from "~/components/shared/Images/CountryFlag/country-flag.types";
-import type { Countries } from "~/models/Country";
+import type { Country } from "~/models/country/country.types";
 
 const props = defineProps<CountryFlagProps>();
 
 const countryFlagSrc = computed<string>(() => {
-  const countryFlagsSrc: Record<Countries, string> = {
-    FRANCE: "france-flag.jpg",
-    USA: "usa-flag.jpg",
-    CANADA: "canada-flag.jpg",
+  const countryFlagsSrc: Record<Country, string> = {
+    france: "france-flag.jpg",
+    usa: "usa-flag.jpg",
+    canada: "canada-flag.jpg",
   };
 
   return countryFlagsSrc[props.country];
