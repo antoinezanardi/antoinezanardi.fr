@@ -9819,99 +9819,13 @@
           }
         },
         {
-          "id": "263",
-          "mutatorName": "ConditionalExpression",
-          "replacement": "true",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 10,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 23,
-              "line": 85
-            },
-            "start": {
-              "column": 7,
-              "line": 85
-            }
-          }
-        },
-        {
-          "id": "262",
-          "mutatorName": "BooleanLiteral",
-          "replacement": "props.startedAt",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 10,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 23,
-              "line": 85
-            },
-            "start": {
-              "column": 7,
-              "line": 85
-            }
-          }
-        },
-        {
           "id": "261",
           "mutatorName": "BlockStatement",
           "replacement": "{}",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 10,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -9948,13 +9862,99 @@
           }
         },
         {
+          "id": "262",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "props.startedAt",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 10,
+          "static": false,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 85
+            },
+            "start": {
+              "column": 7,
+              "line": 85
+            }
+          }
+        },
+        {
+          "id": "263",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 10,
+          "static": false,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 23,
+              "line": 85
+            },
+            "start": {
+              "column": 7,
+              "line": 85
+            }
+          }
+        },
+        {
           "id": "264",
           "mutatorName": "ConditionalExpression",
           "replacement": "false",
           "statusReason": "expected undefined to be '' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 16,
+          "static": false,
           "killedBy": [
             "15"
           ],
@@ -9996,8 +9996,8 @@
           "replacement": "{}",
           "statusReason": "expected undefined to be '' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 16,
+          "static": false,
           "killedBy": [
             "15"
           ],
@@ -10039,8 +10039,8 @@
           "replacement": "\"Stryker was here!\"",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -10082,8 +10082,8 @@
           "replacement": "props.finishedAt && new Date()",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10115,8 +10115,8 @@
           "replacement": "\"Stryker was here!\"",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10148,8 +10148,8 @@
           "replacement": "true",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10181,8 +10181,8 @@
           "replacement": "false",
           "statusReason": "expected '(  shared.and shared.months, {\"monthC…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 5,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10214,8 +10214,8 @@
           "replacement": "{}",
           "statusReason": "expected '(  shared.and shared.months, {\"monthC…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10242,8 +10242,8 @@
           "replacement": "periodText -= t(\"shared.years\", {\n  yearCount: period.year\n}, period.year)",
           "statusReason": "expected '( NaN shared.and shared.months, {\"mon…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10270,8 +10270,8 @@
           "replacement": "\"\"",
           "statusReason": "expected '( , {\"yearCount\":2}, 2 shared.and sha…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10298,8 +10298,8 @@
           "replacement": "{}",
           "statusReason": "expected '( shared.years, {}, 2 shared.and shar…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10326,8 +10326,8 @@
           "replacement": "props.doesShowYearOnly",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10359,8 +10359,8 @@
           "replacement": "true",
           "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2 sh…' to be '( shared.years, {\"yearCount\":2}, 2 )' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 9,
+          "static": false,
           "killedBy": [
             "18"
           ],
@@ -10392,8 +10392,8 @@
           "replacement": "false",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10425,8 +10425,8 @@
           "replacement": "{}",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10456,8 +10456,8 @@
           "replacement": "true",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10487,8 +10487,8 @@
           "replacement": "false",
           "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2sha…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 4,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10518,8 +10518,8 @@
           "replacement": "period.month || period.year",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10549,8 +10549,8 @@
           "replacement": "{}",
           "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2sha…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10575,8 +10575,8 @@
           "replacement": "``",
           "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2sha…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10601,8 +10601,8 @@
           "replacement": "\"\"",
           "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2  s…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "12"
           ],
@@ -10627,8 +10627,8 @@
           "replacement": "true",
           "statusReason": "expected '( shared.years, {\"yearCount\":1}, 1sha…' to be '( shared.years, {\"yearCount\":1}, 1 )' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 6,
+          "static": false,
           "killedBy": [
             "16"
           ],
@@ -10658,8 +10658,8 @@
           "replacement": "false",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10689,8 +10689,8 @@
           "replacement": "{}",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10719,8 +10719,8 @@
           "replacement": "periodText -= t(\"shared.months\", {\n  monthCount: period.month\n})",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10749,8 +10749,8 @@
           "replacement": "\"\"",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10779,8 +10779,8 @@
           "replacement": "{}",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10809,8 +10809,8 @@
           "replacement": "``",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -10842,8 +10842,8 @@
           "replacement": "{}",
           "statusReason": "expected false to be truthy",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 8,
+          "static": false,
           "killedBy": [
             "7"
           ],
@@ -10880,13 +10880,99 @@
           }
         },
         {
+          "id": "293",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "startedAt",
+          "statusReason": "expected false to be truthy",
+          "status": "Killed",
+          "testsCompleted": 8,
+          "static": false,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 17,
+              "line": 107
+            },
+            "start": {
+              "column": 7,
+              "line": 107
+            }
+          }
+        },
+        {
+          "id": "294",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected false to be truthy",
+          "status": "Killed",
+          "testsCompleted": 8,
+          "static": false,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 17,
+              "line": 107
+            },
+            "start": {
+              "column": 7,
+              "line": 107
+            }
+          }
+        },
+        {
           "id": "295",
           "mutatorName": "ConditionalExpression",
           "replacement": "false",
           "statusReason": "expected undefined to be '' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 9,
+          "static": false,
           "killedBy": [
             "8"
           ],
@@ -10928,8 +11014,8 @@
           "replacement": "{}",
           "statusReason": "expected undefined to be '' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 9,
+          "static": false,
           "killedBy": [
             "8"
           ],
@@ -10971,8 +11057,8 @@
           "replacement": "\"Stryker was here!\"",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -11014,8 +11100,8 @@
           "replacement": "``",
           "statusReason": "expected false to be truthy",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "7"
           ],
@@ -11045,8 +11131,8 @@
           "replacement": "{}",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -11088,8 +11174,8 @@
           "replacement": "true",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -11126,99 +11212,13 @@
           }
         },
         {
-          "id": "294",
-          "mutatorName": "ConditionalExpression",
-          "replacement": "true",
-          "statusReason": "expected false to be truthy",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 8,
-          "killedBy": [
-            "7"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 17,
-              "line": 107
-            },
-            "start": {
-              "column": 7,
-              "line": 107
-            }
-          }
-        },
-        {
-          "id": "293",
-          "mutatorName": "BooleanLiteral",
-          "replacement": "startedAt",
-          "statusReason": "expected false to be truthy",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 8,
-          "killedBy": [
-            "7"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 17,
-              "line": 107
-            },
-            "start": {
-              "column": 7,
-              "line": 107
-            }
-          }
-        },
-        {
           "id": "301",
           "mutatorName": "ConditionalExpression",
           "replacement": "false",
           "statusReason": "expected 'shared.today' to be 'janvier 2022' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 5,
+          "static": false,
           "killedBy": [
             "4"
           ],
@@ -11260,8 +11260,8 @@
           "replacement": "{}",
           "statusReason": "expected 'shared.today' to be 'janvier 2022' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "4"
           ],
@@ -11293,8 +11293,8 @@
           "replacement": "``",
           "statusReason": "expected '' to be 'janvier 2022' // Object.is equality",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "4"
           ],
@@ -11324,8 +11324,8 @@
           "replacement": "\"\"",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -11362,56 +11362,13 @@
           }
         },
         {
-          "id": "306",
-          "mutatorName": "BooleanLiteral",
-          "replacement": "!formattedStartedAt.value",
-          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "0"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 82,
-              "line": 126
-            },
-            "start": {
-              "column": 56,
-              "line": 126
-            }
-          }
-        },
-        {
           "id": "305",
           "mutatorName": "ArrowFunction",
           "replacement": "() => undefined",
           "statusReason": "expected false to be truthy",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 8,
+          "static": false,
           "killedBy": [
             "7"
           ],
@@ -11448,13 +11405,56 @@
           }
         },
         {
+          "id": "306",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "!formattedStartedAt.value",
+          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 1,
+          "static": false,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 126
+            },
+            "start": {
+              "column": 56,
+              "line": 126
+            }
+          }
+        },
+        {
           "id": "307",
           "mutatorName": "BooleanLiteral",
           "replacement": "formattedStartedAt.value",
           "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 1,
+          "static": false,
           "killedBy": [
             "0"
           ],
@@ -11492,6 +11492,196 @@
         }
       ],
       "source": "<template>\n  <div\n    id=\"period-timeline\"\n    class=\"d-flex flex-column h-100\"\n  >\n    <a\n      id=\"timeline-logo\"\n      :href=\"url\"\n      rel=\"noopener noreferrer\"\n      target=\"_blank\"\n    >\n      <NuxtImg\n        :alt=\"image\"\n        class=\"logo timeline-logo-image white-logo\"\n        format=\"webp\"\n        :src=\"`/images/logos/${image}`\"\n      />\n    </a>\n\n    <hr class=\"my-3\">\n\n    <div class=\"d-flex flex-column flex-grow-1\">\n      <div\n        id=\"period-dates\"\n        class=\"align-items-center d-flex flex-column flex-grow-1 justify-content-center\"\n      >\n        <div\n          id=\"finished-at-date\"\n          class=\"period-date\"\n        >\n          {{ formattedFinishedAt }}\n        </div>\n\n        <WrappedFontAwesomeIcon\n          v-if=\"doesPeriodHaveTwoDates\"\n          id=\"arrow-up-icon\"\n          classes=\"my-3\"\n          icon=\"fa-arrow-up\"\n          icon-color=\"#00000\"\n          size=\"2x\"\n        />\n\n        <div\n          v-if=\"formattedStartedAt\"\n          id=\"started-at-date\"\n          class=\"period-date\"\n        >\n          {{ formattedStartedAt }}\n        </div>\n      </div>\n\n      <div\n        v-if=\"formattedPeriod\"\n        id=\"period-label\"\n        class=\"align-items-center d-flex flex-column\"\n      >\n        <hr class=\"w-100\">\n\n        <div\n          class=\"font-italic font-weight-bold small\"\n        >\n          {{ formattedPeriod }}\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script lang=\"ts\" setup>\nimport type { PeriodTimelineProps } from \"~/components/shared/Period/period-timeline.types\";\nimport { useDates } from \"~/composables/useDates\";\nimport WrappedFontAwesomeIcon from \"~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue\";\nimport { Period } from \"~/models/period/period.class\";\n\nconst props = withDefaults(defineProps<PeriodTimelineProps>(), {\n  doesShowYearOnly: false,\n  startedAt: undefined,\n  finishedAt: undefined,\n});\n\nconst { t } = useI18n();\nconst { getMonthFullName } = useDates();\n\nconst formattedPeriod = computed<string>(() => {\n  if (!props.startedAt) {\n    return \"\";\n  }\n  const finishedAt = props.finishedAt ?? new Date();\n  const period = new Period(props.startedAt, finishedAt);\n  let periodText = \"\";\n  if (period.year) {\n    periodText += t(\"shared.years\", { yearCount: period.year }, period.year);\n  }\n  if (!props.doesShowYearOnly) {\n    if (period.month && period.year) {\n      periodText += ` ${t(\"shared.and\")} `;\n    }\n    if (period.month) {\n      periodText += t(\"shared.months\", { monthCount: period.month });\n    }\n  }\n  return `( ${periodText} )`;\n});\n\nconst formattedStartedAt = computed<string>(() => {\n  const { startedAt, doesShowYearOnly } = props;\n  if (!startedAt) {\n    return \"\";\n  }\n  const startedAtMonth = getMonthFullName(startedAt);\n  const startedAtYear = startedAt.getFullYear().toString();\n\n  return doesShowYearOnly ? startedAtYear : `${startedAtMonth} ${startedAtYear}`;\n});\n\nconst formattedFinishedAt = computed<string>(() => {\n  const { finishedAt, doesShowYearOnly } = props;\n  if (finishedAt) {\n    const finishedAtYear = finishedAt.getFullYear().toString();\n\n    return doesShowYearOnly ? finishedAtYear : `${getMonthFullName(finishedAt)} ${finishedAtYear}`;\n  }\n  return t(\"shared.today\");\n});\n\nconst doesPeriodHaveTwoDates = computed<boolean>(() => !!formattedStartedAt.value);\n</script>\n\n<style lang=\"scss\" scoped>\n.period-date {\n  font-size: 1.25rem;\n}\n.logo {\n  max-width: 180px;\n  max-height: 75px;\n  filter: brightness(0) invert(1);\n}\n</style>"
+    },
+    "app/composables/useDates.ts": {
+      "language": "typescript",
+      "mutants": [
+        {
+          "id": "308",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "app/composables/useDates.ts(5,22): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "killedBy": [],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 2,
+              "line": 14
+            },
+            "start": {
+              "column": 38,
+              "line": 5
+            }
+          }
+        },
+        {
+          "id": "309",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "app/composables/useDates.ts(8,42): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "killedBy": [],
+          "coveredBy": [
+            "4",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 12
+            },
+            "start": {
+              "column": 52,
+              "line": 8
+            }
+          }
+        },
+        {
+          "id": "310",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "expected '01/01/2022 2022' to be 'janvier 2022' // Object.is equality",
+          "status": "Killed",
+          "testsCompleted": 1,
+          "static": false,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "4",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 83,
+              "line": 9
+            },
+            "start": {
+              "column": 66,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "311",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "app/composables/useDates.ts(9,68): error TS2769: No overload matches this call.\n  Overload 1 of 2, '(locales?: LocalesArgument, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n  Overload 2 of 2, '(locales?: string | string[] | undefined, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n",
+          "status": "CompileError",
+          "static": false,
+          "killedBy": [],
+          "coveredBy": [
+            "4",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 81,
+              "line": 9
+            },
+            "start": {
+              "column": 75,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "312",
+          "mutatorName": "ObjectLiteral",
+          "replacement": "{}",
+          "statusReason": "app/composables/useDates.ts(13,3): error TS2741: Property 'getMonthFullName' is missing in type '{}' but required in type 'DatesComposable'.\n",
+          "status": "CompileError",
+          "static": false,
+          "killedBy": [],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 30,
+              "line": 13
+            },
+            "start": {
+              "column": 10,
+              "line": 13
+            }
+          }
+        }
+      ],
+      "source": "type DatesComposable = {\n  getMonthFullName: (date: Date) => string;\n};\n\nfunction useDates(): DatesComposable {\n  const { locale } = useI18n();\n\n  const getMonthFullName = (date: Date): string => {\n    const dateTimeFormat = new Intl.DateTimeFormat(locale.value, { month: \"long\" });\n\n    return dateTimeFormat.format(date);\n  };\n  return { getMonthFullName };\n}\n\nexport { useDates };"
     },
     "app/models/company/company.constants.ts": {
       "language": "typescript",
@@ -11750,6 +11940,269 @@
       "language": "typescript",
       "mutants": [
         {
+          "id": "326",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 2,
+          "static": false,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 12
+            },
+            "start": {
+              "column": 44,
+              "line": 6
+            }
+          }
+        },
+        {
+          "id": "327",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "Period.getMonthsDifference(from, to) - firstMonth",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 2,
+          "static": false,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 67,
+              "line": 9
+            },
+            "start": {
+              "column": 18,
+              "line": 9
+            }
+          }
+        },
+        {
+          "id": "328",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "this.month * monthsInYear",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "testsCompleted": 2,
+          "static": false,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 53,
+              "line": 10
+            },
+            "start": {
+              "column": 28,
+              "line": 10
+            }
+          }
+        },
+        {
+          "id": "329",
+          "mutatorName": "AssignmentOperator",
+          "replacement": "this.month += this.year * monthsInYear",
+          "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2 sh…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
+          "status": "Killed",
+          "testsCompleted": 5,
+          "static": false,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 43,
+              "line": 11
+            },
+            "start": {
+              "column": 5,
+              "line": 11
+            }
+          }
+        },
+        {
+          "id": "330",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "this.year / monthsInYear",
+          "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2 sh…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
+          "status": "Killed",
+          "testsCompleted": 5,
+          "static": false,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 43,
+              "line": 11
+            },
+            "start": {
+              "column": 19,
+              "line": 11
+            }
+          }
+        },
+        {
+          "id": "331",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "app/models/period/period.class.ts(14,61): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
+          "status": "CompileError",
+          "static": false,
+          "killedBy": [],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 18
+            },
+            "start": {
+              "column": 68,
+              "line": 14
+            }
+          }
+        },
+        {
+          "id": "332",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "to.getMonth() - from.getMonth() - monthCountInYear * (to.getFullYear() - from.getFullYear())",
+          "statusReason": "expected '( shared.years, {\"yearCount\":-2}, -2 …' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
+          "status": "Killed",
+          "testsCompleted": 5,
+          "static": false,
+          "killedBy": [
+            "12"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 104,
+              "line": 17
+            },
+            "start": {
+              "column": 12,
+              "line": 17
+            }
+          }
+        },
+        {
           "id": "333",
           "mutatorName": "ArithmeticOperator",
           "replacement": "to.getMonth() + from.getMonth()",
@@ -11788,237 +12241,13 @@
           }
         },
         {
-          "id": "331",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
-          "statusReason": "app/models/period/period.class.ts(14,61): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 4,
-              "line": 18
-            },
-            "start": {
-              "column": 68,
-              "line": 14
-            }
-          }
-        },
-        {
-          "id": "328",
-          "mutatorName": "ArithmeticOperator",
-          "replacement": "this.month * monthsInYear",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 2,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 53,
-              "line": 10
-            },
-            "start": {
-              "column": 28,
-              "line": 10
-            }
-          }
-        },
-        {
-          "id": "326",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 2,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 4,
-              "line": 12
-            },
-            "start": {
-              "column": 44,
-              "line": 6
-            }
-          }
-        },
-        {
-          "id": "329",
-          "mutatorName": "AssignmentOperator",
-          "replacement": "this.month += this.year * monthsInYear",
-          "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2 sh…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 5,
-          "killedBy": [
-            "12"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 43,
-              "line": 11
-            },
-            "start": {
-              "column": 5,
-              "line": 11
-            }
-          }
-        },
-        {
-          "id": "330",
-          "mutatorName": "ArithmeticOperator",
-          "replacement": "this.year / monthsInYear",
-          "statusReason": "expected '( shared.years, {\"yearCount\":2}, 2 sh…' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 5,
-          "killedBy": [
-            "12"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 43,
-              "line": 11
-            },
-            "start": {
-              "column": 19,
-              "line": 11
-            }
-          }
-        },
-        {
-          "id": "332",
-          "mutatorName": "ArithmeticOperator",
-          "replacement": "to.getMonth() - from.getMonth() - monthCountInYear * (to.getFullYear() - from.getFullYear())",
-          "statusReason": "expected '( shared.years, {\"yearCount\":-2}, -2 …' to be '( shared.years, {\"yearCount\":2}, 2 sh…' // Object.is equality",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 5,
-          "killedBy": [
-            "12"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 104,
-              "line": 17
-            },
-            "start": {
-              "column": 12,
-              "line": 17
-            }
-          }
-        },
-        {
           "id": "334",
           "mutatorName": "ArithmeticOperator",
           "replacement": "monthCountInYear / (to.getFullYear() - from.getFullYear())",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -12055,8 +12284,8 @@
           "replacement": "to.getFullYear() + from.getFullYear()",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
-          "static": false,
           "testsCompleted": 2,
+          "static": false,
           "killedBy": [
             "9"
           ],
@@ -12084,44 +12313,6 @@
             "start": {
               "column": 66,
               "line": 17
-            }
-          }
-        },
-        {
-          "id": "327",
-          "mutatorName": "ArithmeticOperator",
-          "replacement": "Period.getMonthsDifference(from, to) - firstMonth",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 2,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 67,
-              "line": 9
-            },
-            "start": {
-              "column": 18,
-              "line": 9
             }
           }
         }
@@ -12665,192 +12856,6 @@
         }
       ],
       "source": "import type { School, SchoolName } from \"~/models/school/school.types\";\n\nconst SCHOOL_NAMES = [\n  \"vimeu\",\n  \"epitech\",\n  \"laval\",\n  \"cloudNativeComputingFoundation\",\n  \"google\",\n] as const;\n\nconst SCHOOLS: Record<SchoolName, School> = Object.freeze({\n  vimeu: {\n    name: \"vimeu\",\n    city: \"Friville-Escarbotin\",\n    country: \"france\",\n    url: \"https://lycee-vimeu-friville.ac-amiens.fr/\",\n  },\n  epitech: {\n    name: \"epitech\",\n    city: \"Lille\",\n    country: \"france\",\n    url: \"https://www.epitech.eu/\",\n    image: \"epitech-logo.png\",\n  },\n  laval: {\n    name: \"laval\",\n    city: \"Québec\",\n    country: \"canada\",\n    url: \"https://www.ulaval.ca/\",\n    image: \"laval-logo.png\",\n  },\n  cloudNativeComputingFoundation: {\n    name: \"cloudNativeComputingFoundation\",\n    country: \"usa\",\n    url: \"https://www.cncf.io/\",\n    image: \"cloud-native-computed-foundation-logo.png\",\n  },\n  google: {\n    name: \"google\",\n    country: \"usa\",\n    url: \"https://cloud.google.com/\",\n    image: \"google-cloud-platform-logo.png\",\n  },\n});\n\nexport { SCHOOL_NAMES, SCHOOLS };"
-    },
-    "app/composables/useDates.ts": {
-      "language": "typescript",
-      "mutants": [
-        {
-          "id": "309",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
-          "statusReason": "app/composables/useDates.ts(8,42): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "4",
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 4,
-              "line": 12
-            },
-            "start": {
-              "column": 52,
-              "line": 8
-            }
-          }
-        },
-        {
-          "id": "308",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
-          "statusReason": "app/composables/useDates.ts(5,22): error TS2355: A function whose declared type is neither 'undefined', 'void', nor 'any' must return a value.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 2,
-              "line": 14
-            },
-            "start": {
-              "column": 38,
-              "line": 5
-            }
-          }
-        },
-        {
-          "id": "311",
-          "mutatorName": "StringLiteral",
-          "replacement": "\"\"",
-          "statusReason": "app/composables/useDates.ts(9,68): error TS2769: No overload matches this call.\n  Overload 1 of 2, '(locales?: LocalesArgument, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n  Overload 2 of 2, '(locales?: string | string[] | undefined, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "4",
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 81,
-              "line": 9
-            },
-            "start": {
-              "column": 75,
-              "line": 9
-            }
-          }
-        },
-        {
-          "id": "312",
-          "mutatorName": "ObjectLiteral",
-          "replacement": "{}",
-          "statusReason": "app/composables/useDates.ts(13,3): error TS2741: Property 'getMonthFullName' is missing in type '{}' but required in type 'DatesComposable'.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 30,
-              "line": 13
-            },
-            "start": {
-              "column": 10,
-              "line": 13
-            }
-          }
-        },
-        {
-          "id": "310",
-          "mutatorName": "ObjectLiteral",
-          "replacement": "{}",
-          "statusReason": "expected '01/01/2022 2022' to be 'janvier 2022' // Object.is equality",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "4"
-          ],
-          "coveredBy": [
-            "4",
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 83,
-              "line": 9
-            },
-            "start": {
-              "column": 66,
-              "line": 9
-            }
-          }
-        }
-      ],
-      "source": "type DatesComposable = {\n  getMonthFullName: (date: Date) => string;\n};\n\nfunction useDates(): DatesComposable {\n  const { locale } = useI18n();\n\n  const getMonthFullName = (date: Date): string => {\n    const dateTimeFormat = new Intl.DateTimeFormat(locale.value, { month: \"long\" });\n\n    return dateTimeFormat.format(date);\n  };\n  return { getMonthFullName };\n}\n\nexport { useDates };"
     }
   },
   "schemaVersion": "1.0",

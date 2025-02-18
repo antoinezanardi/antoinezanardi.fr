@@ -20,7 +20,8 @@ export default defineVitestConfig({
     fakeTimers: {
       toFake: ["Date"],
     },
-    setupFiles: ["./tests/unit/unit-setup.ts"],
+    globalSetup: "./tests/unit/setup/global-unit-setup.ts",
+    setupFiles: ["./tests/unit/setup/unit-setup.ts"],
     watch: false,
     include: ["./tests/unit/**/*.spec.ts"],
     coverage: {

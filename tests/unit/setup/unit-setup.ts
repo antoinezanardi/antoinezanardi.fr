@@ -8,7 +8,7 @@ process.env.TZ = "UTC";
 expect.extend(matchers);
 
 beforeAll(() => {
-  const dateForUnitTests = new Date("2022-01-01T00:00:00Z");
+  const dateForUnitTests = new Date("2022-01-01");
   vi.setSystemTime(dateForUnitTests);
 
   mockNuxtImports();
