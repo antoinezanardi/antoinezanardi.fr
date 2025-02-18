@@ -3,6 +3,8 @@ import matchers from "jest-extended";
 
 import { mockNuxtImports } from "@tests/unit/utils/helpers/mock.helpers";
 
+process.env.TZ = "UTC";
+
 expect.extend(matchers);
 
 beforeAll(() => {

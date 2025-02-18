@@ -9991,49 +9991,6 @@
           }
         },
         {
-          "id": "266",
-          "mutatorName": "StringLiteral",
-          "replacement": "\"Stryker was here!\"",
-          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "0"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 14,
-              "line": 86
-            },
-            "start": {
-              "column": 12,
-              "line": 86
-            }
-          }
-        },
-        {
           "id": "265",
           "mutatorName": "BlockStatement",
           "replacement": "{}",
@@ -10073,6 +10030,49 @@
             "start": {
               "column": 25,
               "line": 85
+            }
+          }
+        },
+        {
+          "id": "266",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"Stryker was here!\"",
+          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 14,
+              "line": 86
+            },
+            "start": {
+              "column": 12,
+              "line": 86
             }
           }
         },
@@ -10837,15 +10837,15 @@
           }
         },
         {
-          "id": "295",
-          "mutatorName": "ConditionalExpression",
-          "replacement": "false",
-          "statusReason": "expected undefined to be '' // Object.is equality",
+          "id": "292",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "expected false to be truthy",
           "status": "Killed",
           "static": false,
-          "testsCompleted": 9,
+          "testsCompleted": 8,
           "killedBy": [
-            "8"
+            "7"
           ],
           "coveredBy": [
             "0",
@@ -10870,25 +10870,25 @@
           ],
           "location": {
             "end": {
-              "column": 17,
-              "line": 107
+              "column": 2,
+              "line": 114
             },
             "start": {
-              "column": 7,
-              "line": 107
+              "column": 51,
+              "line": 105
             }
           }
         },
         {
-          "id": "294",
+          "id": "295",
           "mutatorName": "ConditionalExpression",
-          "replacement": "true",
-          "statusReason": "expected false to be truthy",
+          "replacement": "false",
+          "statusReason": "expected undefined to be '' // Object.is equality",
           "status": "Killed",
           "static": false,
-          "testsCompleted": 8,
+          "testsCompleted": 9,
           "killedBy": [
-            "7"
+            "8"
           ],
           "coveredBy": [
             "0",
@@ -10966,123 +10966,6 @@
           }
         },
         {
-          "id": "292",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
-          "statusReason": "expected false to be truthy",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 8,
-          "killedBy": [
-            "7"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 2,
-              "line": 114
-            },
-            "start": {
-              "column": 51,
-              "line": 105
-            }
-          }
-        },
-        {
-          "id": "298",
-          "mutatorName": "StringLiteral",
-          "replacement": "``",
-          "statusReason": "expected false to be truthy",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "7"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "12",
-            "13",
-            "16",
-            "17"
-          ],
-          "location": {
-            "end": {
-              "column": 81,
-              "line": 113
-            },
-            "start": {
-              "column": 45,
-              "line": 113
-            }
-          }
-        },
-        {
-          "id": "293",
-          "mutatorName": "BooleanLiteral",
-          "replacement": "startedAt",
-          "statusReason": "expected false to be truthy",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 8,
-          "killedBy": [
-            "7"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 17,
-              "line": 107
-            },
-            "start": {
-              "column": 7,
-              "line": 107
-            }
-          }
-        },
-        {
           "id": "297",
           "mutatorName": "StringLiteral",
           "replacement": "\"Stryker was here!\"",
@@ -11122,6 +11005,37 @@
             "start": {
               "column": 12,
               "line": 108
+            }
+          }
+        },
+        {
+          "id": "298",
+          "mutatorName": "StringLiteral",
+          "replacement": "``",
+          "statusReason": "expected false to be truthy",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "12",
+            "13",
+            "16",
+            "17"
+          ],
+          "location": {
+            "end": {
+              "column": 81,
+              "line": 113
+            },
+            "start": {
+              "column": 45,
+              "line": 113
             }
           }
         },
@@ -11212,46 +11126,15 @@
           }
         },
         {
-          "id": "303",
-          "mutatorName": "StringLiteral",
-          "replacement": "``",
-          "statusReason": "expected '' to be 'janvier 2022' // Object.is equality",
+          "id": "294",
+          "mutatorName": "ConditionalExpression",
+          "replacement": "true",
+          "statusReason": "expected false to be truthy",
           "status": "Killed",
           "static": false,
-          "testsCompleted": 1,
+          "testsCompleted": 8,
           "killedBy": [
-            "4"
-          ],
-          "coveredBy": [
-            "4",
-            "7",
-            "12",
-            "13",
-            "15",
-            "16",
-            "17"
-          ],
-          "location": {
-            "end": {
-              "column": 99,
-              "line": 121
-            },
-            "start": {
-              "column": 48,
-              "line": 121
-            }
-          }
-        },
-        {
-          "id": "304",
-          "mutatorName": "StringLiteral",
-          "replacement": "\"\"",
-          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "0"
+            "7"
           ],
           "coveredBy": [
             "0",
@@ -11276,12 +11159,55 @@
           ],
           "location": {
             "end": {
-              "column": 26,
-              "line": 123
+              "column": 17,
+              "line": 107
             },
             "start": {
-              "column": 12,
-              "line": 123
+              "column": 7,
+              "line": 107
+            }
+          }
+        },
+        {
+          "id": "293",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "startedAt",
+          "statusReason": "expected false to be truthy",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 8,
+          "killedBy": [
+            "7"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 17,
+              "line": 107
+            },
+            "start": {
+              "column": 7,
+              "line": 107
             }
           }
         },
@@ -11358,6 +11284,123 @@
             "start": {
               "column": 19,
               "line": 118
+            }
+          }
+        },
+        {
+          "id": "303",
+          "mutatorName": "StringLiteral",
+          "replacement": "``",
+          "statusReason": "expected '' to be 'janvier 2022' // Object.is equality",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "4"
+          ],
+          "coveredBy": [
+            "4",
+            "7",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17"
+          ],
+          "location": {
+            "end": {
+              "column": 99,
+              "line": 121
+            },
+            "start": {
+              "column": 48,
+              "line": 121
+            }
+          }
+        },
+        {
+          "id": "304",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 26,
+              "line": 123
+            },
+            "start": {
+              "column": 12,
+              "line": 123
+            }
+          }
+        },
+        {
+          "id": "306",
+          "mutatorName": "BooleanLiteral",
+          "replacement": "!formattedStartedAt.value",
+          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 1,
+          "killedBy": [
+            "0"
+          ],
+          "coveredBy": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18"
+          ],
+          "location": {
+            "end": {
+              "column": 82,
+              "line": 126
+            },
+            "start": {
+              "column": 56,
+              "line": 126
             }
           }
         },
@@ -11443,49 +11486,6 @@
             },
             "start": {
               "column": 57,
-              "line": 126
-            }
-          }
-        },
-        {
-          "id": "306",
-          "mutatorName": "BooleanLiteral",
-          "replacement": "!formattedStartedAt.value",
-          "statusReason": "Snapshot `Period Timeline Component > should match snapshot when rendered. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 1,
-          "killedBy": [
-            "0"
-          ],
-          "coveredBy": [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18"
-          ],
-          "location": {
-            "end": {
-              "column": 82,
-              "line": 126
-            },
-            "start": {
-              "column": 56,
               "line": 126
             }
           }
@@ -11822,9 +11822,9 @@
           }
         },
         {
-          "id": "327",
+          "id": "328",
           "mutatorName": "ArithmeticOperator",
-          "replacement": "Period.getMonthsDifference(from, to) - firstMonth",
+          "replacement": "this.month * monthsInYear",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
           "static": false,
@@ -11850,12 +11850,50 @@
           ],
           "location": {
             "end": {
-              "column": 67,
-              "line": 9
+              "column": 53,
+              "line": 10
             },
             "start": {
-              "column": 18,
-              "line": 9
+              "column": 28,
+              "line": 10
+            }
+          }
+        },
+        {
+          "id": "326",
+          "mutatorName": "BlockStatement",
+          "replacement": "{}",
+          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
+          "status": "Killed",
+          "static": false,
+          "testsCompleted": 2,
+          "killedBy": [
+            "9"
+          ],
+          "coveredBy": [
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "16",
+            "17",
+            "18",
+            "128",
+            "129",
+            "130",
+            "131",
+            "132"
+          ],
+          "location": {
+            "end": {
+              "column": 4,
+              "line": 12
+            },
+            "start": {
+              "column": 44,
+              "line": 6
             }
           }
         },
@@ -11974,44 +12012,6 @@
           }
         },
         {
-          "id": "335",
-          "mutatorName": "ArithmeticOperator",
-          "replacement": "to.getFullYear() + from.getFullYear()",
-          "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
-          "status": "Killed",
-          "static": false,
-          "testsCompleted": 2,
-          "killedBy": [
-            "9"
-          ],
-          "coveredBy": [
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "16",
-            "17",
-            "18",
-            "128",
-            "129",
-            "130",
-            "131",
-            "132"
-          ],
-          "location": {
-            "end": {
-              "column": 103,
-              "line": 17
-            },
-            "start": {
-              "column": 66,
-              "line": 17
-            }
-          }
-        },
-        {
           "id": "334",
           "mutatorName": "ArithmeticOperator",
           "replacement": "monthCountInYear / (to.getFullYear() - from.getFullYear())",
@@ -12050,9 +12050,9 @@
           }
         },
         {
-          "id": "328",
+          "id": "335",
           "mutatorName": "ArithmeticOperator",
-          "replacement": "this.month * monthsInYear",
+          "replacement": "to.getFullYear() + from.getFullYear()",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
           "static": false,
@@ -12078,19 +12078,19 @@
           ],
           "location": {
             "end": {
-              "column": 53,
-              "line": 10
+              "column": 103,
+              "line": 17
             },
             "start": {
-              "column": 28,
-              "line": 10
+              "column": 66,
+              "line": 17
             }
           }
         },
         {
-          "id": "326",
-          "mutatorName": "BlockStatement",
-          "replacement": "{}",
+          "id": "327",
+          "mutatorName": "ArithmeticOperator",
+          "replacement": "Period.getMonthsDifference(from, to) - firstMonth",
           "statusReason": "Snapshot `Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1` mismatched",
           "status": "Killed",
           "static": false,
@@ -12116,12 +12116,12 @@
           ],
           "location": {
             "end": {
-              "column": 4,
-              "line": 12
+              "column": 67,
+              "line": 9
             },
             "start": {
-              "column": 44,
-              "line": 6
+              "column": 18,
+              "line": 9
             }
           }
         }
@@ -12702,38 +12702,6 @@
           }
         },
         {
-          "id": "311",
-          "mutatorName": "StringLiteral",
-          "replacement": "\"\"",
-          "statusReason": "app/composables/useDates.ts(9,68): error TS2769: No overload matches this call.\n  Overload 1 of 2, '(locales?: LocalesArgument, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n  Overload 2 of 2, '(locales?: string | string[] | undefined, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n",
-          "status": "CompileError",
-          "static": false,
-          "coveredBy": [
-            "4",
-            "7",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "15",
-            "16",
-            "17",
-            "18",
-            "142"
-          ],
-          "location": {
-            "end": {
-              "column": 81,
-              "line": 9
-            },
-            "start": {
-              "column": 75,
-              "line": 9
-            }
-          }
-        },
-        {
           "id": "308",
           "mutatorName": "BlockStatement",
           "replacement": "{}",
@@ -12770,6 +12738,38 @@
             "start": {
               "column": 38,
               "line": 5
+            }
+          }
+        },
+        {
+          "id": "311",
+          "mutatorName": "StringLiteral",
+          "replacement": "\"\"",
+          "statusReason": "app/composables/useDates.ts(9,68): error TS2769: No overload matches this call.\n  Overload 1 of 2, '(locales?: LocalesArgument, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n  Overload 2 of 2, '(locales?: string | string[] | undefined, options?: DateTimeFormatOptions | undefined): DateTimeFormat', gave the following error.\n    Type '\"\"' is not assignable to type '\"numeric\" | \"2-digit\" | \"long\" | \"short\" | \"narrow\" | undefined'.\n",
+          "status": "CompileError",
+          "static": false,
+          "coveredBy": [
+            "4",
+            "7",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "15",
+            "16",
+            "17",
+            "18",
+            "142"
+          ],
+          "location": {
+            "end": {
+              "column": 81,
+              "line": 9
+            },
+            "start": {
+              "column": 75,
+              "line": 9
             }
           }
         },
@@ -12939,7 +12939,7 @@
           "name": "Period Timeline Component Periods Period should display years only when does show year only is true."
         }
       ],
-      "source": "import type { mount } from \"@vue/test-utils\";\nimport type { ComponentMountingOptions } from \"@vue/test-utils/dist/mount\";\n\nimport type { NuxtImg } from \"#components\";\nimport PeriodTimeline from \"~/components/shared/Period/PeriodTimeline.vue\";\nimport { mountSuspendedComponent } from \"@tests/unit/utils/helpers/mount.helpers\";\nimport type { PeriodTimelineProps } from \"~/components/shared/Period/period-timeline.types\";\nimport type WrappedFontAwesomeIcon from \"~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue\";\n\ndescribe(\"Period Timeline Component\", () => {\n  const defaultProps: PeriodTimelineProps = {\n    url: \"url\",\n    image: \"image\",\n  };\n  let wrapper: ReturnType<typeof mount<typeof PeriodTimeline>>;\n\n  async function mountPeriodTimelineComponent(options: ComponentMountingOptions<typeof PeriodTimeline> = {}): Promise<ReturnType<typeof mount<typeof PeriodTimeline>>> {\n    return mountSuspendedComponent(PeriodTimeline, {\n      props: defaultProps,\n      ...options,\n    });\n  }\n\n  beforeEach(async() => {\n    wrapper = await mountPeriodTimelineComponent();\n  });\n\n  it(\"should match snapshot when rendered.\", () => {\n    expect(wrapper).toBeTruthy();\n    expect(wrapper.html()).toMatchSnapshot();\n  });\n\n  describe(\"Logo\", () => {\n    it(\"should set logo url to anchor when rendered.\", () => {\n      const logo = wrapper.find<HTMLAnchorElement>(\"#timeline-logo\");\n\n      expect(logo.attributes(\"href\")).toBe(\"url\");\n    });\n\n    it(\"should set logo image source when rendered.\", () => {\n      const logoImg = wrapper.findComponent<typeof NuxtImg>(\".timeline-logo-image\");\n\n      expect(logoImg.props(\"src\")).toBe(\"/images/logos/image\");\n    });\n  });\n\n  describe(\"Periods\", () => {\n    describe(\"Finished at date\", () => {\n      it(\"should display finished at today formatted label when finished at is not provided in props.\", () => {\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"shared.today\");\n      });\n\n      it(\"should display finished at formatted label when finished at is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2022-01-01\"),\n          },\n        });\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"janvier 2022\");\n      });\n\n      it(\"should only display finished at year when showOnlyYear is true in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2022-01-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"2022\");\n      });\n    });\n\n    describe(\"Arrow up icon\", () => {\n      it(\"should not display arrow up icon when period doesn't have two dates.\", () => {\n        const arrowUp = wrapper.findComponent<typeof WrappedFontAwesomeIcon>(\"#arrow-up-icon\");\n\n        expect(arrowUp.exists()).toBeFalsy();\n      });\n\n      it(\"should display arrow up icon when period has two dates.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-02-01\"),\n          },\n        });\n        const arrowUp = wrapper.findComponent<typeof WrappedFontAwesomeIcon>(\"#arrow-up-icon\");\n\n        expect(arrowUp.exists()).toBeTruthy();\n      });\n    });\n\n    describe(\"Started at date\", () => {\n      it(\"should not display started at date when it is not provided in props.\", () => {\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n        const periodDates = wrapper.find<HTMLDivElement>(\"#period-dates\");\n\n        expect(startedAt.exists()).toBeFalsy();\n        expect(wrapper.vm.formattedStartedAt).toBe(\"\");\n        expect(periodDates.text()).toBe(\"shared.today\");\n      });\n\n      it(\"should match snapshot when started at date is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n          },\n        });\n\n        expect(wrapper.html()).toMatchSnapshot();\n      });\n\n      it(\"should display started at formatted label when started at is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n          },\n        });\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n\n        expect(startedAt.text()).toBe(\"janvier 2022\");\n      });\n\n      it(\"should only display started at year when showOnlyYear is true in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n\n        expect(startedAt.text()).toBe(\"2022\");\n      });\n    });\n\n    describe(\"Period\", () => {\n      it(\"should display period formatted label when started at and finished at are provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":2}, 2 shared.and shared.months, {\\\"monthCount\\\":3} )\");\n      });\n\n      it(\"should match snapshot when started at and finished at are provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n\n        expect(wrapper.html()).toMatchSnapshot();\n      });\n\n      it(\"should not display period formatted label when started at and finished at are not provided in props.\", () => {\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.exists()).toBeFalsy();\n      });\n\n      it(\"should not display period formatted label when started at is not provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.exists()).toBeFalsy();\n        expect(wrapper.vm.formattedPeriod).toBe(\"\");\n      });\n\n      it(\"should display only years when started at and finished at are exactly one year apart.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-12-31\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":1}, 1 )\");\n      });\n\n      it(\"should display only months when started at and finished at are exactly one month apart.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-01-31\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.months, {\\\"monthCount\\\":1} )\");\n      });\n\n      it(\"should display years only when does show year only is true.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":2}, 2 )\");\n      });\n    });\n  });\n});"
+      "source": "import type { mount } from \"@vue/test-utils\";\nimport type { ComponentMountingOptions } from \"@vue/test-utils/dist/mount\";\n\nimport type { NuxtImg } from \"#components\";\nimport PeriodTimeline from \"~/components/shared/Period/PeriodTimeline.vue\";\nimport { mountSuspendedComponent } from \"@tests/unit/utils/helpers/mount.helpers\";\nimport type { PeriodTimelineProps } from \"~/components/shared/Period/period-timeline.types\";\nimport type WrappedFontAwesomeIcon from \"~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue\";\n\ndescribe(\"Period Timeline Component\", () => {\n  const defaultProps: PeriodTimelineProps = {\n    url: \"url\",\n    image: \"image\",\n  };\n  let wrapper: ReturnType<typeof mount<typeof PeriodTimeline>>;\n\n  async function mountPeriodTimelineComponent(options: ComponentMountingOptions<typeof PeriodTimeline> = {}): Promise<ReturnType<typeof mount<typeof PeriodTimeline>>> {\n    return mountSuspendedComponent(PeriodTimeline, {\n      props: defaultProps,\n      ...options,\n    });\n  }\n\n  beforeEach(async() => {\n    wrapper = await mountPeriodTimelineComponent();\n  });\n\n  it(\"should match snapshot when rendered.\", () => {\n    expect(wrapper).toBeTruthy();\n    expect(wrapper.html()).toMatchSnapshot();\n  });\n\n  describe(\"Logo\", () => {\n    it(\"should set logo url to anchor when rendered.\", () => {\n      const logo = wrapper.find<HTMLAnchorElement>(\"#timeline-logo\");\n\n      expect(logo.attributes(\"href\")).toBe(\"url\");\n    });\n\n    it(\"should set logo image source when rendered.\", () => {\n      const logoImg = wrapper.findComponent<typeof NuxtImg>(\".timeline-logo-image\");\n\n      expect(logoImg.props(\"src\")).toBe(\"/images/logos/image\");\n    });\n  });\n\n  describe(\"Periods\", () => {\n    describe(\"Finished at date\", () => {\n      it(\"should display finished at today formatted label when finished at is not provided in props.\", () => {\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"shared.today\");\n      });\n\n      it(\"should display finished at formatted label when finished at is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2022-01-01\"),\n          },\n        });\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"janvier 2022\");\n      });\n\n      it(\"should only display finished at year when showOnlyYear is true in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2022-01-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const finishedAt = wrapper.find<HTMLDivElement>(\"#finished-at-date\");\n\n        expect(finishedAt.text()).toBe(\"2022\");\n      });\n    });\n\n    describe(\"Arrow up icon\", () => {\n      it(\"should not display arrow up icon when period doesn't have two dates.\", () => {\n        const arrowUp = wrapper.findComponent<typeof WrappedFontAwesomeIcon>(\"#arrow-up-icon\");\n\n        expect(arrowUp.exists()).toBeFalsy();\n      });\n\n      it(\"should display arrow up icon when period has two dates.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-02-01\"),\n          },\n        });\n        const arrowUp = wrapper.findComponent<typeof WrappedFontAwesomeIcon>(\"#arrow-up-icon\");\n\n        expect(arrowUp.exists()).toBeTruthy();\n      });\n    });\n\n    describe(\"Started at date\", () => {\n      it(\"should not display started at date when it is not provided in props.\", () => {\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n        const periodDates = wrapper.find<HTMLDivElement>(\"#period-dates\");\n\n        expect(startedAt.exists()).toBeFalsy();\n        expect((wrapper.vm as unknown as { formattedStartedAt: string }).formattedStartedAt).toBe(\"\");\n        expect(periodDates.text()).toBe(\"shared.today\");\n      });\n\n      it(\"should match snapshot when started at date is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n          },\n        });\n\n        expect(wrapper.html()).toMatchSnapshot();\n      });\n\n      it(\"should display started at formatted label when started at is provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n          },\n        });\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n\n        expect(startedAt.text()).toBe(\"janvier 2022\");\n      });\n\n      it(\"should only display started at year when showOnlyYear is true in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const startedAt = wrapper.find<HTMLDivElement>(\"#started-at-date\");\n\n        expect(startedAt.text()).toBe(\"2022\");\n      });\n    });\n\n    describe(\"Period\", () => {\n      it(\"should display period formatted label when started at and finished at are provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":2}, 2 shared.and shared.months, {\\\"monthCount\\\":3} )\");\n      });\n\n      it(\"should match snapshot when started at and finished at are provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n\n        expect(wrapper.html()).toMatchSnapshot();\n      });\n\n      it(\"should not display period formatted label when started at and finished at are not provided in props.\", () => {\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.exists()).toBeFalsy();\n      });\n\n      it(\"should not display period formatted label when started at is not provided in props.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            finishedAt: new Date(\"2024-03-01\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.exists()).toBeFalsy();\n        expect((wrapper.vm as unknown as { formattedPeriod: string }).formattedPeriod).toBe(\"\");\n      });\n\n      it(\"should display only years when started at and finished at are exactly one year apart.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-12-31\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":1}, 1 )\");\n      });\n\n      it(\"should display only months when started at and finished at are exactly one month apart.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2022-01-31\"),\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.months, {\\\"monthCount\\\":1} )\");\n      });\n\n      it(\"should display years only when does show year only is true.\", async() => {\n        wrapper = await mountPeriodTimelineComponent({\n          props: {\n            ...defaultProps,\n            startedAt: new Date(\"2022-01-01\"),\n            finishedAt: new Date(\"2024-03-01\"),\n            doesShowYearOnly: true,\n          },\n        });\n        const period = wrapper.find<HTMLDivElement>(\"#period-label\");\n\n        expect(period.text()).toBe(\"( shared.years, {\\\"yearCount\\\":2}, 2 )\");\n      });\n    });\n  });\n});"
     },
     "tests/unit/specs/components/MySkills/MySkills.nuxt.spec.ts": {
       "tests": [
@@ -13553,7 +13553,7 @@
       "source": "import { useDates } from \"~/composables/useDates\";\n\ndescribe(\"Use Dates Composable\", () => {\n  describe(\"getMonthFullName\", () => {\n    it(\"should return the full month name when called.\", () => {\n      const date = new Date(\"2021-01-01\");\n      const expectedMonthFullName = \"janvier\";\n      const { getMonthFullName } = useDates();\n      const result = getMonthFullName(date);\n\n      expect(result).toBe(expectedMonthFullName);\n    });\n  });\n});"
     }
   },
-  "projectRoot": "/Users/mac-Z14AZANA/WebstormProjects/antoinezanardi.fr",
+  "projectRoot": "/Users/antoinezanardi/WebstormProjects/antoinezanardi.fr",
   "config": {
     "cleanTempDir": "always",
     "incremental": true,

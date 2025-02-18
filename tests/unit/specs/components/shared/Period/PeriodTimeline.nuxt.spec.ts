@@ -105,7 +105,7 @@ describe("Period Timeline Component", () => {
         const periodDates = wrapper.find<HTMLDivElement>("#period-dates");
 
         expect(startedAt.exists()).toBeFalsy();
-        expect(wrapper.vm.formattedStartedAt).toBe("");
+        expect((wrapper.vm as unknown as { formattedStartedAt: string }).formattedStartedAt).toBe("");
         expect(periodDates.text()).toBe("shared.today");
       });
 
@@ -188,7 +188,7 @@ describe("Period Timeline Component", () => {
         const period = wrapper.find<HTMLDivElement>("#period-label");
 
         expect(period.exists()).toBeFalsy();
-        expect(wrapper.vm.formattedPeriod).toBe("");
+        expect((wrapper.vm as unknown as { formattedPeriod: string }).formattedPeriod).toBe("");
       });
 
       it("should display only years when started at and finished at are exactly one year apart.", async() => {

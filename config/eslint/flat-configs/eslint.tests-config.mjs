@@ -9,6 +9,7 @@ const ESLINT_TESTS_CONFIG = {
   rules: {
     "max-lines-per-function": OFF,
     "no-magic-numbers": OFF,
+    "@typescript-eslint/no-unsafe-type-assertion": OFF,
     "import/no-namespace": OFF,
     "import/no-internal-modules": OFF,
     "import/max-dependencies": [
