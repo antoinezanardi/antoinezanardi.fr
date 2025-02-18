@@ -31,3 +31,5 @@ yarn-error.log*
 
 tests/unit/coverage
 tests/stryker/coverage
+
+.stryker/

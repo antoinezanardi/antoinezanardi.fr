@@ -81,9 +81,9 @@ const props = withDefaults(defineProps<PeriodTimelineProps>(), {
 const { t } = useI18n();
 const { getMonthFullName } = useDates();
 
-const formattedPeriod = computed<string | undefined>(() => {
+const formattedPeriod = computed<string>(() => {
   if (!props.startedAt) {
-    return undefined;
+    return "";
   }
   const finishedAt = props.finishedAt ?? new Date();
   const period = new Period(props.startedAt, finishedAt);
@@ -102,10 +102,10 @@ const formattedPeriod = computed<string | undefined>(() => {
   return `( ${periodText} )`;
 });
 
-const formattedStartedAt = computed<string | undefined>(() => {
+const formattedStartedAt = computed<string>(() => {
   const { startedAt, doesShowYearOnly } = props;
   if (!startedAt) {
-    return undefined;
+    return "";
   }
   const startedAtMonth = getMonthFullName(startedAt);
   const startedAtYear = startedAt.getFullYear().toString();
@@ -123,7 +123,7 @@ const formattedFinishedAt = computed<string>(() => {
   return t("shared.today");
 });
 
-const doesPeriodHaveTwoDates = computed<boolean>(() => formattedStartedAt.value !== undefined);
+const doesPeriodHaveTwoDates = computed<boolean>(() => !!formattedStartedAt.value);
 </script>
 
 <style lang="scss" scoped>
