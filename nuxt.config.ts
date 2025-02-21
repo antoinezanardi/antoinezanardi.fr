@@ -2,6 +2,7 @@ import { fileURLToPath } from "node:url";
 
 export default defineNuxtConfig({
   alias: {
+    "@config": fileURLToPath(new URL("./config", import.meta.url)),
     "@tests": fileURLToPath(new URL("./tests", import.meta.url)),
     "@modules": fileURLToPath(new URL("./modules", import.meta.url)),
   },
