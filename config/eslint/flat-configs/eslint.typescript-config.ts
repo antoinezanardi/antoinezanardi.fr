@@ -12,7 +12,8 @@ const ESLINT_TYPESCRIPT_CONFIG = {
   ],
   plugins: { "@typescript-eslint": TypeScriptPlugin },
   languageOptions: {
-    parser: TypescriptParser,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
+    parser: TypescriptParser as Linter.Parser,
     parserOptions: {
       ecmaVersion: "latest",
       sourceType: "module",
