@@ -8,7 +8,7 @@ import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers
 import AboutMyPersonalInfo from "@/components/AboutMe/AboutMyPersonalInfo/AboutMyPersonalInfo.vue";
 
 const { useRuntimeConfig: mockedUseRuntimeConfig } = vi.hoisted(() => ({
-  useRuntimeConfig: vi.fn(() => TEST_NUXT_RUNTIME_CONFIG),
+  useRuntimeConfig: vi.fn<() => typeof TEST_NUXT_RUNTIME_CONFIG>(() => TEST_NUXT_RUNTIME_CONFIG),
 }));
 
 describe("AboutMyPersonalInfo Component", () => {
