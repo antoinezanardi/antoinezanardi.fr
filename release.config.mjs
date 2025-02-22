@@ -119,13 +119,7 @@ export default {
             if (commitGroupsOrder[commitGroupTitleA] === undefined || commitGroupsOrder[commitGroupTitleB] === undefined) {
               return 0;
             }
-            if (commitGroupsOrder[commitGroupTitleA] < commitGroupsOrder[commitGroupTitleB]) {
-              return -1;
-            }
-            if (commitGroupsOrder[commitGroupTitleA] > commitGroupsOrder[commitGroupTitleB]) {
-              return 1;
-            }
-            return 0;
+            return commitGroupsOrder[commitGroupTitleA] - commitGroupsOrder[commitGroupTitleB];
           },
         },
       },
