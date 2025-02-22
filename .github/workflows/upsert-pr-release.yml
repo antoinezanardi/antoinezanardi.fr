@@ -50,15 +50,15 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Merge main branch into develop branch 🤝
+      - name: Merge master branch into develop branch 🤝
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
           git fetch --all
-          git checkout main
-          git pull origin main
+          git checkout master
+          git pull origin master
           git checkout develop
-          git merge main
+          git merge master
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -84,7 +84,7 @@ jobs:
           npx semantic-release --dry-run --no-ci | awk '/^## [0-9]+\.[0-9]+\.[0-9]+ \(https:\/\/github\.com\/antoinezanardi/ {if (found) exit; found=1} found {print}' > RELEASE.md
           awk '/^## /{header=1} header{print; header=0; next} {sub(/^ */, ""); sub(/ \(.+?\)$/, ""); print}' RELEASE.md > temp.md && mv temp.md RELEASE.md
           awk '/^\* / { sub(/^\* /, "* **"); sub(/: /, "**: ", $0) } 1' RELEASE.md > temp.md && mv temp.md RELEASE.md
-          sed -E 's/^## ([0-9]+\.[0-9]+\.[0-9]+) \(https:\/\/github\.com\/antoinezanardi\/werewolves-assistant-web-next\/compare\/v[0-9]+\.[0-9]+\.[0-9]+...v[0-9]+\.[0-9]+\.[0-9]+\) \(([0-9-]+)\)/## Release v\1/' RELEASE.md > temp.md && mv temp.md RELEASE.md
+          sed -E 's/^## ([0-9]+\.[0-9]+\.[0-9]+) \(https:\/\/github\.com\/antoinezanardi\/antoinezanardi.fr\/compare\/v[0-9]+\.[0-9]+\.[0-9]+...v[0-9]+\.[0-9]+\.[0-9]+\) \(([0-9-]+)\)/## Release v\1/' RELEASE.md > temp.md && mv temp.md RELEASE.md
 
       - name: Cache release changelog 🥡
         uses: actions/cache@v4
@@ -115,10 +115,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-release-changelog-
 
-      - name: List open PR into main 📋
+      - name: List open PR into master 📋
         run: | 
-          OPEN_PR_INTO_MAIN=$(gh pr list --state open -B main --search "Release in:title" --json number,title)
-          echo "OPEN_PR_INTO_MAIN=$OPEN_PR_INTO_MAIN" >> $GITHUB_ENV
+          OPEN_PR_INTO_MASTER=$(gh pr list --state open -B master --search "Release in:title" --json number,title)
+          echo "OPEN_PR_INTO_MASTER=$OPEN_PR_INTO_MASTER" >> $GITHUB_ENV
 
       - name: Set PR Title 🔤
         run: |
@@ -127,8 +127,8 @@ jobs:
 
       - name: Determine action to perform on PR 🚏
         run: |
-          if [[ "$OPEN_PR_INTO_MAIN" != "[]" ]]; then
-            PR_NUMBER=$(echo "$OPEN_PR_INTO_MAIN" | jq -r '.[0].number')
+          if [[ "$OPEN_PR_INTO_MASTER" != "[]" ]]; then
+            PR_NUMBER=$(echo "$OPEN_PR_INTO_MASTER" | jq -r '.[0].number')
             if [[ -n "$PR_NUMBER" ]]; then
               echo "PR_ACTION=update" >> $GITHUB_ENV
               echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
@@ -141,7 +141,7 @@ jobs:
 
       - name: Create Release PR if it doesn't exist 🔃
         if: env.PR_ACTION == 'create'
-        run: gh pr create --repo "${{ github.repository }}" --title "${{ env.PR_TITLE }}" --body "$(cat RELEASE.md)" --assignee "antoinezanardi" --label "🏷️ release" --base main --head develop
+        run: gh pr create --repo "${{ github.repository }}" --title "${{ env.PR_TITLE }}" --body "$(cat RELEASE.md)" --assignee "antoinezanardi" --label "🏷️ release" --base master --head develop
 
       - name: Update Release PR if it exists 🔃
         if: env.PR_ACTION == 'update'
