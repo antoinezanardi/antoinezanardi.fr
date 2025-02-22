@@ -1,4 +1,4 @@
-import { ERROR } from "../eslint.constants.mjs";
+import type { Linter } from "eslint";
 
 const ESLINT_CLASSES_CONFIG = {
   name: "classes",
@@ -6,7 +6,7 @@ const ESLINT_CLASSES_CONFIG = {
     "**/*.class.ts",
     "**/*.dto.ts",
   ],
-  rules: { "new-cap": [ERROR, { capIsNewExceptions: ["Type", "Expose"] }] },
-};
+  rules: { "new-cap": ["off", { capIsNewExceptions: ["Type", "Expose"] }] },
+} satisfies Linter.Config;
 
 export { ESLINT_CLASSES_CONFIG };

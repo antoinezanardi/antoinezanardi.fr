@@ -1,13 +1,13 @@
-import { OFF, READONLY } from "../eslint.constants.mjs";
+import type { Linter } from "eslint";
 
 const ESLINT_NUXT_CONFIG_FILE_CONFIG = {
   name: "nuxt-config-file",
   files: ["nuxt.config.ts"],
 
-  languageOptions: { globals: { CustomMatchers: READONLY } },
+  languageOptions: { globals: { CustomMatchers: "readonly" } },
   rules: {
-    camelcase: OFF,
+    camelcase: "off",
   },
-};
+} satisfies Linter.Config;
 
 export { ESLINT_NUXT_CONFIG_FILE_CONFIG };
