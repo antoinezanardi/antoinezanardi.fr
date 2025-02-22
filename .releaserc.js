@@ -11,7 +11,7 @@ const commitGroupsOrder = {
 };
 
 export default {
-  branches: ["main", "develop"],
+  branches: ["master", "develop"],
   repositoryUrl: "git@github.com:antoinezanardi/antoinezanardi.fr.git",
   plugins: [
     [
