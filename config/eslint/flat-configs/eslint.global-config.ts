@@ -1,7 +1,7 @@
 import Vitest from "@vitest/eslint-plugin";
 import type { Linter } from "eslint";
 
-import { MAX_NESTED_CALLBACK, MAX_PARAMS, MAX_LINES_PER_FUNCTION_DEFAULT_CONFIG } from "../eslint.constants.mjs";
+import { MAX_NESTED_CALLBACK, MAX_PARAMS, MAX_LINES_PER_FUNCTION_DEFAULT_CONFIG } from "../eslint.constants.js";
 
 const ESLINT_GLOBAL_CONFIG = {
   name: "global",

@@ -1,6 +1,7 @@
 import type { Linter } from "eslint";
 
-import { ESLINT_IGNORES } from "./config/eslint/eslint.constants.mjs";
+import { ESLINT_CUCUMBER_CONFIG } from "./config/eslint/flat-configs/eslint.cucumber-config";
+import { ESLINT_IGNORES } from "./config/eslint/eslint.constants";
 import { ESLINT_GLOBAL_CONFIG } from "./config/eslint/flat-configs/eslint.global-config";
 import { ESLINT_IMPORT_CONFIG } from "./config/eslint/flat-configs/eslint.import-config";
 import { ESLINT_TYPESCRIPT_CONFIG } from "./config/eslint/flat-configs/eslint.typescript-config.js";
@@ -39,4 +40,5 @@ export default [
   ESLINT_NUXT_CONFIG_FILE_CONFIG,
   ESLINT_SERVER_FILES_CONFIG,
   ESLINT_TESTS_CONFIG,
+  ESLINT_CUCUMBER_CONFIG,
 ] satisfies Linter.Config[];

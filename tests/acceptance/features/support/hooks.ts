@@ -1,9 +1,10 @@
 import { fileURLToPath } from "node:url";
 
-import { I18N_TEST_LOCALE } from "@modules/i18n/i18n.constants";
 import type { ITestCaseHookParameter } from "@cucumber/cucumber";
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
 import { createPage, createTest } from "@nuxt/test-utils/e2e";
+
+import { I18N_TEST_LOCALE } from "@modules/i18n/i18n.constants";
 import { generateScreenshotOnScenarioFailure, removeAcceptanceTestsReportsScreenshotsDirectory } from "@tests/acceptance/features/support/helpers/hooks.helpers";
 import type { CustomWorld } from "@tests/acceptance/shared/types/word.types";
 import { TEST_NUXT_RUNTIME_CONFIG } from "@tests/unit/utils/constants/nuxt-test.constants";
