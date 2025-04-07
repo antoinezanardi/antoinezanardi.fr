@@ -3,9 +3,9 @@
 exports[`AboutMyPersonalInfo Component > should match snapshot when rendered. 1`] = `
 "<div data-v-b7a042bc="">
   <div data-v-b7a042bc="" class="card-body">
-    <div data-v-b7a042bc="" class="h3 mt-0 title">
+    <h3 data-v-b7a042bc="" class="h3 mb-2 mt-0 title">
       <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-id-card" iconcolor="#000000" classes="me-2"></wrapped-font-awesome-icon-stub><span data-v-b7a042bc="">Informations personnelles</span>
-    </div>
+    </h3>
     <hr data-v-b7a042bc="">
     <div data-v-b7a042bc="" class="row">
       <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Sexe :</b></div>
