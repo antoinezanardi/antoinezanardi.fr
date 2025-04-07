@@ -15,7 +15,7 @@ const { beforeEach, afterEach, afterAll, setup } = createTest({
   browserOptions: {
     type: "chromium",
     launch: {
-      headless: false,
+      headless: true,
       ignoreDefaultArgs: ["--hide-scrollbars"],
       env: {
         NUXT_PUBLIC_EMAIL: TEST_NUXT_RUNTIME_CONFIG.public.email,
