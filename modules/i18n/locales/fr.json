@@ -30,8 +30,8 @@
     "languages": "Langues",
     "englishAndFrench": "Anglais et Français",
     "licenses": "Permis",
-    "car": "Voiture",
-    "boat": "Bateau",
+    "car": "Permis B",
+    "boat": "Permis Bateau Côtier",
     "workingAt": "Travaille chez",
     "emailLink": "Envoyez-moi un email à {email}",
     "phoneLink": "Appelez-moi au {phone}",
@@ -52,8 +52,8 @@
     "itSkills": "Compétences techniques",
     "html": "HTML",
     "css": "CSS",
-    "javascript": "Javascript",
-    "typescript": "Typescript",
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
     "vue": "Vue 3",
     "nuxt": "Nuxt 3",
     "mysql": "MySQL",
@@ -152,5 +152,8 @@
   },
   "LinkedInButton": {
     "joinMyNetwork": "Rejoignez mon réseau"
+  },
+  "SkillProgressBar": {
+    "skillProgress": "Je maîtrise la technologie {skillName} à {skillPercent}"
   }
 }

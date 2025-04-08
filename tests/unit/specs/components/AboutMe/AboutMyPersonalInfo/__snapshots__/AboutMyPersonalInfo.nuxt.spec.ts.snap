@@ -34,8 +34,8 @@ exports[`AboutMyPersonalInfo Component > should match snapshot when rendered. 1`
     <div data-v-b7a042bc="" class="align-items-center mt-3 row">
       <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Permis :</b></div>
       <div data-v-b7a042bc="" class="col-sm-8 d-flex">
-        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-car" iconcolor="#000000" size="2x" classes="" aria-label="Voiture" class="me-2" data-bs-toggle="tooltip" role="img" title="Voiture"></wrapped-font-awesome-icon-stub>
-        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-anchor" iconcolor="#000000" size="2x" classes="" aria-label="Bateau" class="me-2" data-bs-toggle="tooltip" role="img" title="Bateau"></wrapped-font-awesome-icon-stub>
+        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-car" iconcolor="#000000" size="2x" classes="" aria-label="Permis B" class="me-2" data-bs-toggle="tooltip" role="img" title="Permis B"></wrapped-font-awesome-icon-stub>
+        <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-anchor" iconcolor="#000000" size="2x" classes="" aria-label="Permis Bateau Côtier" class="me-2" data-bs-toggle="tooltip" role="img" title="Permis Bateau Côtier"></wrapped-font-awesome-icon-stub>
       </div>
     </div>
     <div data-v-b7a042bc="" class="align-items-center mt-3 row">

@@ -25,7 +25,7 @@
 
     <div class="progress">
       <div
-        :aria-label="skill.name"
+        :aria-label="progressBarAriaLabel"
         aria-valuemax="100"
         aria-valuemin="0"
         class="progress-bar progress-bar-primary"
@@ -51,8 +51,15 @@ import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesome
 
 const props = defineProps<SkillProgressBarProps>();
 
+const { t } = useI18n();
+
 const progressBarStyle = computed<Record<string, string>>(() => ({
   width: props.skill.percent,
   backgroundColor: props.skill.color,
+}));
+
+const progressBarAriaLabel = computed<string>(() => t("SkillProgressBar.skillProgress", {
+  skillName: props.skill.name,
+  skillPercent: props.skill.percent,
 }));
 </script>

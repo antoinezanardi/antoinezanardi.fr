@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`My Skills Component > should match snapshot when rendered. 1`] = `
-"<div id="skill" class="section">
+"<div id="skill" class="section" data-testid="skills-section">
   <div class="container">
     <section-title-stub icon="fa fa-code" title="Compétences techniques" iconcolor="#007EB8"></section-title-stub>
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">

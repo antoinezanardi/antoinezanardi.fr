@@ -5,7 +5,7 @@ import { expect } from "@playwright/test";
 import type { LocatorRole } from "@tests/acceptance/shared/types/playwright.types";
 import type { CustomWorld } from "@tests/acceptance/shared/types/word.types";
 
-Then(/^the (?<role>button|img|heading|navigation|link|region|paragraph|tab|columnheader) with(?<isExact> exact)? name "(?<name>.+)" should be visible$/u, async function(this: CustomWorld, role: LocatorRole, exact: string | null, name: string): Promise<void> {
+Then(/^the (?<role>button|img|heading|navigation|link|region|paragraph|tab|columnheader|progressbar|alertdialog) with(?<isExact> exact)? name "(?<name>.+)" should be visible$/u, async function(this: CustomWorld, role: LocatorRole, exact: string | null, name: string): Promise<void> {
   const isExact = exact !== null;
 
   await expect(this.page.getByRole(role, { name, exact: isExact })).toBeVisible();

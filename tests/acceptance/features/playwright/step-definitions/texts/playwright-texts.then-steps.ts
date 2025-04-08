@@ -16,6 +16,10 @@ Then(/^the exact text "(?<text>.+?)" should be visible$/u, async function(this: 
   await expect(this.page.getByText(text, { exact: true })).toBeVisible();
 });
 
+Then(/^the text with regexp "(?<regexp>.+?)" should be visible$/u, async function(this: CustomWorld, regexp: string): Promise<void> {
+  await expect(this.page.getByText(new RegExp(regexp, "u"))).toBeVisible();
+});
+
 Then(/^the exact text "(?<text>.+?)" should be hidden$/u, async function(this: CustomWorld, text: string): Promise<void> {
   await expect(this.page.getByText(text, { exact: true })).toBeHidden();
 });

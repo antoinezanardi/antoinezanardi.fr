@@ -2,6 +2,7 @@
   <div
     id="skill"
     class="section"
+    data-testid="skills-section"
   >
     <div class="container">
       <SectionTitle
