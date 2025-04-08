@@ -45,7 +45,7 @@ describe("AboutMyPersonalInfo Component", () => {
     it("should render formatted phone number when rendered.", () => {
       const phoneNumber = wrapper.find<HTMLDivElement>("#phone-number");
 
-      expect(phoneNumber.text()).toBe("12 34 56 78 90");
+      expect(phoneNumber.text()).toBe("01 23 45 67 89");
     });
 
     it("should render ? when phone number in runtime config doesn't have a correct format.", async() => {

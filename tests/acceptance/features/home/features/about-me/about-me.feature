@@ -21,11 +21,11 @@ Feature: 👤 Home Page - About Me Section
     And the exact text "Age :" should be visible
     And the text with regexp "\d{2} ans" should be visible
     And the exact text "email :" should be visible
-    And the link with exact name "Envoyez-moi un email à antoine.zanardi@epitech.eu" should be visible
+    And the link with exact name "Envoyez-moi un email à john@doe.com" should be visible
     And the exact text "Téléphone :" should be visible
-    And the link with exact name "Appelez-moi au 06 48 92 08 23" should be visible
+    And the link with exact name "Appelez-moi au 01 23 45 67 89" should be visible
     And the exact text "Adresse postale :" should be visible
-    And the exact text "Faches-Thumesnil" should be visible
+    And the exact text "1234 Elm Street" should be visible
     And the exact text "Langues :" should be visible
     And the exact text "Anglais et Français" should be visible
     And the exact text "Permis :" should be visible
