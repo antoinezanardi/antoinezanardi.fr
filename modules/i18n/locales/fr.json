@@ -155,5 +155,8 @@
   },
   "SkillProgressBar": {
     "skillProgress": "Je maîtrise la technologie {skillName} à {skillPercent}"
+  },
+  "PeriodTimeline": {
+    "periodDatesAriaLabel": "Période : {startedAt} à {finishedAt}"
   }
 }

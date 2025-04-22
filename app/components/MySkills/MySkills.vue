@@ -1,11 +1,12 @@
 <template>
   <div
-    id="skill"
+    aria-labelledby="skills-title"
     class="section"
-    data-testid="skills-section"
+    role="region"
   >
     <div class="container">
       <SectionTitle
+        id="skills-title"
         icon="fa fa-code"
         icon-color="#007EB8"
         :title="$t('MySkills.itSkills')"

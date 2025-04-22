@@ -13,6 +13,7 @@
             does-show-year-only
             :finished-at="educationDegree.degree.obtainedAt"
             :image="schoolImage"
+            :image-alt="schoolLabel"
             :started-at="educationDegree.degree.startedAt"
             :url="educationDegree.school.url"
           />

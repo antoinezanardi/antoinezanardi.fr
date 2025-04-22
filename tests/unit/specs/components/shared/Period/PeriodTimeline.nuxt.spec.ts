@@ -11,6 +11,7 @@ describe("Period Timeline Component", () => {
   const defaultProps: PeriodTimelineProps = {
     url: "url",
     image: "image",
+    imageAlt: "imageAlt",
   };
   let wrapper: ReturnType<typeof mount<typeof PeriodTimeline>>;
 

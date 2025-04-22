@@ -9,7 +9,7 @@ Feature: 🛠️ Home Page - My Skills Section
 
   Scenario: 🛠 My Skills Section displays all skills with progress bars
     Given the user is on home page
-    And the user scrolls to the element with data-test id "skills-section"
+    And the user scrolls to the region with exact name "Compétences techniques"
     Then the progressbar with exact name "Je maîtrise la technologie HTML à 95%" should be visible
     And the progressbar with exact name "Je maîtrise la technologie CSS à 90%" should be visible
     And the progressbar with exact name "Je maîtrise la technologie JavaScript à 95%" should be visible
@@ -21,7 +21,7 @@ Feature: 🛠️ Home Page - My Skills Section
 
   Scenario: 🛠 My Skills Section displays all tools used
     Given the user is on home page
-    And the user scrolls to the element with data-test id "skills-section"
+    And the user scrolls to the region with exact name "Compétences techniques"
     Then the heading with name "Mes outils" should be visible
     And the exact text "(Survolez ou cliquez sur les icônes pour plus de détails)" should be visible
     And the img with exact name "Je déploie mes travaux web sur des serveurs sous Linux (Debian). Je m'occupe moi-même de la configuration de l'hébergement des applications sur le serveur grâce à une CI/CD robuste." should be visible

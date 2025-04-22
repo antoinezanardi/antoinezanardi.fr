@@ -1,10 +1,13 @@
 <template>
   <div
     id="experience"
+    aria-labelledby="experience-title"
     class="section"
+    role="region"
   >
     <div class="cc-experience container">
       <SectionTitle
+        id="experience-title"
         icon="fa fa-briefcase"
         icon-color="#4D9344"
         :title="$t('MyExperience.professionalExperience')"
@@ -13,8 +16,10 @@
       <ProfessionalExperienceCard
         v-for="(professionalExperience, index) in professionalExperiences"
         :key="index"
+        :aria-label="getExperienceAriaLabel(professionalExperience.job.name, index)"
         class="professional-experience-card"
         :professional-experience="professionalExperience"
+        role="region"
       />
     </div>
   </div>
@@ -89,4 +94,8 @@ const professionalExperiences: ProfessionalExperience[] = [
     company: COMPANIES.SoBook,
   },
 ];
+
+function getExperienceAriaLabel(jobName: string, index: number): string {
+  return `${index + 1} - ${jobName}`;
+}
 </script>

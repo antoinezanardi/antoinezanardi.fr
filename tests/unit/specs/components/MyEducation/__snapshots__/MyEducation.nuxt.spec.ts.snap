@@ -1,9 +1,9 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`MyEducation Component > should match snapshot when rendered. 1`] = `
-"<div id="education" class="section">
+"<div id="education" aria-labelledby="education-title" class="section" role="region">
   <div class="cc-education container">
-    <section-title-stub icon="fa fa-graduation-cap" title="Formation &amp; Certifications" iconcolor="#F05033"></section-title-stub>
+    <section-title-stub icon="fa fa-graduation-cap" title="Formation &amp; Certifications" iconcolor="#F05033" id="education-title"></section-title-stub>
     <education-degree-card-stub educationdegree="[object Object]" class="education-degree-card"></education-degree-card-stub>
     <education-degree-card-stub educationdegree="[object Object]" class="education-degree-card"></education-degree-card-stub>
     <education-degree-card-stub educationdegree="[object Object]" class="education-degree-card"></education-degree-card-stub>

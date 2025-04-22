@@ -1,10 +1,13 @@
 <template>
   <div
     id="education"
+    aria-labelledby="education-title"
     class="section"
+    role="region"
   >
     <div class="cc-education container">
       <SectionTitle
+        id="education-title"
         icon="fa fa-graduation-cap"
         icon-color="#F05033"
         :title="$t('MyEducation.education')"

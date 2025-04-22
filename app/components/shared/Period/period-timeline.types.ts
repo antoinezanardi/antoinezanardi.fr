@@ -1,6 +1,7 @@
 type PeriodTimelineProps = {
   url: string;
   image: string;
+  imageAlt: string;
   doesShowYearOnly?: boolean;
   startedAt?: Date;
   finishedAt?: Date;
