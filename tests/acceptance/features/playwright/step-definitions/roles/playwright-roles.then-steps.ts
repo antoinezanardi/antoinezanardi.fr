@@ -11,6 +11,14 @@ Then(/^the (?<role>button|img|heading|navigation|link|region|paragraph|tab|colum
   await expect(this.page.getByRole(role, { name, exact: isExact })).toBeVisible();
 });
 
+Then(/^the nested (?<role>button|img|heading|navigation|link|region|paragraph|tab|columnheader|progressbar|alertdialog) with(?<isExact> exact)? name "(?<name>.+)" under the region with name "(?<regionName>.+)" should be visible$/u, async function(this: CustomWorld, role: LocatorRole, exact: string | null, name: string, regionName: string): Promise<void> {
+  const isExact = exact !== null;
+  const region = this.page.getByRole("region", { name: regionName, exact: isExact });
+  const element = region.getByRole(role, { name, exact: true });
+
+  await expect(element).toBeVisible();
+});
+
 Then(/^the (?<role>button|img|heading|navigation|link|region|tab) with(?<isExact> exact)? name "(?<name>.+)" should be in viewport$/u, async function(this: CustomWorld, role: LocatorRole, exact: string | null, name: string): Promise<void> {
   const isExact = exact !== null;
 

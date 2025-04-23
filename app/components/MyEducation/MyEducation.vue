@@ -16,8 +16,10 @@
       <EducationDegreeCard
         v-for="(educationDegree, index) in educationDegrees"
         :key="index"
+        :aria-label="getEducationDegreeAriaLabel(educationDegree.degree.name, index)"
         class="education-degree-card"
         :education-degree="educationDegree"
+        role="region"
       />
     </div>
   </div>
@@ -93,4 +95,8 @@ const educationDegrees: EducationDegree[] = [
     },
   },
 ];
+
+function getEducationDegreeAriaLabel(educationDegreeName: string, index: number): string {
+  return `${index + 1} - ${educationDegreeName}`;
+}
 </script>

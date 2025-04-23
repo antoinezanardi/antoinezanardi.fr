@@ -27,11 +27,11 @@
         data-aos-offset="50"
       >
         <div class="card-body">
-          <div
+          <h4
             class="degree-name h4"
           >
             {{ educationDegree.degree.name }}
-          </div>
+          </h4>
 
           <div class="d-flex">
             <p

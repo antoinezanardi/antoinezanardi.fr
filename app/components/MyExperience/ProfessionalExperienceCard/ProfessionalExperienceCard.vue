@@ -26,11 +26,11 @@
         data-aos-offset="50"
       >
         <div class="card-body">
-          <div
+          <h4
             class="h4 job-name"
           >
             {{ professionalExperience.job.name }}
-          </div>
+          </h4>
 
           <hr>
 

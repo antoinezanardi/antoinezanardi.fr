@@ -25,7 +25,7 @@ exports[`Period Timeline Component > Periods > Started at date > should match sn
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
-    <div data-v-a56b5921="" id="period-dates" aria-label="shared.today" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
+    <div data-v-a56b5921="" id="period-dates" aria-label="PeriodTimeline.periodDatesAriaLabel, {&quot;startedAt&quot;:&quot;janvier 2022&quot;,&quot;finishedAt&quot;:&quot;shared.today&quot;}" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
       <div data-v-a56b5921="" id="finished-at-date" class="period-date">shared.today</div>
       <wrapped-font-awesome-icon-stub data-v-a56b5921="" icon="fa-arrow-up" iconcolor="#00000" size="2x" classes="my-3" id="arrow-up-icon"></wrapped-font-awesome-icon-stub>
       <div data-v-a56b5921="" id="started-at-date" class="period-date">janvier 2022</div>
