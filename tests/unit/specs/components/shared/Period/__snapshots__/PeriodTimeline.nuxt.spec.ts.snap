@@ -44,7 +44,7 @@ exports[`Period Timeline Component > should match snapshot when rendered. 1`] = 
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
-    <div data-v-a56b5921="" id="period-dates" aria-label="shared.today" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
+    <div data-v-a56b5921="" id="period-dates" aria-label="PeriodTimeline.obtainedAtAriaLabel, {&quot;obtainedAt&quot;:&quot;shared.today&quot;}" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
       <div data-v-a56b5921="" id="finished-at-date" class="period-date">shared.today</div>
       <!--v-if-->
       <!--v-if-->

@@ -62,6 +62,26 @@ describe("Education Degree Card Component", () => {
       expect(periodTimeline.props("image")).toBe(defaultProps.educationDegree.school.image);
     });
 
+    it("should pass school image alt as translated name when rendered.", () => {
+      const periodTimeline = wrapper.findComponent<typeof PeriodTimeline>(".education-timeline");
+
+      expect(periodTimeline.props("imageAlt")).toBe(defaultProps.educationDegree.school.translatedName);
+    });
+
+    it("should pass interrogative image alt when school translated name is not found.", async() => {
+      const educationDegreeWithoutTranslatedName: EducationDegree = {
+        ...defaultProps.educationDegree,
+        school: {
+          ...defaultProps.educationDegree.school,
+          translatedName: undefined,
+        },
+      };
+      wrapper = await mountEducationDegreeCardComponent({ props: { educationDegree: educationDegreeWithoutTranslatedName } });
+      const periodTimeline = wrapper.findComponent<typeof PeriodTimeline>(".education-timeline");
+
+      expect(periodTimeline.props("imageAlt")).toBe("?");
+    });
+
     it("should pass default school image when school image is not set in education degree.", async() => {
       const educationDegreeWithoutImage: EducationDegree = {
         ...defaultProps.educationDegree,

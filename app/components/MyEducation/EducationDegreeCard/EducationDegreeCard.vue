@@ -13,7 +13,7 @@
             does-show-year-only
             :finished-at="educationDegree.degree.obtainedAt"
             :image="schoolImage"
-            :image-alt="schoolLabel"
+            :image-alt="schoolImageAlt"
             :started-at="educationDegree.degree.startedAt"
             :url="educationDegree.school.url"
           />
@@ -78,6 +78,8 @@ const schoolLabel = computed<string>(() => {
   }
   return label;
 });
+
+const schoolImageAlt = computed<string>(() => props.educationDegree.school.translatedName ?? "?");
 </script>
 
 <style lang="scss" scoped>

@@ -157,6 +157,7 @@
     "skillProgress": "Je maîtrise la technologie {skillName} à {skillPercent}"
   },
   "PeriodTimeline": {
-    "periodDatesAriaLabel": "Période : {startedAt} à {finishedAt}"
+    "periodDatesAriaLabel": "Période : {startedAt} à {finishedAt}",
+    "obtainedAtAriaLabel": "Obtenu en {obtainedAt}"
   }
 }

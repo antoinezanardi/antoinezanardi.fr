@@ -135,7 +135,9 @@ const periodDatesAriaLabel = computed<string>(() => {
       finishedAt: formattedFinishedAt.value,
     });
   }
-  return formattedFinishedAt.value;
+  return t("PeriodTimeline.obtainedAtAriaLabel", {
+    obtainedAt: formattedFinishedAt.value,
+  });
 });
 </script>
 
