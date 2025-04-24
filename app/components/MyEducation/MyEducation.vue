@@ -1,10 +1,13 @@
 <template>
   <div
     id="education"
+    aria-labelledby="education-title"
     class="section"
+    role="region"
   >
     <div class="cc-education container">
       <SectionTitle
+        id="education-title"
         icon="fa fa-graduation-cap"
         icon-color="#F05033"
         :title="$t('MyEducation.education')"
@@ -13,8 +16,10 @@
       <EducationDegreeCard
         v-for="(educationDegree, index) in educationDegrees"
         :key="index"
+        :aria-label="getEducationDegreeAriaLabel(educationDegree.degree.name, index)"
         class="education-degree-card"
         :education-degree="educationDegree"
+        role="region"
       />
     </div>
   </div>
@@ -90,4 +95,8 @@ const educationDegrees: EducationDegree[] = [
     },
   },
 ];
+
+function getEducationDegreeAriaLabel(educationDegreeName: string, index: number): string {
+  return `${index + 1} - ${educationDegreeName}`;
+}
 </script>

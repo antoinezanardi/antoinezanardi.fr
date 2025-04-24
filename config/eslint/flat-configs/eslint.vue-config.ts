@@ -4,7 +4,7 @@ import TypescriptParser from "@typescript-eslint/parser";
 import TypeScriptPlugin from "@typescript-eslint/eslint-plugin";
 import VuePlugin from "eslint-plugin-vue";
 
-import { MAX_LENGTH_DEFAULT_CONFIG } from "../eslint.constants.mjs";
+import { MAX_LENGTH_DEFAULT_CONFIG } from "../eslint.constants.js";
 
 import { ESLINT_TYPESCRIPT_CONFIG } from "./eslint.typescript-config.js";
 

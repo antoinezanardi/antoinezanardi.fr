@@ -1,10 +1,13 @@
 <template>
   <div
     id="portfolio"
+    aria-labelledby="portfolio-title"
     class="section"
+    role="region"
   >
     <div class="container">
       <SectionTitle
+        id="portfolio-title"
         icon="fa fa-star"
         icon-color="#EEC624"
         :title="$t('MyPortfolio.portfolio')"

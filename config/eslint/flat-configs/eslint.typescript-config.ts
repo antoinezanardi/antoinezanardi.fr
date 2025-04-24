@@ -2,7 +2,7 @@ import TypescriptParser from "@typescript-eslint/parser";
 import TypeScriptPlugin from "@typescript-eslint/eslint-plugin";
 import type { Linter } from "eslint";
 
-import { NAMING_CONVENTION_DEFAULT_CONFIG } from "../eslint.constants.mjs";
+import { NAMING_CONVENTION_DEFAULT_CONFIG } from "../eslint.constants.js";
 
 const ESLINT_TYPESCRIPT_CONFIG = {
   name: "typescript",

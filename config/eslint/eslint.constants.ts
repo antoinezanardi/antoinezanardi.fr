@@ -6,12 +6,6 @@ const MAX_PARAMS = 8;
 
 const INDENT_SPACE_COUNT = 2;
 
-const ERROR = "error";
-
-const WARNING = "warn";
-
-const OFF = "off";
-
 const MAX_LENGTH_DEFAULT_CONFIG = {
   code: MAX_LENGTH,
   ignoreTemplateLiterals: true,
@@ -25,12 +19,6 @@ const MAX_LINES_PER_FUNCTION_DEFAULT_CONFIG = {
   skipComments: true,
   skipBlankLines: true,
 };
-
-const READONLY = "readonly";
-
-const ALWAYS = "always";
-
-const NEVER = "never";
 
 const BOOLEAN_PREFIXES = ["is", "was", "are", "were", "should", "has", "can", "does", "do", "did", "must"];
 
@@ -91,12 +79,6 @@ export {
   MAX_NESTED_CALLBACK,
   MAX_PARAMS,
   INDENT_SPACE_COUNT,
-  ERROR,
-  WARNING,
-  OFF,
-  READONLY,
-  ALWAYS,
-  NEVER,
   MAX_LENGTH_DEFAULT_CONFIG,
   MAX_LINES_PER_FUNCTION_DEFAULT_CONFIG,
   NAMING_CONVENTION_DEFAULT_CONFIG,

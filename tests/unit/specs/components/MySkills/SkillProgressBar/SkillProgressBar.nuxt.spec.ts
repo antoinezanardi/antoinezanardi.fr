@@ -64,10 +64,10 @@ describe("Skill Progress Bar Component", () => {
   });
 
   describe("Progress Bar", () => {
-    it("should set aria label to skill name when rendered.", () => {
+    it("should set aria label to skill name and percent when rendered.", () => {
       const progressBar = wrapper.find<HTMLDivElement>(".progress-bar");
 
-      expect(progressBar.attributes("aria-label")).toBe(defaultProps.skill.name);
+      expect(progressBar.attributes("aria-label")).toBe("SkillProgressBar.skillProgress, {\"skillName\":\"MySkills.html\",\"skillPercent\":\"95%\"}");
     });
 
     it("should set progress bar style when rendered.", () => {

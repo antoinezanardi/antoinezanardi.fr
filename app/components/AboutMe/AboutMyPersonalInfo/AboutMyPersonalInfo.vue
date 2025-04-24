@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="card-body">
-      <div class="h3 mt-0 title">
+      <h3 class="h3 mb-2 mt-0 title">
         <WrappedFontAwesomeIcon
           classes="me-2"
           icon="fa-id-card"
@@ -10,7 +10,7 @@
         <span>
           {{ $t('AboutMyPersonalInfo.personalInfo') }}
         </span>
-      </div>
+      </h3>
 
       <hr>
 

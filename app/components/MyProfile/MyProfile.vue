@@ -27,23 +27,23 @@
               </a>
             </div>
 
-            <div
-              class="h2 text-shadow title"
+            <h1
+              class="h1 text-shadow title"
             >
               {{ $t('shared.antoineZanardi') }}
-            </div>
+            </h1>
 
-            <p
-              class="category mb-1 text-shadow text-white"
+            <h2
+              class="category mb-3 text-shadow text-white"
             >
               {{ $t('MyProfile.itConsultant') }}
-            </p>
+            </h2>
 
-            <p
-              class="category text-shadow text-white"
+            <h2
+              class="category mb-3 text-shadow text-white"
             >
               {{ $t('MyProfile.fullStackWebExpert') }}
-            </p>
+            </h2>
 
             <a
               id="my-cv"
@@ -52,6 +52,7 @@
               data-aos-anchor="data-aos-anchor"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
               href="/CV.pdf"
+              role="button"
             >
               {{ $t('MyProfile.myCv') }}
             </a>
