@@ -1,5 +1,16 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.1.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.0.0...v1.1.0) (2025-04-24)
+
+### 🚀 Features
+
+* **renovate:** update deps system ([#34](https://github.com/antoinezanardi/antoinezanardi.fr/issues/34)) ([289f6da](https://github.com/antoinezanardi/antoinezanardi.fr/commit/289f6da54cb430bcdca11b5371a4b1aacb8ee4ec))
+* **tests:** acceptance tests ([#37](https://github.com/antoinezanardi/antoinezanardi.fr/issues/37)) ([cbe0ff0](https://github.com/antoinezanardi/antoinezanardi.fr/commit/cbe0ff00bc396516e05636df4f02b9776bb5bf08))
+
+### 🐛 Bug Fixes
+
+* **semantic-release:** correct deps in lock ([#36](https://github.com/antoinezanardi/antoinezanardi.fr/issues/36)) ([ab1c973](https://github.com/antoinezanardi/antoinezanardi.fr/commit/ab1c973ab511514fcc2a782e01bec6d405809645))
+
 ## 1.0.0 (2025-02-22)
 
 * Merge pull request #23 from antoinezanardi/nuxt ([cbb9dd4](https://github.com/antoinezanardi/antoinezanardi.fr/commit/cbb9dd4)), closes [#23](https://github.com/antoinezanardi/antoinezanardi.fr/issues/23)
