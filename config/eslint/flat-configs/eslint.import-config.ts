@@ -1,7 +1,7 @@
 import ImportPlugin from "eslint-plugin-import";
 import type { Linter } from "eslint";
 
-import { ESLINT_IGNORES } from "../eslint.constants.mjs";
+import { ESLINT_IGNORES } from "../eslint.constants.js";
 
 const ESLINT_IMPORT_CONFIG = {
   ...ImportPlugin.flatConfigs.recommended,

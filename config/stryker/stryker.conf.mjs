@@ -49,7 +49,7 @@ export default {
     ".editorconfig",
     ".npmrc",
     ".nvmrc",
-    ".releaserc.js",
+    "release.config.mjs",
     ".DS_Store",
     ".validate-branch-namerc.json",
     "CHANGELOG.md",

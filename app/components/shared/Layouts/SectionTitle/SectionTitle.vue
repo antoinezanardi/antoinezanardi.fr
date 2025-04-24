@@ -1,5 +1,5 @@
 <template>
-  <div class="h2 mb-5 text-center title">
+  <h2 class="h2 mb-4 text-center title">
     <WrappedFontAwesomeIcon
       id="section-title-icon"
       classes="section-icon me-2"
@@ -10,7 +10,7 @@
     <span class="section-title-text">
       {{ title }}
     </span>
-  </div>
+  </h2>
 </template>
 
 <script setup lang="ts">

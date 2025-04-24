@@ -10,7 +10,7 @@
       target="_blank"
     >
       <NuxtImg
-        :alt="image"
+        :alt="imageAlt"
         class="logo timeline-logo-image white-logo"
         format="webp"
         :src="`/images/logos/${image}`"
@@ -22,7 +22,9 @@
     <div class="d-flex flex-column flex-grow-1">
       <div
         id="period-dates"
+        :aria-label="periodDatesAriaLabel"
         class="align-items-center d-flex flex-column flex-grow-1 justify-content-center"
+        role="region"
       >
         <div
           id="finished-at-date"
@@ -124,6 +126,19 @@ const formattedFinishedAt = computed<string>(() => {
 });
 
 const doesPeriodHaveTwoDates = computed<boolean>(() => !!formattedStartedAt.value);
+
+const periodDatesAriaLabel = computed<string>(() => {
+  const { startedAt } = props;
+  if (startedAt) {
+    return t("PeriodTimeline.periodDatesAriaLabel", {
+      startedAt: formattedStartedAt.value,
+      finishedAt: formattedFinishedAt.value,
+    });
+  }
+  return t("PeriodTimeline.obtainedAtAriaLabel", {
+    obtainedAt: formattedFinishedAt.value,
+  });
+});
 </script>
 
 <style lang="scss" scoped>

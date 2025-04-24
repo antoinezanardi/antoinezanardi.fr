@@ -13,6 +13,7 @@
             does-show-year-only
             :finished-at="educationDegree.degree.obtainedAt"
             :image="schoolImage"
+            :image-alt="schoolImageAlt"
             :started-at="educationDegree.degree.startedAt"
             :url="educationDegree.school.url"
           />
@@ -26,11 +27,11 @@
         data-aos-offset="50"
       >
         <div class="card-body">
-          <div
+          <h4
             class="degree-name h4"
           >
             {{ educationDegree.degree.name }}
-          </div>
+          </h4>
 
           <div class="d-flex">
             <p
@@ -77,6 +78,8 @@ const schoolLabel = computed<string>(() => {
   }
   return label;
 });
+
+const schoolImageAlt = computed<string>(() => props.educationDegree.school.translatedName ?? "?");
 </script>
 
 <style lang="scss" scoped>

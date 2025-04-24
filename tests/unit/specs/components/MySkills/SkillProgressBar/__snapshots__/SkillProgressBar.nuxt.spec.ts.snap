@@ -3,7 +3,7 @@
 exports[`Skill Progress Bar Component > should match snapshot when rendered. 1`] = `
 "<div class="progress-container"><span id="badge-html" class="progress-badge"><wrapped-font-awesome-icon-stub icon="fab fa-html5" iconcolor="#E44D27" classes="me-2" class="skill-icon"></wrapped-font-awesome-icon-stub><b><a class="skill-name text-muted" href="https://fr.wikipedia.org/wiki/HTML5" rel="noopener noreferrer" target="_blank">MySkills.html</a></b></span>
   <div class="progress">
-    <div aria-label="MySkills.html" aria-valuemax="100" aria-valuemin="0" class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-duration="2000" data-aos-offset="10" role="progressbar" style="width: 95%; background-color: #E44D27;"></div><span class="font-weight-bold progress-value">95%</span>
+    <div aria-label="SkillProgressBar.skillProgress, {&quot;skillName&quot;:&quot;MySkills.html&quot;,&quot;skillPercent&quot;:&quot;95%&quot;}" aria-valuemax="100" aria-valuemin="0" class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-duration="2000" data-aos-offset="10" role="progressbar" style="width: 95%; background-color: #E44D27;"></div><span class="font-weight-bold progress-value">95%</span>
   </div>
 </div>"
 `;

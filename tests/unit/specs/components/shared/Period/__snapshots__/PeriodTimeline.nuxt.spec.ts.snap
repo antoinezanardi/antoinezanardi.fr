@@ -2,11 +2,11 @@
 
 exports[`Period Timeline Component > Periods > Period > should match snapshot when started at and finished at are provided in props. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="image" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
-    <div data-v-a56b5921="" id="period-dates" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center">
+    <div data-v-a56b5921="" id="period-dates" aria-label="PeriodTimeline.periodDatesAriaLabel, {&quot;startedAt&quot;:&quot;janvier 2022&quot;,&quot;finishedAt&quot;:&quot;mars 2024&quot;}" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
       <div data-v-a56b5921="" id="finished-at-date" class="period-date">mars 2024</div>
       <wrapped-font-awesome-icon-stub data-v-a56b5921="" icon="fa-arrow-up" iconcolor="#00000" size="2x" classes="my-3" id="arrow-up-icon"></wrapped-font-awesome-icon-stub>
       <div data-v-a56b5921="" id="started-at-date" class="period-date">janvier 2022</div>
@@ -21,11 +21,11 @@ exports[`Period Timeline Component > Periods > Period > should match snapshot wh
 
 exports[`Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="image" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
-    <div data-v-a56b5921="" id="period-dates" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center">
+    <div data-v-a56b5921="" id="period-dates" aria-label="PeriodTimeline.periodDatesAriaLabel, {&quot;startedAt&quot;:&quot;janvier 2022&quot;,&quot;finishedAt&quot;:&quot;shared.today&quot;}" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
       <div data-v-a56b5921="" id="finished-at-date" class="period-date">shared.today</div>
       <wrapped-font-awesome-icon-stub data-v-a56b5921="" icon="fa-arrow-up" iconcolor="#00000" size="2x" classes="my-3" id="arrow-up-icon"></wrapped-font-awesome-icon-stub>
       <div data-v-a56b5921="" id="started-at-date" class="period-date">janvier 2022</div>
@@ -40,11 +40,11 @@ exports[`Period Timeline Component > Periods > Started at date > should match sn
 
 exports[`Period Timeline Component > should match snapshot when rendered. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="image" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
-    <div data-v-a56b5921="" id="period-dates" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center">
+    <div data-v-a56b5921="" id="period-dates" aria-label="PeriodTimeline.obtainedAtAriaLabel, {&quot;obtainedAt&quot;:&quot;shared.today&quot;}" class="align-items-center d-flex flex-column flex-grow-1 justify-content-center" role="region">
       <div data-v-a56b5921="" id="finished-at-date" class="period-date">shared.today</div>
       <!--v-if-->
       <!--v-if-->

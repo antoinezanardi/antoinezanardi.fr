@@ -3,12 +3,12 @@
 exports[`AboutMyProfile Component > should match snapshot when rendered. 1`] = `
 "<div>
   <div class="card-body">
-    <div class="h3 mt-0 title">
+    <h3 class="h3 mb-2 mt-0 title">
       <wrapped-font-awesome-icon-stub icon="fa-user-circle" iconcolor="#000000" classes="me-2"></wrapped-font-awesome-icon-stub><span>Qui suis-je ?</span>
-    </div>
+    </h3>
     <hr>
     <p>Hello 👋 ! Je suis <b>Antoine Zanardi</b> et bienvenue sur mon profil. Je suis <b> expert informatique spécialisé dans le web</b> et passionné par les nouvelles technologies, la robotique, l'intelligence artificielle et les innovations en tout genre.</p>
-    <p><span>Mes diplômes acquis pendant</span><a class="mx-1" href="#education">mon cursus scolaire</a><span>couplés à</span><a class="mx-1" href="#experience">mon parcours professionnel</a><span>me permettent d'avoir un <b> esprit d'équipe </b> fort ainsi que des compétences <b> techniques et managériales</b> avancées.</span></p>
+    <p><span>Mes diplômes acquis pendant</span><span>&nbsp;</span><a href="#education">mon cursus scolaire</a><span>&nbsp;</span><span>couplés à</span><span>&nbsp;</span><a href="#experience">mon parcours professionnel</a><span>&nbsp;</span><span>me permettent d'avoir un <b> esprit d'équipe </b> fort ainsi que des compétences <b> techniques et managériales</b> avancées.</span></p>
     <p>Ma passion et mon perfectionnisme me poussent à aller au bout de mes projets en y apportant <b>ma rigueur et mon savoir</b> pour les terminer dans les temps et dans<b> la qualité attendue</b>. Ma veille technologique me permet d'être à la page sur les nouveautés du web et de les appliquer dans mes projets.</p>
   </div>
 </div>"

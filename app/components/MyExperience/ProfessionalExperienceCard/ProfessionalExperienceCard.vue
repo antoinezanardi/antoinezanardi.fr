@@ -12,6 +12,7 @@
             class="experience-timeline"
             :finished-at="professionalExperience.job.finishedAt"
             :image="professionalExperience.company.image"
+            :image-alt="professionalExperience.company.name"
             :started-at="professionalExperience.job.startedAt"
             :url="professionalExperience.company.url"
           />
@@ -25,11 +26,11 @@
         data-aos-offset="50"
       >
         <div class="card-body">
-          <div
+          <h4
             class="h4 job-name"
           >
             {{ professionalExperience.job.name }}
-          </div>
+          </h4>
 
           <hr>
 

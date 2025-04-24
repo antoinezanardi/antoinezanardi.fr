@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
   ],
   i18n: {
-    vueI18n: "./modules/i18n/i18n.config.ts",
+    vueI18n: "../modules/i18n/i18n.config.ts",
     defaultLocale: "fr",
     locales: [
       {
@@ -41,6 +41,9 @@ export default defineNuxtConfig({
     strategy: "no_prefix",
     compilation: {
       strictMessage: false,
+    },
+    bundle: {
+      optimizeTranslationDirective: false,
     },
   },
   nitro: {

@@ -3,7 +3,7 @@ import type { Linter } from "eslint";
 const ESLINT_CONFIG_FILES_CONFIG = {
   name: "config-files",
   files: [
-    ".releaserc.js",
+    "release.config.mjs",
     "eslint.config.ts",
     "nuxt.config.ts",
     "config/**/*.{js,mjs,ts}",

@@ -4,7 +4,7 @@
     data-bs-toggle="tooltip"
     :icon="tool.iconClasses"
     :icon-color="tool.color"
-    role="alertdialog"
+    role="img"
     size="3x"
     :title="tool.description"
   />
