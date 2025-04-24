@@ -43,7 +43,7 @@ Then(/^the (?<role>button|tab) with(?<isExact> exact)? name "(?<name>.+)" should
   await expect(this.page.getByRole(role, { name, exact: isExact })).toBeEnabled();
 });
 
-Then(/^the (?<role>button|img|heading|navigation|link|region) with name(?<isExact> exact)? "(?<name>.+)" should have the following attributes$/u, async function(this: CustomWorld, role: LocatorRole, exact: string | null, name: string, attributesDatatable: DataTable): Promise<void> {
+Then(/^the (?<role>button|img|heading|navigation|link|region) with(?<isExact> exact)? name"(?<name>.+)" should have the following attributes$/u, async function(this: CustomWorld, role: LocatorRole, name: string, exact: string | null, attributesDatatable: DataTable): Promise<void> {
   const isExact = exact !== null;
   const element = this.page.getByRole(role, { name, exact: isExact });
   const promises = [];
