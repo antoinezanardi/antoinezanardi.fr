@@ -91,7 +91,7 @@
     "eslint-import-resolver-typescript": "^3.8.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-vue": "^9.32.0",
+    "eslint-plugin-vue": "^9.33.0",
     "happy-dom": "^17.1.2",
     "husky": "^9.1.7",
     "jest-extended": "^4.0.2",
