@@ -54,6 +54,7 @@ const ESLINT_TESTS_CONFIG = {
     "vitest/padding-around-test-blocks": "error",
     "vitest/prefer-called-with": "error",
     "vitest/prefer-comparison-matcher": "error",
+    "vitest/prefer-describe-function-title": "error",
     "vitest/prefer-each": "error",
     "vitest/prefer-equality-matcher": "error",
     "vitest/prefer-expect-assertions": "off",
