@@ -104,7 +104,7 @@
     "pngjs": "^7.0.0",
     "radash": "^12.1.0",
     "rimraf": "^6.0.1",
-    "sass": "^1.85.0",
+    "sass": "^1.87.0",
     "semantic-release": "24.2.3",
     "semantic-release-export-data": "^1.1.0",
     "tsx": "^4.19.3",
