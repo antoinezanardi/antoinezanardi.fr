@@ -70,7 +70,8 @@ done
 open_pr_url="https://github.com/$username/$repository/compare/$base_branch...$current_branch?expand=1&assignee=$github_user"
 encoded_label=$(ruby -e 'require "erb"; puts ERB::Util.url_encode(ARGV[0])' "$label")
 encoded_title=$(ruby -e 'require "erb"; puts ERB::Util.url_encode(ARGV[0])' "$first_commit_message")
-encoded_open_pr_url="$open_pr_url&labels=$encoded_label&title=$encoded_title"
+reviewers="github-copilot"
+encoded_open_pr_url="$open_pr_url&labels=$encoded_label&title=$encoded_title&reviewers=$reviewers"
 if [[ "$OSTYPE" == "darwin"* ]]; then
   open "$encoded_open_pr_url"
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
