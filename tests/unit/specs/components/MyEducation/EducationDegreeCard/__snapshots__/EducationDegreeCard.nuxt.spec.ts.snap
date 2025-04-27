@@ -10,9 +10,9 @@ exports[`Education Degree Card Component > should match snapshot when rendered. 
     </div>
     <div data-v-91841a15="" class="col-md-9" data-aos="fade-left" data-aos-duration="500" data-aos-offset="50">
       <div data-v-91841a15="" class="card-body">
-        <h4 data-v-91841a15="" class="degree-name h4">Degrees.ITMasterDegree</h4>
+        <h4 data-v-91841a15="" class="degree-name font-weight-bold h4 mb-2 mt-0">Degrees.ITMasterDegree</h4>
         <div data-v-91841a15="" class="d-flex">
-          <p data-v-91841a15="" class="category mb-0 school-name">Schools.epitech, Lille</p>
+          <p data-v-91841a15="" class="category font-weight-bold mb-0 school-name">Schools.epitech, Lille</p>
           <country-flag-stub data-v-91841a15="" country="france" class="ms-2 school-flag"></country-flag-stub>
         </div>
         <hr data-v-91841a15="">

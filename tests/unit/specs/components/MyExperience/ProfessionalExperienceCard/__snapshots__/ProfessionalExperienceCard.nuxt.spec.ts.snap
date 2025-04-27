@@ -10,7 +10,7 @@ exports[`Professional Experience Card Component > should match snapshot when ren
     </div>
     <div data-v-ceaf3c35="" class="col-md-9" data-aos="fade-left" data-aos-duration="500" data-aos-offset="50">
       <div data-v-ceaf3c35="" class="card-body">
-        <h4 data-v-ceaf3c35="" class="h4 job-name">MyExperience.internFullStackDeveloper</h4>
+        <h4 data-v-ceaf3c35="" class="font-weight-bold h4 job-name mt-0">MyExperience.internFullStackDeveloper</h4>
         <hr data-v-ceaf3c35="">
         <p data-v-ceaf3c35="" class="job-description">MyExperience.distributionProject</p>
         <p data-v-ceaf3c35="" class="job-description">MyExperience.thisFinalInternship</p>

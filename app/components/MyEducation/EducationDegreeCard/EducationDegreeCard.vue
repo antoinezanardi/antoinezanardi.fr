@@ -28,14 +28,14 @@
       >
         <div class="card-body">
           <h4
-            class="degree-name h4"
+            class="degree-name font-weight-bold h4 mb-2 mt-0"
           >
             {{ educationDegree.degree.name }}
           </h4>
 
           <div class="d-flex">
             <p
-              class="category mb-0 school-name"
+              class="category font-weight-bold mb-0 school-name"
             >
               {{ schoolLabel }}
             </p>
