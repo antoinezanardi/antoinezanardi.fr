@@ -27,7 +27,7 @@
       >
         <div class="card-body">
           <h4
-            class="h4 job-name"
+            class="font-weight-bold h4 job-name mt-0"
           >
             {{ professionalExperience.job.name }}
           </h4>
