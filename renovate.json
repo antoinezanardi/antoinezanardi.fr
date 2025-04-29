@@ -7,5 +7,6 @@
   "assignees": ["antoinezanardi"],
   "baseBranches": ["develop"],
   "semanticCommits": "enabled",
-  "reviewers": ["antoinezanardi"]
+  "reviewers": ["antoinezanardi"],
+  "dependencyDashboardApproval": false
 }
