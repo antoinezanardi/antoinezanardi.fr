@@ -129,6 +129,9 @@ const doesPeriodHaveTwoDates = computed<boolean>(() => !!formattedStartedAt.valu
 
 const periodDatesAriaLabel = computed<string>(() => {
   const { startedAt } = props;
+  if (props.periodDatesAriaLabel !== undefined) {
+    return props.periodDatesAriaLabel;
+  }
   if (startedAt) {
     return t("PeriodTimeline.periodDatesAriaLabel", {
       startedAt: formattedStartedAt.value,

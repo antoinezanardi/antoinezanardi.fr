@@ -16,3 +16,8 @@ Feature: 🏡 Home Page
       | name        | content                                                                                                        |
       | description | Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences. |
       | viewport    | width=device-width, initial-scale=1                                                                            |
+
+  Scenario: 🏡 Home Page doesn't have any accessibility issues
+    Given the user is on home page
+    Then the page should not contain accessibility issues in desktop mode
+    And the page should not contain accessibility issues in mobile mode

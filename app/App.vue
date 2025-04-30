@@ -2,7 +2,7 @@
   <div>
     <NavBar/>
 
-    <div class="app-content">
+    <main class="app-content">
       <MyProfile/>
 
       <AboutMe/>
@@ -16,7 +16,7 @@
       <MyEducation/>
 
       <PageFooter/>
-    </div>
+    </main>
   </div>
 </template>
 

@@ -5,11 +5,11 @@ exports[`NavBar Component > should match snapshot when rendered. 1`] = `
   <div data-v-fe2af0c4="" class="profile-page sidebar-collapse">
     <nav data-v-fe2af0c4="" class="bg-primary fixed-top navbar navbar-expand-lg" data-color-on-scroll="100">
       <div data-v-fe2af0c4="" class="container">
-        <div data-v-fe2af0c4="" class="navbar-translate"><a data-v-fe2af0c4="" class="navbar-brand text-uppercase" href="#">Antoine Zanardi</a><button data-v-fe2af0c4="" aria-controls="navigation" aria-expanded="false" class="navbar-toggler" data-target="#navigation" data-toggle="collapse" type="button"><span data-v-fe2af0c4="" class="bar1 navbar-toggler-bar"></span><span data-v-fe2af0c4="" class="bar2 navbar-toggler-bar"></span><span data-v-fe2af0c4="" class="bar3 navbar-toggler-bar"></span></button></div>
+        <div data-v-fe2af0c4="" class="navbar-translate"><a data-v-fe2af0c4="" class="navbar-brand text-uppercase" href="#">Antoine Zanardi</a><button data-v-fe2af0c4="" aria-controls="navigation" aria-expanded="false" aria-label="Ouvrir la navigation" class="navbar-toggler" data-target="#navigation" data-toggle="collapse" type="button"><span data-v-fe2af0c4="" class="bar1 navbar-toggler-bar"></span><span data-v-fe2af0c4="" class="bar2 navbar-toggler-bar"></span><span data-v-fe2af0c4="" class="bar3 navbar-toggler-bar"></span></button></div>
         <div data-v-fe2af0c4="" id="navigation" class="collapse justify-content-end navbar-collapse">
           <ul data-v-fe2af0c4="" class="navbar-nav w-100">
             <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#about">Qui suis-je ?</a></li>
-            <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#skill">Compétences techniques</a></li>
+            <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#skills">Compétences techniques</a></li>
             <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
             <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#experience">Expérience professionnelle</a></li>
             <li data-v-fe2af0c4="" class="nav-item"><a data-v-fe2af0c4="" class="nav-link smooth-scroll" href="#education">Formation &amp; Certifications</a></li>

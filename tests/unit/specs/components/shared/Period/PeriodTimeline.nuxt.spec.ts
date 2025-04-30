@@ -46,6 +46,20 @@ describe("Period Timeline Component", () => {
   });
 
   describe("Periods", () => {
+    describe("Aria Label", () => {
+      it("should set aria label from props when defined in props.", async() => {
+        wrapper = await mountPeriodTimelineComponent({
+          props: {
+            ...defaultProps,
+            periodDatesAriaLabel: "aria-label",
+          },
+        });
+        const period = wrapper.find<HTMLDivElement>("#period-dates");
+
+        expect(period.attributes("aria-label")).toBe("aria-label");
+      });
+    });
+
     describe("Finished at date", () => {
       it("should display finished at today formatted label when finished at is not provided in props.", () => {
         const finishedAt = wrapper.find<HTMLDivElement>("#finished-at-date");
