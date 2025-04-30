@@ -1,8 +1,10 @@
 import { World } from "@cucumber/cucumber";
 import type { IWorldOptions } from "@cucumber/cucumber";
-import type { BrowserContext, Page } from "playwright-core";
+import type { Browser, BrowserContext, Page } from "playwright-core";
 
 class CustomWorld extends World {
+  public browser: Browser;
+
   public page: Page;
 
   public context: BrowserContext;

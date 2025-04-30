@@ -1,5 +1,6 @@
 <template>
   <div
+    id="skills"
     aria-labelledby="skills-title"
     class="section"
     role="region"
@@ -35,11 +36,11 @@
 
           <div class="row">
             <div class="col-md-12 text-center">
-              <h5
+              <h3
                 class="mb-0"
               >
                 {{ $t('MySkills.myTools') }}
-              </h5>
+              </h3>
             </div>
           </div>
 

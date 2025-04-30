@@ -3,7 +3,7 @@
 exports[`App Component > should match snapshot when rendered. 1`] = `
 "<div>
   <nav-bar-stub></nav-bar-stub>
-  <div class="app-content">
+  <main class="app-content">
     <my-profile-stub></my-profile-stub>
     <about-me-stub></about-me-stub>
     <my-skills-stub></my-skills-stub>
@@ -11,6 +11,6 @@ exports[`App Component > should match snapshot when rendered. 1`] = `
     <my-experience-stub></my-experience-stub>
     <my-education-stub></my-education-stub>
     <page-footer-stub></page-footer-stub>
-  </div>
+  </main>
 </div>"
 `;

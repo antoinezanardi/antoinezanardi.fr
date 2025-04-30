@@ -5,12 +5,12 @@ exports[`Education Degree Card Component > should match snapshot when rendered. 
   <div data-v-91841a15="" class="row">
     <div data-v-91841a15="" class="bg-primary col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-offset="50">
       <div data-v-91841a15="" class="card-body cc-education-header">
-        <period-timeline-stub data-v-91841a15="" image="epitech-logo.png" imagealt="Schools.epitech" url="https://www.epitech.eu/" doesshowyearonly="true" startedat="Wed Jan 01 2014 00:00:00 GMT+0000 (Coordinated Universal Time)" finishedat="Tue Jan 01 2019 00:00:00 GMT+0000 (Coordinated Universal Time)" class="education-timeline"></period-timeline-stub>
+        <period-timeline-stub data-v-91841a15="" image="epitech-logo.png" imagealt="Schools.epitech" perioddatesarialabel="EducationDegreeCard.degreeObtainedAtAriaLabel, {&quot;degreeName&quot;:&quot;Degrees.ITMasterDegree&quot;,&quot;obtainedAt&quot;:&quot;2019&quot;}" url="https://www.epitech.eu/" doesshowyearonly="true" startedat="Wed Jan 01 2014 00:00:00 GMT+0000 (Coordinated Universal Time)" finishedat="Tue Jan 01 2019 00:00:00 GMT+0000 (Coordinated Universal Time)" class="education-timeline"></period-timeline-stub>
       </div>
     </div>
     <div data-v-91841a15="" class="col-md-9" data-aos="fade-left" data-aos-duration="500" data-aos-offset="50">
       <div data-v-91841a15="" class="card-body">
-        <h4 data-v-91841a15="" class="degree-name font-weight-bold h4 mb-2 mt-0">Degrees.ITMasterDegree</h4>
+        <h3 data-v-91841a15="" class="degree-name font-weight-bold h4 mb-2 mt-0">Degrees.ITMasterDegree</h3>
         <div data-v-91841a15="" class="d-flex">
           <p data-v-91841a15="" class="category font-weight-bold mb-0 school-name">Schools.epitech, Lille</p>
           <country-flag-stub data-v-91841a15="" country="france" class="ms-2 school-flag"></country-flag-stub>

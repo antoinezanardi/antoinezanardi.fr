@@ -159,5 +159,11 @@
   "PeriodTimeline": {
     "periodDatesAriaLabel": "Période : {startedAt} à {finishedAt}",
     "obtainedAtAriaLabel": "Obtenu en {obtainedAt}"
+  },
+  "EducationDegreeCard": {
+    "degreeObtainedAtAriaLabel": "{degreeName} obtenu en {obtainedAt}"
+  },
+  "NavBar": {
+    "openNavigation": "Ouvrir la navigation"
   }
 }
