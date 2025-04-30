@@ -17,6 +17,7 @@
             <button
               aria-controls="navigation"
               :aria-expanded="false"
+              :aria-label="$t('NavBar.openNavigation')"
               class="navbar-toggler"
               data-target="#navigation"
               data-toggle="collapse"
@@ -50,7 +51,7 @@
               <li class="nav-item">
                 <a
                   class="nav-link smooth-scroll"
-                  href="#skill"
+                  href="#skills"
                   @click="onClickFromNavBarLink"
                 >
                   {{ $t('MySkills.itSkills') }}
@@ -109,7 +110,7 @@ function onClickFromNavBarLink(): void {
 <style lang="scss" scoped>
 .navbar {
   box-shadow: 0px -5px 20px 5px black;
-  background-color: #2F7C36 !important;
+  background-color: #1b6426 !important;
 
   #navigation.show {
     transform: unset;

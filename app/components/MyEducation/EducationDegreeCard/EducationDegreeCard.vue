@@ -14,6 +14,7 @@
             :finished-at="educationDegree.degree.obtainedAt"
             :image="schoolImage"
             :image-alt="schoolImageAlt"
+            :period-dates-aria-label="periodDatesAriaLabel"
             :started-at="educationDegree.degree.startedAt"
             :url="educationDegree.school.url"
           />
@@ -27,11 +28,11 @@
         data-aos-offset="50"
       >
         <div class="card-body">
-          <h4
+          <h3
             class="degree-name font-weight-bold h4 mb-2 mt-0"
           >
             {{ educationDegree.degree.name }}
-          </h4>
+          </h3>
 
           <div class="d-flex">
             <p
@@ -68,6 +69,8 @@ import PeriodTimeline from "~/components/shared/Period/PeriodTimeline.vue";
 
 const props = defineProps<EducationDegreeCardProps>();
 
+const { t } = useI18n();
+
 const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.png");
 
 const schoolLabel = computed<string>(() => {
@@ -80,6 +83,15 @@ const schoolLabel = computed<string>(() => {
 });
 
 const schoolImageAlt = computed<string>(() => props.educationDegree.school.translatedName ?? "?");
+
+const periodDatesAriaLabel = computed<string>(() => {
+  const finishedAtYear = props.educationDegree.degree.obtainedAt.getFullYear().toString();
+
+  return t("EducationDegreeCard.degreeObtainedAtAriaLabel", {
+    degreeName: props.educationDegree.degree.name,
+    obtainedAt: finishedAtYear,
+  });
+});
 </script>
 
 <style lang="scss" scoped>
