@@ -98,7 +98,7 @@
     "jest-extended": "^4.0.2",
     "jiti": "^2.4.2",
     "lint-staged": "^15.5.1",
-    "nuxt": "^3.17.1",
+    "nuxt": "^3.17.2",
     "pixelmatch": "^7.1.0",
     "playwright": "^1.52.0",
     "playwright-core": "^1.52.0",
