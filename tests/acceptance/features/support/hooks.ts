@@ -9,7 +9,7 @@ import { generateScreenshotOnScenarioFailure, removeAcceptanceTestsReportsScreen
 import type { CustomWorld } from "@tests/acceptance/shared/types/word.types";
 import { TEST_NUXT_RUNTIME_CONFIG } from "@tests/unit/utils/constants/nuxt-test.constants";
 
-const { beforeEach, afterEach, afterAll, setup } = createTest({
+const { beforeEach, afterEach, afterAll, beforeAll } = createTest({
   runner: "cucumber",
   server: true,
   browserOptions: {
@@ -41,7 +41,7 @@ const beforeTimeout = 10000;
 
 BeforeAll({ timeout: beforeAllTimeout }, async(): Promise<void> => {
   removeAcceptanceTestsReportsScreenshotsDirectory();
-  await setup();
+  await beforeAll();
 });
 
 Before({ timeout: beforeTimeout }, async function(this: CustomWorld): Promise<void> {
