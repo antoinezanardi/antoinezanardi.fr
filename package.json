@@ -62,7 +62,7 @@
     "@axe-core/playwright": "^4.10.1",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/cucumber": "^11.3.0",
     "@eslint/config-inspector": "^1.0.2",
     "@nuxt/image": "^1.10.0",
     "@nuxt/test-utils": "^3.18.0",
