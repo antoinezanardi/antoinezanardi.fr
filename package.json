@@ -65,7 +65,7 @@
     "@cucumber/cucumber": "^11.3.0",
     "@eslint/config-inspector": "^1.0.2",
     "@nuxt/image": "^1.10.0",
-    "@nuxt/test-utils": "^3.19.0",
+    "@nuxt/test-utils": "^3.19.1",
     "@nuxtjs/i18n": "^9.5.4",
     "@playwright/test": "^1.52.0",
     "@semantic-release/changelog": "^6.0.3",
