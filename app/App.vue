@@ -22,6 +22,7 @@
 
 <script lang="ts" setup>
 import aos from "aos";
+import { stampInHtml } from "dev-stamp";
 
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
 import { onMounted, useNuxtApp, useHead } from "#imports";
@@ -39,5 +40,6 @@ onMounted((): void => {
   aos.init();
   const tooltipTriggerList = document.querySelectorAll("[data-bs-toggle=\"tooltip\"]");
   tooltipTriggerList.forEach((tooltip: Element) => new $bootstrap.Tooltip(tooltip));
+  stampInHtml("👋 Hey ! J'ai aussi créé 💮 `dev-stamp` qui a généré ce message ! Retrouvez le sur GitHub ou npm !");
 });
 </script>
