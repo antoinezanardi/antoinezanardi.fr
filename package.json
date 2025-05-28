@@ -88,7 +88,7 @@
     "conventional-changelog-conventionalcommits": "^9.0.0",
     "cross-env": "^7.0.3",
     "cucumber-html-reporter": "^7.2.0",
-    "dev-stamp": "^1.1.0",
+    "dev-stamp": "^1.2.0",
     "eslint": "^9.27.0",
     "eslint-import-resolver-typescript": "^4.4.1",
     "eslint-plugin-import": "^2.31.0",

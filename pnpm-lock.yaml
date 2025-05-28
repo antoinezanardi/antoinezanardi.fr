@@ -118,8 +118,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       dev-stamp:
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.2.0
+        version: 1.2.0
       eslint:
         specifier: ^9.27.0
         version: 9.27.0(jiti@2.4.2)
@@ -3786,8 +3786,8 @@ packages:
     resolution: {integrity: sha512-ARFxjzizOhPqs1fYC/2NMC3N4jrQ6HvVflnXBTRqNEqJuXwyKLRr9CrJwkRcV/SnZt1sNXgsF6FPm0x57Tq0rw==}
     engines: {node: ^14.14.0 || >=16.0.0}
 
-  dev-stamp@1.1.0:
-    resolution: {integrity: sha512-pZUG/dNTBe8P6qlufowthcZ15Kc5DRSQwfRvPn2g7EDMQWMXd+MPVimlK8QFaksBhR5xq2QmXmL/gSdducPwEA==}
+  dev-stamp@1.2.0:
+    resolution: {integrity: sha512-FxQrm3uNVhfpjQHgDTPc6n8NQHxZrVbxqL858f9Jfgb0wUYAN1hgsOSw5O6Zaj/Jh/nlj2nAjYodYHeOy1Nn9Q==}
     engines: {node: '>=22.16.0'}
 
   devalue@5.1.1:
@@ -12021,7 +12021,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  dev-stamp@1.1.0: {}
+  dev-stamp@1.2.0: {}
 
   devalue@5.1.1: {}
 
