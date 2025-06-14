@@ -178,6 +178,11 @@ const ESLINT_VUE_CONFIG = {
     "vue/define-emits-declaration": "error",
     "vue/define-macros-order": "error",
     "vue/define-props-declaration": "error",
+    "vue/define-props-destructuring": [
+      "error", {
+        destructure: "never",
+      },
+    ],
     "vue/enforce-style-attribute": "error",
     "vue/html-button-has-type": "error",
     "vue/html-comment-content-newline": "error",
