@@ -116,7 +116,7 @@
     "vite": "6.3.5",
     "vitest": "^3.2.4",
     "vue-eslint-parser": "^10.2.0",
-    "vue-tsc": "2.2.10"
+    "vue-tsc": "3.0.1"
   },
   "engines": {
     "node": ">=23.11.1"
