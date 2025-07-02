@@ -1,4 +1,4 @@
-import { fileURLToPath } from "node:url";
+import { fileURLToPath } from "url";
 
 import type { ITestCaseHookParameter } from "@cucumber/cucumber";
 import { After, AfterAll, Before, BeforeAll, Status } from "@cucumber/cucumber";
