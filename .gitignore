@@ -34,3 +34,6 @@ tests/stryker/coverage
 tests/acceptance/reports
 
 .stryker/
+
+RELEASE.md
+temp.md
