@@ -107,6 +107,7 @@ const ESLINT_GLOBAL_CONFIG = {
     "no-sparse-arrays": "error",
     "no-template-curly-in-string": "error",
     "no-this-before-super": "error",
+    "no-unassigned-vars": "error",
     "no-undef": ["error"],
     "no-unexpected-multiline": "error",
     "no-unmodified-loop-condition": "error",
