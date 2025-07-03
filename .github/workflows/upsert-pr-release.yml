@@ -89,10 +89,6 @@ jobs:
           path: RELEASE.md
           key: ${{ runner.os }}-release-changelog-${{ hashFiles('RELEASE.md') }}
 
-    outputs:
-      new-release-published: ${{ steps.release.outputs.new-release-published }}
-      new-release-version: ${{ steps.release.outputs.new-release-version }}
-
   upsert-pr-release:
     name: Upsert Pull Request Release 🔃
     runs-on: ubuntu-latest
