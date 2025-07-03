@@ -39,6 +39,7 @@ const ESLINT_IMPORT_CONFIG = {
     "import/unambiguous": "error",
     // - Static analysis (https://github.com/import-js/eslint-plugin-import#static-analysis)
     "import/default": "error",
+    "import/enforce-node-protocol-usage": ["error", "never"],
     "import/named": "off",
     "import/namespace": "error",
     "import/no-absolute-path": "error",

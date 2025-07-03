@@ -1,8 +1,11 @@
 import type { mount } from "@vue/test-utils";
 import type { ComponentMountingOptions } from "@vue/test-utils/dist/mount";
+import { stampInHtml } from "dev-stamp";
 
 import App from "@/App.vue";
 import { mountSuspendedComponent } from "@tests/unit/utils/helpers/mount.helpers";
+
+vi.mock("dev-stamp");
 
 describe("App Component", () => {
   let wrapper: ReturnType<typeof mount<typeof App>>;
@@ -28,5 +31,11 @@ describe("App Component", () => {
     };
 
     expect(useHead).toHaveBeenCalledExactlyOnceWith(expectedUseHeadAttribute);
+  });
+
+  it("should stamp a comment in HTML when rendered.", () => {
+    const expectedComment = "👋 Hey ! J'ai aussi créé 💮 `dev-stamp` qui a généré ce message ! Retrouvez le sur GitHub ou npm !";
+
+    expect(stampInHtml).toHaveBeenCalledExactlyOnceWith(expectedComment);
   });
 });

@@ -26,7 +26,6 @@ const ESLINT_STYLISTIC_CONFIG = {
     "@stylistic/dot-location": ["error", "property"],
     "@stylistic/eol-last": ["error", "never"],
     "@stylistic/function-call-argument-newline": ["error", "consistent"],
-    "@stylistic/func-call-spacing": "error",
     "@stylistic/function-call-spacing": "error",
     "@stylistic/function-paren-newline": ["error", "multiline"],
     "@stylistic/generator-star-spacing": [
