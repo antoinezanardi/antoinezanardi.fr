@@ -85,6 +85,7 @@ const vueUrl = "https://vuejs.org/";
 const nuxtUrl = "https://v3.nuxtjs.org/";
 const mysqlUrl = "https://www.mysql.com/fr/";
 const mongodbUrl = "https://www.mongodb.com/";
+const rustUrl = "https://www.rust-lang.org/";
 const skills: Skill[] = [
   {
     name: t("MySkills.html"),
@@ -141,6 +142,13 @@ const skills: Skill[] = [
     color: "#4E9445",
     percent: "90%",
     url: mongodbUrl,
+  },
+  {
+    name: t("MySkills.rust"),
+    iconClasses: "fas fa-cogs",
+    color: "#E3884F",
+    percent: "60%",
+    url: rustUrl,
   },
 ];
 
