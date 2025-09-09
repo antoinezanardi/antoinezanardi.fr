@@ -25,7 +25,7 @@ describe("My Skills Component", () => {
   });
 
   describe("Skills", () => {
-    it("should render 8 skills when rendered.", () => {
+    it("should render 9 skills when rendered.", () => {
       const skills = wrapper.findAllComponents<typeof SkillProgressBar>(".skill");
 
       expect(skills).toHaveLength(9);
