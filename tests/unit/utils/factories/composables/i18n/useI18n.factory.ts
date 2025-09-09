@@ -1,6 +1,8 @@
 import { isObject } from "radash";
 import type { Mock } from "vitest";
 
+import type { Ref } from "#imports";
+import { ref } from "#imports";
 import fr from "@modules/i18n/locales/fr.json";
 
 type MockedI18n = {
