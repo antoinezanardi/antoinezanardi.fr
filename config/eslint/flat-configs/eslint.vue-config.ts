@@ -25,7 +25,6 @@ const ESLINT_VUE_CONFIG = {
     parser: VueParser,
     parserOptions: {
       parser: TypescriptParser,
-      tsconfigRootDir: "./",
       sourceType: "module",
       extraFileExtensions: [".vue"],
       project: "./tsconfig.json",

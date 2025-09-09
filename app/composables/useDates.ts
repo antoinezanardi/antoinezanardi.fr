@@ -1,3 +1,5 @@
+import { useI18n } from "#imports";
+
 type DatesComposable = {
   getMonthFullName: (date: Date) => string;
 };

@@ -1,5 +1,6 @@
 import { fileURLToPath } from "url";
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 export default defineNuxtConfig({
   alias: {
     "@config": fileURLToPath(new URL("./config", import.meta.url)),
@@ -21,7 +22,6 @@ export default defineNuxtConfig({
     buildCache: false,
   },
   future: {
-    compatibilityVersion: 4,
     typescriptBundlerResolution: true,
   },
   modules: [
@@ -41,9 +41,6 @@ export default defineNuxtConfig({
     strategy: "no_prefix",
     compilation: {
       strictMessage: false,
-    },
-    bundle: {
-      optimizeTranslationDirective: false,
     },
   },
   nitro: {
@@ -83,14 +80,6 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: "modern-compiler",
-          silenceDeprecations: ["legacy-js-api"],
-        },
-      },
-    },
     esbuild: {
       tsconfigRaw: {
         compilerOptions: { experimentalDecorators: true },

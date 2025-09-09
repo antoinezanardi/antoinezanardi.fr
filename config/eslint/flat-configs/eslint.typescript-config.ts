@@ -18,7 +18,7 @@ const ESLINT_TYPESCRIPT_CONFIG = {
       ecmaVersion: "latest",
       sourceType: "module",
       ecmaFeatures: { jsx: true },
-      project: "./tsconfig.json",
+      project: "./tsconfig.eslint.json",
       emitDecoratorMetadata: true,
     },
   },
