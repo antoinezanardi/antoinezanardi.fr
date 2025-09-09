@@ -145,7 +145,7 @@ const skills: Skill[] = [
   },
   {
     name: t("MySkills.rust"),
-    iconClasses: "fas fa-cogs",
+    iconClasses: "fab fa-rust",
     color: "#E3884F",
     percent: "60%",
     url: rustUrl,

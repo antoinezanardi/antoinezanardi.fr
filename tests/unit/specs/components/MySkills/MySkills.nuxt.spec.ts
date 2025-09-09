@@ -115,7 +115,7 @@ describe("My Skills Component", () => {
       {
         index: 8,
         name: "MySkills.rust",
-        iconClasses: "fas fa-cogs",
+        iconClasses: "fab fa-rust",
         color: "#E3884F",
         percent: "60%",
         url: "https://www.rust-lang.org/",
