@@ -4,9 +4,15 @@
     "config:recommended"
   ],
   "rangeStrategy": "bump",
-  "assignees": ["antoinezanardi"],
-  "baseBranches": ["develop"],
+  "assignees": [
+    "antoinezanardi"
+  ],
+  "baseBranchPatterns": [
+    "develop"
+  ],
   "semanticCommits": "enabled",
-  "reviewers": ["antoinezanardi"],
+  "reviewers": [
+    "antoinezanardi"
+  ],
   "dependencyDashboardApproval": false
 }
