@@ -58,6 +58,7 @@
     "nuxt": "Nuxt 3",
     "mysql": "MySQL",
     "mongodb": "MongoDB",
+    "rust": "Rust",
     "myTools": "Mes outils",
     "hoverIconsForDetails": "Survolez ou cliquez sur les icônes pour plus de détails",
     "linuxForServers": "Je déploie mes travaux web sur des serveurs sous Linux (Debian). Je m'occupe moi-même de la configuration de l'hébergement des applications sur le serveur grâce à une CI/CD robuste.",
