@@ -1,5 +1,11 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.2.1](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.2.0...v1.2.1) (2025-09-09)
+
+### 🧹 Chore
+
+* **config:** migrate renovate config ([#245](https://github.com/antoinezanardi/antoinezanardi.fr/issues/245)) ([b3a9bfd](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b3a9bfd2bb12536a1e57f83e82fdfb58dcdf7ad0))
+
 ## [1.2.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.1.1...v1.2.0) (2025-07-03)
 
 ### 🚀 Features
