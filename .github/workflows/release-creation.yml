@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout GitHub repository 📡
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Initialize CodeQL ⚙️
         uses: github/codeql-action/init@v3
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub repository 📡
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -48,7 +48,7 @@ jobs:
           run_install: false
 
       - name: Setup NodeJS ✨
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
@@ -71,7 +71,7 @@ jobs:
       - install
     steps:
       - name: Checkout GitHub repository 📡
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           persist-credentials: false
 
@@ -81,7 +81,7 @@ jobs:
           run_install: false
 
       - name: Setup NodeJS ✨
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
@@ -120,7 +120,7 @@ jobs:
       VITEST_LINES_PERCENT: ${{ steps.outputs.outputs.VITEST_LINES_PERCENT }}
     steps:
       - name: Checkout GitHub repository 📡
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -128,7 +128,7 @@ jobs:
           run_install: false
 
       - name: Setup NodeJS ✨
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'

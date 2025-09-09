@@ -20,7 +20,7 @@ jobs:
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     steps:
       - name: Setup GitHub repository 🔧
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -28,7 +28,7 @@ jobs:
           run_install: false
 
       - name: Setup NodeJS ✨
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version-file: ".nvmrc"
           cache: "pnpm"
@@ -51,13 +51,13 @@ jobs:
         run: cp app.yaml .output/public
 
       - name: Auth to GCP ☁️
-        uses: 'google-github-actions/auth@v2'
+        uses: 'google-github-actions/auth@v3'
         with:
           workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
 
       - name: Deploy 🚀
-        uses: 'google-github-actions/deploy-appengine@v2'
+        uses: 'google-github-actions/deploy-appengine@v3'
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           working_directory: .output/public
