@@ -42,9 +42,6 @@ export default defineNuxtConfig({
     compilation: {
       strictMessage: false,
     },
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
   nitro: {
     compressPublicAssets: true,
