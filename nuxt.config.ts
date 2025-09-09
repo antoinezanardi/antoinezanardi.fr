@@ -83,14 +83,6 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          api: "modern-compiler",
-          silenceDeprecations: ["legacy-js-api"],
-        },
-      },
-    },
     esbuild: {
       tsconfigRaw: {
         compilerOptions: { experimentalDecorators: true },
