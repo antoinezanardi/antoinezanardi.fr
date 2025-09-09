@@ -25,10 +25,10 @@ describe("My Skills Component", () => {
   });
 
   describe("Skills", () => {
-    it("should render 8 skills when rendered.", () => {
+    it("should render 9 skills when rendered.", () => {
       const skills = wrapper.findAllComponents<typeof SkillProgressBar>(".skill");
 
-      expect(skills).toHaveLength(8);
+      expect(skills).toHaveLength(9);
     });
 
     it.each<{
@@ -111,6 +111,15 @@ describe("My Skills Component", () => {
         percent: "90%",
         url: "https://www.mongodb.com/",
         test: "should render MongoDB skill when rendered.",
+      },
+      {
+        index: 8,
+        name: "MySkills.rust",
+        iconClasses: "fab fa-rust",
+        color: "#E3884F",
+        percent: "60%",
+        url: "https://www.rust-lang.org/",
+        test: "should render Rust skill when rendered.",
       },
     ])("$test", ({ index, name, iconClasses, color, percent, url }) => {
       const skills = wrapper.findAllComponents<typeof SkillProgressBar>(".skill");

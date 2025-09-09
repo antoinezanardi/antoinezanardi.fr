@@ -31,6 +31,9 @@ exports[`My Skills Component > should match snapshot when rendered. 1`] = `
           <div class="col-md-6">
             <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
           </div>
+          <div class="col-md-6">
+            <skill-progress-bar-stub skill="[object Object]" class="skill"></skill-progress-bar-stub>
+          </div>
         </div>
         <hr>
         <div class="row">

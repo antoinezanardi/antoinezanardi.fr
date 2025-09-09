@@ -18,6 +18,7 @@ Feature: 🛠️ Home Page - My Skills Section
     And the progressbar with exact name "Je maîtrise la technologie Nuxt 3 à 90%" should be visible
     And the progressbar with exact name "Je maîtrise la technologie MySQL à 85%" should be visible
     And the progressbar with exact name "Je maîtrise la technologie MongoDB à 90%" should be visible
+    And the progressbar with exact name "Je maîtrise la technologie Rust à 60%" should be visible
 
   Scenario: 🛠 My Skills Section displays all tools used
     Given the user is on home page
