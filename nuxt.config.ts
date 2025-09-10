@@ -76,6 +76,7 @@ export default defineNuxtConfig({
         experimentalDecorators: true,
         noUncheckedIndexedAccess: false,
       },
+      include: ["../tests"],
     },
     typeCheck: true,
   },
