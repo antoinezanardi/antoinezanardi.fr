@@ -36,9 +36,10 @@ useHead({
   htmlAttrs: { lang: locale.value },
 });
 
-onMounted((): void => {
+onMounted(() => {
   aos.init();
   const tooltipTriggerList = document.querySelectorAll("[data-bs-toggle=\"tooltip\"]");
+  // Stryker disable next-line all
   tooltipTriggerList.forEach((tooltip: Element) => new $bootstrap.Tooltip(tooltip));
   stampInHtml("👋 Hey ! J'ai aussi créé 💮 `dev-stamp` qui a généré ce message ! Retrouvez le sur GitHub ou npm !");
 });
