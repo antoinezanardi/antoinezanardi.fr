@@ -10,6 +10,7 @@ concurrency:
 
 jobs:
   deployment:
+    name: Deploy to GCP App Engine 🚀
     permissions:
       contents: 'read'
       id-token: 'write'
