@@ -1,20 +1,19 @@
-name: ⛵️ Deploy on Preproduction Workflow
+name: ⛵️ Deploy To Preproduction Workflow
 
 on:
   push:
     branches:
       - "develop"
-      - "feat/vercel-for-develop-branch"
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  group: ${{ github.workflow }}
   cancel-in-progress: true
 
 jobs:
   deployment:
+    name: Deploy to Vercel ⛵
     permissions:
       contents: 'read'
-      id-token: 'write'
     runs-on: ubuntu-latest
     env:
       NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
@@ -35,16 +34,8 @@ jobs:
           node-version-file: ".nvmrc"
           cache: "pnpm"
 
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
-
       - name: Install project dependencies 📦
-        run: pnpm install
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install --frozen-lockfile
 
       - name: Generate app ✨
         run: pnpm run generate
