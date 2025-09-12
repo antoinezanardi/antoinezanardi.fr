@@ -12,10 +12,10 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 ## 📖 Table of Contents
 
 - [🚀 Features](#-features)
-- [🛠️ Tech Stack](#-tech-stack)
+- [🛠️ Tech Stack](#--tech-stack)
 - [✅ Testing & Quality](#-testing--quality)
 - [🔄 Deployment Workflow](#-deployment-workflow)
-- [🏗️ Getting Started](#-getting-started)
+- [🏗️ Getting Started](#--getting-started)
 - [📜 License](#-license)
 
 ---
