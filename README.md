@@ -11,16 +11,16 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 
 ## 📖 Table of Contents
 
-- [🚀 Features](#-features)
-- [🛠️ Tech Stack](#--tech-stack)
-- [✅ Testing & Quality](#-testing--quality)
-- [🔄 Deployment Workflow](#-deployment-workflow)
-- [🏗️ Getting Started](#--getting-started)
-- [📜 License](#-license)
+- [🚀 Features](#features)
+- [🛠️ Tech Stack](#tech-stack)
+- [✅ Testing & Quality](#testing-quality)
+- [🔄 Deployment Workflow](#deployment-workflow)
+- [🏗️ Getting Started](#getting-started)
+- [📜 License](#license)
 
 ---
 
-## 🚀 Features
+## <a name="features"></a>🚀 Features
 
 This portfolio is not just a website, but also a **playground for professional-grade practices**:
 
@@ -32,7 +32,7 @@ This portfolio is not just a website, but also a **playground for professional-g
 
 ---
 
-## 🛠️ Tech Stack
+## <a name="tech-stack"></a>🛠️ Tech Stack
 
 - **[Nuxt 4](https://nuxt.com/)** with **TypeScript**
 - **Vue.js** for UI development
@@ -42,7 +42,7 @@ This portfolio is not just a website, but also a **playground for professional-g
 
 ---
 
-## ✅ Testing & Quality
+## <a name="testing-quality"></a>✅ Testing & Quality
 
 This repository demonstrates how I build reliable software with strong testing strategies:
 
@@ -54,14 +54,14 @@ This repository demonstrates how I build reliable software with strong testing s
 
 ---
 
-## 🔄 Deployment Workflow
+## <a name="deployment-workflow"></a>🔄 Deployment Workflow
 
 - **Pre-production** → Automatically deployed to **Vercel** when merging into `develop`.
 - **Production** → Automatically deployed to **GCP** when merging into `master`.
 
 ---
 
-## 🏗️ Getting Started
+## <a name="getting-started"></a>🏗️ Getting Started
 
 Clone the repository:
 
@@ -104,7 +104,7 @@ pnpm run test:stryker
 
 ---
 
-## 📜 License
+## <a name="license"></a>📜 License
 
 This project is licensed under the **MIT License**.
 See the [LICENSE](./LICENSE) file for details.
