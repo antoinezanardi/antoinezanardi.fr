@@ -5,17 +5,17 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
 
-👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or checkout the development version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
+👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or check out the development version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
 
 ---
 
 ## 📖 Table of Contents
 
 - [🚀 Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
+- [🛠️ Tech Stack](#-tech-stack)
 - [✅ Testing & Quality](#-testing--quality)
 - [🔄 Deployment Workflow](#-deployment-workflow)
-- [🏗️ Getting Started](#️-getting-started)
+- [🏗️ Getting Started](#-getting-started)
 - [📜 License](#-license)
 
 ---
