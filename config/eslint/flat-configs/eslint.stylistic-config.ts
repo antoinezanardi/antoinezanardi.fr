@@ -58,7 +58,6 @@ const ESLINT_STYLISTIC_CONFIG = {
     "@stylistic/jsx-newline": "error",
     "@stylistic/jsx-one-expression-per-line": "error",
     "@stylistic/jsx-pascal-case": "error",
-    "@stylistic/jsx-props-no-multi-spaces": "error",
     "@stylistic/jsx-quotes": "error",
     "@stylistic/jsx-self-closing-comp": "error",
     "@stylistic/jsx-sort-props": "error",

@@ -25,7 +25,6 @@ const ESLINT_VUE_CONFIG = {
     parser: VueParser,
     parserOptions: {
       parser: TypescriptParser,
-      tsconfigRootDir: "./",
       sourceType: "module",
       extraFileExtensions: [".vue"],
       project: "./tsconfig.json",
@@ -203,6 +202,7 @@ const ESLINT_VUE_CONFIG = {
     "vue/no-empty-component-block": "error",
     "vue/no-import-compiler-macros": "error",
     "vue/no-multiple-objects-in-class": "error",
+    "vue/no-negated-v-if-condition": "off",
     "vue/no-potential-component-option-typo": "error",
     "vue/no-ref-object-reactivity-loss": "error",
     "vue/no-required-prop-with-default": "error",
@@ -299,6 +299,7 @@ const ESLINT_VUE_CONFIG = {
     "vue/no-implicit-coercion": "error",
     "vue/no-irregular-whitespace": "error",
     "vue/no-loss-of-precision": "error",
+    "vue/no-negated-condition": "off",
     "vue/no-restricted-syntax": "error",
     "vue/no-sparse-arrays": "error",
     "vue/no-useless-concat": "error",

@@ -259,6 +259,7 @@ const ESLINT_GLOBAL_CONFIG = {
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "preserve-caught-error": "error",
     "radix": ["error", "as-needed"],
     "require-await": "error",
     "require-unicode-regexp": "error",
