@@ -3,7 +3,7 @@
 My personal portfolio website, built to showcase my profile, projects, and professional background — while also serving as a demonstration of clean, fully tested, and production-ready web development.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)](#)
+![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
 
 👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or checkout the development version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
 
@@ -24,21 +24,21 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 
 This portfolio is not just a website, but also a **playground for professional-grade practices**:
 
-* **Who I am** — personal introduction & contact info.
-* **Technical skills** — languages, frameworks, and tools I master.
-* **Portfolio** — selected projects that I’m most proud of.
-* **Professional experiences** — my career journey.
-* **Education & certifications** — my academic path and achievements.
+- **Who I am** — personal introduction & contact info.
+- **Technical skills** — languages, frameworks, and tools I master.
+- **Portfolio** — selected projects that I’m most proud of.
+- **Professional experiences** — my career journey.
+- **Education & certifications** — my academic path and achievements.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **[Nuxt 4](https://nuxt.com/)** with **TypeScript**
-* **Vue.js** for UI development
-* **Bootstrap** for styling
-* **Vercel** — pre-production deployments
-* **GCP (Google Cloud Platform)** — production hosting
+- **[Nuxt 4](https://nuxt.com/)** with **TypeScript**
+- **Vue.js** for UI development
+- **Bootstrap** for styling
+- **Vercel** — pre-production deployments
+- **GCP (Google Cloud Platform)** — production hosting
 
 ---
 
@@ -46,18 +46,18 @@ This portfolio is not just a website, but also a **playground for professional-g
 
 This repository demonstrates how I build reliable software with strong testing strategies:
 
-* **Unit tests** — [Vitest](https://vitest.dev/) with **100% coverage**.
-* **End-to-End tests** — [Playwright](https://playwright.dev/).
-* **Mutation tests** — [Stryker](https://stryker-mutator.io/).
-* **Linting & formatting** — [ESLint](https://eslint.org/).
-* **CI/CD pipelines** — [GitHub Actions](https://github.com/features/actions).
+- **Unit tests** — [Vitest](https://vitest.dev/) with **100% coverage**.
+- **End-to-End tests** — [Playwright](https://playwright.dev/).
+- **Mutation tests** — [Stryker](https://stryker-mutator.io/).
+- **Linting & formatting** — [ESLint](https://eslint.org/).
+- **CI/CD pipelines** — [GitHub Actions](https://github.com/features/actions).
 
 ---
 
 ## 🔄 Deployment Workflow
 
-* **Pre-production** → Automatically deployed to **Vercel** when merging into `develop`.
-* **Production** → Automatically deployed to **GCP** when merging into `master`.
+- **Pre-production** → Automatically deployed to **Vercel** when merging into `develop`.
+- **Production** → Automatically deployed to **GCP** when merging into `master`.
 
 ---
 
@@ -96,10 +96,10 @@ Run tests:
 pnpm run test:unit
 
 # End-to-End tests
-npm run test:cucumber
+pnpm run test:cucumber
 
 # Mutation tests
-npm run test:stryker
+pnpm run test:stryker
 ```
 
 ---
