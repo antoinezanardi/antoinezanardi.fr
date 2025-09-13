@@ -184,8 +184,8 @@ importers:
         specifier: ^4.20.5
         version: 4.20.5
       type-fest:
-        specifier: ^4.41.0
-        version: 4.41.0
+        specifier: ^5.0.0
+        version: 5.0.0
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -6519,6 +6519,10 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tar-fs@2.1.2:
     resolution: {integrity: sha512-EsaAXwxmx8UB7FRKqeozqEPop69DXcmYwTQwXvyAPF352HJsPdkVhvTaDPYqfNgruveJIJy3TA2l+2zj8LJIJA==}
 
@@ -6704,6 +6708,10 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
+
+  type-fest@5.0.0:
+    resolution: {integrity: sha512-GeJop7+u7BYlQ6yQCAY1nBQiRSHR+6OdCEtd8Bwp9a3NK3+fWAVjOaPKJDteB9f6cIJ0wt4IfnScjLG450EpXA==}
+    engines: {node: '>=20'}
 
   type-level-regexp@0.1.17:
     resolution: {integrity: sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==}
@@ -14657,6 +14665,8 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
+  tagged-tag@1.0.0: {}
+
   tar-fs@2.1.2:
     dependencies:
       chownr: 1.1.4
@@ -14841,6 +14851,10 @@ snapshots:
   type-fest@2.19.0: {}
 
   type-fest@4.41.0: {}
+
+  type-fest@5.0.0:
+    dependencies:
+      tagged-tag: 1.0.0
 
   type-level-regexp@0.1.17: {}
 
