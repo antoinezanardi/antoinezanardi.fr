@@ -11,7 +11,7 @@ describe("My Project Component", () => {
     project: {
       name: "MyPortfolio.projects.portfolio.name",
       description: "MyPortfolio.projects.portfolio.description",
-      image: "portfolio-thumbnail.jpg",
+      image: "portfolio-thumbnail.webp",
       url: "https://www.antoinezanardi.fr",
     },
   };
@@ -43,7 +43,7 @@ describe("My Project Component", () => {
     it("should set image source when rendered.", () => {
       const image = wrapper.findComponent<typeof NuxtImg>(".project-image");
 
-      expect(image.props("src")).toBe("/images/projects/portfolio-thumbnail.jpg");
+      expect(image.props("src")).toBe("/images/projects/portfolio-thumbnail.webp");
     });
   });
 

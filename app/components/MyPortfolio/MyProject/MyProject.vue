@@ -14,7 +14,6 @@
         <NuxtImg
           :alt="project.name"
           class="project-image"
-          format="webp"
           :src="`/images/projects/${project.image}`"
         />
 

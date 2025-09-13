@@ -12,7 +12,6 @@
       <NuxtImg
         :alt="imageAlt"
         class="logo timeline-logo-image white-logo"
-        format="webp"
         :src="`/images/logos/${image}`"
       />
     </a>

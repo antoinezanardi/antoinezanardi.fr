@@ -21,8 +21,8 @@
                 <NuxtImg
                   id="profile-pic"
                   :alt="$t('MyProfile.profilePicture')"
-                  format="webp"
-                  src="/images/antoine.jpg"
+                  size="180x180"
+                  src="/images/antoine.webp"
                 />
               </a>
             </div>
@@ -93,7 +93,7 @@ import LinkedInButton from "~/components/shared/Buttons/LinkedInButton.vue";
 }
 
 .page-header-image {
-  background-image: url("../../assets/images/background.jpg");
+  background-image: url("../../assets/images/background.webp");
 }
 .text-shadow {
   text-shadow: #394036 1px 1px;
