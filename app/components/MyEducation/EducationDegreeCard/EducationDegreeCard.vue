@@ -71,7 +71,7 @@ const props = defineProps<EducationDegreeCardProps>();
 
 const { t } = useI18n();
 
-const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.png");
+const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.webp");
 
 const schoolLabel = computed<string>(() => {
   const { school } = props.educationDegree;

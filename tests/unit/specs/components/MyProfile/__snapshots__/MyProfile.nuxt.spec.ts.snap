@@ -8,7 +8,7 @@ exports[`My Profile Component > should match snapshot when rendered. 1`] = `
       <div data-v-d3c3f494="" class="container">
         <div data-v-d3c3f494="" class="content-center">
           <div data-v-d3c3f494="" class="cc-profile-image"><a data-v-d3c3f494="" href="https://www.linkedin.com/in/antoinezanardi/" rel="noopener noreferrer" target="_blank">
-              <nuxt-img-stub data-v-d3c3f494="" alt="Photo de profil" format="webp" src="/images/antoine.jpg" preload="false" crossorigin="false" placeholder="false" custom="false" id="profile-pic"></nuxt-img-stub>
+              <nuxt-img-stub data-v-d3c3f494="" alt="Photo de profil" height="180" src="/images/antoine.webp" width="180" preload="false" crossorigin="false" placeholder="false" custom="false" id="profile-pic"></nuxt-img-stub>
             </a></div>
           <h1 data-v-d3c3f494="" class="h1 text-shadow title">Antoine Zanardi</h1>
           <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Consultant Tech Lead</h2>

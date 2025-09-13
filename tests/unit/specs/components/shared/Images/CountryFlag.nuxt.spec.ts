@@ -34,7 +34,7 @@ describe("Country Flag Component", () => {
     it("should render France flag when country is France.", () => {
       const flag = wrapper.findComponent<typeof NuxtImg>(".country-flag");
 
-      expect(flag.attributes("src")).toBe("/images/flags/france-flag.jpg");
+      expect(flag.attributes("src")).toBe("/images/flags/france-flag.webp");
     });
 
     it.each<{
@@ -44,17 +44,17 @@ describe("Country Flag Component", () => {
     }>([
       {
         country: "france",
-        expectedFlag: "/images/flags/france-flag.jpg",
+        expectedFlag: "/images/flags/france-flag.webp",
         test: "should render France flag when country is France.",
       },
       {
         country: "usa",
-        expectedFlag: "/images/flags/usa-flag.jpg",
+        expectedFlag: "/images/flags/usa-flag.webp",
         test: "should render USA flag when country is USA.",
       },
       {
         country: "canada",
-        expectedFlag: "/images/flags/canada-flag.jpg",
+        expectedFlag: "/images/flags/canada-flag.webp",
         test: "should render Canada flag when country is Canada.",
       },
     ])("$test", async({ country, expectedFlag }) => {

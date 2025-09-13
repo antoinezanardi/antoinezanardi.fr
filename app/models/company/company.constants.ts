@@ -10,17 +10,17 @@ const COMPANIES: Record<CompanyName, Company> = Object.freeze({
   OhMyCode: {
     name: "OhMyCode",
     url: "https://www.sobook.fr/oh-my-code/",
-    image: "omc-logo.png",
+    image: "omc-logo.webp",
   },
   SoBook: {
     name: "SoBook",
     url: "https://www.sobook.fr/oh-my-code/",
-    image: "sobook-logo.png",
+    image: "sobook-logo.webp",
   },
   Daveo: {
     name: "Daveo",
     url: "https://www.daveo.fr/",
-    image: "daveo-logo.png",
+    image: "daveo-logo.webp",
   },
 });
 

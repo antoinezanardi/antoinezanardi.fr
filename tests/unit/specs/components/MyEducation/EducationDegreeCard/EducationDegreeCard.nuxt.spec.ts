@@ -93,7 +93,7 @@ describe("Education Degree Card Component", () => {
       wrapper = await mountEducationDegreeCardComponent({ props: { educationDegree: educationDegreeWithoutImage } });
       const periodTimeline = wrapper.findComponent<typeof PeriodTimeline>(".education-timeline");
 
-      expect(periodTimeline.props("image")).toBe("college-icon.png");
+      expect(periodTimeline.props("image")).toBe("college-icon.webp");
     });
 
     it("should pass school url when rendered.", () => {
