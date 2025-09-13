@@ -175,6 +175,7 @@
             <NuxtImg
               alt="Daveo"
               class="daveo-logo"
+              loading="lazy"
               src="/images/logos/daveo-logo.webp"
             />
           </a>

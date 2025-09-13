@@ -3,9 +3,11 @@
     :alt="`${country} flag`"
     class="country-flag"
     data-bs-toggle="tooltip"
-    size="25x25"
+    height="25"
+    loading="lazy"
     :src="`/images/flags/${countryFlagSrc}`"
     :title="$t(`Countries.${country}`)"
+    width="25"
   />
 </template>
 

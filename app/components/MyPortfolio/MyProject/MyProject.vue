@@ -14,6 +14,7 @@
         <NuxtImg
           :alt="project.name"
           class="project-image"
+          loading="lazy"
           :src="`/images/projects/${project.image}`"
         />
 

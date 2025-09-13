@@ -12,6 +12,7 @@
       <NuxtImg
         :alt="imageAlt"
         class="logo timeline-logo-image white-logo"
+        loading="lazy"
         :src="`/images/logos/${image}`"
       />
     </a>

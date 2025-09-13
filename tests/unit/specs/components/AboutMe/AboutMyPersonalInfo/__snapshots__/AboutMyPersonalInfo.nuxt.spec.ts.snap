@@ -41,7 +41,7 @@ exports[`AboutMyPersonalInfo Component > should match snapshot when rendered. 1`
     <div data-v-b7a042bc="" class="align-items-center mt-3 row">
       <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Travaille chez :</b></div>
       <div data-v-b7a042bc="" class="col-sm-8"><a data-v-b7a042bc="" aria-label="Visitez le site de Daveo" href="https://www.daveo.fr/" rel="noopener noreferrer" target="_blank">
-          <nuxt-img-stub data-v-b7a042bc="" alt="Daveo" src="/images/logos/daveo-logo.webp" preload="false" crossorigin="false" placeholder="false" custom="false" class="daveo-logo"></nuxt-img-stub>
+          <nuxt-img-stub data-v-b7a042bc="" alt="Daveo" loading="lazy" src="/images/logos/daveo-logo.webp" preload="false" crossorigin="false" placeholder="false" custom="false" class="daveo-logo"></nuxt-img-stub>
         </a></div>
     </div>
   </div>
