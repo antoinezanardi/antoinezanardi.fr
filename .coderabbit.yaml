@@ -8,7 +8,7 @@ reviews:
   high_level_summary: true
   poem: true
   review_status: true
-  fail_commit_status: true
+  fail_commit_status: false
   collapse_walkthrough: false
   finishing_touches:
     docstrings:
@@ -17,10 +17,12 @@ reviews:
       enabled: false
   pre_merge_checks:
     title:
-      mode: "warning"
+      mode: "error"
       requirements: "Use Conventional Commits: type(scope)?: subject — types: feat, fix, docs, style, refactor, perf, test, chore; no period at the end."
     description:
       mode: "warning"
+    docstrings:
+      mode: "off"
   auto_review:
     enabled: true
     drafts: false
