@@ -1,0 +1,21 @@
+.section {
+  padding: 70px 0 0;
+  position: relative;
+  background: #FFFFFF;
+}
+
+.section .row + .category {
+  margin-top: 15px;
+}
+
+.section-navbars {
+  padding-bottom: 0;
+}
+
+.section-full-screen {
+  height: 100vh;
+}
+
+.section-signup {
+  padding-top: 20vh;
+}
