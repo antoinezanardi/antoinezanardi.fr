@@ -1,17 +1,17 @@
-.tooltip.bs-tooltip-right .arrow:before {
-  border-right-color: #FFFFFF;
+.tooltip[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: var(--bs-tooltip-bg, #FFFFFF);
 }
 
-.tooltip.bs-tooltip-top .arrow:before {
-  border-top-color: #FFFFFF;
+.tooltip[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: var(--bs-tooltip-bg, #FFFFFF);
 }
 
-.tooltip.bs-tooltip-bottom .arrow:before {
-  border-bottom-color: #FFFFFF;
+.tooltip[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: var(--bs-tooltip-bg, #FFFFFF);
 }
 
-.tooltip.bs-tooltip-left .arrow:before {
-  border-left-color: #FFFFFF;
+.tooltip[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: var(--bs-tooltip-bg, #FFFFFF);
 }
 
 .tooltip-inner {

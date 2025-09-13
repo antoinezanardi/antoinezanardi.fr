@@ -52,9 +52,7 @@
   right: 10px;
   bottom: 10px;
   left: 10px;
-  -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
-  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
 
@@ -63,18 +61,13 @@
   right: 10px;
   bottom: 10px;
   left: 10px;
-  -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
-  -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
 }
 
 .gallery figure.cc-effect .h4 {
   margin-top: 25%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
   opacity: 0;
 }
 
@@ -95,16 +88,12 @@
   padding: 0.5em 2em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
   opacity: 0;
 }
 
 .gallery figure.cc-effect img,
 .gallery figure.cc-effect .h4 {
-  -webkit-transform: scale(1.06, 1.06);
   transform: scale(1.06, 1.06);
 }
 
@@ -112,22 +101,17 @@
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after,
 .gallery figure.cc-effect p {
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .gallery figure.cc-effect:hover img {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
 .gallery figure.cc-effect:hover figcaption::after {
   opacity: 1;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -139,7 +123,6 @@
 .gallery figure.cc-effect:hover p,
 .gallery figure.cc-effect:hover button {
   opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   color: #fff;
 }
@@ -148,6 +131,5 @@
 .gallery figure.cc-effect:hover .h4,
 .gallery figure.cc-effect:hover p,
 .gallery figure.cc-effect:hover img {
-  -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }

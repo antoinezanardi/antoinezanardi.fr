@@ -1,5 +1,4 @@
 .img-raised {
-  -webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -15,9 +14,7 @@
   width: 180px;
   position: absolute;
   left: 0;
-  -webkit-animation: pulsate 1.6s ease-out;
   animation: pulsate 1.6s ease-out;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   opacity: 0.0;
   z-index: 99;
@@ -32,39 +29,19 @@
   margin: 0;
   border: 15px solid transparent;
   z-index: 9999;
-  -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
 
 .cc-profile-image a:hover img {
-  -webkit-transform: scale(1.06, 1.06);
   transform: scale(1.06, 1.06);
 }
 
 .cc-profile-image a:hover:before {
-  -webkit-animation: none;
   animation: none;
 }
 
-/* Profile Image Style */
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-    opacity: 0.0;
-  }
-  50% {
-    opacity: 1.0;
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 0.0;
-  }
-}
 @keyframes pulsate {
   0% {
-    -webkit-transform: scale(0.6, 0.6);
     transform: scale(0.6, 0.6);
     opacity: 0.0;
   }
@@ -72,7 +49,6 @@
     opacity: 1.0;
   }
   100% {
-    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 0.0;
   }

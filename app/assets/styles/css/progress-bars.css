@@ -1,5 +1,7 @@
 .progress-container {
   position: relative;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 
 .progress-container + .progress-container,
@@ -14,16 +16,15 @@
 }
 
 .progress-container .progress {
-  height: 1px;
+  height: 5px;
+  font-size: 18px;
   border-radius: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
   background: rgba(222, 222, 222, 0.8);
   margin-top: 14px;
 }
 
 .progress-container .progress .progress-bar {
-  -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #888;
 }
@@ -36,85 +37,13 @@
   font-size: 0.8571em;
 }
 
-.progress-container.progress-neutral .progress {
-  background: rgba(255, 255, 255, 0.3);
-}
-
-.progress-container.progress-neutral .progress-bar {
-  background: #FFFFFF;
-}
-
-.progress-container.progress-neutral .progress-value,
-.progress-container.progress-neutral .progress-badge {
-  color: #FFFFFF;
-}
-
-.progress-container.progress-primary .progress {
-  background: rgba(55, 140, 63, 0.4);
-}
-
-.progress-container.progress-primary .progress-bar {
-  background: #1b6426;
-}
-
-.progress-container.progress-primary .progress-value,
-.progress-container.progress-primary .progress-badge {
-  color: #1b6426;
-}
-
-.progress-container.progress-info .progress {
-  background: rgba(44, 168, 255, 0.3);
-}
-
-.progress-container.progress-info .progress-bar {
-  background: #2CA8FF;
-}
-
-.progress-container.progress-info .progress-value,
-.progress-container.progress-info .progress-badge {
-  color: #2CA8FF;
-}
-
-.progress-container.progress-success .progress {
-  background: rgba(24, 206, 15, 0.3);
-}
-
-.progress-container.progress-success .progress-bar {
-  background: #18ce0f;
-}
-
-.progress-container.progress-success .progress-value,
-.progress-container.progress-success .progress-badge {
-  color: #18ce0f;
-}
-
-.progress-container.progress-warning .progress {
-  background: rgba(255, 178, 54, 0.3);
-}
-
-.progress-container {
-  margin-bottom: 20px;
-  font-size: 18px;
-}
-
 .progress-container .progress-bar {
   height: 5px;
-  -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: -webkit-transform 2s ease-in-out;
-  transition: -webkit-transform 2s ease-in-out;
   transition: transform 2s ease-in-out;
-  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
-  -webkit-transform-origin: 0% 0%;
-  transform-origin: 0% 0%;
-}
-
-.progress-container .progress {
-  height: 5px;
-  font-size: 18px;
+  transform-origin: 0 0;
 }
 
 .progress-container .aos-animate {
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }

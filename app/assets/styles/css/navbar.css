@@ -1,11 +1,10 @@
 .btn,
 .navbar .navbar-nav > a.btn {
-  border-width: 2px;
   font-weight: 400;
   font-size: 0.8571em;
   line-height: 1.35em;
   margin: 5px 1px;
-  border: none;
+  border: 2px none;
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
@@ -25,12 +24,9 @@
 .navbar .navbar-nav > a.btn:active:hover,
 .navbar .navbar-nav > a.btn.active:focus,
 .navbar .navbar-nav > a.btn.active:hover,
-.show >
-.navbar .navbar-nav > a.btn.dropdown-toggle,
-.show >
-.navbar .navbar-nav > a.btn.dropdown-toggle:focus,
-.show >
-.navbar .navbar-nav > a.btn.dropdown-toggle:hover {
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle,
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
   background-color: #979797;
   color: #FFFFFF;
   -webkit-box-shadow: none;
@@ -68,18 +64,12 @@ fieldset[disabled] .btn.active,
 .navbar .navbar-nav > a.btn[disabled].focus,
 .navbar .navbar-nav > a.btn[disabled]:active,
 .navbar .navbar-nav > a.btn[disabled].active,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn:hover,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn:focus,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn.focus,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn:active,
-fieldset[disabled]
-.navbar .navbar-nav > a.btn.active {
+fieldset[disabled] .navbar .navbar-nav > a.btn,
+fieldset[disabled] .navbar .navbar-nav > a.btn:hover,
+fieldset[disabled] .navbar .navbar-nav > a.btn:focus,
+fieldset[disabled] .navbar .navbar-nav > a.btn.focus,
+fieldset[disabled] .navbar .navbar-nav > a.btn:active,
+fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   background-color: #888;
   border-color: #888;
 }
@@ -121,15 +111,15 @@ fieldset[disabled]
 .navbar .navbar-nav > a.btn:hover,
 .navbar .navbar-nav > a.btn:focus {
   opacity: 1;
-  filter: alpha(opacity=100);
-  outline: 0 !important;
+  outline: 2px solid #379963;
+  outline-offset: 2px;
 }
 
 .btn:active, .btn.active,
 .open > .btn.dropdown-toggle,
 .navbar .navbar-nav > a.btn:active,
 .navbar .navbar-nav > a.btn.active,
-.open >
+.open >,
 .navbar .navbar-nav > a.btn.dropdown-toggle {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -188,7 +178,6 @@ fieldset[disabled]
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-12px, -12px);
   transform: translate(-12px, -12px);
   line-height: 1.5626rem;
   width: 25px;

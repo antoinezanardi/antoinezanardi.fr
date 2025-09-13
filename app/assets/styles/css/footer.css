@@ -33,6 +33,12 @@
   text-decoration: none;
 }
 
+.footer ul li a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
 .footer .copyright {
   font-size: 0.8571em;
 }
