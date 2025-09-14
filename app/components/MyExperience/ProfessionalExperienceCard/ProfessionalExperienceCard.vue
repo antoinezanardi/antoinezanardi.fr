@@ -2,7 +2,7 @@
   <div class="card">
     <div class="row">
       <div
-        class="bg-primary col-md-3"
+        class="background-primary col-md-3"
         data-aos="fade-right"
         data-aos-duration="500"
         data-aos-offset="50"

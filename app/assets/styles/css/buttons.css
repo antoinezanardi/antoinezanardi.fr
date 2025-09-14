@@ -2,8 +2,8 @@
   color: white;
 }
 
-.btn:hover {
-  color: white !important;
+button .btn:hover {
+  color: white;
 }
 
 .btn-primary {
@@ -22,17 +22,6 @@
 
 .btn-primary:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
-}
-
-.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary:disabled, .btn-primary:disabled:hover, .btn-primary:disabled:focus, .btn-primary:disabled.focus, .btn-primary:disabled:active, .btn-primary:disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active,
-fieldset[disabled] .btn-primary,
-fieldset[disabled] .btn-primary:hover,
-fieldset[disabled] .btn-primary:focus,
-fieldset[disabled] .btn-primary.focus,
-fieldset[disabled] .btn-primary:active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #1b6426;
-  border-color: #1b6426;
 }
 
 .btn-primary.btn-simple {
@@ -76,18 +65,6 @@ fieldset[disabled] .btn-primary.active {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
 }
 
-.btn-info.btn-simple {
-  color: #2CA8FF;
-  border-color: #2CA8FF;
-}
-
-.btn-info.btn-simple:hover, .btn-info.btn-simple:focus, .btn-info.btn-simple:active {
-  background-color: transparent;
-  color: #4bb5ff;
-  border-color: #4bb5ff;
-  box-shadow: none;
-}
-
 .btn-info.btn-link {
   color: #2CA8FF;
 }
@@ -99,14 +76,20 @@ fieldset[disabled] .btn-primary.active {
   box-shadow: none;
 }
 
-.btn-round {
-  border-width: 1px;
-  border-radius: 30px !important;
-  padding: 11px 23px;
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.btn-info:focus-visible {
+  outline: 2px solid #1b6426;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(55, 140, 63, 0.25);
 }
 
-.btn-round.btn-simple {
-  padding: 10px 22px;
+.btn.btn-round {
+  border-radius: 30px;
+}
+
+.btn.btn-icon {
+  padding-top: 0.8rem;
 }
 
 .btn-lg {
@@ -115,6 +98,10 @@ fieldset[disabled] .btn-primary.active {
   padding: 15px 48px;
 }
 
-.btn-lg.btn-simple {
-  padding: 14px 47px;
+.btn.btn-round:focus-visible,
+.btn.btn-icon:focus-visible,
+.btn-lg:focus-visible {
+  outline: 2px solid #1b6426;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(55, 140, 63, 0.25);
 }

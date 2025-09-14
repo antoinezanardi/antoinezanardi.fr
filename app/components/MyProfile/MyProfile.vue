@@ -62,7 +62,11 @@
 
         <div class="section">
           <div class="container">
-            <div class="button-container">
+            <div
+              class="button-container"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <LinkedInButton class="me-2"/>
 
               <GitHubButton/>

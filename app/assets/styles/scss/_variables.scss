@@ -1,4 +1,9 @@
-$primary: #378C3F;
+$primary: #378C3F !default;
 $font-family-sans-serif: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 
 $mobile-breakpoint: 576px;
+
+:root {
+  --bs-primary: #378C3F;
+  --bs-primary-rgb: rgb(55, 140, 63);
+}

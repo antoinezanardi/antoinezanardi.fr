@@ -29,13 +29,11 @@
 .show > .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
   background-color: #979797;
   color: #FFFFFF;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .btn:hover,
 .navbar .navbar-nav > a.btn:hover {
-  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
 }
 
@@ -87,7 +85,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   background-color: transparent;
   color: #979797;
   border-color: #979797;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -103,7 +100,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   background-color: transparent;
   color: #979797;
   text-decoration: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -121,7 +117,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 .navbar .navbar-nav > a.btn.active,
 .open >,
 .navbar .navbar-nav > a.btn.dropdown-toggle {
-  -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
 }
@@ -194,7 +189,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   padding-bottom: 0.625rem;
   min-height: 53px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -317,7 +311,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 
 .navbar.navbar-transparent {
   background-color: transparent !important;
-  -webkit-box-shadow: none;
   box-shadow: none;
   color: #FFFFFF;
   padding-top: 20px;

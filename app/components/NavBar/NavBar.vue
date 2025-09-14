@@ -2,7 +2,7 @@
   <header>
     <div class="profile-page sidebar-collapse">
       <nav
-        class="bg-primary fixed-top navbar navbar-expand-lg"
+        class="background-primary fixed-top navbar navbar-expand-lg"
         data-color-on-scroll="100"
       >
         <div class="container">

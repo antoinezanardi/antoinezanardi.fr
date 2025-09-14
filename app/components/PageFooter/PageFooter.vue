@@ -1,6 +1,10 @@
 <template>
   <footer class="footer py-1">
-    <div class="container text-center">
+    <div
+      class="container text-center"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <LinkedInButton class="me-2"/>
 
       <GitHubButton/>

@@ -17,7 +17,7 @@ exports[`My Profile Component > should match snapshot when rendered. 1`] = `
       </div>
       <div data-v-d3c3f494="" class="section">
         <div data-v-d3c3f494="" class="container">
-          <div data-v-d3c3f494="" class="button-container">
+          <div data-v-d3c3f494="" class="button-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <linked-in-button-stub data-v-d3c3f494="" class="me-2"></linked-in-button-stub>
             <git-hub-button-stub data-v-d3c3f494=""></git-hub-button-stub>
           </div>

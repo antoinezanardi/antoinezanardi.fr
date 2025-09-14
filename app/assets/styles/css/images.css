@@ -18,6 +18,7 @@
   animation-iteration-count: infinite;
   opacity: 0.0;
   z-index: 99;
+  pointer-events: none;
 }
 
 .cc-profile-image img {
