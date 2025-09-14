@@ -38,7 +38,6 @@
 }
 
 .progress-container .progress-bar {
-  height: 5px;
   transform: scaleX(0);
   transition: transform 2s ease-in-out;
   transform-origin: 0 0;
