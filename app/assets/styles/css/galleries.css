@@ -13,7 +13,7 @@
 
 .gallery .cc-portfolio-image figure figcaption {
   position: absolute;
-  color: #fff;
+  color: var(--white-color);
   backface-visibility: hidden;
 }
 
@@ -114,7 +114,7 @@
   transform: scale(1);
 }
 
-.gallery figure.cc-effect:hover figcaption:before {
+.gallery figure.cc-effect:hover figcaption::before {
   background: rgba(27, 23, 23, 0.5);
 }
 

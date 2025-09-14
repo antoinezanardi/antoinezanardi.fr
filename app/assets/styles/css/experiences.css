@@ -2,6 +2,6 @@
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
-  color: #fff;
+  color: var(--white-color);
   text-transform: uppercase;
 }

@@ -1,24 +1,24 @@
 .tooltip[data-popper-placement^="right"] .tooltip-arrow::before {
-  border-right-color: var(--bs-tooltip-bg, #FFFFFF);
+  border-right-color: var(--bs-tooltip-bg, var(--white-color));
 }
 
 .tooltip[data-popper-placement^="top"] .tooltip-arrow::before {
-  border-top-color: var(--bs-tooltip-bg, #FFFFFF);
+  border-top-color: var(--bs-tooltip-bg, var(--white-color));
 }
 
 .tooltip[data-popper-placement^="bottom"] .tooltip-arrow::before {
-  border-bottom-color: var(--bs-tooltip-bg, #FFFFFF);
+  border-bottom-color: var(--bs-tooltip-bg, var(--white-color));
 }
 
 .tooltip[data-popper-placement^="left"] .tooltip-arrow::before {
-  border-left-color: var(--bs-tooltip-bg, #FFFFFF);
+  border-left-color: var(--bs-tooltip-bg, var(--white-color));
 }
 
 .tooltip-inner {
   padding: 0.5rem 0.7rem;
   min-width: 130px;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   font-size: 14px;
   color: inherit;
-  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-shadow);
 }

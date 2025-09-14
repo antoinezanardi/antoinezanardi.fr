@@ -1,22 +1,26 @@
 .btn {
-  color: white;
-}
-
-button .btn:hover {
-  color: white;
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 0.8571em;
+  line-height: 1.35em;
+  margin: 5px 1px;
+  border: 2px none;
+  border-radius: 0.1875rem;
+  padding: 11px 22px;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #1b6426;
-  color: #FFFFFF;
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
-  background-color: #40a249;
-  color: #FFFFFF;
+  background-color: var(--primary-hover-color);
+  color: var(--white-color);
   box-shadow: none;
 }
 
@@ -25,39 +29,39 @@ button .btn:hover {
 }
 
 .btn-primary.btn-simple {
-  color: #1b6426;
-  border-color: #1b6426;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active {
   background-color: transparent;
-  color: #40a249;
-  border-color: #40a249;
+  color: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
   box-shadow: none;
 }
 
 .btn-primary.btn-link {
-  color: #1b6426;
+  color: var(--primary-color);
 }
 
 .btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
   background-color: transparent;
-  color: #40a249;
+  color: var(--primary-hover-color);
   text-decoration: none;
   box-shadow: none;
 }
 
 .btn-info {
-  background-color: #2CA8FF;
-  color: #FFFFFF;
+  background-color: var(--info-color);
+  color: var(--white-color);
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info:active:focus, .btn-info:active:hover, .btn-info.active:focus, .btn-info.active:hover,
 .show > .btn-info.dropdown-toggle,
 .show > .btn-info.dropdown-toggle:focus,
 .show > .btn-info.dropdown-toggle:hover {
-  background-color: #4bb5ff;
-  color: #FFFFFF;
+  background-color: var(--info-hover-color);
+  color: var(--white-color);
   box-shadow: none;
 }
 
@@ -66,12 +70,12 @@ button .btn:hover {
 }
 
 .btn-info.btn-link {
-  color: #2CA8FF;
+  color: var(--info-color);
 }
 
 .btn-info.btn-link:hover, .btn-info.btn-link:focus, .btn-info.btn-link:active {
   background-color: transparent;
-  color: #4bb5ff;
+  color: var(--info-hover-color);
   text-decoration: none;
   box-shadow: none;
 }
@@ -79,9 +83,9 @@ button .btn:hover {
 .btn:focus-visible,
 .btn-primary:focus-visible,
 .btn-info:focus-visible {
-  outline: 2px solid #1b6426;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(55, 140, 63, 0.25);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 25%, transparent);
 }
 
 .btn.btn-round {
@@ -101,7 +105,7 @@ button .btn:hover {
 .btn.btn-round:focus-visible,
 .btn.btn-icon:focus-visible,
 .btn-lg:focus-visible {
-  outline: 2px solid #1b6426;
+  outline: 2px solid var(--primary-color);
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px rgba(55, 140, 63, 0.25);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 25%, transparent);
 }

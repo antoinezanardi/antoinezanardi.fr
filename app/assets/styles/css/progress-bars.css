@@ -10,7 +10,7 @@
 }
 
 .progress-container .progress-badge {
-  color: #888;
+  color: var(--gray-color);
   font-size: 0.8571em;
   text-transform: uppercase;
 }
@@ -20,20 +20,20 @@
   font-size: 18px;
   border-radius: 0;
   box-shadow: none;
-  background: rgba(222, 222, 222, 0.8);
+  background: var(--progress-bg);
   margin-top: 14px;
 }
 
 .progress-container .progress .progress-bar {
   box-shadow: none;
-  background-color: #888;
+  background-color: var(--gray-color);
 }
 
 .progress-container .progress .progress-value {
   position: absolute;
   top: 2px;
   right: 0;
-  color: #888;
+  color: var(--gray-color);
   font-size: 0.8571em;
 }
 

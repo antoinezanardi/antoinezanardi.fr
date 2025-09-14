@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #1B6426;
+  --primary-color-rgb: 55, 140, 63;
+  --primary-color-alpha-60: rgba(55, 140, 63, 0.6);
+  --primary-hover-color: #40A249;
+
+  --info-color: #0391EC;
+  --info-hover-color: #4BB5FF;
+
+  --white-color: #FFFFFF;
+  --white-alpha-49: rgba(255, 255, 255, 0.49);
+  --white-alpha-50: rgba(255, 255, 255, 0.5);
+
+  --gray-color: #888;
+  --gray-hover-color: #9A9A9A;
+
+  --muted-color: #9A9A9A;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+
+  --progress-bg: rgba(222, 222, 222, 0.8);
+
+  --btn-shadow: rgba(0, 0, 0, 0.17);
+
+  --footer-bg: #f2f2f2;
+
+  --card-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.2);
+
+  --body-text-color: #2c2c2c;
+  --body-text-alpha-20: rgba(44, 44, 44, 0.2);
+
+  --black-alpha-15: rgba(0, 0, 0, 0.15);
+}

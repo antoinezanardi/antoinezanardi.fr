@@ -110,7 +110,6 @@ function onClickFromNavBarLink(): void {
 <style lang="scss" scoped>
 .navbar {
   box-shadow: 0px -5px 20px 5px black;
-  background-color: #1b6426 !important;
 
   #navigation.show {
     transform: unset;

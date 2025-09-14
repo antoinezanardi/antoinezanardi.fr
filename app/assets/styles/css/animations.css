@@ -2,5 +2,14 @@
 .nav-item .nav-link,
 .navbar,
 .nav-tabs .nav-link {
-  transition: all 300ms ease 0s;
+  transition: background-color 300ms ease 0s, color 300ms ease 0s, opacity 300ms ease 0s, transform 300ms ease 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-pills .nav-link,
+  .nav-item .nav-link,
+  .navbar,
+  .nav-tabs .nav-link {
+    transition: none !important;
+  }
 }

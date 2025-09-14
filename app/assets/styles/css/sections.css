@@ -1,7 +1,7 @@
 .section {
   padding: 70px 0 0;
   position: relative;
-  background: #FFFFFF;
+  background: var(--white-color);
 }
 
 .section .row + .category {

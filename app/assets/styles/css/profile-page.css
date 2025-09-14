@@ -3,7 +3,7 @@
 }
 
 .profile-page .profile-container {
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 
 .profile-page .photo-container {
@@ -12,7 +12,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px 0 var(--shadow-color);
 }
 
 .profile-page .title {
