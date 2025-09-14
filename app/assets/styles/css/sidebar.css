@@ -81,7 +81,7 @@
     display: block;
     top: 0;
     height: 100% !important;
-    width: 300px;
+    width: var(--sidebar-width);
     right: 0;
     z-index: 100;
     visibility: visible;
@@ -90,7 +90,7 @@
     border-top: none;
     text-align: left;
     max-height: none !important;
-    transform: translate3d(300px, 0, 0);
+    transform: translate3d(var(--sidebar-width), 0, 0);
     transition: transform 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1), opacity 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
 
@@ -247,7 +247,7 @@
   }
 
   .sidebar-collapse [class*="navbar-expand-"] .navbar-collapse {
-    width: 300px;
+    width: var(--sidebar-width);
   }
 
   .sidebar-collapse .wrapper {
@@ -260,8 +260,7 @@
     position: fixed;
     opacity: 1;
     top: 0;
-    left: auto;
-    right: 300px;
+    left: var(--sidebar-width);
     content: "";
     z-index: 9999;
     overflow-x: hidden;
@@ -272,7 +271,7 @@
   .sidebar-collapse.menu-on-left .navbar-collapse {
     right: auto;
     left: 0;
-    transform: translate3d(-300px, 0, 0);
+    transform: translate3d(calc(-1 * var(--sidebar-width)), 0, 0);
   }
 
   .nav-open .sidebar-collapse .navbar-collapse {
@@ -280,11 +279,11 @@
   }
 
   .nav-open .sidebar-collapse .wrapper {
-    transform: translate3d(-150px, 0, 0);
+    transform: translate3d(calc(-1 * var(--sidebar-width)), 0, 0);
   }
 
   .nav-open .sidebar-collapse .navbar-translate {
-    transform: translate3d(-300px, 0, 0);
+    transform: translate3d(calc(var(--sidebar-width)), 0, 0);
   }
 
   .nav-open .sidebar-collapse.menu-on-left .navbar-collapse {
@@ -292,16 +291,16 @@
   }
 
   .nav-open .sidebar-collapse.menu-on-left .navbar-translate {
-    transform: translate3d(300px, 0, 0);
+    transform: translate3d(var(--sidebar-width), 0, 0);
   }
 
   .nav-open .sidebar-collapse.menu-on-left .wrapper {
-    transform: translate3d(150px, 0, 0);
+    transform: translate3d(calc(var(--sidebar-width)), 0, 0);
   }
 
   .nav-open .sidebar-collapse.menu-on-left #bodyClick {
     right: auto;
-    left: 300px;
+    left: var(--sidebar-width);
   }
 
   .navbar-nav .nav-link i.fa,

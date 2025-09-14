@@ -4,7 +4,7 @@
   font-size: 0.8571em;
   line-height: 1.35em;
   margin: 5px 1px;
-  border: 2px none;
+  border: 2px solid transparent;
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;

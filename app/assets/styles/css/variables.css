@@ -29,4 +29,6 @@
   --body-text-alpha-20: rgba(44, 44, 44, 0.2);
 
   --black-alpha-15: rgba(0, 0, 0, 0.15);
+
+  --sidebar-width: 300px;
 }

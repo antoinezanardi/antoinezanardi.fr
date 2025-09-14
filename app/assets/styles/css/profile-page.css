@@ -2,19 +2,6 @@
   min-height: 550px;
 }
 
-.profile-page .profile-container {
-  color: var(--white-color);
-}
-
-.profile-page .photo-container {
-  width: 123px;
-  height: 123px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-  box-shadow: 0 10px 25px 0 var(--shadow-color);
-}
-
 .profile-page .title {
   text-align: center;
   margin-top: 30px;
@@ -39,25 +26,9 @@
   margin: 0 auto;
 }
 
-.profile-page .content .social-description {
-  display: inline-block;
-  max-width: 150px;
-  width: 145px;
-  text-align: center;
-  margin: 15px 0 0;
-}
-
-.profile-page .content .social-description h2 {
-  margin-bottom: 15px;
-}
-
 .profile-page .button-container {
   text-align: center;
   margin-top: -106px;
-}
-
-.profile-page .collections img {
-  margin-bottom: 30px;
 }
 
 .profile-page .gallery {

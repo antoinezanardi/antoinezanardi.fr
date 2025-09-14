@@ -105,7 +105,7 @@
 
 .gallery figure.cc-effect:hover img {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+  transform: none;
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
@@ -122,7 +122,7 @@
 .gallery figure.cc-effect:hover p,
 .gallery figure.cc-effect:hover button {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+  transform: none;
   color: #fff;
 }
 
@@ -131,4 +131,21 @@
 .gallery figure.cc-effect:hover p,
 .gallery figure.cc-effect:hover img {
   transition-delay: 0.15s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery figure.cc-effect *,
+  .gallery figure.cc-effect *::before,
+  .gallery figure.cc-effect *::after {
+    transition: none !important;
+    transform: none !important;
+  }
+  .gallery figure.cc-effect img,
+  .gallery figure.cc-effect .h4,
+  .gallery figure.cc-effect p,
+  .gallery figure.cc-effect button,
+  .gallery figure.cc-effect figcaption::before,
+  .gallery figure.cc-effect figcaption::after {
+    opacity: 1 !important;
+  }
 }

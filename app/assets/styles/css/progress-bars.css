@@ -17,7 +17,7 @@
 
 .progress-container .progress {
   height: 5px;
-  font-size: 18px;
+  font-size: inherit;
   border-radius: 0;
   box-shadow: none;
   background: var(--progress-bg);
