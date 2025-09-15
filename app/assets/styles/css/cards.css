@@ -1,0 +1,15 @@
+.card {
+  border: 0;
+  border-radius: 0.1875rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: var(--card-shadow);
+}
+
+.card .card-body {
+  min-height: 190px;
+  height: 100%;
+}

@@ -1,0 +1,24 @@
+.tooltip[data-popper-placement^="right"] .tooltip-arrow::before {
+  border-right-color: var(--bs-tooltip-bg, var(--white-color));
+}
+
+.tooltip[data-popper-placement^="top"] .tooltip-arrow::before {
+  border-top-color: var(--bs-tooltip-bg, var(--white-color));
+}
+
+.tooltip[data-popper-placement^="bottom"] .tooltip-arrow::before {
+  border-bottom-color: var(--bs-tooltip-bg, var(--white-color));
+}
+
+.tooltip[data-popper-placement^="left"] .tooltip-arrow::before {
+  border-left-color: var(--bs-tooltip-bg, var(--white-color));
+}
+
+.tooltip-inner {
+  padding: 0.5rem 0.7rem;
+  min-width: 130px;
+  background-color: var(--white-color);
+  font-size: 14px;
+  color: inherit;
+  box-shadow: var(--card-shadow);
+}

@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div
         class="page-header page-header-small"
-        data-fiter-color="green"
+        data-filter-color="green"
       >
         <div
           class="page-header-image"
@@ -51,6 +51,7 @@
               class="btn btn-primary"
               data-aos="zoom-in"
               data-aos-anchor="data-aos-anchor"
+              data-aos-once="true"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
               href="/CV.pdf"
               role="button"
@@ -62,7 +63,12 @@
 
         <div class="section">
           <div class="container">
-            <div class="button-container">
+            <div
+              class="button-container"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-once="true"
+            >
               <LinkedInButton class="me-2"/>
 
               <GitHubButton/>

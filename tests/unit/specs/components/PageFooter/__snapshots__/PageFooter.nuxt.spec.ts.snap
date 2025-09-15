@@ -2,7 +2,7 @@
 
 exports[`Page Footer Component > should match snapshot when rendered. 1`] = `
 "<footer class="footer py-1">
-  <div class="container text-center">
+  <div class="container text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
     <linked-in-button-stub class="me-2"></linked-in-button-stub>
     <git-hub-button-stub></git-hub-button-stub>
   </div>

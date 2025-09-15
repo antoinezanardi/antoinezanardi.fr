@@ -1,0 +1,37 @@
+.profile-page .page-header {
+  min-height: 550px;
+}
+
+.profile-page .title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.profile-page .description,
+.profile-page .category {
+  text-align: center;
+}
+
+.profile-page h5.description {
+  max-width: 700px;
+  margin: 20px auto 75px;
+}
+
+.profile-page .nav-align-center {
+  margin-top: 30px;
+}
+
+.profile-page .content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.profile-page .button-container {
+  text-align: center;
+  margin-top: -106px;
+}
+
+.profile-page .gallery {
+  margin-top: 45px;
+  padding-bottom: 50px;
+}
