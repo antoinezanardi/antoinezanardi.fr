@@ -47,7 +47,7 @@
   box-shadow: 0 0 0 2px var(--primary-color, #1B6426), 0 0 0 4px var(--white-color, #fff);
   outline: none;
   transition: transform .3s ease-out, box-shadow .2s;
-  z-index: 10000;
+  z-index: 3;
 }
 
 @keyframes pulsate {
