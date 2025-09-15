@@ -283,7 +283,7 @@
   }
 
   .nav-open .sidebar-collapse .navbar-translate {
-    transform: translate3d(calc(var(--sidebar-width)), 0, 0);
+    transform: translate3d(var(--sidebar-width), 0, 0);
   }
 
   .nav-open .sidebar-collapse.menu-on-left .navbar-collapse {
@@ -295,7 +295,7 @@
   }
 
   .nav-open .sidebar-collapse.menu-on-left .wrapper {
-    transform: translate3d(calc(var(--sidebar-width)), 0, 0);
+    transform: translate3d(var(--sidebar-width), 0, 0);
   }
 
   .nav-open .sidebar-collapse.menu-on-left #bodyClick {

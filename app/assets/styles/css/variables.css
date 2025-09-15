@@ -1,11 +1,14 @@
 :root {
   --primary-color: #1B6426;
   --primary-color-rgb: 27, 100, 38;
-  --primary-color-alpha-60: rgba(27, 100, 38, 0.6);
+  --bs-primary: var(--primary-color);
+  --bs-primary-rgb: var(--primary-color-rgb);
+  --primary-color-alpha-60: rgba(var(--primary-color-rgb), 0.6);
   --primary-hover-color: #40A249;
 
-  --info-color: #0391EC;
-  --info-hover-color: #4BB5FF;
+  --info-color: #005EA6;
+  --bs-info: var(--info-color);
+  --info-hover-color: #017ae0;
 
   --white-color: #FFFFFF;
   --white-alpha-49: rgba(255, 255, 255, 0.49);
@@ -14,7 +17,7 @@
   --gray-color: #888;
   --gray-hover-color: #9A9A9A;
 
-  --muted-color: #9A9A9A;
+  --muted-color: var(--gray-hover-color);
   --shadow-color: rgba(0, 0, 0, 0.3);
 
   --progress-bg: rgba(222, 222, 222, 0.8);

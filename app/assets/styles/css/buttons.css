@@ -10,22 +10,27 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  border: 2px solid transparent;
+}
+
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary.active:focus,
 .show > .btn-primary.dropdown-toggle,
-.show > .btn-primary.dropdown-toggle:focus,
-.show > .btn-primary.dropdown-toggle:hover {
-  background-color: var(--primary-hover-color);
+.show > .btn-primary.dropdown-toggle:focus {
   color: var(--white-color);
   box-shadow: none;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  background-color: var(--primary-hover-color);
+  box-shadow: 3px 8px 0 rgba(0, 0, 0, 0.17);
+  outline: 2px solid var(--primary-hover-color);
+  outline-offset: 2px;
 }
 
 .btn-primary.btn-simple {
@@ -38,6 +43,7 @@
   color: var(--primary-hover-color);
   border-color: var(--primary-hover-color);
   box-shadow: none;
+
 }
 
 .btn-primary.btn-link {
@@ -58,15 +64,16 @@
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info:active:focus, .btn-info:active:hover, .btn-info.active:focus, .btn-info.active:hover,
 .show > .btn-info.dropdown-toggle,
-.show > .btn-info.dropdown-toggle:focus,
-.show > .btn-info.dropdown-toggle:hover {
+.show > .btn-info.dropdown-toggle:focus {
   background-color: var(--info-hover-color);
   color: var(--white-color);
   box-shadow: none;
 }
 
 .btn-info:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
+  box-shadow: 3px 8px 0 rgba(0, 0, 0, 0.17);
+  outline: 2px solid var(--info-hover-color);
+  outline-offset: 2px;
 }
 
 .btn-info.btn-link {
@@ -83,10 +90,11 @@
 .btn:focus-visible,
 .btn-primary:focus-visible,
 .btn-info:focus-visible {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid currentColor;
   outline-offset: 2px;
   box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
 }
+
 @supports not (color: color-mix(in srgb, white 50%, black)) {
   .btn:focus-visible,
   .btn-primary:focus-visible,
@@ -112,7 +120,7 @@
 .btn.btn-round:focus-visible,
 .btn.btn-icon:focus-visible,
 .btn-lg:focus-visible {
-  outline: 2px solid var(--primary-color);
+  outline: 2px solid currentColor;
   outline-offset: 2px;
   box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
 }

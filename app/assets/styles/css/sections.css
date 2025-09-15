@@ -1,5 +1,7 @@
 .section {
-  padding: 70px 0 0;
+  padding-block-start: 70px;
+  padding-block-end: 0;
+  padding-inline: 0;
   position: relative;
   background-color: var(--white-color);
 }
