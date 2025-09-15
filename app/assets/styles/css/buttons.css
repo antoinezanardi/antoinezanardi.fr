@@ -85,7 +85,14 @@
 .btn-info:focus-visible {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 25%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
+}
+@supports not (color: color-mix(in srgb, white 50%, black)) {
+  .btn:focus-visible,
+  .btn-primary:focus-visible,
+  .btn-info:focus-visible {
+    box-shadow: none;
+  }
 }
 
 .btn.btn-round {
@@ -107,5 +114,13 @@
 .btn-lg:focus-visible {
   outline: 2px solid var(--primary-color);
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-color) 25%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
+}
+
+@supports not (color: color-mix(in srgb, white 50%, black)) {
+  .btn.btn-round:focus-visible,
+  .btn.btn-icon:focus-visible,
+  .btn-lg:focus-visible {
+    box-shadow: none;
+  }
 }
