@@ -1,5 +1,22 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.3.1](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.3.0...v1.3.1) (2025-09-16)
+
+### ⚡️ Performances
+
+* **images:** update image formats to webp for optimization ([#258](https://github.com/antoinezanardi/antoinezanardi.fr/issues/258)) ([ef9e93a](https://github.com/antoinezanardi/antoinezanardi.fr/commit/ef9e93a6c3e7fb86f866cfc621efef56194f1c1c))
+
+### 🧹 Chore
+
+* **config:** update coderabbit.yaml and editorconfig for enhanced review settings and formatting ([#259](https://github.com/antoinezanardi/antoinezanardi.fr/issues/259)) ([48a203d](https://github.com/antoinezanardi/antoinezanardi.fr/commit/48a203d061a0cd00b4edde86e703db90ebd45aa5))
+* **css:** remove unused css from theme ([#260](https://github.com/antoinezanardi/antoinezanardi.fr/issues/260)) ([31fd5ce](https://github.com/antoinezanardi/antoinezanardi.fr/commit/31fd5ceb977a69064977952d1834b9412dce4b76))
+* **deps:** update dependency @types/node to ^22.18.3 ([#256](https://github.com/antoinezanardi/antoinezanardi.fr/issues/256)) ([88e3048](https://github.com/antoinezanardi/antoinezanardi.fr/commit/88e30487a55b17c2b0d6898a17ae1f23a6687b3c))
+* **deps:** update dependency @types/node to ^22.18.4 ([#263](https://github.com/antoinezanardi/antoinezanardi.fr/issues/263)) ([565b2c0](https://github.com/antoinezanardi/antoinezanardi.fr/commit/565b2c05809d175955fb25c972d6a82d49a2c820))
+* **deps:** update dependency @vitest/eslint-plugin to ^1.3.10 ([#262](https://github.com/antoinezanardi/antoinezanardi.fr/issues/262)) ([e7d70cb](https://github.com/antoinezanardi/antoinezanardi.fr/commit/e7d70cb022a2af5d9e6c6e9c39f785483ab53203))
+* **deps:** update dependency nuxt to ^4.1.2 ([#234](https://github.com/antoinezanardi/antoinezanardi.fr/issues/234)) ([39a273e](https://github.com/antoinezanardi/antoinezanardi.fr/commit/39a273e4f57cc881bb40ca46561485591c015ce8))
+* **deps:** update dependency type-fest to v5 ([#261](https://github.com/antoinezanardi/antoinezanardi.fr/issues/261)) ([0dfabdd](https://github.com/antoinezanardi/antoinezanardi.fr/commit/0dfabddfcfb49994829f771ada708a280937b569))
+* **deps:** update typescript-eslint monorepo to ^8.44.0 ([#264](https://github.com/antoinezanardi/antoinezanardi.fr/issues/264)) ([8cc05ef](https://github.com/antoinezanardi/antoinezanardi.fr/commit/8cc05ef0ca2037b75cd5203e6ae81573b6abc0e5))
+
 ## [1.3.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.2.1...v1.3.0) (2025-09-12)
 
 ### 🚀 Features
