@@ -1,0 +1,48 @@
+.progress-container {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.progress-container + .progress-container,
+.progress-container ~ .progress-container {
+  margin-top: 15px;
+}
+
+.progress-container .progress-badge {
+  color: var(--gray-color);
+  font-size: 0.8571em;
+  text-transform: uppercase;
+}
+
+.progress-container .progress {
+  height: 5px;
+  font-size: inherit;
+  border-radius: 0;
+  box-shadow: none;
+  background: var(--progress-bg);
+  margin-top: 14px;
+}
+
+.progress-container .progress .progress-bar {
+  box-shadow: none;
+  background-color: var(--gray-color);
+}
+
+.progress-container .progress .progress-value {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: var(--gray-color);
+  font-size: 0.8571em;
+}
+
+.progress-container .progress-bar {
+  transform: scaleX(0);
+  transition: transform 2s ease-in-out;
+  transform-origin: 0 0;
+}
+
+.progress-container .aos-animate {
+  transform: scaleX(1);
+}

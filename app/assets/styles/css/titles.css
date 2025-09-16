@@ -1,0 +1,13 @@
+.title {
+  font-weight: 700;
+}
+
+.title + .category {
+  margin-top: -25px;
+}
+
+.category {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--muted-color);
+}

@@ -2,7 +2,7 @@
   <header>
     <div class="profile-page sidebar-collapse">
       <nav
-        class="bg-primary fixed-top navbar navbar-expand-lg"
+        class="background-primary fixed-top navbar navbar-expand-lg"
         data-color-on-scroll="100"
       >
         <div class="container">
@@ -110,7 +110,6 @@ function onClickFromNavBarLink(): void {
 <style lang="scss" scoped>
 .navbar {
   box-shadow: 0px -5px 20px 5px black;
-  background-color: #1b6426 !important;
 
   #navigation.show {
     transform: unset;

@@ -1,0 +1,11 @@
+.section {
+  padding-block-start: 70px;
+  padding-block-end: 0;
+  padding-inline: 0;
+  position: relative;
+  background-color: var(--white-color);
+}
+
+.section .row + .category {
+  margin-top: 15px;
+}

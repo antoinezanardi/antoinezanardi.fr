@@ -3,9 +3,9 @@
 exports[`Professional Experience Card Component > should match snapshot when rendered. 1`] = `
 "<div data-v-ceaf3c35="" class="card">
   <div data-v-ceaf3c35="" class="row">
-    <div data-v-ceaf3c35="" class="bg-primary col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-offset="50">
+    <div data-v-ceaf3c35="" class="background-primary col-md-3" data-aos="fade-right" data-aos-duration="500" data-aos-offset="50">
       <div data-v-ceaf3c35="" class="card-body cc-experience-header">
-        <period-timeline-stub data-v-ceaf3c35="" image="omc-logo.png" imagealt="OhMyCode" url="https://www.sobook.fr/oh-my-code/" doesshowyearonly="false" startedat="Sat Sep 01 2018 00:00:00 GMT+0000 (Coordinated Universal Time)" finishedat="Fri Aug 30 2019 00:00:00 GMT+0000 (Coordinated Universal Time)" class="experience-timeline"></period-timeline-stub>
+        <period-timeline-stub data-v-ceaf3c35="" image="omc-logo.webp" imagealt="OhMyCode" url="https://www.sobook.fr/oh-my-code/" doesshowyearonly="false" startedat="Sat Sep 01 2018 00:00:00 GMT+0000 (Coordinated Universal Time)" finishedat="Fri Aug 30 2019 00:00:00 GMT+0000 (Coordinated Universal Time)" class="experience-timeline"></period-timeline-stub>
       </div>
     </div>
     <div data-v-ceaf3c35="" class="col-md-9" data-aos="fade-left" data-aos-duration="500" data-aos-offset="50">

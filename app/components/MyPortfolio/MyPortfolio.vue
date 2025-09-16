@@ -50,25 +50,25 @@ const projects: Project[] = [
   {
     name: t(`${i18nProjectPath}.portfolio.name`),
     description: t(`${i18nProjectPath}.portfolio.description`),
-    image: "portfolio-thumbnail.jpg",
+    image: "portfolio-thumbnail.webp",
     url: "https://www.antoinezanardi.fr",
   },
   {
     name: t(`${i18nProjectPath}.werewolvesAssistant.name`),
     description: t(`${i18nProjectPath}.werewolvesAssistant.description`),
-    image: "werewolves-assistant-thumbnail.png",
+    image: "werewolves-assistant-thumbnail.webp",
     url: "https://werewolves-assistant.com",
   },
   {
     name: t(`${i18nProjectPath}.distribution.name`),
     description: t(`${i18nProjectPath}.distribution.description`),
-    image: "distribution-thumbnail.jpeg",
+    image: "distribution-thumbnail.webp",
     url: "https://www.airvey-editions.fr",
   },
   {
     name: t(`${i18nProjectPath}.gitHub.name`),
     description: t(`${i18nProjectPath}.gitHub.description`),
-    image: "github.jpeg",
+    image: "github.webp",
     url: "https://github.com/antoinezanardi",
   },
 ];

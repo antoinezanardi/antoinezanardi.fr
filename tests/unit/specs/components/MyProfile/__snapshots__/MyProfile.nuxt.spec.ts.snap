@@ -3,21 +3,21 @@
 exports[`My Profile Component > should match snapshot when rendered. 1`] = `
 "<div data-v-d3c3f494="" class="profile-page">
   <div data-v-d3c3f494="" class="wrapper">
-    <div data-v-d3c3f494="" class="page-header page-header-small" data-fiter-color="green">
+    <div data-v-d3c3f494="" class="page-header page-header-small" data-filter-color="green">
       <div data-v-d3c3f494="" class="page-header-image" data-parallax="true"></div>
       <div data-v-d3c3f494="" class="container">
         <div data-v-d3c3f494="" class="content-center">
           <div data-v-d3c3f494="" class="cc-profile-image"><a data-v-d3c3f494="" href="https://www.linkedin.com/in/antoinezanardi/" rel="noopener noreferrer" target="_blank">
-              <nuxt-img-stub data-v-d3c3f494="" alt="Photo de profil" format="webp" src="/images/antoine.jpg" preload="false" crossorigin="false" placeholder="false" custom="false" id="profile-pic"></nuxt-img-stub>
+              <nuxt-img-stub data-v-d3c3f494="" alt="Photo de profil" height="180" src="/images/antoine.webp" width="180" preload="false" crossorigin="false" placeholder="false" custom="false" id="profile-pic"></nuxt-img-stub>
             </a></div>
           <h1 data-v-d3c3f494="" class="h1 text-shadow title">Antoine Zanardi</h1>
           <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Consultant Tech Lead</h2>
-          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" download="CV Antoine ZANARDI.pdf" href="/CV.pdf" role="button">Mon CV</a>
+          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-aos-once="true" download="CV Antoine ZANARDI.pdf" href="/CV.pdf" role="button">Mon CV</a>
         </div>
       </div>
       <div data-v-d3c3f494="" class="section">
         <div data-v-d3c3f494="" class="container">
-          <div data-v-d3c3f494="" class="button-container">
+          <div data-v-d3c3f494="" class="button-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-once="true">
             <linked-in-button-stub data-v-d3c3f494="" class="me-2"></linked-in-button-stub>
             <git-hub-button-stub data-v-d3c3f494=""></git-hub-button-stub>
           </div>

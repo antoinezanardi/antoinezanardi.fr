@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`LinkedIn Button Component > should match snapshot when rendered. 1`] = `
-"<a data-v-d82ba599="" class="btn btn-icon btn-info btn-lg btn-round" data-bs-toggle="tooltip" href="https://www.linkedin.com/in/antoinezanardi/" rel="noopener noreferrer" target="_blank" title="Rejoignez mon réseau">
-  <wrapped-font-awesome-icon-stub data-v-d82ba599="" icon="fa-brands fa-linkedin-in" iconcolor="white" size="2x" classes=""></wrapped-font-awesome-icon-stub>
+"<a class="btn btn-icon btn-info btn-lg btn-round" data-bs-toggle="tooltip" href="https://www.linkedin.com/in/antoinezanardi/" rel="noopener noreferrer" target="_blank" title="Rejoignez mon réseau">
+  <wrapped-font-awesome-icon-stub icon="fa-brands fa-linkedin-in" iconcolor="white" size="2x" classes=""></wrapped-font-awesome-icon-stub>
 </a>"
 `;

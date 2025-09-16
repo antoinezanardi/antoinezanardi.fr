@@ -3,9 +3,11 @@
     :alt="`${country} flag`"
     class="country-flag"
     data-bs-toggle="tooltip"
-    format="webp"
+    height="25"
+    loading="lazy"
     :src="`/images/flags/${countryFlagSrc}`"
     :title="$t(`Countries.${country}`)"
+    width="25"
   />
 </template>
 
@@ -17,9 +19,9 @@ const props = defineProps<CountryFlagProps>();
 
 const countryFlagSrc = computed<string>(() => {
   const countryFlagsSrc: Record<Country, string> = {
-    france: "france-flag.jpg",
-    usa: "usa-flag.jpg",
-    canada: "canada-flag.jpg",
+    france: "france-flag.webp",
+    usa: "usa-flag.webp",
+    canada: "canada-flag.webp",
   };
 
   return countryFlagsSrc[props.country];

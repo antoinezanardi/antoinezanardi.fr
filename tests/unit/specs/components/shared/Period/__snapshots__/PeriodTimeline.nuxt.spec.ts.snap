@@ -2,7 +2,7 @@
 
 exports[`Period Timeline Component > Periods > Period > should match snapshot when started at and finished at are provided in props. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" loading="lazy" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
@@ -21,7 +21,7 @@ exports[`Period Timeline Component > Periods > Period > should match snapshot wh
 
 exports[`Period Timeline Component > Periods > Started at date > should match snapshot when started at date is provided in props. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" loading="lazy" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">
@@ -40,7 +40,7 @@ exports[`Period Timeline Component > Periods > Started at date > should match sn
 
 exports[`Period Timeline Component > should match snapshot when rendered. 1`] = `
 "<div data-v-a56b5921="" id="period-timeline" class="d-flex flex-column h-100"><a data-v-a56b5921="" id="timeline-logo" href="url" rel="noopener noreferrer" target="_blank">
-    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" format="webp" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
+    <nuxt-img-stub data-v-a56b5921="" alt="imageAlt" loading="lazy" src="/images/logos/image" preload="false" crossorigin="false" placeholder="false" custom="false" class="logo timeline-logo-image white-logo"></nuxt-img-stub>
   </a>
   <hr data-v-a56b5921="" class="my-3">
   <div data-v-a56b5921="" class="d-flex flex-column flex-grow-1">

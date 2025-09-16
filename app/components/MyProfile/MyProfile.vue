@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div
         class="page-header page-header-small"
-        data-fiter-color="green"
+        data-filter-color="green"
       >
         <div
           class="page-header-image"
@@ -21,8 +21,9 @@
                 <NuxtImg
                   id="profile-pic"
                   :alt="$t('MyProfile.profilePicture')"
-                  format="webp"
-                  src="/images/antoine.jpg"
+                  height="180"
+                  src="/images/antoine.webp"
+                  width="180"
                 />
               </a>
             </div>
@@ -50,6 +51,7 @@
               class="btn btn-primary"
               data-aos="zoom-in"
               data-aos-anchor="data-aos-anchor"
+              data-aos-once="true"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
               href="/CV.pdf"
               role="button"
@@ -61,7 +63,12 @@
 
         <div class="section">
           <div class="container">
-            <div class="button-container">
+            <div
+              class="button-container"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-once="true"
+            >
               <LinkedInButton class="me-2"/>
 
               <GitHubButton/>
@@ -93,7 +100,7 @@ import LinkedInButton from "~/components/shared/Buttons/LinkedInButton.vue";
 }
 
 .page-header-image {
-  background-image: url("../../assets/images/background.jpg");
+  background-image: url("~/assets/images/background.webp");
 }
 .text-shadow {
   text-shadow: #394036 1px 1px;

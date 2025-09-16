@@ -2,7 +2,7 @@
   <div class="card">
     <div class="row">
       <div
-        class="bg-primary col-md-3"
+        class="background-primary col-md-3"
         data-aos="fade-right"
         data-aos-duration="500"
         data-aos-offset="50"
@@ -71,7 +71,7 @@ const props = defineProps<EducationDegreeCardProps>();
 
 const { t } = useI18n();
 
-const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.png");
+const schoolImage = computed<string>(() => props.educationDegree.school.image ?? "college-icon.webp");
 
 const schoolLabel = computed<string>(() => {
   const { school } = props.educationDegree;
