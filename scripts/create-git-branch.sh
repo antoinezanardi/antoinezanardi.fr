@@ -12,6 +12,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 
+git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { echo "❌ Not a git repository." >&2; exit 1; }
+
 PS3="What kind of job are you starting? "
 select option in "feat" "fix" "docs" "style" "refactor" "test" "perf" "build" "ci" "chore" "revert";
 do
@@ -27,7 +29,7 @@ do
 done
 
 while true; do
-  echo "Please provide your branch name, it must be kebab-case (like: 'my-feature') : "
+  echo "Please provide your branch name, it must be kebab-case (like: 'my-feature'): "
   read -r FEATURE_NAME
   if [[ -z "$FEATURE_NAME" ]]; then
     echo "You must provide a branch name."

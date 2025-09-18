@@ -11,9 +11,9 @@ concurrency:
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-  SAFE_BRANCH_NAME: ${BRANCH_NAME//\//-}
+  SAFE_BRANCH_NAME: ${{ replace(github.head_ref || github.ref_name, '/', '-') }}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
-  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${SAFE_BRANCH_NAME}
+  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
   GH_TOKEN: ${{ github.token }}
   STRYKER_REPORT_PATH: tests/stryker/coverage
@@ -185,7 +185,7 @@ jobs:
         if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
         with:
           path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
 
       - name: Save unit tests coverage report as artifact 💎
         uses: actions/upload-artifact@v4
@@ -301,6 +301,10 @@ jobs:
   sonarcloud:
     name: SonarCloud Analysis 🌥️
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
     needs:
       - unit-tests
     steps:
@@ -326,9 +330,9 @@ jobs:
         id: cache-unit-tests-coverage
         with:
           path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-
           restore-keys: |
-            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
+            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-
 
       - name: SonarCloud Scan 🌥️
         timeout-minutes: 20

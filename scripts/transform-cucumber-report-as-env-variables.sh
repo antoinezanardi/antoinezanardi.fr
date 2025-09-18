@@ -22,4 +22,4 @@ fi
 
 num_testcases=$(grep -c "<testcase" "$report_file")
 
-echo "CUCUMBER_SCENARIOS_COUNT={num_testcases:-0}"
+echo "CUCUMBER_SCENARIOS_COUNT=${num_testcases:-0}"

@@ -184,6 +184,10 @@ jobs:
   sonarcloud:
     name: SonarCloud Analysis 🌥️
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
     needs:
       - unit-tests
     steps:
@@ -214,7 +218,6 @@ jobs:
             ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
 
       - name: SonarCloud Scan 🌥️
-        timeout-minutes: 20
         uses: SonarSource/sonarqube-scan-action@v6.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
