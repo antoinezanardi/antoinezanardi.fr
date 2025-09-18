@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: preproduction
-      url: ${{ steps.deployment.outputs.preview-url }}
+      url: ${{ secrets.PREPRODUCTION_URL }}
     env:
       NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
       NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
