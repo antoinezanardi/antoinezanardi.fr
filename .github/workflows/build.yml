@@ -11,30 +11,19 @@ concurrency:
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+  SAFE_BRANCH_NAME: ${BRANCH_NAME//\//-}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
-  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${{ needs.init.outputs.safe_branch_name }}
+  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${{ env.SAFE_BRANCH_NAME }}
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
   GH_TOKEN: ${{ github.token }}
   STRYKER_REPORT_PATH: tests/stryker/coverage
   STRYKER_INCREMENTAL_PATH: tests/stryker/incremental
 
 jobs:
-  init:
-    runs-on: ubuntu-latest
-    outputs:
-      safe_branch: ${{ steps.sanitize-branch.outputs.safe_branch }}
-    steps:
-      - name: Compute safe branch name
-        id: sanitize-branch-name
-        run: |
-          RAW_BRANCH="${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}"
-          SAFE_BRANCH_NAME="${RAW_BRANCH//\//_}"
-          echo "safe_branch_name=$SAFE_BRANCH_NAME" >> $GITHUB_OUTPUT
 
   code-ql:
     name: CodeQL Scan ❇️
     runs-on: ubuntu-latest
-    needs: init
     timeout-minutes: 360
     permissions:
       actions: read
@@ -60,7 +49,6 @@ jobs:
   install:
     name: Install ⚙️
     runs-on: ubuntu-latest
-    needs: init
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
