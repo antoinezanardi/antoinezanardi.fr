@@ -1,0 +1,8 @@
+name: "Compute Safe Branch Name"
+description: "Computes a safe branch name and exports it as SAFE_BRANCH_NAME"
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: |
+        echo "SAFE_BRANCH_NAME=${GITHUB_HEAD_REF:-${GITHUB_REF_NAME}}" | sed 's|/|-|g' >> $GITHUB_ENV

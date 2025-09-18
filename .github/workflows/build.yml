@@ -11,7 +11,6 @@ concurrency:
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-  SAFE_BRANCH_NAME: ${{ replace(github.head_ref || github.ref_name, '/', '-') }}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
   UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
@@ -153,6 +152,10 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
+      - name: Compute safe branch name 🍃
+        id: safe-branch-name
+        uses: "./.github/actions/compute-safe-branch-name"
+
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
         with:
@@ -185,7 +188,7 @@ jobs:
         if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
         with:
           path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
 
       - name: Save unit tests coverage report as artifact 💎
         uses: actions/upload-artifact@v4
@@ -313,6 +316,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Compute safe branch name 🍃
+        id: safe-branch-name
+        uses: "./.github/actions/compute-safe-branch-name"
+
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
         with:
@@ -330,9 +337,9 @@ jobs:
         id: cache-unit-tests-coverage
         with:
           path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
           restore-keys: |
-            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ env.SAFE_BRANCH_NAME }}-
+            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
 
       - name: SonarCloud Scan 🌥️
         timeout-minutes: 20

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # -----------------------------------------------------------------------------
 # transform-cucumber-report-as-env-variables.sh
 #
@@ -20,6 +20,6 @@ if [[ ! -r "$report_file" ]]; then
   exit 1
 fi
 
-num_testcases=$(grep -c "<testcase" "$report_file")
+num_testcases=$(grep -c -E '<testcase([[:space:]>])' "$report_file")
 
 echo "CUCUMBER_SCENARIOS_COUNT=${num_testcases:-0}"
