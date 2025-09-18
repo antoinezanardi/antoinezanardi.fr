@@ -54,9 +54,8 @@ if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
   exit 1
 fi
 
-# Create the branch
 if git checkout -b "$BRANCH_NAME"; then
-  echo "✅ Branch '$BRANCH_NAME' created and checked out successfully. 🚀"
+  echo "✅ Branch '$BRANCH_NAME' created and checked out successfully. Let's make some great things! 🚀"
 else
   echo "❌ Failed to create branch '$BRANCH_NAME'." >&2
   exit 1
