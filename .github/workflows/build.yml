@@ -13,7 +13,7 @@ env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
   SAFE_BRANCH_NAME: ${BRANCH_NAME//\//-}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
-  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${{ env.SAFE_BRANCH_NAME }}
+  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${SAFE_BRANCH_NAME}
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
   GH_TOKEN: ${{ github.token }}
   STRYKER_REPORT_PATH: tests/stryker/coverage
@@ -331,6 +331,7 @@ jobs:
             ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
 
       - name: SonarCloud Scan 🌥️
+        timeout-minutes: 20
         uses: SonarSource/sonarqube-scan-action@v6.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}

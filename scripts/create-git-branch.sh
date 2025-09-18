@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # -----------------------------------------------------------------------------
 # create-git-branch.sh
 #
@@ -9,7 +9,10 @@
 #   ./create-git-branch.sh
 # -----------------------------------------------------------------------------
 
-PS3="What kind of job are your starting? "
+set -euo pipefail
+IFS=$'\n\t'
+
+PS3="What kind of job are you starting? "
 select option in "feat" "fix" "docs" "style" "refactor" "test" "perf" "build" "ci" "chore" "revert";
 do
   case $option in
@@ -38,5 +41,21 @@ while true; do
 done
 
 BRANCH_NAME="$SELECTED_OPTION/$FEATURE_NAME"
-git checkout -b "$BRANCH_NAME"
-echo "You're all set 🚀"
+
+if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+  echo "❌ Branch '$BRANCH_NAME' already exists locally. Aborting." >&2
+  exit 1
+fi
+
+if git ls-remote --exit-code --heads origin "$BRANCH_NAME" >/dev/null 2>&1; then
+  echo "❌ Branch '$BRANCH_NAME' already exists on remote. Aborting." >&2
+  exit 1
+fi
+
+# Create the branch
+if git checkout -b "$BRANCH_NAME"; then
+  echo "✅ Branch '$BRANCH_NAME' created and checked out successfully. 🚀"
+else
+  echo "❌ Failed to create branch '$BRANCH_NAME'." >&2
+  exit 1
+fi
