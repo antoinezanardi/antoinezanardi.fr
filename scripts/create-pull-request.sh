@@ -1,4 +1,13 @@
 #!/bin/bash
+# -----------------------------------------------------------------------------
+# create-pull-request.sh
+#
+# Interactive script to open a pull request on GitHub. Prompts for GitHub
+# username if not set, validates it, and checks for commits before opening PR.
+#
+# Usage:
+#   ./create-pull-request.sh [base-branch]
+# -----------------------------------------------------------------------------
 
 github_user=$(git config github.user)
 

@@ -1,4 +1,14 @@
 #!/bin/bash
+# -----------------------------------------------------------------------------
+# create-git-branch.sh
+#
+# Interactive script to create a new git branch following conventional commit
+# types and enforcing kebab-case naming. Prompts for job type and branch name.
+#
+# Usage:
+#   ./create-git-branch.sh
+# -----------------------------------------------------------------------------
+
 PS3="What kind of job are your starting ? "
 select option in "feat" "fix" "docs" "style" "refactor" "test" "perf" "build" "ci" "chore" "revert";
 do

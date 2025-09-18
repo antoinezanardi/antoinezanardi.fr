@@ -1,9 +1,13 @@
 #!/bin/bash -e
-
-# Script: create-release-changelog.sh
-# Description: Creates a release against the main branch using semantic-release.
+# -----------------------------------------------------------------------------
+# create-release-changelog.sh
 #
-# Usage: ./create-release-changelog.sh
+# Generates a release changelog using semantic-release, reformats output,
+# and saves it to RELEASE.md for review or publishing.
+#
+# Usage:
+#   ./create-release-changelog.sh
+# -----------------------------------------------------------------------------
 
 npx semantic-release --dry-run --no-ci | awk '/^## [0-9]+\.[0-9]+\.[0-9]+( \(https:\/\/github\.com\/)?/ {if (found) exit; found=1} found {print}' >RELEASE.md
 gawk '
