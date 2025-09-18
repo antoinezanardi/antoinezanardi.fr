@@ -13,6 +13,7 @@ env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
   BRANCH_NAME_FORMATTED_FOR_REPORTS: ${BRANCH_NAME//\//_}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
+  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-${{ github.head_ref || github.ref_name }}
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
   GH_TOKEN: ${{ github.token }}
   STRYKER_REPORT_PATH: tests/stryker/coverage
@@ -295,3 +296,40 @@ jobs:
       - name: Exit with error if E2E tests failed 🚨
         if: steps.e2e-tests.outcome != 'success'
         run: exit 1;
+
+  sonarcloud:
+    name: SonarCloud Analysis 🌥️
+    runs-on: ubuntu-latest
+    needs:
+      - unit-tests
+    steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm 🏗️
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Restore pnpm dependencies from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Restore tests coverage from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-unit-tests-coverage
+        with:
+          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
+          restore-keys: |
+            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
+
+      - name: SonarCloud Scan 🌥️
+        uses: SonarSource/sonarqube-scan-action@v6.0.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
