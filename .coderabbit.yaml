@@ -18,7 +18,7 @@ reviews:
   pre_merge_checks:
     title:
       mode: "error"
-      requirements: "Use Conventional Commits: type(scope)?: subject — types: feat, fix, docs, style, refactor, perf, test, chore; no period at the end."
+      requirements: "Use Conventional Commits: type(scope)?: subject — types: feat, fix, docs, style, refactor, perf, test, chore, build, ci, revert; no period at the end."
     description:
       mode: "warning"
     docstrings:
