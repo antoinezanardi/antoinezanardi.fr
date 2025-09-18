@@ -11,8 +11,8 @@ concurrency:
 
 env:
   BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-  BRANCH_NAME_FORMATTED_FOR_REPORTS: ${BRANCH_NAME//\//_}
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
+  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage
   ACCEPTANCE_TESTS_REPORTS_PATH: tests/acceptance/reports
   GH_TOKEN: ${{ github.token }}
   STRYKER_REPORT_PATH: tests/stryker/coverage
@@ -67,7 +67,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install project dependencies 📦
         run: pnpm install
@@ -98,7 +98,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Create Nuxt types ⛰️
         run: pnpm run postinstall
@@ -134,7 +134,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Create Nuxt types ⛰️
         run: pnpm run postinstall
@@ -150,6 +150,10 @@ jobs:
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
+
+      - name: Compute safe branch name 🍃
+        id: safe-branch-name
+        uses: "./.github/actions/compute-safe-branch-name"
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -167,7 +171,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Create Nuxt types ⛰️
         run: pnpm run postinstall
@@ -180,10 +184,10 @@ jobs:
       - name: Save unit tests coverage in cache 🥡
         uses: actions/cache/save@v4
         id: cache-unit-tests-coverage
-        if: ${{ hashFiles('tests/unit/coverage/lcov.info') }}
+        if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
         with:
-          path: tests/unit/coverage
-          key: ${{ runner.os }}-tests-unit-coverage-v3-${{ env.BRANCH_NAME }}-${{hashFiles('tests/unit/coverage/lcov.info')}}
+          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
 
       - name: Save unit tests coverage report as artifact 💎
         uses: actions/upload-artifact@v4
@@ -224,7 +228,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Create Nuxt types ⛰️
         run: pnpm run postinstall
@@ -272,7 +276,7 @@ jobs:
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Create Nuxt types ⛰️
         run: pnpm run postinstall
@@ -294,4 +298,49 @@ jobs:
 
       - name: Exit with error if E2E tests failed 🚨
         if: steps.e2e-tests.outcome != 'success'
-        run: exit 1;
+        run: exit 1
+
+  sonarcloud:
+    name: SonarCloud Analysis 🌥️
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pull-requests: write
+    needs:
+      - unit-tests
+    steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Compute safe branch name 🍃
+        id: safe-branch-name
+        uses: "./.github/actions/compute-safe-branch-name"
+
+      - name: Install pnpm 🏗️
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Restore pnpm dependencies from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Restore tests coverage from cache 🥡
+        uses: actions/cache/restore@v4
+        id: cache-unit-tests-coverage
+        with:
+          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
+          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
+          restore-keys: |
+            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
+
+      - name: SonarCloud Scan 🌥️
+        uses: SonarSource/sonarqube-scan-action@v6.0.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
