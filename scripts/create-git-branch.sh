@@ -9,7 +9,7 @@
 #   ./create-git-branch.sh
 # -----------------------------------------------------------------------------
 
-PS3="What kind of job are your starting ? "
+PS3="What kind of job are your starting? "
 select option in "feat" "fix" "docs" "style" "refactor" "test" "perf" "build" "ci" "chore" "revert";
 do
   case $option in

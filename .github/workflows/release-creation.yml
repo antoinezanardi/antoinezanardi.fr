@@ -167,7 +167,7 @@ jobs:
         id: cache-unit-tests-coverage
         if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
         with:
-          path: tests/unit/coverage
+          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
           key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
 
       - name: Save unit tests coverage report as artifact 💎
