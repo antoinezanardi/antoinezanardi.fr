@@ -15,6 +15,9 @@ jobs:
     permissions:
       contents: 'read'
     runs-on: ubuntu-latest
+    environment:
+      name: preproduction
+      url: ${{ steps.deployment.outputs.preview-url }}
     env:
       NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
       NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
@@ -41,6 +44,7 @@ jobs:
         run: pnpm run generate
 
       - name: Deploy to Vercel ⛵
+        id: deployment
         uses: amondnet/vercel-action@v41.1.4
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
