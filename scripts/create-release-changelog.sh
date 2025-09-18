@@ -35,4 +35,4 @@ if [ ! -s RELEASE.md ]; then
   exit 0
 fi
 
-sed -E -i 's/^## ([0-9]+\.[0-9]+\.[0-9]+).*/## Release v\1/' "RELEASE.md"
+sed -E -i 's/^## ([0-9]+\.[0-9]+\.[0-9]+).*/## Release v\1/' RELEASE.md

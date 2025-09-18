@@ -19,7 +19,6 @@ env:
   STRYKER_INCREMENTAL_PATH: tests/stryker/incremental
 
 jobs:
-
   code-ql:
     name: CodeQL Scan ❇️
     runs-on: ubuntu-latest
@@ -342,7 +341,6 @@ jobs:
             ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
 
       - name: SonarCloud Scan 🌥️
-        timeout-minutes: 20
         uses: SonarSource/sonarqube-scan-action@v6.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
