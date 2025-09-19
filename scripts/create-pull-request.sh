@@ -60,7 +60,7 @@ if [ "$current_branch" = "$base_branch" ]; then
   exit 1
 fi
 
-pr_url=$(curl -s "https://api.github.com/repos/$username/$repository/pulls?head=$username:$current_branch&base=$base_branch" | grep -Eo "https://github.com/$username/$repository/pull/[0-9]+" | head -n 1)
+pr_url=$(curl -s "https://api.github.com/repos/$username/$repository/pulls?head=$username:$current_branch&base=$base_branch" | grep -Eo "https://github.com/$username/$repository/pull/[0-9]+" | head -n 1 || true)
 
 if [ -n "$pr_url" ]; then
   echo "❌  A pull request already exists for $current_branch against $base_branch: $pr_url"
