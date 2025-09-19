@@ -152,15 +152,17 @@ jobs:
       - name: Set Vitest Results As Outputs 📝
         id: outputs
         run: |
-          echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}" >> "$GITHUB_OUTPUT"
-          echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}" >> "$GITHUB_OUTPUT"
+          {
+            echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}"
+            echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}"
+            echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}"
+            echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}"
+            echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}"
+            echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}"
+            echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}"
+            echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}"
+            echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Save unit tests coverage in cache 🥡
         uses: actions/cache/save@v4

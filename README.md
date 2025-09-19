@@ -50,7 +50,7 @@ This repository demonstrates how I build reliable software with strong testing s
 - **Unit tests** — [Vitest](https://vitest.dev/) with **100% coverage**.
 - **End-to-End tests** — [Playwright](https://playwright.dev/).
 - **Mutation tests** — [Stryker](https://stryker-mutator.io/).
-- **Linting & formatting** — [ESLint](https://eslint.org/).
+- **Linting & formatting** — [ESLint](https://eslint.org/), [ActionLint](https://github.com/rhysd/actionlint).
 - **Code quality and coverage** — [SonarCloud](https://sonarcloud.io/).
 - **CI/CD pipelines** — [GitHub Actions](https://github.com/features/actions).
 

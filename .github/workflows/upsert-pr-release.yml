@@ -117,25 +117,25 @@ jobs:
       - name: List open PR into master 📋
         run: | 
           OPEN_PR_INTO_MASTER=$(gh pr list --state open -B master --search "Release in:title" --json number,title)
-          echo "OPEN_PR_INTO_MASTER=$OPEN_PR_INTO_MASTER" >> $GITHUB_ENV
+          echo "OPEN_PR_INTO_MASTER=$OPEN_PR_INTO_MASTER" >> "$GITHUB_ENV"
 
       - name: Set PR Title 🔤
         run: |
           PR_TITLE="Release v${{ needs.get-next-release-version.outputs.new-release-version }}"
-          echo "PR_TITLE=$PR_TITLE" >> $GITHUB_ENV
+          echo "PR_TITLE=$PR_TITLE" >> "$GITHUB_ENV"
 
       - name: Determine action to perform on PR 🚏
         run: |
           if [[ "$OPEN_PR_INTO_MASTER" != "[]" ]]; then
             PR_NUMBER=$(echo "$OPEN_PR_INTO_MASTER" | jq -r '.[0].number')
             if [[ -n "$PR_NUMBER" ]]; then
-              echo "PR_ACTION=update" >> $GITHUB_ENV
-              echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
+              echo "PR_ACTION=update" >> "$GITHUB_ENV"
+              echo "PR_NUMBER=$PR_NUMBER" >> "$GITHUB_ENV"
             else
-              echo "PR_ACTION=create" >> $GITHUB_ENV
+              echo "PR_ACTION=create" >> "$GITHUB_ENV"
             fi
           else
-            echo "PR_ACTION=create" >> $GITHUB_ENV
+            echo "PR_ACTION=create" >> "$GITHUB_ENV"
           fi
 
       - name: Create Release PR if it doesn't exist 🔃
