@@ -71,7 +71,6 @@ jobs:
           pyflakes: true
           cache: true
           group-result: true
-          files: .github/workflows
 
   install:
     name: Install ⚙️
