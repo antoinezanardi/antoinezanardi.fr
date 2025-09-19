@@ -108,7 +108,7 @@
     "radash": "^12.1.1",
     "rimraf": "^6.0.1",
     "sass": "^1.92.1",
-    "semantic-release": "24.2.8",
+    "semantic-release": "24.2.9",
     "semantic-release-export-data": "^1.1.1",
     "tsx": "^4.20.5",
     "type-fest": "^5.0.1",
