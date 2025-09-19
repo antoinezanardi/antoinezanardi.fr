@@ -22,7 +22,7 @@ jobs:
   code-ql:
     name: CodeQL Scan ❇️
     runs-on: ubuntu-latest
-    timeout-minutes: 360
+    timeout-minutes: 30
     permissions:
       actions: read
       contents: read
@@ -47,12 +47,31 @@ jobs:
   lint-workflows:
     name: Lint GitHub Workflows 🐙
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
+      - name: Create dummy package.json for ActionLint 📄
+        run: |
+          echo '{
+            "name": "dummy-package",
+            "version": "1.0.0",
+            "private": true
+          }' > package.json
+
       - name: Lint GitHub Workflows 🐙
         uses: raven-actions/actionlint@v2.0.1
+        with:
+          matcher: true
+          fail-on-error: true
+          shellcheck: true
+          pyflakes: true
+          cache: true
+          group-result: true
+          files: .github/workflows
 
   install:
     name: Install ⚙️
@@ -120,7 +139,7 @@ jobs:
         run: pnpm run generate
 
   lint:
-    name: Lint 🔍
+    name: Lint Codebase 🔍
     runs-on: ubuntu-latest
     needs:
       - install
