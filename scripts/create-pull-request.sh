@@ -1,4 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# -----------------------------------------------------------------------------
+# create-pull-request.sh
+#
+# Interactive script to open a pull request on GitHub. Prompts for GitHub
+# username if not set, validates it, and checks for commits before opening PR.
+#
+# Usage:
+#   ./create-pull-request.sh [base-branch]
+# -----------------------------------------------------------------------------
+
+set -euo pipefail
+IFS=$'\n\t'
+
+command -v curl >/dev/null 2>&1 || { echo "❌  curl is required." >&2; exit 1; }
+command -v git >/dev/null 2>&1 || { echo "❌  git is required." >&2; exit 1; }
+command -v ruby >/dev/null 2>&1 || echo "⚠️ ruby not found; labels/titles won't be URL-encoded."
+git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { echo "❌ Not a git repository." >&2; exit 1; }
 
 github_user=$(git config github.user)
 
@@ -43,7 +60,7 @@ if [ "$current_branch" = "$base_branch" ]; then
   exit 1
 fi
 
-pr_url=$(curl -s "https://api.github.com/repos/$username/$repository/pulls?head=$username:$current_branch&base=$base_branch" | grep -Eo "https://github.com/$username/$repository/pull/[0-9]+" | head -n 1)
+pr_url=$(curl -s "https://api.github.com/repos/$username/$repository/pulls?head=$username:$current_branch&base=$base_branch" | grep -Eo "https://github.com/$username/$repository/pull/[0-9]+" | head -n 1 || true)
 
 if [ -n "$pr_url" ]; then
   echo "❌  A pull request already exists for $current_branch against $base_branch: $pr_url"
@@ -76,6 +93,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
   xdg-open "$encoded_open_pr_url"
 else
-  echo "❌  Unsupported OS for automatically open the pull request creation page"
+  echo "❌  Unsupported OS to automatically open the pull request creation page"
   exit 1
 fi

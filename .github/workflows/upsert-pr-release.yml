@@ -3,7 +3,7 @@ name: 🔃️ Upsert PR Release Workflow
 on:
   push:
     branches:
-      - "develop"
+      - develop
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -24,19 +24,19 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Cache npm dependencies 🥡
         uses: actions/cache@v4
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install project dependencies 📦
-        run: pnpm install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
   get-next-release-version:
     name: Get next release version 🏷️
@@ -68,15 +68,19 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
-      - name: Restore npm dependencies from cache 🥡
+      - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
         id: cache-node-modules
         with:
           path: node_modules
-          key: ${{ runner.os }}-pnpm-v3-${{ hashFiles('pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install project dependencies 📦
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
       - name: Get next release version and create release changelog 🏷️
         id: release
@@ -113,25 +117,25 @@ jobs:
       - name: List open PR into master 📋
         run: | 
           OPEN_PR_INTO_MASTER=$(gh pr list --state open -B master --search "Release in:title" --json number,title)
-          echo "OPEN_PR_INTO_MASTER=$OPEN_PR_INTO_MASTER" >> $GITHUB_ENV
+          echo "OPEN_PR_INTO_MASTER=$OPEN_PR_INTO_MASTER" >> "$GITHUB_ENV"
 
       - name: Set PR Title 🔤
         run: |
           PR_TITLE="Release v${{ needs.get-next-release-version.outputs.new-release-version }}"
-          echo "PR_TITLE=$PR_TITLE" >> $GITHUB_ENV
+          echo "PR_TITLE=$PR_TITLE" >> "$GITHUB_ENV"
 
       - name: Determine action to perform on PR 🚏
         run: |
           if [[ "$OPEN_PR_INTO_MASTER" != "[]" ]]; then
             PR_NUMBER=$(echo "$OPEN_PR_INTO_MASTER" | jq -r '.[0].number')
             if [[ -n "$PR_NUMBER" ]]; then
-              echo "PR_ACTION=update" >> $GITHUB_ENV
-              echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
+              echo "PR_ACTION=update" >> "$GITHUB_ENV"
+              echo "PR_NUMBER=$PR_NUMBER" >> "$GITHUB_ENV"
             else
-              echo "PR_ACTION=create" >> $GITHUB_ENV
+              echo "PR_ACTION=create" >> "$GITHUB_ENV"
             fi
           else
-            echo "PR_ACTION=create" >> $GITHUB_ENV
+            echo "PR_ACTION=create" >> "$GITHUB_ENV"
           fi
 
       - name: Create Release PR if it doesn't exist 🔃

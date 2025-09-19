@@ -1,11 +1,23 @@
-#!/bin/bash -e
-
-# Script: create-release-changelog.sh
-# Description: Creates a release against the main branch using semantic-release.
+#!/usr/bin/env bash
+# -----------------------------------------------------------------------------
+# create-release-changelog.sh
 #
-# Usage: ./create-release-changelog.sh
+# Generates a release changelog using semantic-release, reformats output,
+# and saves it to RELEASE.md for review or publishing.
+#
+# Usage:
+#   ./create-release-changelog.sh
+# -----------------------------------------------------------------------------
 
-npx semantic-release --dry-run --no-ci | awk '/^## [0-9]+\.[0-9]+\.[0-9]+( \(https:\/\/github\.com\/)?/ {if (found) exit; found=1} found {print}' >RELEASE.md
+set -euo pipefail
+
+if ! command -v gawk &>/dev/null; then
+  echo "gawk is required but not installed. Please install gawk and try again."
+  exit 1
+fi
+
+npx semantic-release --dry-run --no-ci | gawk '/^## [0-9]+\.[0-9]+\.[0-9]+( \(https:\/\/github\.com\/)?/ {if (found) exit; found=1} found {print}' >RELEASE.md
+
 gawk '
   {
     sub(/^ */, "");
@@ -15,4 +27,12 @@ gawk '
     }
     print
   }' RELEASE.md >temp.md && mv temp.md RELEASE.md
-sed -Ei 's/^## ([0-9]+\.[0-9]+\.[0-9]+).*/## Release v\1/' RELEASE.md
+
+
+if [ ! -s RELEASE.md ]; then
+  echo "No new release notes generated. Removing empty RELEASE.md."
+  rm RELEASE.md
+  exit 0
+fi
+
+sed -E -i 's/^## ([0-9]+\.[0-9]+\.[0-9]+).*/## Release v\1/' RELEASE.md
