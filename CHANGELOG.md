@@ -1,5 +1,32 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.4.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.3.1...v1.4.0) (2025-09-19)
+
+### 🚀 Features
+
+* **cv:** update cv ([#265](https://github.com/antoinezanardi/antoinezanardi.fr/issues/265)) ([1538bdb](https://github.com/antoinezanardi/antoinezanardi.fr/commit/1538bdbd9ec539da574d638ee357f3f2ae0155f2))
+* **quality:** integrate SonarCloud analysis into CI pipeline ([#271](https://github.com/antoinezanardi/antoinezanardi.fr/issues/271)) ([73d4311](https://github.com/antoinezanardi/antoinezanardi.fr/commit/73d4311dde783e981c74fd020b920030f89af7f5))
+
+### 🐛 Bug Fixes
+
+* **script:** handle curl command failure in create pull request script ([#277](https://github.com/antoinezanardi/antoinezanardi.fr/issues/277)) ([3682c1c](https://github.com/antoinezanardi/antoinezanardi.fr/commit/3682c1cf32c55766e84532e2f5f636618389779a))
+
+### 🔁 CI
+
+* **deployment:** update environment names and fix variable references in deployment workflows ([#276](https://github.com/antoinezanardi/antoinezanardi.fr/issues/276)) ([3df97a0](https://github.com/antoinezanardi/antoinezanardi.fr/commit/3df97a0d0f3c58bf260cb481aa823d87c60d3850))
+* **lint:** add GitHub workflows linting step to build process ([#278](https://github.com/antoinezanardi/antoinezanardi.fr/issues/278)) ([eeb6b23](https://github.com/antoinezanardi/antoinezanardi.fr/commit/eeb6b23bf0b8d375f38832c3db9b7b256f859d9a))
+
+### 🧹 Chore
+
+* **coderabbit:** update Conventional Commits requirements to include build and ci types ([#274](https://github.com/antoinezanardi/antoinezanardi.fr/issues/274)) ([b89d800](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b89d80019677fcd8d4d605a54d4eeaae2b5d4901))
+* **deployment:** enhance preproduction workflow with environment settings ([#272](https://github.com/antoinezanardi/antoinezanardi.fr/issues/272)) ([07dfa18](https://github.com/antoinezanardi/antoinezanardi.fr/commit/07dfa184c4c3a3c54d0ce129b9935d7d00e15761))
+* **deps:** update dependency @types/node to ^22.18.5 ([#268](https://github.com/antoinezanardi/antoinezanardi.fr/issues/268)) ([e64c801](https://github.com/antoinezanardi/antoinezanardi.fr/commit/e64c801ce85556a62f12ecb0437462800b26f56b))
+* **deps:** update dependency @types/node to ^22.18.6 ([#269](https://github.com/antoinezanardi/antoinezanardi.fr/issues/269)) ([600fa06](https://github.com/antoinezanardi/antoinezanardi.fr/commit/600fa066fa1fd7f8b1eebbaced88fc85718e30d9))
+* **deps:** update dependency @vitest/eslint-plugin to ^1.3.12 ([#267](https://github.com/antoinezanardi/antoinezanardi.fr/issues/267)) ([ad3d8e8](https://github.com/antoinezanardi/antoinezanardi.fr/commit/ad3d8e8dec7963d66a335c830b5b98a8c6fab87c))
+* **deps:** update dependency type-fest to ^5.0.1 ([#275](https://github.com/antoinezanardi/antoinezanardi.fr/issues/275)) ([a49e451](https://github.com/antoinezanardi/antoinezanardi.fr/commit/a49e4512d84df77b67af912106a9d562323ab883))
+* **deps:** update dependency vite to v7.1.6 ([#270](https://github.com/antoinezanardi/antoinezanardi.fr/issues/270)) ([1754cbc](https://github.com/antoinezanardi/antoinezanardi.fr/commit/1754cbc6037dbfe04fb38a4146bdb9f427cdb50e))
+* **preproduction:** update deployment URL to use secrets for preproduction environment ([#273](https://github.com/antoinezanardi/antoinezanardi.fr/issues/273)) ([2e0552a](https://github.com/antoinezanardi/antoinezanardi.fr/commit/2e0552a54bf5f8a16d8c36075c99c716fb6e3f3c))
+
 ## [1.3.1](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.3.0...v1.3.1) (2025-09-16)
 
 ### ⚡️ Performances
