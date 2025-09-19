@@ -3,7 +3,7 @@ name: 🏷️ Release Creation Workflow
 on:
   push:
     branches:
-      - 'master'
+      - master
 
 env:
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
@@ -34,7 +34,7 @@ jobs:
       - name: Perform CodeQL Analysis ❇️
         uses: github/codeql-action/analyze@v3
         with:
-          category: "/language:javascript"
+          category: /language:javascript
 
   install:
     name: Install ⚙️

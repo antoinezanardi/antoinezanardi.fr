@@ -220,8 +220,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4

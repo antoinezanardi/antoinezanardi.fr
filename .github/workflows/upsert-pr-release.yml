@@ -3,7 +3,7 @@ name: 🔃️ Upsert PR Release Workflow
 on:
   push:
     branches:
-      - "develop"
+      - develop
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -24,8 +24,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Cache npm dependencies 🥡
         uses: actions/cache@v4
@@ -68,8 +68,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore npm dependencies from cache 🥡
         uses: actions/cache/restore@v4
