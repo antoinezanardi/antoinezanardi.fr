@@ -71,7 +71,7 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
 
-      - name: Restore npm dependencies from cache 🥡
+      - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
         id: cache-node-modules
         with:
