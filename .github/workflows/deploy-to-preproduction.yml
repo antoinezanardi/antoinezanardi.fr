@@ -15,13 +15,14 @@ jobs:
     permissions:
       contents: 'read'
     runs-on: ubuntu-latest
-    environment:
-      name: preproduction
-      url: ${{ steps.deployment.outputs.preview-url }}
     env:
+      PREPRODUCTION_URL: ${{ secrets.PREPRODUCTION_URL }}
       NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
       NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
+    environment:
+      name: preproduction
+      url: ${{ env.PREPRODUCTION_URL }}
     steps:
       - name: Setup GitHub repository 🔧
         uses: actions/checkout@v5
