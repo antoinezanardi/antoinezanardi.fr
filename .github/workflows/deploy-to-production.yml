@@ -20,7 +20,7 @@ jobs:
       NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     environment:
-      name: 🚀 Production
+      name: Production
       url: ${{ vars.PRODUCTION_URL }}
     steps:
       - name: Setup GitHub repository 🔧
