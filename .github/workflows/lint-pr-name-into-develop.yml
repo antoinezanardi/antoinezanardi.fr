@@ -3,7 +3,7 @@ name: 🔃 Lint PR Name Into Develop Workflow
 on:
   pull_request:
     branches:
-      - 'develop'
+      - develop
     types:
       - opened
       - edited

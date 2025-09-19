@@ -2,8 +2,8 @@ name: ⚙️ Build Workflow
 on:
   pull_request:
     branches:
-      - "master"
-      - "develop"
+      - master
+      - develop
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -59,8 +59,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Cache pnpm dependencies 🥡
         uses: actions/cache@v4
@@ -70,8 +70,8 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install project dependencies 📦
-        run: pnpm install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
   build:
     name: Build ✨
@@ -90,8 +90,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
@@ -126,8 +126,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
@@ -153,7 +153,7 @@ jobs:
 
       - name: Compute safe branch name 🍃
         id: safe-branch-name
-        uses: "./.github/actions/compute-safe-branch-name"
+        uses: ./.github/actions/compute-safe-branch-name
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4
@@ -163,8 +163,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
@@ -220,8 +220,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
@@ -268,8 +268,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
@@ -317,7 +317,7 @@ jobs:
 
       - name: Compute safe branch name 🍃
         id: safe-branch-name
-        uses: "./.github/actions/compute-safe-branch-name"
+        uses: ./.github/actions/compute-safe-branch-name
 
       - name: Install pnpm 🏗️
         uses: pnpm/action-setup@v4

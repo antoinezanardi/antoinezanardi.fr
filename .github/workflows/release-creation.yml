@@ -3,7 +3,7 @@ name: 🏷️ Release Creation Workflow
 on:
   push:
     branches:
-      - 'master'
+      - master
 
 env:
   UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
@@ -62,8 +62,8 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install project dependencies 📦
-        run: pnpm install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
   release:
     name: Release 🏷️

@@ -3,7 +3,7 @@ name: ⛵️ Deploy To Preproduction Workflow
 on:
   push:
     branches:
-      - "develop"
+      - develop
 
 concurrency:
   group: ${{ github.workflow }}
@@ -13,16 +13,15 @@ jobs:
   deployment:
     name: Deploy to Vercel ⛵
     permissions:
-      contents: 'read'
+      contents: read
     runs-on: ubuntu-latest
     env:
-      PREPRODUCTION_URL: ${{ secrets.PREPRODUCTION_URL }}
       NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
       NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     environment:
-      name: preproduction
-      url: ${{ env.PREPRODUCTION_URL }}
+      name: ⛵ Preproduction
+      url: ${{ vars.PREPRODUCTION_URL }}
     steps:
       - name: Setup GitHub repository 🔧
         uses: actions/checkout@v5
@@ -35,8 +34,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Install project dependencies 📦
         run: pnpm install --frozen-lockfile
@@ -52,6 +51,6 @@ jobs:
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ./
-          vercel-args: '--prod'
+          vercel-args: --prod
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

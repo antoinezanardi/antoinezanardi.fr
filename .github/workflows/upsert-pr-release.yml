@@ -3,7 +3,7 @@ name: 🔃️ Upsert PR Release Workflow
 on:
   push:
     branches:
-      - "develop"
+      - develop
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -24,8 +24,8 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
       - name: Cache npm dependencies 🥡
         uses: actions/cache@v4
@@ -35,8 +35,8 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: Install project dependencies 📦
-        run: pnpm install
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
   get-next-release-version:
     name: Get next release version 🏷️
@@ -68,15 +68,19 @@ jobs:
       - name: Setup NodeJS ✨
         uses: actions/setup-node@v5
         with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+          node-version-file: .nvmrc
+          cache: pnpm
 
-      - name: Restore npm dependencies from cache 🥡
+      - name: Restore pnpm dependencies from cache 🥡
         uses: actions/cache/restore@v4
         id: cache-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install project dependencies 📦
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm install
 
       - name: Get next release version and create release changelog 🏷️
         id: release
