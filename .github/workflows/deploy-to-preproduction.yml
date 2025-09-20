@@ -1,4 +1,4 @@
-name: ⛵️ Deploy To Preproduction Workflow
+name: ⛵️ Deploy To Staging Workflow
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
       NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
     environment:
       name: Staging
-      url: ${{ vars.PREPRODUCTION_URL }}
+      url: ${{ vars.STAGING_URL }}
     steps:
       - name: Setup GitHub repository 🔧
         uses: actions/checkout@v5
