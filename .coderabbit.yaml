@@ -30,6 +30,10 @@ reviews:
       - "master"
       - "develop"
     auto_incremental_review: true
+    ignore_usernames:
+      - "renovate[bot]"
+      - "dependabot[bot]"
+      - "github-actions[bot]"
   tools:
     eslint:
       enabled: true
