@@ -1,5 +1,18 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.4.1](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.4.0...v1.4.1) (2025-09-21)
+
+### 🔁 CI
+
+* **deployment:** update environment names in preproduction and production workflows ([#279](https://github.com/antoinezanardi/antoinezanardi.fr/issues/279)) ([9f1b4f2](https://github.com/antoinezanardi/antoinezanardi.fr/commit/9f1b4f2831bfcf908896cb6f8292dcbf535ebe05))
+
+### 🧹 Chore
+
+* **coderabbit:** add bots to ignore list in configuration ([#286](https://github.com/antoinezanardi/antoinezanardi.fr/issues/286)) ([33b2bdb](https://github.com/antoinezanardi/antoinezanardi.fr/commit/33b2bdb6422d5a12421836539d979d4dbf1931ca))
+* **deps:** update dependency eslint to ^9.36.0 ([#280](https://github.com/antoinezanardi/antoinezanardi.fr/issues/280)) ([b5254f7](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b5254f77696faf95992157580b2096328769aba3))
+* **deps:** update dependency sass to ^1.93.0 ([#285](https://github.com/antoinezanardi/antoinezanardi.fr/issues/285)) ([962596a](https://github.com/antoinezanardi/antoinezanardi.fr/commit/962596ae7f54b44566b70299a5e6bc5db02e2b37))
+* **deps:** update dependency semantic-release to v24.2.9 ([#284](https://github.com/antoinezanardi/antoinezanardi.fr/issues/284)) ([b6ed8be](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b6ed8be4dfe46ad6a15dcdad590f8c72ea38083d))
+
 ## [1.4.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.3.1...v1.4.0) (2025-09-19)
 
 ### 🚀 Features
