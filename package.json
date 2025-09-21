@@ -75,7 +75,7 @@
     "@stryker-mutator/core": "^9.1.1",
     "@stryker-mutator/typescript-checker": "^9.1.1",
     "@stryker-mutator/vitest-runner": "^9.1.1",
-    "@stylistic/eslint-plugin": "^5.3.1",
+    "@stylistic/eslint-plugin": "^5.4.0",
     "@types/aos": "^3.0.7",
     "@types/bootstrap": "^5.2.10",
     "@types/node": "^22.18.6",
