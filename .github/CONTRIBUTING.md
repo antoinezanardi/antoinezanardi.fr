@@ -4,11 +4,11 @@ Thank you for your interest in contributing! Your help is greatly appreciated. P
 
 ## How to Contribute
 
-1. **Fork the repository** and create your branch from `main`.
+1. **Fork the repository** and create your branch from `develop`. `master` branch is reserved for production-ready code.
 2. **Clone your fork** and set up the project locally.
 3. **Install dependencies** using `pnpm install`.
 4. **Make your changes** with clear, descriptive commits.
-5. **Test your changes** to ensure nothing is broken.
+5. **Test your changes** using `pnpm run test:unit` and `pnpm run test:cucumber` to ensure nothing is broken.
 6. **Push your branch** and open a pull request (PR) with a clear description of your changes against the `develop` branch.
 
 ## Code Style
@@ -31,6 +31,6 @@ Thank you for your interest in contributing! Your help is greatly appreciated. P
 
 ## Contact
 
-For questions, contact Antoine ZANARDI at antoine.zanardi@epitech.eu.
+For questions, contact Antoine ZANARDI at [antoine.zanardi@epitech.eu](mailto:antoine.zanardi@epitech.eu).
 
 Thank you for helping improve this project!

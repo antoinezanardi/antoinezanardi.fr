@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in this repository, please report it as soon as possible.
 
-- Contact: antoine.zanardi@epitech.eu
+- Contact: [antoine.zanardi@epitech.eu](mailto:antoine.zanardi@epitech.eu)
 - Please include as much detail as possible to help us address the issue quickly.
 - Do not disclose security issues publicly until they have been reviewed and resolved.
 

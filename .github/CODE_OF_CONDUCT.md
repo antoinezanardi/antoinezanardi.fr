@@ -32,7 +32,7 @@ This Code of Conduct applies within all project spaces and also applies when an 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at antoine.zanardi@epitech.eu. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project team at [antoine.zanardi@epitech.eu](mailto:antoine.zanardi@epitech.eu). All complaints will be reviewed and investigated promptly and fairly.
 
 ## Attribution
 
