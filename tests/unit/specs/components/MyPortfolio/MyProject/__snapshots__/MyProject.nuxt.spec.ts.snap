@@ -4,9 +4,11 @@ exports[`My Project Component > should match snapshot when rendered. 1`] = `
 "<div data-v-09377792="" class="cc-portfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a data-v-09377792="" class="project-link" href="https://www.antoinezanardi.fr" rel="noopener noreferrer" target="_blank">
     <figure data-v-09377792="" class="cc-effect">
       <nuxt-img-stub data-v-09377792="" alt="MyPortfolio.projects.portfolio.name" loading="lazy" src="/images/projects/portfolio-thumbnail.webp" preload="false" crossorigin="false" placeholder="false" custom="false" class="project-image"></nuxt-img-stub>
-      <figcaption data-v-09377792="" class="project-metadata">
-        <div data-v-09377792="" class="h4 project-name">MyPortfolio.projects.portfolio.name</div>
-        <p data-v-09377792="" class="project-desc">MyPortfolio.projects.portfolio.description</p>
+      <figcaption data-v-09377792="" class="d-flex flex-column h-100 justify-content-center project-metadata">
+        <div data-v-09377792="" class="h4 project-name py-3">MyPortfolio.projects.portfolio.name</div>
+        <p data-v-09377792="" class="align-items-center d-flex flex-column justify-content-center project-desc"><span data-v-09377792="">MyPortfolio.projects.portfolio.description</span>
+          <wrapped-font-awesome-icon-stub data-v-09377792="" icon="fa-arrow-up-right-from-square" iconcolor="#000000" size="2x" classes="my-3"></wrapped-font-awesome-icon-stub>
+        </p>
       </figcaption>
     </figure>
   </a></div>"

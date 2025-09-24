@@ -18,17 +18,26 @@
           :src="`/images/projects/${project.image}`"
         />
 
-        <figcaption class="project-metadata">
+        <figcaption class="d-flex flex-column h-100 justify-content-center project-metadata">
           <div
-            class="h4 project-name"
+            class="h4 project-name py-3"
           >
             {{ project.name }}
           </div>
 
           <p
-            class="project-desc"
+            class="align-items-center d-flex flex-column justify-content-center project-desc"
           >
-            {{ project.description }}
+            <span>
+              {{ project.description }}
+            </span>
+
+            <WrappedFontAwesomeIcon
+              classes="my-3"
+              icon="fa-arrow-up-right-from-square"
+              icon-color="#000000"
+              size="2x"
+            />
           </p>
         </figcaption>
       </figure>
@@ -38,6 +47,7 @@
 
 <script setup lang="ts">
 import type { MyProjectProps } from "~/components/MyPortfolio/MyProject/my-project.types";
+import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
 
 defineProps<MyProjectProps>();
 </script>

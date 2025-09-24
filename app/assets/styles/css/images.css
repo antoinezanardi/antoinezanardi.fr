@@ -43,9 +43,9 @@
   animation: none;
 }
 
-.cc-profile-image a:focus-visible img,
-.cc-profile-image a:focus img {
-  box-shadow: 0 0 0 2px var(--primary-color, #1B6426), 0 0 0 4px var(--white-color, #fff);
+.cc-profile-image a:focus-visible,
+.cc-profile-image a:focus {
+  box-shadow: 0 0 0 2px var(--primary-hover-color), 0 0 0 4px;
   outline: none;
   transition: transform .3s ease-out, box-shadow .2s;
   z-index: 3;

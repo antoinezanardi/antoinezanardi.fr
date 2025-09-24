@@ -65,9 +65,9 @@
 }
 
 .gallery figure.cc-effect .h4 {
-  margin-top: 25%;
   transition: transform 0.35s;
   opacity: 0;
+  color: var(--white-color);
 }
 
 @media (max-width: 480px) {
@@ -92,38 +92,54 @@
 }
 
 .gallery figure.cc-effect img,
+.gallery figure.cc-effect p,
 .gallery figure.cc-effect .h4 {
   transform: scale(1.06, 1.06);
 }
 
 .gallery figure.cc-effect img,
+.gallery figure.cc-effect .h4,
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after,
 .gallery figure.cc-effect p {
-  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, filter 0.35s;
 }
 
-.gallery figure.cc-effect:hover img {
+.gallery figure.cc-effect:hover img,
+.gallery a:focus figure.cc-effect img,
+.gallery a:focus-visible figure.cc-effect img {
   opacity: 1;
   transform: none;
+  filter: blur(5px);
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
-.gallery figure.cc-effect:hover figcaption::after {
+.gallery a:focus figure.cc-effect figcaption::before,
+.gallery a:focus-visible figure.cc-effect figcaption::before,
+.gallery figure.cc-effect:hover figcaption::after,
+.gallery a:focus figure.cc-effect figcaption::after,
+.gallery a:focus-visible figure.cc-effect figcaption::after {
   opacity: 1;
   transform: scale(1);
 }
 
-.gallery figure.cc-effect:hover figcaption::before {
-  background: rgba(27, 23, 23, 0.5);
+.gallery figure.cc-effect:hover figcaption::before,
+.gallery a:focus figcaption::before,
+.gallery a:focus-visible figcaption::before {
+  background: rgba(27, 23, 23, 0.7);
 }
 
 .gallery figure.cc-effect:hover .h4,
 .gallery figure.cc-effect:hover p,
-.gallery figure.cc-effect:hover button {
+.gallery figure.cc-effect:hover button,
+.gallery a:focus .h4,
+.gallery a:focus p,
+.gallery a:focus button,
+.gallery a:focus-visible .h4,
+.gallery a:focus-visible p,
+.gallery a:focus-visible button {
   opacity: 1;
-  transform: none;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .gallery figure.cc-effect:hover figcaption::after,
@@ -140,6 +156,7 @@
     transition: none !important;
     transform: none !important;
   }
+
   .gallery figure.cc-effect img,
   .gallery figure.cc-effect .h4,
   .gallery figure.cc-effect p,

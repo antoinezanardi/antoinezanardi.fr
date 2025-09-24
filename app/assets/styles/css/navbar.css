@@ -46,6 +46,12 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   line-height: 1.625rem;
+  border-radius: 0.1875rem;
+}
+
+.navbar a.navbar-brand:focus-visible {
+  outline: 2px solid var(--white-color);
+  outline-offset: 2px;
 }
 
 .navbar .navbar-toggler {
@@ -287,6 +293,12 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 .navbar .navbar-nav .nav-link:not(.btn).disabled {
   opacity: .5;
   color: #FFFFFF;
+}
+
+.navbar .navbar-nav .nav-link:focus-visible {
+  outline: 2px solid var(--white-color);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 
 .navbar .navbar-nav .nav-item.active .nav-link:not(.btn),

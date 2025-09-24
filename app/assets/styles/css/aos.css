@@ -1,0 +1,5 @@
+body .aos-animate[data-aos] {
+  transition-property: opacity, transform, background-color, box-shadow !important;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}

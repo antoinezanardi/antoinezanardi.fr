@@ -33,9 +33,13 @@ a:hover, a:focus {
 }
 
 a:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
+  outline: var(--primary-hover-color) solid 2px;
+  outline-offset: 3px;
   text-decoration: none;
+}
+
+.background-primary a:focus-visible {
+  outline: var(--white-color) solid 2px;
 }
 
 h1, .h1 {
