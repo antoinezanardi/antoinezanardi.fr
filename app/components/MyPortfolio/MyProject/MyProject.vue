@@ -35,7 +35,7 @@
             <WrappedFontAwesomeIcon
               classes="my-3"
               icon="fa-arrow-up-right-from-square"
-              icon-color="#000000"
+              icon-color="#FFFFFF"
               size="2x"
             />
           </p>

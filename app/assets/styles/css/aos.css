@@ -1,5 +1,11 @@
 body .aos-animate[data-aos] {
-  transition-property: opacity, transform, background-color, box-shadow !important;
+  transition-property: opacity, transform, background-color, box-shadow;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .aos-animate[data-aos] {
+    transition: none !important;
+  }
 }

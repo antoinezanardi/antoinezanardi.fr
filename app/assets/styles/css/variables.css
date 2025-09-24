@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #167522;
-  --primary-color-rgb: 27, 100, 38;
+  --primary-color: #12671d;
+  --primary-color-rgb: 18, 103, 29;
   --bs-primary: var(--primary-color);
   --bs-primary-rgb: var(--primary-color-rgb);
   --primary-color-alpha-60: rgba(var(--primary-color-rgb), 0.6);

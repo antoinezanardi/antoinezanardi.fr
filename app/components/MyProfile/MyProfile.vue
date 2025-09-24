@@ -48,7 +48,7 @@
 
             <a
               id="my-cv"
-              class="btn btn-primary"
+              class="border-2 border-success-subtle btn btn-primary rounded-3"
               data-aos="zoom-in"
               data-aos-once="true"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"

@@ -124,8 +124,8 @@
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
-.gallery a:focus figcaption::before,
-.gallery a:focus-visible figcaption::before {
+.gallery figure.cc-effect a:focus figcaption::before,
+.gallery figure.cc-effect a:focus-visible figcaption::before {
   background: rgba(27, 23, 23, 0.7);
 }
 
@@ -150,6 +150,12 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .gallery figure.cc-effect:hover img,
+  .gallery a:focus figure.cc-effect img,
+  .gallery a:focus-visible figure.cc-effect img {
+    filter: none !important;
+  }
+
   .gallery figure.cc-effect *,
   .gallery figure.cc-effect *::before,
   .gallery figure.cc-effect *::after {
@@ -164,5 +170,6 @@
   .gallery figure.cc-effect figcaption::before,
   .gallery figure.cc-effect figcaption::after {
     opacity: 1 !important;
+    filter: none !important;
   }
 }

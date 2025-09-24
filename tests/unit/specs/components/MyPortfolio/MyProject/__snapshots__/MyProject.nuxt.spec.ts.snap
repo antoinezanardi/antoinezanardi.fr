@@ -7,7 +7,7 @@ exports[`My Project Component > should match snapshot when rendered. 1`] = `
       <figcaption data-v-09377792="" class="d-flex flex-column h-100 justify-content-center project-metadata">
         <div data-v-09377792="" class="h4 project-name py-3">MyPortfolio.projects.portfolio.name</div>
         <p data-v-09377792="" class="align-items-center d-flex flex-column justify-content-center project-desc"><span data-v-09377792="">MyPortfolio.projects.portfolio.description</span>
-          <wrapped-font-awesome-icon-stub data-v-09377792="" icon="fa-arrow-up-right-from-square" iconcolor="#000000" size="2x" classes="my-3"></wrapped-font-awesome-icon-stub>
+          <wrapped-font-awesome-icon-stub data-v-09377792="" icon="fa-arrow-up-right-from-square" iconcolor="#FFFFFF" size="2x" classes="my-3"></wrapped-font-awesome-icon-stub>
         </p>
       </figcaption>
     </figure>
