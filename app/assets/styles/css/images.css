@@ -46,7 +46,7 @@
 
 .cc-profile-image a:focus-visible,
 .cc-profile-image a:focus {
-  box-shadow: 0 0 0 4px var(--primary-hover-color);
+  box-shadow: 0 0 0 2px var(--white-color), 0 0 0 6px var(--primary-hover-color);
   outline: none;
   transition: transform .3s ease-out, box-shadow .2s;
   z-index: 3;

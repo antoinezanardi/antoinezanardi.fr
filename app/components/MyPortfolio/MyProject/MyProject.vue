@@ -19,18 +19,16 @@
         />
 
         <figcaption class="d-flex flex-column h-100 justify-content-center project-metadata">
-          <div
-            class="h4 project-name py-3"
+          <h2
+            class="h2 project-name py-3"
           >
             {{ project.name }}
-          </div>
+          </h2>
 
           <p
             class="align-items-center d-flex flex-column justify-content-center project-desc"
           >
-            <span>
-              {{ project.description }}
-            </span>
+            {{ project.description }}
 
             <WrappedFontAwesomeIcon
               classes="my-3"

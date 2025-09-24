@@ -196,10 +196,6 @@
     transition: width .2s linear, margin-top .2s linear;
   }
 
-  .sidebar-collapse .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
-    background: var(--gray-color);
-  }
-
   .sidebar-collapse .navbar .toggled .navbar-toggler-bar {
     width: 24px;
   }

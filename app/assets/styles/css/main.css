@@ -51,8 +51,18 @@ a:focus {
   }
 }
 
+.background-primary a:focus {
+  outline: var(--white-color) solid 2px;
+}
+
 .background-primary a:focus-visible {
   outline: var(--white-color) solid 2px;
+}
+
+@supports selector(:focus-visible) {
+  .background-primary a:focus {
+    outline: var(--white-color) solid 2px;
+  }
 }
 
 h1, .h1 {
