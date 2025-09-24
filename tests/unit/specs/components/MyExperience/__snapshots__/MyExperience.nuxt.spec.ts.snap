@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`My Experience Component > should match snapshot when rendered. 1`] = `
-"<div id="experience" aria-labelledby="experience-title" class="section" role="region">
+"<section id="experience" aria-labelledby="experience-title" class="section">
   <div class="cc-experience container">
     <section-title-stub icon="fa fa-briefcase" title="Expérience professionnelle" iconcolor="#4D9344" id="experience-title"></section-title-stub>
     <professional-experience-card-stub professionalexperience="[object Object]" aria-label="1 - MyExperience.fullStackDeveloperConsultant" class="professional-experience-card" role="region"></professional-experience-card-stub>
@@ -11,5 +11,5 @@ exports[`My Experience Component > should match snapshot when rendered. 1`] = `
     <professional-experience-card-stub professionalexperience="[object Object]" aria-label="5 - MyExperience.freelanceFullStackDeveloper" class="professional-experience-card" role="region"></professional-experience-card-stub>
     <professional-experience-card-stub professionalexperience="[object Object]" aria-label="6 - MyExperience.internFullStackDeveloper" class="professional-experience-card" role="region"></professional-experience-card-stub>
   </div>
-</div>"
+</section>"
 `;

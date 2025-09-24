@@ -1,5 +1,76 @@
-.btn,
-.navbar .navbar-nav > a.btn {
+.navbar {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  min-height: 53px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  vertical-align: middle;
+}
+
+.navbar a:not(.btn):not(.dropdown-item) {
+  color: #FFFFFF;
+}
+
+.navbar p {
+  display: inline-block;
+  margin: 0;
+  line-height: 21px;
+}
+
+.navbar .navbar-nav.navbar-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 49px;
+  top: -4px;
+}
+
+.navbar .logo-container {
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  font-size: 0.8571em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.625rem;
+}
+
+.navbar .navbar-toggler {
+  width: 37px;
+  height: 27px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.navbar .navbar-toggler.navbar-toggler-left {
+  position: relative;
+  left: 0;
+  padding-left: 0;
+}
+
+.navbar .navbar-toggler:hover .navbar-toggler-bar.bar2 {
+  width: 22px;
+}
+
+.navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
+  width: 17px;
+}
+
+.navbar .navbar-nav > a.btn,
+.btn {
   font-weight: 400;
   font-size: 0.8571em;
   line-height: 1.35em;
@@ -10,115 +81,6 @@
   cursor: pointer;
   background-color: var(--gray-color);
   color: var(--white-color);
-}
-
-.btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover,
-.show > .btn.dropdown-toggle,
-.show > .btn.dropdown-toggle:focus,
-.show > .btn.dropdown-toggle:hover,
-.navbar .navbar-nav > a.btn:hover,
-.navbar .navbar-nav > a.btn:focus,
-.navbar .navbar-nav > a.btn:active,
-.navbar .navbar-nav > a.btn.active,
-.navbar .navbar-nav > a.btn:active:focus,
-.navbar .navbar-nav > a.btn:active:hover,
-.navbar .navbar-nav > a.btn.active:focus,
-.navbar .navbar-nav > a.btn.active:hover,
-.show > .navbar .navbar-nav > a.btn.dropdown-toggle,
-.show > .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
-.show > .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: var(--gray-hover-color);
-  color: var(--white-color);
-  box-shadow: none;
-}
-
-.btn:hover,
-.navbar .navbar-nav > a.btn:hover {
-  box-shadow: 0 3px 8px 0 var(--btn-shadow);
-}
-
-.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active,
-fieldset[disabled] .btn,
-fieldset[disabled] .btn:hover,
-fieldset[disabled] .btn:focus,
-fieldset[disabled] .btn.focus,
-fieldset[disabled] .btn:active,
-fieldset[disabled] .btn.active,
-.navbar .navbar-nav > a.btn.disabled,
-.navbar .navbar-nav > a.btn.disabled:hover,
-.navbar .navbar-nav > a.btn.disabled:focus,
-.navbar .navbar-nav > a.btn.disabled.focus,
-.navbar .navbar-nav > a.btn.disabled:active,
-.navbar .navbar-nav > a.btn.disabled.active,
-.navbar .navbar-nav > a.btn:disabled,
-.navbar .navbar-nav > a.btn:disabled:hover,
-.navbar .navbar-nav > a.btn:disabled:focus,
-.navbar .navbar-nav > a.btn:disabled.focus,
-.navbar .navbar-nav > a.btn:disabled:active,
-.navbar .navbar-nav > a.btn:disabled.active,
-.navbar .navbar-nav > a.btn[disabled],
-.navbar .navbar-nav > a.btn[disabled]:hover,
-.navbar .navbar-nav > a.btn[disabled]:focus,
-.navbar .navbar-nav > a.btn[disabled].focus,
-.navbar .navbar-nav > a.btn[disabled]:active,
-.navbar .navbar-nav > a.btn[disabled].active,
-fieldset[disabled] .navbar .navbar-nav > a.btn,
-fieldset[disabled] .navbar .navbar-nav > a.btn:hover,
-fieldset[disabled] .navbar .navbar-nav > a.btn:focus,
-fieldset[disabled] .navbar .navbar-nav > a.btn.focus,
-fieldset[disabled] .navbar .navbar-nav > a.btn:active,
-fieldset[disabled] .navbar .navbar-nav > a.btn.active {
-  background-color: var(--gray-color);
-  border-color: var(--gray-color);
-}
-
-.btn.btn-simple,
-.navbar .navbar-nav > a.btn.btn-simple {
-  color: var(--gray-color);
-  border-color: var(--gray-color);
-}
-
-.btn.btn-simple:hover, .btn.btn-simple:focus, .btn.btn-simple:active,
-.navbar .navbar-nav > a.btn.btn-simple:hover,
-.navbar .navbar-nav > a.btn.btn-simple:focus,
-.navbar .navbar-nav > a.btn.btn-simple:active {
-  background-color: transparent;
-  color: var(--gray-hover-color);
-  border-color: var(--gray-hover-color);
-  box-shadow: none;
-}
-
-.btn.btn-link,
-.navbar .navbar-nav > a.btn.btn-link {
-  color: var(--gray-color);
-}
-
-.btn.btn-link:hover, .btn.btn-link:focus, .btn.btn-link:active,
-.navbar .navbar-nav > a.btn.btn-link:hover,
-.navbar .navbar-nav > a.btn.btn-link:focus,
-.navbar .navbar-nav > a.btn.btn-link:active {
-  background-color: transparent;
-  color: var(--gray-hover-color);
-  text-decoration: none;
-  box-shadow: none;
-}
-
-.btn:hover, .btn:focus,
-.navbar .navbar-nav > a.btn:hover,
-.navbar .navbar-nav > a.btn:focus {
-  opacity: 1;
-  outline: 2px solid #379963;
-  outline-offset: 2px;
-}
-
-.btn:active, .btn.active,
-.open > .btn.dropdown-toggle,
-.navbar .navbar-nav > a.btn:active,
-.navbar .navbar-nav > a.btn.active,
-.open >,
-.navbar .navbar-nav > a.btn.dropdown-toggle {
-  box-shadow: none;
-  outline: 0 !important;
 }
 
 .btn.btn-icon,
@@ -184,35 +146,112 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   top: 1px;
 }
 
-.navbar {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  min-height: 53px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+.btn.btn-simple,
+.navbar .navbar-nav > a.btn.btn-simple {
+  color: var(--gray-color);
+  border-color: var(--gray-color);
 }
 
-.navbar a {
-  vertical-align: middle;
+.btn.btn-link,
+.navbar .navbar-nav > a.btn.btn-link {
+  color: var(--gray-color);
 }
 
-.navbar a:not(.btn):not(.dropdown-item) {
-  color: #FFFFFF;
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover,
+.show > .btn.dropdown-toggle,
+.show > .btn.dropdown-toggle:focus,
+.show > .btn.dropdown-toggle:hover,
+.navbar .navbar-nav > a.btn:hover,
+.navbar .navbar-nav > a.btn:focus,
+.navbar .navbar-nav > a.btn:active,
+.navbar .navbar-nav > a.btn.active,
+.navbar .navbar-nav > a.btn:active:focus,
+.navbar .navbar-nav > a.btn:active:hover,
+.navbar .navbar-nav > a.btn.active:focus,
+.navbar .navbar-nav > a.btn.active:hover,
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle,
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
+.show > .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
+  background-color: var(--gray-hover-color);
+  color: var(--white-color);
+  box-shadow: none;
 }
 
-.navbar p {
-  display: inline-block;
-  margin: 0;
-  line-height: 21px;
+.btn:hover,
+.navbar .navbar-nav > a.btn:hover {
+  box-shadow: 0 3px 8px 0 var(--btn-shadow);
 }
 
-.navbar .navbar-nav.navbar-logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 49px;
-  top: -4px;
+.btn:active, .btn.active,
+.open > .btn.dropdown-toggle,
+.navbar .navbar-nav > a.btn:active,
+.navbar .navbar-nav > a.btn.active,
+.navbar .navbar-nav > a.btn.dropdown-toggle {
+  box-shadow: none;
+  outline: 0 !important;
+}
+
+.btn.btn-simple:hover, .btn.btn-simple:focus, .btn.btn-simple:active,
+.navbar .navbar-nav > a.btn.btn-simple:hover,
+.navbar .navbar-nav > a.btn.btn-simple:focus,
+.navbar .navbar-nav > a.btn.btn-simple:active {
+  background-color: transparent;
+  color: var(--gray-hover-color);
+  border-color: var(--gray-hover-color);
+  box-shadow: none;
+}
+
+.btn.btn-link:hover, .btn.btn-link:focus, .btn.btn-link:active,
+.navbar .navbar-nav > a.btn.btn-link:hover,
+.navbar .navbar-nav > a.btn.btn-link:focus,
+.navbar .navbar-nav > a.btn.btn-link:active {
+  background-color: transparent;
+  color: var(--gray-hover-color);
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.btn:hover, .btn:focus,
+.navbar .navbar-nav > a.btn:hover,
+.navbar .navbar-nav > a.btn:focus {
+  opacity: 1;
+  outline: 2px solid #379963;
+  outline-offset: 2px;
+}
+
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active,
+fieldset[disabled] .btn,
+fieldset[disabled] .btn:hover,
+fieldset[disabled] .btn:focus,
+fieldset[disabled] .btn.focus,
+fieldset[disabled] .btn:active,
+fieldset[disabled] .btn.active,
+.navbar .navbar-nav > a.btn.disabled,
+.navbar .navbar-nav > a.btn.disabled:hover,
+.navbar .navbar-nav > a.btn.disabled:focus,
+.navbar .navbar-nav > a.btn.disabled.focus,
+.navbar .navbar-nav > a.btn.disabled:active,
+.navbar .navbar-nav > a.btn.disabled.active,
+.navbar .navbar-nav > a.btn:disabled,
+.navbar .navbar-nav > a.btn:disabled:hover,
+.navbar .navbar-nav > a.btn:disabled:focus,
+.navbar .navbar-nav > a.btn:disabled.focus,
+.navbar .navbar-nav > a.btn:disabled:active,
+.navbar .navbar-nav > a.btn:disabled.active,
+.navbar .navbar-nav > a.btn[disabled],
+.navbar .navbar-nav > a.btn[disabled]:hover,
+.navbar .navbar-nav > a.btn[disabled]:focus,
+.navbar .navbar-nav > a.btn[disabled].focus,
+.navbar .navbar-nav > a.btn[disabled]:active,
+.navbar .navbar-nav > a.btn[disabled].active,
+fieldset[disabled] .navbar .navbar-nav > a.btn,
+fieldset[disabled] .navbar .navbar-nav > a.btn:hover,
+fieldset[disabled] .navbar .navbar-nav > a.btn:focus,
+fieldset[disabled] .navbar .navbar-nav > a.btn.focus,
+fieldset[disabled] .navbar .navbar-nav > a.btn:active,
+fieldset[disabled] .navbar .navbar-nav > a.btn.active {
+  background-color: var(--gray-color);
+  border-color: var(--gray-color);
 }
 
 .navbar .navbar-nav .nav-link.btn {
@@ -271,43 +310,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   border-radius: 0.1875rem;
 }
 
-.navbar .logo-container {
-  width: 27px;
-  height: 27px;
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 1px solid transparent;
-}
-
-.navbar .navbar-brand {
-  text-transform: uppercase;
-  font-size: 0.8571em;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  line-height: 1.625rem;
-}
-
-.navbar .navbar-toggler {
-  width: 37px;
-  height: 27px;
-  outline: 0;
-  cursor: pointer;
-}
-
-.navbar .navbar-toggler.navbar-toggler-left {
-  position: relative;
-  left: 0;
-  padding-left: 0;
-}
-
-.navbar .navbar-toggler:hover .navbar-toggler-bar.bar2 {
-  width: 22px;
-}
-
-.navbar .button-dropdown .navbar-toggler-bar:nth-child(2) {
-  width: 17px;
-}
 
 .navbar.navbar-transparent {
   background-color: transparent !important;
@@ -338,11 +340,6 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
 
 .navbar.bg-white:not(.navbar-transparent) .logo-container {
   border: 1px solid var(--gray-color);
-}
-
-.navbar {
-  font-size: 18px;
-  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 576px) {

@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`My Portfolio Component > should match snapshot when rendered. 1`] = `
-"<div id="portfolio" aria-labelledby="portfolio-title" class="section" role="region">
+"<section id="portfolio" aria-labelledby="portfolio-title" class="section">
   <div class="container">
     <section-title-stub icon="fa fa-star" title="Portfolio" iconcolor="#EEC624" id="portfolio-title"></section-title-stub>
     <div class="gallery tab-content">
@@ -25,5 +25,5 @@ exports[`My Portfolio Component > should match snapshot when rendered. 1`] = `
       </div>
     </div>
   </div>
-</div>"
+</section>"
 `;

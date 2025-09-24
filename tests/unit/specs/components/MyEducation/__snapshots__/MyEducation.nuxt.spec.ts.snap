@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`MyEducation Component > should match snapshot when rendered. 1`] = `
-"<div id="education" aria-labelledby="education-title" class="section" role="region">
+"<section id="education" aria-labelledby="education-title" class="section" role="region">
   <div class="cc-education container">
     <section-title-stub icon="fa fa-graduation-cap" title="Formation &amp; Certifications" iconcolor="#F05033" id="education-title"></section-title-stub>
     <education-degree-card-stub educationdegree="[object Object]" aria-label="1 - Degrees.gcpACE" class="education-degree-card" role="region"></education-degree-card-stub>
@@ -10,5 +10,5 @@ exports[`MyEducation Component > should match snapshot when rendered. 1`] = `
     <education-degree-card-stub educationdegree="[object Object]" aria-label="4 - Degrees.ITCertification" class="education-degree-card" role="region"></education-degree-card-stub>
     <education-degree-card-stub educationdegree="[object Object]" aria-label="5 - Degrees.highSchoolDiploma" class="education-degree-card" role="region"></education-degree-card-stub>
   </div>
-</div>"
+</section>"
 `;

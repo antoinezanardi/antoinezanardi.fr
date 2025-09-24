@@ -12,7 +12,7 @@ exports[`My Profile Component > should match snapshot when rendered. 1`] = `
             </a></div>
           <h1 data-v-d3c3f494="" class="h1 text-shadow title">Antoine Zanardi</h1>
           <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Consultant Tech Lead</h2>
-          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="btn btn-primary" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-aos-once="true" download="CV Antoine ZANARDI.pdf" href="/CV.pdf" role="button">Mon CV</a>
+          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="btn btn-primary" data-aos="zoom-in" data-aos-once="true" download="CV Antoine ZANARDI.pdf" href="/CV.pdf">Mon CV</a>
         </div>
       </div>
       <div data-v-d3c3f494="" class="section">

@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     id="education"
     aria-labelledby="education-title"
     class="section"
@@ -22,7 +22,7 @@
         role="region"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
