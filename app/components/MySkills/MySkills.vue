@@ -1,9 +1,8 @@
 <template>
-  <div
+  <section
     id="skills"
     aria-labelledby="skills-title"
     class="section"
-    role="region"
   >
     <div class="container">
       <SectionTitle
@@ -65,7 +64,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>

@@ -303,14 +303,12 @@
     left: var(--sidebar-width);
   }
 
-  .navbar-nav .nav-link i.fa,
-  .navbar-nav .nav-link i.now-ui-icons {
+  .sidebar-collapse .navbar-nav .nav-link i.fa {
     opacity: .5;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* Disable toggler morph animations for reduced motion */
   .sidebar-collapse .bar1,
   .sidebar-collapse .bar2,
   .sidebar-collapse .bar3,

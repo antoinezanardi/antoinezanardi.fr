@@ -50,11 +50,9 @@
               id="my-cv"
               class="btn btn-primary"
               data-aos="zoom-in"
-              data-aos-anchor="data-aos-anchor"
               data-aos-once="true"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
               href="/CV.pdf"
-              role="button"
             >
               {{ $t('MyProfile.myCv') }}
             </a>

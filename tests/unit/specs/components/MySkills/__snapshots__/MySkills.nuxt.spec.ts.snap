@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`My Skills Component > should match snapshot when rendered. 1`] = `
-"<div id="skills" aria-labelledby="skills-title" class="section" role="region">
+"<section id="skills" aria-labelledby="skills-title" class="section">
   <div class="container">
     <section-title-stub icon="fa fa-code" title="Compétences techniques" iconcolor="#007EB8" id="skills-title"></section-title-stub>
     <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -64,5 +64,5 @@ exports[`My Skills Component > should match snapshot when rendered. 1`] = `
       </div>
     </div>
   </div>
-</div>"
+</section>"
 `;
