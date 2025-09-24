@@ -38,11 +38,6 @@ a:focus-visible {
   text-decoration: none;
 }
 
-a:focus {
-  outline: var(--primary-hover-color) solid 2px;
-  outline-offset: 3px;
-}
-
 @media (forced-colors: active) {
   a:focus,
   a:focus-visible {
@@ -57,12 +52,6 @@ a:focus {
 
 .background-primary a:focus-visible {
   outline: var(--white-color) solid 2px;
-}
-
-@supports selector(:focus-visible) {
-  .background-primary a:focus {
-    outline: var(--white-color) solid 2px;
-  }
 }
 
 h1, .h1 {

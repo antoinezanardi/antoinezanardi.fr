@@ -19,11 +19,11 @@
         />
 
         <figcaption class="d-flex flex-column h-100 justify-content-center project-metadata">
-          <h2
+          <div
             class="h2 project-name py-3"
           >
             {{ project.name }}
-          </h2>
+          </div>
 
           <p
             class="align-items-center d-flex flex-column justify-content-center project-desc"
