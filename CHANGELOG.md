@@ -1,5 +1,34 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.5.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.4.1...v1.5.0) (2025-09-24)
+
+### 🚀 Features
+
+* **accessibility:** enhance focus styles and improve color contrast ([#300](https://github.com/antoinezanardi/antoinezanardi.fr/issues/300)) ([04cf57c](https://github.com/antoinezanardi/antoinezanardi.fr/commit/04cf57c1520278e2e59f872486a02fb147de835e))
+
+### 🐛 Bug Fixes
+
+* **sonarcloud:** update links and sections for improved semantics ([#299](https://github.com/antoinezanardi/antoinezanardi.fr/issues/299)) ([268270c](https://github.com/antoinezanardi/antoinezanardi.fr/commit/268270cdd4350c16083e767a5763f254a7ade150))
+
+### 🔁 CI
+
+* **build:** skip SonarQube checks for Renovate bot ([#288](https://github.com/antoinezanardi/antoinezanardi.fr/issues/288)) ([7457b46](https://github.com/antoinezanardi/antoinezanardi.fr/commit/7457b462d2588d66c0e156b073e3f10f6e66d0c2))
+
+### 🧹 Chore
+
+* **deps:** update dependency @eslint/config-inspector to ^1.3.0 ([#281](https://github.com/antoinezanardi/antoinezanardi.fr/issues/281)) ([123c116](https://github.com/antoinezanardi/antoinezanardi.fr/commit/123c116fdfec10a8b4aebc07fb337c55deeaf248))
+* **deps:** update dependency @stylistic/eslint-plugin to ^5.4.0 ([#283](https://github.com/antoinezanardi/antoinezanardi.fr/issues/283)) ([9dd515c](https://github.com/antoinezanardi/antoinezanardi.fr/commit/9dd515cb49149b315b3e1addada2efef1bea92ea))
+* **deps:** update dependency eslint-plugin-vue to ^10.5.0 ([#290](https://github.com/antoinezanardi/antoinezanardi.fr/issues/290)) ([da1f6bd](https://github.com/antoinezanardi/antoinezanardi.fr/commit/da1f6bdce565c343ac7d1f4a48e09af11b9bcdf6))
+* **deps:** update dependency jiti to ^2.6.0 ([#291](https://github.com/antoinezanardi/antoinezanardi.fr/issues/291)) ([a227587](https://github.com/antoinezanardi/antoinezanardi.fr/commit/a227587d7d1fdd19fde8b9f45e6319fde9d834d4))
+* **deps:** update dependency lint-staged to ^16.2.0 ([#292](https://github.com/antoinezanardi/antoinezanardi.fr/issues/292)) ([1048025](https://github.com/antoinezanardi/antoinezanardi.fr/commit/1048025b950723dc17eaf81565899796fe6a7bd2))
+* **deps:** update dependency sass to ^1.93.1 ([#295](https://github.com/antoinezanardi/antoinezanardi.fr/issues/295)) ([a6553e7](https://github.com/antoinezanardi/antoinezanardi.fr/commit/a6553e7cb2680cbf5e4e932a469a8012454b4d5f))
+* **deps:** update dependency sass to ^1.93.2 ([#298](https://github.com/antoinezanardi/antoinezanardi.fr/issues/298)) ([ad7ffa5](https://github.com/antoinezanardi/antoinezanardi.fr/commit/ad7ffa571ddebf9e495f0cdc656213b51eaebcaf))
+* **deps:** update dependency vite to v7.1.7 ([#289](https://github.com/antoinezanardi/antoinezanardi.fr/issues/289)) ([52c0e91](https://github.com/antoinezanardi/antoinezanardi.fr/commit/52c0e91498259483a56d92ed170626ab8be9459c))
+* **deps:** update dependency vue-tsc to v3.0.8 ([#294](https://github.com/antoinezanardi/antoinezanardi.fr/issues/294)) ([72ba76b](https://github.com/antoinezanardi/antoinezanardi.fr/commit/72ba76b4da9a5946f3d9ccd29d861df1f55ff18a))
+* **deps:** update playwright monorepo to ^1.55.1 ([#296](https://github.com/antoinezanardi/antoinezanardi.fr/issues/296)) ([5aeac38](https://github.com/antoinezanardi/antoinezanardi.fr/commit/5aeac38d384d4f9b53d4e4496b6d1f785416b861))
+* **deps:** update typescript-eslint monorepo to ^8.44.1 ([#293](https://github.com/antoinezanardi/antoinezanardi.fr/issues/293)) ([36169c2](https://github.com/antoinezanardi/antoinezanardi.fr/commit/36169c21e57a2d5103e50f5222b4fd01eced5377))
+* **support:** add contributing guidelines, code of conduct, funding, and more ([#297](https://github.com/antoinezanardi/antoinezanardi.fr/issues/297)) ([42b56ef](https://github.com/antoinezanardi/antoinezanardi.fr/commit/42b56ef9f2cdb9feafb4108c471c141649413772))
+
 ## [1.4.1](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.4.0...v1.4.1) (2025-09-21)
 
 ### 🔁 CI
