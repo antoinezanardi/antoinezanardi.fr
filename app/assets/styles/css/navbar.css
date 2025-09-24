@@ -46,6 +46,12 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   line-height: 1.625rem;
+  border-radius: 0.1875rem;
+}
+
+.navbar a.navbar-brand:focus-visible {
+  outline: 2px solid var(--white-color);
+  outline-offset: 2px;
 }
 
 .navbar .navbar-toggler {
@@ -289,44 +295,18 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   color: #FFFFFF;
 }
 
+.navbar .navbar-nav .nav-link:focus-visible {
+  outline: 2px solid var(--white-color);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
 .navbar .navbar-nav .nav-item.active .nav-link:not(.btn),
 .navbar .navbar-nav .nav-item .nav-link:not(.btn):focus,
 .navbar .navbar-nav .nav-item .nav-link:not(.btn):hover,
 .navbar .navbar-nav .nav-item .nav-link:not(.btn):active {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 0.1875rem;
-}
-
-
-.navbar.navbar-transparent {
-  background-color: transparent !important;
-  box-shadow: none;
-  color: #FFFFFF;
-  padding-top: 20px;
-}
-
-.navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item) {
-  color: var(--gray-color);
-}
-
-.navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item).disabled {
-  opacity: .5;
-  color: var(--gray-color);
-}
-
-.navbar.bg-white:not(.navbar-transparent) .button-bar {
-  background: var(--gray-color);
-}
-
-.navbar.bg-white:not(.navbar-transparent) .nav-item.active .nav-link:not(.btn),
-.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):focus,
-.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):hover,
-.navbar.bg-white:not(.navbar-transparent) .nav-item .nav-link:not(.btn):active {
-  background-color: rgba(222, 222, 222, 0.3);
-}
-
-.navbar.bg-white:not(.navbar-transparent) .logo-container {
-  border: 1px solid var(--gray-color);
 }
 
 @media screen and (max-width: 576px) {
