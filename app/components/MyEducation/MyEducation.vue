@@ -3,7 +3,6 @@
     id="education"
     aria-labelledby="education-title"
     class="section"
-    role="region"
   >
     <div class="cc-education container">
       <SectionTitle

@@ -69,13 +69,12 @@
   width: 17px;
 }
 
-.navbar .navbar-nav > a.btn,
-.btn {
+.navbar .navbar-nav > .btn {
   font-weight: 400;
   font-size: 0.8571em;
   line-height: 1.35em;
   margin: 5px 1px;
-  border: 2px none;
+  border: 2px solid transparent;
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
@@ -108,9 +107,7 @@
 }
 
 .btn.btn-icon.btn-sm i.fa,
-.btn.btn-icon.btn-sm i.now-ui-icons,
-.navbar .navbar-nav > a.btn.btn-icon.btn-sm i.fa,
-.navbar .navbar-nav > a.btn.btn-icon.btn-sm i.now-ui-icons {
+.navbar .navbar-nav > a.btn.btn-icon.btn-sm i.fa {
   font-size: 0.6875rem;
 }
 
@@ -121,16 +118,12 @@
   width: 3.6rem;
 }
 
-.btn.btn-icon.btn-lg i.now-ui-icons,
 .btn.btn-icon.btn-lg i.fa,
-.navbar .navbar-nav > a.btn.btn-icon.btn-lg i.now-ui-icons,
 .navbar .navbar-nav > a.btn.btn-icon.btn-lg i.fa {
   font-size: 1.325rem;
 }
 
-.btn.btn-icon:not(.btn-footer) i.now-ui-icons,
 .btn.btn-icon:not(.btn-footer) i.fa,
-.navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.now-ui-icons,
 .navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.fa {
   position: absolute;
   top: 50%;
@@ -138,12 +131,6 @@
   transform: translate(-12px, -12px);
   line-height: 1.5626rem;
   width: 25px;
-}
-
-.btn:not(.btn-icon) .now-ui-icons,
-.navbar .navbar-nav > a.btn:not(.btn-icon) .now-ui-icons {
-  position: relative;
-  top: 1px;
 }
 
 .btn.btn-simple,
@@ -179,7 +166,14 @@
 
 .btn:hover,
 .navbar .navbar-nav > a.btn:hover {
-  box-shadow: 0 3px 8px 0 var(--btn-shadow);
+  opacity: 1;
+}
+
+.btn:focus-visible,
+.navbar .navbar-nav > a.btn:focus-visible {
+  outline: 2px solid #379963;
+  outline-offset: 2px;
+  opacity: 1;
 }
 
 .btn:active, .btn.active,
@@ -273,23 +267,16 @@ fieldset[disabled] .navbar .navbar-nav > a.btn.active {
   line-height: 1.625rem;
 }
 
-.navbar .navbar-nav .nav-link:not(.btn) i.fa + p,
-.navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons + p {
+.navbar .navbar-nav .nav-link:not(.btn) i.fa + p {
   margin-left: 5px;
 }
 
-.navbar .navbar-nav .nav-link:not(.btn) i.fa,
-.navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
+.navbar .navbar-nav .nav-link:not(.btn) i.fa {
   font-size: 18px;
   position: relative;
   top: 2px;
   text-align: center;
   width: 21px;
-}
-
-.navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
-  top: 4px;
-  font-size: 16px;
 }
 
 .navbar .navbar-nav .nav-link:not(.btn).profile-photo .profile-photo-small {

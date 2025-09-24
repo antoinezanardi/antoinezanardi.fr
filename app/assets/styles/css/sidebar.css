@@ -303,8 +303,7 @@
     left: var(--sidebar-width);
   }
 
-  .navbar-nav .nav-link i.fa,
-  .navbar-nav .nav-link i.now-ui-icons {
+  .navbar-nav .nav-link i.fa {
     opacity: .5;
   }
 }
