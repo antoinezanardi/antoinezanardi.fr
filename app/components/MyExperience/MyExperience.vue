@@ -1,9 +1,8 @@
 <template>
-  <div
+  <section
     id="experience"
     aria-labelledby="experience-title"
     class="section"
-    role="region"
   >
     <div class="cc-experience container">
       <SectionTitle
@@ -22,7 +21,7 @@
         role="region"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">

@@ -87,12 +87,21 @@
   box-shadow: none;
 }
 
-.btn:focus-visible,
-.btn-primary:focus-visible,
-.btn-info:focus-visible {
-  outline: 2px solid currentColor;
+.btn:focus-visible {
   outline-offset: 2px;
-  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
+  border-color: transparent;
+}
+
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary-hover-color) 25%, transparent);
+  background-color: var(--primary-hover-color);
+  outline: 2px solid var(--primary-hover-color);
+}
+
+.btn-info:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--info-hover-color) 25%, transparent);
+  background-color: var(--info-hover-color);
+  outline: 2px solid var(--info-hover-color);
 }
 
 @supports not (color: color-mix(in srgb, white 50%, black)) {
@@ -115,14 +124,6 @@
   font-size: 1em;
   border-radius: 0.25rem;
   padding: 15px 48px;
-}
-
-.btn.btn-round:focus-visible,
-.btn.btn-icon:focus-visible,
-.btn-lg:focus-visible {
-  outline: 2px solid currentColor;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 25%, transparent);
 }
 
 @supports not (color: color-mix(in srgb, white 50%, black)) {

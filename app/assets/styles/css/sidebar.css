@@ -196,10 +196,6 @@
     transition: width .2s linear, margin-top .2s linear;
   }
 
-  .sidebar-collapse .navbar.bg-white:not(.navbar-transparent) .navbar-toggler-bar {
-    background: var(--gray-color);
-  }
-
   .sidebar-collapse .navbar .toggled .navbar-toggler-bar {
     width: 24px;
   }
@@ -303,14 +299,12 @@
     left: var(--sidebar-width);
   }
 
-  .navbar-nav .nav-link i.fa,
-  .navbar-nav .nav-link i.now-ui-icons {
+  .sidebar-collapse .navbar-nav .nav-link i.fa {
     opacity: .5;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  /* Disable toggler morph animations for reduced motion */
   .sidebar-collapse .bar1,
   .sidebar-collapse .bar2,
   .sidebar-collapse .bar3,

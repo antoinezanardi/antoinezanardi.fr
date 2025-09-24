@@ -4,10 +4,7 @@
   padding: 0;
   color: var(--white-color);
   position: relative;
-  background-position: center center;
-  background-size: cover;
-  background: var(--body-text-alpha-20);
-  background: linear-gradient(0deg, var(--body-text-alpha-20), var(--primary-color-alpha-60));
+  background: linear-gradient(0deg, var(--body-text-alpha-20), var(--primary-color-alpha-60)) center center / cover no-repeat;
 }
 
 .page-header .page-header-image {

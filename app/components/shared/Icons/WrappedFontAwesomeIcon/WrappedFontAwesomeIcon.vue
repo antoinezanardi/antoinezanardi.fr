@@ -5,7 +5,6 @@
         class="font-awesome-icon"
         :class="classes"
         :icon="icon"
-        role="button"
         :size="size"
         :style="{ 'color': iconColor }"
       />

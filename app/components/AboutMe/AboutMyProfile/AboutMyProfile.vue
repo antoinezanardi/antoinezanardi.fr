@@ -35,8 +35,9 @@
 
         <a
           href="#experience"
-          v-html="$t('AboutMyProfile.myExperience')"
-        />
+        >
+          {{ $t('AboutMyProfile.myExperience') }}
+        </a>
 
         <span>&nbsp;</span>
 
