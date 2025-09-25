@@ -18,6 +18,7 @@ const { beforeEach, afterEach, afterAll, beforeAll } = createTest({
       headless: true,
       ignoreDefaultArgs: ["--hide-scrollbars"],
       env: {
+        NODE_ENV: "production",
         NUXT_PUBLIC_EMAIL: TEST_NUXT_RUNTIME_CONFIG.public.email,
         NUXT_PUBLIC_PHONE_NUMBER: TEST_NUXT_RUNTIME_CONFIG.public.phoneNumber,
         NUXT_PUBLIC_ADDRESS: TEST_NUXT_RUNTIME_CONFIG.public.address,

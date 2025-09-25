@@ -52,7 +52,7 @@
               data-aos="zoom-in"
               data-aos-once="true"
               :download="`${$t('MyProfile.cv')} Antoine ZANARDI.pdf`"
-              href="/CV.pdf"
+              href="/antoine-zanardi-cv.pdf"
             >
               {{ $t('MyProfile.myCv') }}
             </a>

@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/test-utils/module",
     "@nuxt/image",
+    "@nuxtjs/robots",
   ],
   i18n: {
     vueI18n: "../modules/i18n/i18n.config.ts",
