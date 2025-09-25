@@ -11,7 +11,7 @@
         | viewport    | width=device-width, initial-scale=1                                                                            |
         | robots      | index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1                                   |
 
-    Scenario: 🏡 Home Page provides robot.txt
+    Scenario: 🏡 Home Page provides robots.txt
       Given the user is on /robots.txt page
       Then the text "User-agent: *" should be visible
       And the text "Disallow:" should be visible
