@@ -16,6 +16,8 @@ const { beforeEach, afterEach, afterAll, beforeAll } = createTest({
     NUXT_PUBLIC_ADDRESS: TEST_NUXT_RUNTIME_CONFIG.public.address,
     NUXT_PUBLIC_EMAIL: TEST_NUXT_RUNTIME_CONFIG.public.email,
     NUXT_PUBLIC_PHONE_NUMBER: TEST_NUXT_RUNTIME_CONFIG.public.phoneNumber,
+    NUXT_SITE_NAME: "Antoine ZANARDI - Portfolio Test",
+    NUXT_SITE_URL: "https://test.antoinezanardi.fr",
     NUXT_SITE_ENV: "production",
   },
   browserOptions: {
