@@ -11,7 +11,7 @@ async function goOnPage(world: CustomWorld, pageName: string): Promise<void> {
     return;
   }
   await world.page.goto(fullUrl);
-  if (pageName === "/sitemap.xml") {
+  if (trimmedPageName === "/sitemap.xml") {
     return;
   }
   await waitForPageLoadStates(world);
