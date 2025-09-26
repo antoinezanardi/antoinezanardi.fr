@@ -36,6 +36,8 @@ useHead({
   htmlAttrs: { lang: locale.value },
 });
 
+defineOgImageComponent("DefaultOgImage");
+
 onMounted(() => {
   aos.init();
   const tooltipTriggerList = document.querySelectorAll("[data-bs-toggle=\"tooltip\"]");
