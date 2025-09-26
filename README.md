@@ -6,7 +6,7 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
 
-👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or check out the development version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
+👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or check out the staging version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
 
 ---
 
@@ -58,7 +58,7 @@ This repository demonstrates how I build reliable software with strong testing s
 
 ## <a name="deployment-workflow"></a>🔄 Deployment Workflow
 
-- **Pre-production** → Automatically deployed to **Vercel** when merging into `develop`.
+- **Staging** → Automatically deployed to **Vercel** when merging into `develop`.
 - **Production** → Automatically deployed to **GCP** when merging into `master`.
 
 ---
