@@ -8,7 +8,8 @@
   },
   "App": {
     "meta": {
-      "description": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences."
+      "description": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences",
+      "smallDescription": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web"
     }
   },
   "MyProfile": {

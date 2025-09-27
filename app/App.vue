@@ -25,7 +25,7 @@ import aos from "aos";
 import { stampInHtml } from "dev-stamp";
 
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
-import { onMounted, useNuxtApp, useHead } from "#imports";
+import { onMounted, useNuxtApp, useHead, defineOgImageComponent } from "#imports";
 
 const { t, locale } = useI18n();
 const { $bootstrap } = useNuxtApp();
@@ -35,6 +35,8 @@ useHead({
   meta: [{ name: "description", content: t("App.meta.description") }],
   htmlAttrs: { lang: locale.value },
 });
+
+defineOgImageComponent("DefaultOgImage");
 
 onMounted(() => {
   aos.init();
