@@ -25,7 +25,7 @@ import aos from "aos";
 import { stampInHtml } from "dev-stamp";
 
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
-import { onMounted, useNuxtApp, useHead } from "#imports";
+import { onMounted, useNuxtApp, useHead, defineOgImageComponent } from "#imports";
 
 const { t, locale } = useI18n();
 const { $bootstrap } = useNuxtApp();

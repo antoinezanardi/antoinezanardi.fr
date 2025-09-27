@@ -5,6 +5,8 @@ import { createFakeI18n } from "@tests/unit/utils/factories/composables/i18n/use
 function mockNuxtImports(): void {
   mockNuxtImport<typeof useHead>("useHead", () => vi.fn());
 
+  mockNuxtImport<typeof defineOgImageComponent>("defineOgImageComponent", () => vi.fn());
+
   mockNuxtImport<() => ReturnType<typeof createFakeI18n>>("useI18n", () => vi.fn(() => createFakeI18n()));
 }
 

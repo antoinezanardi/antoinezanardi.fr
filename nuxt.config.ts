@@ -50,6 +50,9 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
+  ogImage: {
+    enabled: process.env.NODE_ENV !== "test",
+  },
   plugins: [
     {
       src: "~/plugins/bootstrap.ts",

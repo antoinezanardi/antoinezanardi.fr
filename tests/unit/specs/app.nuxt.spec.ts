@@ -23,6 +23,10 @@ describe("App Component", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
+  it("should define og image component when rendered.", () => {
+    expect(defineOgImageComponent).toHaveBeenCalledExactlyOnceWith("DefaultOgImage");
+  });
+
   it("should use head for sso purposes when rendered.", () => {
     const expectedUseHeadAttribute = {
       title: "Antoine ZANARDI",
