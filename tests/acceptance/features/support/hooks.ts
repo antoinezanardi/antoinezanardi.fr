@@ -18,7 +18,7 @@ const { beforeEach, afterEach, afterAll, beforeAll } = createTest({
     NUXT_PUBLIC_PHONE_NUMBER: TEST_NUXT_RUNTIME_CONFIG.public.phoneNumber,
     NUXT_SITE_NAME: TEST_NUXT_SITE_CONFIG.name,
     NUXT_SITE_URL: TEST_NUXT_SITE_CONFIG.url,
-    NUXT_SITE_ENV: "production",
+    NUXT_SITE_ENV: TEST_NUXT_SITE_CONFIG.env,
   },
   browserOptions: {
     type: "chromium",

@@ -1,6 +1,7 @@
 const TEST_NUXT_SITE_CONFIG = Object.freeze({
   name: "Antoine ZANARDI - Portfolio Test",
   url: "https://test.antoinezanardi.fr",
+  env: "production",
 });
 
 const TEST_NUXT_RUNTIME_CONFIG = Object.freeze({

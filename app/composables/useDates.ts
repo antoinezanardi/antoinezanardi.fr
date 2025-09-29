@@ -2,6 +2,7 @@ import { useI18n } from "#imports";
 
 type DatesComposable = {
   getMonthFullName: (date: Date) => string;
+  birthDate: string;
 };
 
 function useDates(): DatesComposable {
@@ -12,7 +13,10 @@ function useDates(): DatesComposable {
 
     return dateTimeFormat.format(date);
   };
-  return { getMonthFullName };
+  return {
+    birthDate: "1996-04-14",
+    getMonthFullName,
+  };
 }
 
 export { useDates };
