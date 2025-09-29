@@ -1,3 +1,8 @@
+const TEST_NUXT_SITE_CONFIG = Object.freeze({
+  name: "Antoine ZANARDI - Portfolio Test",
+  url: "https://test.antoinezanardi.fr",
+});
+
 const TEST_NUXT_RUNTIME_CONFIG = Object.freeze({
   public: {
     email: "john@doe.com",
@@ -6,4 +11,7 @@ const TEST_NUXT_RUNTIME_CONFIG = Object.freeze({
   },
 });
 
-export { TEST_NUXT_RUNTIME_CONFIG };
+export {
+  TEST_NUXT_SITE_CONFIG,
+  TEST_NUXT_RUNTIME_CONFIG,
+};

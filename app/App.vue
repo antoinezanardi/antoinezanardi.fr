@@ -66,7 +66,7 @@ const schemaOrgPerson: Person = {
     "name": t("MyProfile.itConsultant"),
     "description": t("MyProfile.fullStackWebExpert"),
   },
-  "image": "https://antoinezanardi.fr/_ipx/s_180x180/images/antoine.webp",
+  "image": "https://avatars.githubusercontent.com/u/11405981",
   "jobTitle": t("MyProfile.itConsultant"),
   "knowsAbout": [
     t("MySkills.html"),
@@ -75,7 +75,6 @@ const schemaOrgPerson: Person = {
     t("MySkills.typescript"),
     t("MySkills.vue"),
     t("MySkills.nuxt"),
-    t("MySkills.nodeJs"),
     t("MySkills.mysql"),
     t("MySkills.mongodb"),
     t("MySkills.rust"),
