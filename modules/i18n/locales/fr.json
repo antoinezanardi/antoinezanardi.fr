@@ -6,10 +6,14 @@
     "and": "et",
     "today": "aujourd'hui"
   },
+  "Languages": {
+    "french": "Français",
+    "english": "Anglais"
+  },
   "App": {
     "meta": {
       "description": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences",
-      "smallDescription": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web"
+      "smallDescription": "Antoine ZANARDI, expert informatique spécialisé dans le web"
     }
   },
   "MyProfile": {

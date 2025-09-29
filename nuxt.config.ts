@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
     "nuxt-og-image",
+    "nuxt-schema-org",
   ],
   i18n: {
     vueI18n: "../modules/i18n/i18n.config.ts",
