@@ -95,7 +95,7 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^10.5.0",
-    "happy-dom": "^18.0.1",
+    "happy-dom": "^19.0.1",
     "husky": "^9.1.7",
     "jest-extended": "^6.0.0",
     "jiti": "^2.6.0",
