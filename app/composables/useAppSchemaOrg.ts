@@ -1,7 +1,7 @@
 import { definePerson, defineWebSite } from "nuxt-schema-org/schema";
 
 import { useI18n, useRuntimeConfig, useSchemaOrg, useSiteConfig } from "#imports";
-import { ANTOINE_ZANARDI_BIRTH_DATE, ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
+import { ANTOINE_ZANARDI_BIRTH_DATE, ANTOINE_ZANARDI_FULL_NAME, ANTOINE_ZANARDI_GITHUB_URL, ANTOINE_ZANARDI_LINKEDIN_URL, ANTOINE_ZANARDI_GITHUB_AVATAR_URL } from "~/shared/constants/antoine-zanardi.constants";
 
 type AppSchemaOrgComposable = {
   getAppSchemaOrgWebSite: () => ReturnType<typeof defineWebSite>;
@@ -26,7 +26,7 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
     "address": {
       "@type": "PostalAddress",
       "addressLocality": config.public.address,
-      "addressCountry": "France",
+      "addressCountry": t("Countries.france"),
     },
     "alumniOf": {
       "@type": "CollegeOrUniversity",
@@ -49,7 +49,7 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
       "name": t("MyProfile.itConsultant"),
       "description": t("MyProfile.fullStackWebExpert"),
     },
-    "image": "https://avatars.githubusercontent.com/u/11405981",
+    "image": ANTOINE_ZANARDI_GITHUB_AVATAR_URL,
     "jobTitle": t("MyProfile.itConsultant"),
     "knowsAbout": [
       t("MySkills.html"),
@@ -77,15 +77,15 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
     "name": ANTOINE_ZANARDI_FULL_NAME,
     "nationality": {
       "@type": "Country",
-      "name": "France",
+      "name": t("Countries.france"),
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": siteConfig.url,
     },
     "sameAs": [
-      "https://www.linkedin.com/in/antoinezanardi/",
-      "https://github.com/antoinezanardi",
+      ANTOINE_ZANARDI_LINKEDIN_URL,
+      ANTOINE_ZANARDI_GITHUB_URL,
     ],
     "subjectOf": {
       "@type": "CreativeWork",
