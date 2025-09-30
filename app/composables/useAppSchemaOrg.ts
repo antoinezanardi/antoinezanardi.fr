@@ -74,14 +74,14 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
         "alternateName": "en",
       },
     ],
-    "name": "Antoine ZANARDI",
+    "name": ANTOINE_ZANARDI_FULL_NAME,
     "nationality": {
       "@type": "Country",
       "name": "France",
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://antoinezanardi.fr",
+      "@id": siteConfig.url,
     },
     "sameAs": [
       "https://www.linkedin.com/in/antoinezanardi/",

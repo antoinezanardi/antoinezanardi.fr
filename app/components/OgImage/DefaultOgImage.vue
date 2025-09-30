@@ -17,7 +17,7 @@
         class="text-[3rem] text-center text-white"
         :style="headingStyles"
       >
-        {{ $t("shared.antoineZanardi") }}
+        {{ ANTOINE_ZANARDI_FULL_NAME }}
       </h1>
 
       <hr class="bg-gray-600 w-11/12">
@@ -34,6 +34,8 @@
 </template>
 
 <script lang="ts" setup>
+import { ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
+
 const headingStyles = {
   textShadow: "0px 1px 2px rgba(13, 79, 22, 1), 0px 3px 2px rgba(13, 79, 22, 1), 0px 4px 8px rgba(13, 79, 22, 1)",
 };

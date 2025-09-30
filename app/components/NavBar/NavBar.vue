@@ -11,7 +11,7 @@
               class="navbar-brand text-uppercase"
               href="#"
             >
-              {{ $t('shared.antoineZanardi') }}
+              {{ ANTOINE_ZANARDI_FULL_NAME }}
             </a>
 
             <button
@@ -96,6 +96,8 @@
 </template>
 
 <script lang="ts" setup>
+import { ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
+
 const isMobileNavBarCollapsed = ref<boolean>(true);
 
 function onClickFromNavBarToggler(): void {

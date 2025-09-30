@@ -5,6 +5,7 @@
     "config",
     "modules",
     "app/plugins",
+    "app/shared",
     "eslint.config.ts",
     "nuxt.config.ts"
   ],
