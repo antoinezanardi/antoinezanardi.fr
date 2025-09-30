@@ -38,11 +38,14 @@
 </template>
 
 <script setup lang="ts">
+import { useSiteConfig } from "#imports";
 import MyProject from "~/components/MyPortfolio/MyProject/MyProject.vue";
 import SectionTitle from "~/components/shared/Layouts/SectionTitle/SectionTitle.vue";
 import type { Project } from "~/models/project/project.types";
+import { ANTOINE_ZANARDI_GITHUB_URL } from "~/shared/constants/antoine-zanardi.constants";
 
 const { t } = useI18n();
+const { url: siteUrl } = useSiteConfig();
 
 const i18nProjectPath = "MyPortfolio.projects";
 const projects: Project[] = [
@@ -50,7 +53,7 @@ const projects: Project[] = [
     name: t(`${i18nProjectPath}.portfolio.name`),
     description: t(`${i18nProjectPath}.portfolio.description`),
     image: "portfolio-thumbnail.webp",
-    url: "https://www.antoinezanardi.fr",
+    url: siteUrl,
   },
   {
     name: t(`${i18nProjectPath}.werewolvesAssistant.name`),
@@ -68,7 +71,7 @@ const projects: Project[] = [
     name: t(`${i18nProjectPath}.gitHub.name`),
     description: t(`${i18nProjectPath}.gitHub.description`),
     image: "github.webp",
-    url: "https://github.com/antoinezanardi",
+    url: ANTOINE_ZANARDI_GITHUB_URL,
   },
 ];
 </script>

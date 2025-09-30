@@ -1,6 +1,6 @@
-const ANTOINE_ZANARDI_FULL_NAME = 'Antoine ZANARDI';
+const ANTOINE_ZANARDI_FULL_NAME = "Antoine ZANARDI";
 
-const ANTOINE_ZANARDI_BIRTH_DATE = '1996-04-14';
+const ANTOINE_ZANARDI_BIRTH_DATE = "1996-04-14";
 
 const ANTOINE_ZANARDI_GITHUB_URL = "https://github.com/antoinezanardi/";
 
