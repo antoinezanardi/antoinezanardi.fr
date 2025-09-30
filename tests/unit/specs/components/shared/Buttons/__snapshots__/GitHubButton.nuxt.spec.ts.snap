@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`GitHub Button Component > should match snapshot when rendered. 1`] = `
-"<a aria-label="Découvrez mes projets" class="btn btn-icon btn-lg btn-primary btn-round" data-bs-toggle="tooltip" href="https://github.com/antoinezanardi" rel="noopener noreferrer" target="_blank" title="Découvrez mes projets">
+"<a aria-label="Découvrez mes projets" class="btn btn-icon btn-lg btn-primary btn-round" data-bs-toggle="tooltip" href="https://github.com/antoinezanardi/" rel="noopener noreferrer" target="_blank" title="Découvrez mes projets">
   <wrapped-font-awesome-icon-stub icon="fa-brands fa-github" iconcolor="white" size="2x" classes=""></wrapped-font-awesome-icon-stub>
 </a>"
 `;

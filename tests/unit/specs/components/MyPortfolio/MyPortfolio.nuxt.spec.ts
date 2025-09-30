@@ -35,7 +35,7 @@ describe("My Portfolio Component", () => {
         name: "MyPortfolio.projects.portfolio.name",
         description: "MyPortfolio.projects.portfolio.description",
         image: "portfolio-thumbnail.webp",
-        url: "https://www.antoinezanardi.fr",
+        url: "https://test.antoinezanardi.fr",
       };
 
       expect(projects[0].props("project")).toStrictEqual<Project>(expectedProject);
@@ -71,7 +71,7 @@ describe("My Portfolio Component", () => {
         name: "MyPortfolio.projects.gitHub.name",
         description: "MyPortfolio.projects.gitHub.description",
         image: "github.webp",
-        url: "https://github.com/antoinezanardi",
+        url: "https://github.com/antoinezanardi/",
       };
 
       expect(projects[3].props("project")).toStrictEqual<Project>(expectedProject);

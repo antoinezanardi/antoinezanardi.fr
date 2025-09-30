@@ -34,7 +34,7 @@ describe("App Component", () => {
       htmlAttrs: { lang: "fr" },
     };
 
-    expect(useHead).toHaveBeenCalledExactlyOnceWith(expectedUseHeadAttribute);
+    expect(useHead).toHaveBeenNthCalledWith(1, expectedUseHeadAttribute);
   });
 
   it("should stamp a comment in HTML when rendered.", () => {

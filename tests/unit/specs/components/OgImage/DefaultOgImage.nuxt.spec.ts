@@ -25,13 +25,13 @@ describe("Default Og Image Component", () => {
     it("should set Og Image title when rendered.", () => {
       const title = wrapper.find("#og-image-title");
 
-      expect(title.text()).toBe("Antoine Zanardi");
+      expect(title.text()).toBe("Antoine ZANARDI");
     });
 
     it("should set Og Image subtitle when rendered.", () => {
       const subtitle = wrapper.find("#og-image-subtitle");
 
-      expect(subtitle.text()).toBe("Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web");
+      expect(subtitle.text()).toBe("Antoine ZANARDI, expert informatique spécialisé dans le web");
     });
   });
 });

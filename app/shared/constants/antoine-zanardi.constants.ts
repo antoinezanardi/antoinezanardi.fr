@@ -4,7 +4,7 @@ const ANTOINE_ZANARDI_BIRTH_DATE = "1996-04-14";
 
 const ANTOINE_ZANARDI_GITHUB_URL = "https://github.com/antoinezanardi/";
 
-const ANTOINE_ZANARDI_GITHUB_AVATAR_URL = "https://avatars.githubusercontent.com/u/11405981?v=4";
+const ANTOINE_ZANARDI_GITHUB_AVATAR_URL = "https://github.com/antoinezanardi.png";
 
 const ANTOINE_ZANARDI_LINKEDIN_URL = "https://www.linkedin.com/in/antoinezanardi/";
 

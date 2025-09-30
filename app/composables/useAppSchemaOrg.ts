@@ -16,7 +16,7 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
 
   const getAppSchemaOrgWebSite = (): ReturnType<typeof defineWebSite> => defineWebSite({
     "@type": "WebSite",
-    "name": ANTOINE_ZANARDI_FULL_NAME,
+    "name": siteConfig.name,
     "description": t("App.meta.description"),
     "inLanguage": locale.value,
   });
