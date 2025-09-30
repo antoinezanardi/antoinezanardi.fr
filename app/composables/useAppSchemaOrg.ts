@@ -1,6 +1,7 @@
 import { definePerson, defineWebSite } from "nuxt-schema-org/schema";
 
-import { useI18n, useRuntimeConfig, useDates, useSchemaOrg } from "#imports";
+import { useI18n, useRuntimeConfig, useSchemaOrg, useSiteConfig } from "#imports";
+import { ANTOINE_ZANARDI_BIRTH_DATE, ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
 
 type AppSchemaOrgComposable = {
   getAppSchemaOrgWebSite: () => ReturnType<typeof defineWebSite>;
@@ -11,16 +12,16 @@ type AppSchemaOrgComposable = {
 function useAppSchemaOrg(): AppSchemaOrgComposable {
   const config = useRuntimeConfig();
   const { t, locale } = useI18n();
-  const { birthDate } = useDates();
+  const siteConfig = useSiteConfig();
 
   const getAppSchemaOrgWebSite = (): ReturnType<typeof defineWebSite> => defineWebSite({
     "@type": "WebSite",
-    "name": "Antoine ZANARDI",
+    "name": ANTOINE_ZANARDI_FULL_NAME,
     "description": t("App.meta.description"),
     "inLanguage": locale.value,
   });
 
-  const getAppSchemaOrgPerson = (): ReturnType<typeof defineWebSite> => definePerson({
+  const getAppSchemaOrgPerson = (): ReturnType<typeof definePerson> => definePerson({
     "@type": "Person",
     "address": {
       "@type": "PostalAddress",
@@ -39,7 +40,7 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
       t("Degrees.CKAD"),
       t("Degrees.gcpACE"),
     ],
-    birthDate,
+    "birthDate": ANTOINE_ZANARDI_BIRTH_DATE,
     "description": t("App.meta.smallDescription"),
     "email": config.public.email,
     "gender": "Male",
@@ -93,7 +94,7 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
       "url": "https://werewolves-assistant.com/",
     },
     "telephone": config.public.phoneNumber,
-    "url": "https://antoinezanardi.fr",
+    "url": siteConfig.url,
     "worksFor": {
       "@type": "Organization",
       "name": "Daveo",

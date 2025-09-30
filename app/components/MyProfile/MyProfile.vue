@@ -31,7 +31,7 @@
             <h1
               class="h1 text-shadow title"
             >
-              {{ $t('shared.antoineZanardi') }}
+              {{ ANTOINE_ZANARDI_FULL_NAME }}
             </h1>
 
             <h2
@@ -81,6 +81,7 @@
 <script lang="ts" setup>
 import GitHubButton from "~/components/shared/Buttons/GitHubButton.vue";
 import LinkedInButton from "~/components/shared/Buttons/LinkedInButton.vue";
+import { ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
 </script>
 
 <style lang="scss" scoped>
