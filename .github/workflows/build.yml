@@ -105,9 +105,9 @@ jobs:
     name: Build ✨
     runs-on: ubuntu-latest
     env:
-      NUXT_PUBLIC_EMAIL: ${{ secrets.NUXT_PUBLIC_EMAIL }}
-      NUXT_PUBLIC_PHONE_NUMBER: ${{ secrets.NUXT_PUBLIC_PHONE_NUMBER }}
-      NUXT_PUBLIC_ADDRESS: ${{ secrets.NUXT_PUBLIC_ADDRESS }}
+      NUXT_PUBLIC_EMAIL: ${{ vars.NUXT_PUBLIC_EMAIL }}
+      NUXT_PUBLIC_PHONE_NUMBER: ${{ vars.NUXT_PUBLIC_PHONE_NUMBER }}
+      NUXT_PUBLIC_ADDRESS: ${{ vars.NUXT_PUBLIC_ADDRESS }}
       NUXT_SITE_NAME: ${{ vars.STAGING_SITE_NAME }}
       NUXT_SITE_URL: ${{ vars.STAGING_URL }}
     needs:
