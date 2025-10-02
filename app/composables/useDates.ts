@@ -12,7 +12,9 @@ function useDates(): DatesComposable {
 
     return dateTimeFormat.format(date);
   };
-  return { getMonthFullName };
+  return {
+    getMonthFullName,
+  };
 }
 
 export { useDates };

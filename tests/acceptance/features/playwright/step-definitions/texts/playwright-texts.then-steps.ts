@@ -14,8 +14,10 @@ Then(/^the text "(?<text>.+?)" under the (?<role>button|img|heading|navigation|l
   await expect(this.page.getByRole(role, { name }).getByText(text, { exact: true })).toBeHidden();
 });
 
-Then(/^the exact text "(?<text>.+?)" should be visible$/u, async function(this: CustomWorld, text: string): Promise<void> {
-  await expect(this.page.getByText(text, { exact: true })).toBeVisible();
+Then(/^the(?<isExact> exact)? text "(?<text>.+?)" should be visible$/u, async function(this: CustomWorld, exact: string | null, text: string): Promise<void> {
+  const isExact = exact !== null;
+
+  await expect(this.page.getByText(text, { exact: isExact })).toBeVisible();
 });
 
 Then(/^the text with regexp "(?<regexp>.+?)" should be visible$/u, async function(this: CustomWorld, regexp: string): Promise<void> {

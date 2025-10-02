@@ -2,7 +2,7 @@
   <a
     class="btn btn-icon btn-info btn-lg btn-round"
     data-bs-toggle="tooltip"
-    href="https://www.linkedin.com/in/antoinezanardi/"
+    :href="ANTOINE_ZANARDI_LINKEDIN_URL"
     rel="noopener noreferrer"
     target="_blank"
     :title="$t('LinkedInButton.joinMyNetwork')"
@@ -17,4 +17,5 @@
 
 <script setup lang="ts">
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
+import { ANTOINE_ZANARDI_LINKEDIN_URL } from "~/shared/constants/antoine-zanardi.constants";
 </script>

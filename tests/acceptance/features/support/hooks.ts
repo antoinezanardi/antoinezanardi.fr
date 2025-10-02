@@ -7,21 +7,24 @@ import { createPage, createTest } from "@nuxt/test-utils/e2e";
 import { I18N_TEST_LOCALE } from "@modules/i18n/i18n.constants";
 import { generateScreenshotOnScenarioFailure, removeAcceptanceTestsReportsScreenshotsDirectory } from "@tests/acceptance/features/support/helpers/hooks.helpers";
 import type { CustomWorld } from "@tests/acceptance/shared/types/word.types";
-import { TEST_NUXT_RUNTIME_CONFIG } from "@tests/unit/utils/constants/nuxt-test.constants";
+import { TEST_NUXT_RUNTIME_CONFIG, TEST_NUXT_SITE_CONFIG } from "@tests/unit/utils/constants/nuxt-test.constants";
 
 const { beforeEach, afterEach, afterAll, beforeAll } = createTest({
   runner: "cucumber",
   server: true,
+  env: {
+    NUXT_PUBLIC_ADDRESS: TEST_NUXT_RUNTIME_CONFIG.public.address,
+    NUXT_PUBLIC_EMAIL: TEST_NUXT_RUNTIME_CONFIG.public.email,
+    NUXT_PUBLIC_PHONE_NUMBER: TEST_NUXT_RUNTIME_CONFIG.public.phoneNumber,
+    NUXT_SITE_NAME: TEST_NUXT_SITE_CONFIG.name,
+    NUXT_SITE_URL: TEST_NUXT_SITE_CONFIG.url,
+    NUXT_SITE_ENV: TEST_NUXT_SITE_CONFIG.env,
+  },
   browserOptions: {
     type: "chromium",
     launch: {
       headless: true,
       ignoreDefaultArgs: ["--hide-scrollbars"],
-      env: {
-        NUXT_PUBLIC_EMAIL: TEST_NUXT_RUNTIME_CONFIG.public.email,
-        NUXT_PUBLIC_PHONE_NUMBER: TEST_NUXT_RUNTIME_CONFIG.public.phoneNumber,
-        NUXT_PUBLIC_ADDRESS: TEST_NUXT_RUNTIME_CONFIG.public.address,
-      },
     },
   },
   rootDir: fileURLToPath(new URL("../../../..", import.meta.url)),
