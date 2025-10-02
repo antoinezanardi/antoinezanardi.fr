@@ -29,7 +29,7 @@ describe("App Component", () => {
 
   it("should use head for sso purposes when rendered.", () => {
     const expectedUseHeadAttribute = {
-      title: "Antoine ZANARDI",
+      title: "App.meta.title",
       meta: [{ name: "description", content: "App.meta.description" }],
       htmlAttrs: { lang: "fr" },
     };

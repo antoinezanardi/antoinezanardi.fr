@@ -12,8 +12,9 @@
   },
   "App": {
     "meta": {
-      "description": "Portfolio d'Antoine ZANARDI, expert informatique spécialisé dans le web regroupant CV, projets et compétences",
-      "smallDescription": "Antoine ZANARDI, expert informatique spécialisé dans le web"
+      "title": "Antoine ZANARDI - Tech Lead Web Fullstack à Lille, Consultant Expert Nuxt/Vue.js",
+      "description": "Expert Web FullStack basé à Lille, qui allie qualité, IA et efficacité. Consultez mon portfolio & compétences ou contactez-moi !",
+      "smallDescription": "Expert Web FullStack basé à Lille, qui allie qualité, IA et efficacité"
     }
   },
   "MyProfile": {

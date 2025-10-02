@@ -27,7 +27,6 @@ import { stampInHtml } from "dev-stamp";
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
 import { onMounted, useNuxtApp, useHead, defineOgImageComponent } from "#imports";
 import { useAppSchemaOrg } from "~/composables/useAppSchemaOrg";
-import { ANTOINE_ZANARDI_FULL_NAME } from "~/shared/constants/antoine-zanardi.constants";
 
 const { t, locale } = useI18n();
 const { $bootstrap } = useNuxtApp();
@@ -35,7 +34,7 @@ const { $bootstrap } = useNuxtApp();
 const { setupAppSchemaOrg } = useAppSchemaOrg();
 
 useHead({
-  title: ANTOINE_ZANARDI_FULL_NAME,
+  title: t("App.meta.title"),
   meta: [{ name: "description", content: t("App.meta.description") }],
   htmlAttrs: { lang: locale.value },
 });
