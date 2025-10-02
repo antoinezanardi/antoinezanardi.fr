@@ -61,6 +61,7 @@ const ESLINT_GLOBAL_CONFIG = {
       useMagicKeys: "readonly",
       useEventBus: "readonly",
       useSiteConfig: "readonly",
+      useSchemaOrg: "readonly",
     },
   },
   rules: {

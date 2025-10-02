@@ -8,6 +8,8 @@ function mockNuxtImports(): void {
 
   mockNuxtImport<typeof defineOgImageComponent>("defineOgImageComponent", () => vi.fn());
 
+  mockNuxtImport<typeof useSchemaOrg>("useSchemaOrg", () => vi.fn());
+
   mockNuxtImport<() => ReturnType<typeof createFakeI18n>>("useI18n", () => vi.fn(() => createFakeI18n()));
 
   mockNuxtImport<() => ReturnType<typeof useSiteConfig>>("useSiteConfig", () => vi.fn(() => ({

@@ -16,7 +16,8 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
 
   const getAppSchemaOrgWebSite = (): ReturnType<typeof defineWebSite> => defineWebSite({
     "@type": "WebSite",
-    "name": siteConfig.name,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
+    "name": siteConfig.name as string,
     "description": t("App.meta.description"),
     "inLanguage": locale.value,
   });
@@ -78,10 +79,6 @@ function useAppSchemaOrg(): AppSchemaOrgComposable {
     "nationality": {
       "@type": "Country",
       "name": t("Countries.france"),
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": siteConfig.url,
     },
     "sameAs": [
       ANTOINE_ZANARDI_LINKEDIN_URL,
