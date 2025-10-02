@@ -87,7 +87,7 @@ const ESLINT_STYLISTIC_CONFIG = {
       "all",
       {
         returnAssign: false,
-        enforceForArrowConditionals: false,
+        ignoredNodes: ["ArrowFunctionExpression"],
       },
     ],
     "@stylistic/no-extra-semi": "error",
@@ -138,7 +138,7 @@ const ESLINT_STYLISTIC_CONFIG = {
       },
     ],
     "@stylistic/quote-props": ["error", "consistent-as-needed"],
-    "@stylistic/quotes": ["error", "double", { allowTemplateLiterals: true }],
+    "@stylistic/quotes": ["error", "double", { allowTemplateLiterals: "always" }],
     "@stylistic/rest-spread-spacing": "error",
     "@stylistic/semi": ["error", "always"],
     "@stylistic/semi-spacing": "error",

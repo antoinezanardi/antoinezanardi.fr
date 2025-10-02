@@ -23,14 +23,18 @@ describe("App Component", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
+  it("should define og image component when rendered.", () => {
+    expect(defineOgImageComponent).toHaveBeenCalledExactlyOnceWith("DefaultOgImage");
+  });
+
   it("should use head for sso purposes when rendered.", () => {
     const expectedUseHeadAttribute = {
-      title: "Antoine ZANARDI",
+      title: "App.meta.title",
       meta: [{ name: "description", content: "App.meta.description" }],
       htmlAttrs: { lang: "fr" },
     };
 
-    expect(useHead).toHaveBeenCalledExactlyOnceWith(expectedUseHeadAttribute);
+    expect(useHead).toHaveBeenNthCalledWith(1, expectedUseHeadAttribute);
   });
 
   it("should stamp a comment in HTML when rendered.", () => {

@@ -25,16 +25,23 @@ import aos from "aos";
 import { stampInHtml } from "dev-stamp";
 
 import { AboutMe, MyProfile, MySkills, MyPortfolio, MyExperience, MyEducation, PageFooter, NavBar } from "#components";
-import { onMounted, useNuxtApp, useHead } from "#imports";
+import { onMounted, useNuxtApp, useHead, defineOgImageComponent } from "#imports";
+import { useAppSchemaOrg } from "~/composables/useAppSchemaOrg";
 
 const { t, locale } = useI18n();
 const { $bootstrap } = useNuxtApp();
 
+const { setupAppSchemaOrg } = useAppSchemaOrg();
+
 useHead({
-  title: "Antoine ZANARDI",
+  title: t("App.meta.title"),
   meta: [{ name: "description", content: t("App.meta.description") }],
   htmlAttrs: { lang: locale.value },
 });
+
+setupAppSchemaOrg();
+
+defineOgImageComponent("DefaultOgImage");
 
 onMounted(() => {
   aos.init();

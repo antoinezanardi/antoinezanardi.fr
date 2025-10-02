@@ -60,6 +60,8 @@ const ESLINT_GLOBAL_CONFIG = {
       useElementHover: "readonly",
       useMagicKeys: "readonly",
       useEventBus: "readonly",
+      useSiteConfig: "readonly",
+      useSchemaOrg: "readonly",
     },
   },
   rules: {

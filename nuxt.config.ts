@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@tests": fileURLToPath(new URL("./tests", import.meta.url)),
     "@modules": fileURLToPath(new URL("./modules", import.meta.url)),
   },
+
   build: { transpile: ["@fortawesome"] },
   compatibilityDate: "2025-02-01",
   css: [
@@ -28,6 +29,11 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/test-utils/module",
     "@nuxt/image",
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
+    "nuxt-og-image",
+    "nuxt-schema-org",
+    "nuxt-site-config",
   ],
   i18n: {
     vueI18n: "../modules/i18n/i18n.config.ts",
@@ -45,6 +51,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true,
+  },
+  ogImage: {
+    enabled: process.env.NODE_ENV !== "test",
   },
   plugins: [
     {

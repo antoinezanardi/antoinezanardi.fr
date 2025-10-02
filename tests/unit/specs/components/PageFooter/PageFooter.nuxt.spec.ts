@@ -24,7 +24,7 @@ describe("Page Footer Component", () => {
     it("should display Antoine ZANARDI and full year when rendered.", () => {
       const title = wrapper.find<HTMLDivElement>(".title");
 
-      expect(title.text()).toBe("Antoine Zanardi - 2022");
+      expect(title.text()).toBe("Antoine ZANARDI - 2022");
     });
   });
 });

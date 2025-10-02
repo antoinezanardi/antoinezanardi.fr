@@ -9,7 +9,7 @@ export default {
   mutate: [
     "app/App.vue",
     "app/**/*.{ts,vue}",
-    "!app/utils/**/*.constants.ts",
+    "!app/**/*.constants.ts",
     "!app/plugins/**/*.ts",
   ],
   plugins: [

@@ -187,11 +187,12 @@
 
 <script setup lang="ts">
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
+import { ANTOINE_ZANARDI_BIRTH_DATE } from "~/shared/constants/antoine-zanardi.constants";
 
 const config = useRuntimeConfig();
 
 const age = computed<number>(() => {
-  const birthday = new Date("1996-04-14");
+  const birthday = new Date(ANTOINE_ZANARDI_BIRTH_DATE);
   const epochYear = 1970;
 
   return new Date(Date.now() - birthday.getTime()).getUTCFullYear() - epochYear;

@@ -10,9 +10,9 @@ exports[`My Profile Component > should match snapshot when rendered. 1`] = `
           <div data-v-d3c3f494="" class="cc-profile-image"><a data-v-d3c3f494="" href="https://www.linkedin.com/in/antoinezanardi/" rel="noopener noreferrer" target="_blank">
               <nuxt-img-stub data-v-d3c3f494="" alt="Photo de profil" height="180" src="/images/antoine.webp" width="180" preload="false" crossorigin="false" placeholder="false" custom="false" id="profile-pic"></nuxt-img-stub>
             </a></div>
-          <h1 data-v-d3c3f494="" class="h1 text-shadow title">Antoine Zanardi</h1>
+          <h1 data-v-d3c3f494="" class="h1 text-shadow title">Antoine ZANARDI</h1>
           <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Consultant Tech Lead</h2>
-          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="border-2 border-success-subtle btn btn-primary rounded-3" data-aos="zoom-in" data-aos-once="true" download="CV Antoine ZANARDI.pdf" href="/CV.pdf">Mon CV</a>
+          <h2 data-v-d3c3f494="" class="category mb-3 text-shadow text-white">Expert Web FullStack</h2><a data-v-d3c3f494="" id="my-cv" class="border-2 border-success-subtle btn btn-primary rounded-3" data-aos="zoom-in" data-aos-once="true" download="CV Antoine ZANARDI.pdf" href="/antoine-zanardi-cv.pdf">Mon CV</a>
         </div>
       </div>
       <div data-v-d3c3f494="" class="section">
