@@ -22,6 +22,7 @@
                   id="profile-pic"
                   :alt="$t('MyProfile.profilePicture')"
                   height="180"
+                  preload
                   src="/images/antoine.webp"
                   width="180"
                 />
