@@ -149,8 +149,11 @@ const periodDatesAriaLabel = computed<string>(() => {
   font-size: 1.25rem;
 }
 .logo {
-  max-width: 180px;
-  max-height: 75px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  max-width: 200px;
   filter: brightness(0) invert(1);
 }
 </style>
