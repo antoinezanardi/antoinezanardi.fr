@@ -1,5 +1,26 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.7.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.6.0...v1.7.0) (2025-10-05)
+
+### 🚀 Features
+
+* **about-me:** add personality section with ENTJ details ([#332](https://github.com/antoinezanardi/antoinezanardi.fr/issues/332)) ([8941f59](https://github.com/antoinezanardi/antoinezanardi.fr/commit/8941f592240c28f9ac153f7d70d6a26ff1c860fd))
+* **profile:** preload profile picture for faster loading ([#329](https://github.com/antoinezanardi/antoinezanardi.fr/issues/329)) ([b241fca](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b241fcaea74ae428e567792433aae09cdd916e02))
+
+### 🎨 Styles
+
+* **galleries:** adjust gallery width and margin for better layout ([#331](https://github.com/antoinezanardi/antoinezanardi.fr/issues/331)) ([29c3e14](https://github.com/antoinezanardi/antoinezanardi.fr/commit/29c3e146c86ece794b14c2e2ccdd186c90b6bc35))
+* **timelines:** adjust logo dimensions and styling ([#328](https://github.com/antoinezanardi/antoinezanardi.fr/issues/328)) ([0e1ef38](https://github.com/antoinezanardi/antoinezanardi.fr/commit/0e1ef38580d799caad1789b996f8f827e52d3983))
+
+### 🧹 Chore
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.3.15 ([#324](https://github.com/antoinezanardi/antoinezanardi.fr/issues/324)) ([078644d](https://github.com/antoinezanardi/antoinezanardi.fr/commit/078644d16cd08335a46d855ffb8667d5681a24ad))
+* **deps:** update dependency eslint to ^9.37.0 ([#327](https://github.com/antoinezanardi/antoinezanardi.fr/issues/327)) ([7fe7f84](https://github.com/antoinezanardi/antoinezanardi.fr/commit/7fe7f84817c760780bdee5783cd2d15ef7ac5f98))
+* **deps:** update dependency semantic-release-export-data to ^1.2.0 ([#333](https://github.com/antoinezanardi/antoinezanardi.fr/issues/333)) ([49456fd](https://github.com/antoinezanardi/antoinezanardi.fr/commit/49456fdbda297300b19db911bcb94c6eb7c7c750))
+* **deps:** update dependency vite to v7.1.9 ([#325](https://github.com/antoinezanardi/antoinezanardi.fr/issues/325)) ([e389db7](https://github.com/antoinezanardi/antoinezanardi.fr/commit/e389db7efe04beae962dd411f78f0f2a5031c1b8))
+* **deps:** update stryker-js monorepo to ^9.2.0 ([#330](https://github.com/antoinezanardi/antoinezanardi.fr/issues/330)) ([5276dde](https://github.com/antoinezanardi/antoinezanardi.fr/commit/5276dde980de01db8c1b92168be80880fbd8e209))
+* **pnpm:** update pnpm workspace and package manager version ([#334](https://github.com/antoinezanardi/antoinezanardi.fr/issues/334)) ([20cb6a8](https://github.com/antoinezanardi/antoinezanardi.fr/commit/20cb6a8e8cba518097ea18826a56160d58b630d4))
+
 ## [1.6.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.5.0...v1.6.0) (2025-10-02)
 
 ### 🚀 Features
