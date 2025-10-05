@@ -15,7 +15,7 @@
       <div class="gallery tab-content">
         <div
           id="web-development"
-          class="active tab-pane"
+          class="active mb-3 tab-pane"
         >
           <div class="me-auto ms-auto">
             <div class="align-items-center row">
