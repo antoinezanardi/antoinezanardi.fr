@@ -48,6 +48,42 @@
         </div>
       </div>
 
+      <div class="align-items-center mt-3 row">
+        <div class="col-sm-4">
+          <b
+            class="text-uppercase"
+          >
+            {{ `${$t('AboutMyPersonalInfo.personality')} :` }}
+          </b>
+        </div>
+
+        <div
+          id="personality"
+          class="align-items-center col-sm-8 d-flex gap-1"
+        >
+          <NuxtImg
+            aria-hidden="true"
+            height="24"
+            loading="lazy"
+            src="/svg/entj-personality.svg"
+            width="24"
+          />
+
+          <a
+            :href="ENTJ_PERSONALITY_HREF"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {{ $t('AboutMyPersonalInfo.entj') }}
+
+            <WrappedFontAwesomeIcon
+              icon="fa-arrow-up-right-from-square"
+              :icon-color="PRIMARY_COLOR"
+            />
+          </a>
+        </div>
+      </div>
+
       <div class="mt-3 row">
         <div class="col-sm-4">
           <b
@@ -186,8 +222,10 @@
 </template>
 
 <script setup lang="ts">
+import { ENTJ_PERSONALITY_HREF } from "~/components/AboutMe/AboutMyPersonalInfo/AboutMyPersonalInfo.constants";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
 import { ANTOINE_ZANARDI_BIRTH_DATE } from "~/shared/constants/antoine-zanardi.constants";
+import { PRIMARY_COLOR } from "~/shared/constants/style.constants";
 
 const config = useRuntimeConfig();
 
