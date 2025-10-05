@@ -38,7 +38,7 @@
           id="arrow-up-icon"
           classes="my-3"
           icon="fa-arrow-up"
-          icon-color="#00000"
+          :icon-color="WHITE_COLOR"
           size="2x"
         />
 
@@ -73,6 +73,7 @@ import type { PeriodTimelineProps } from "~/components/shared/Period/period-time
 import { useDates } from "~/composables/useDates";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
 import { Period } from "~/models/period/period.class";
+import { WHITE_COLOR } from "~/shared/constants/style.constants";
 
 const props = withDefaults(defineProps<PeriodTimelineProps>(), {
   doesShowYearOnly: false,
@@ -149,8 +150,11 @@ const periodDatesAriaLabel = computed<string>(() => {
   font-size: 1.25rem;
 }
 .logo {
-  max-width: 180px;
-  max-height: 75px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  max-width: 200px;
   filter: brightness(0) invert(1);
 }
 </style>

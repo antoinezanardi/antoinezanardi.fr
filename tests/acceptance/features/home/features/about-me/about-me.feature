@@ -20,6 +20,8 @@ Feature: 👤 Home Page - About Me Section
     And the exact text "Homme" should be visible
     And the exact text "Age :" should be visible
     And the text with regexp "\d{2} ans" should be visible
+    And the exact text "Personnalité :" should be visible
+    And the exact text "ENTJ - Commandant" should be visible
     And the exact text "email :" should be visible
     And the link with exact name "Envoyez-moi un email à john@doe.com" should be visible
     And the exact text "Téléphone :" should be visible

@@ -15,6 +15,12 @@ exports[`AboutMyPersonalInfo Component > should match snapshot when rendered. 1`
       <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Age :</b></div>
       <div data-v-b7a042bc="" id="age" class="col-sm-8">25 ans</div>
     </div>
+    <div data-v-b7a042bc="" class="align-items-center mt-3 row">
+      <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">Personnalité :</b></div>
+      <div data-v-b7a042bc="" id="personality" class="align-items-center col-sm-8 d-flex gap-1">
+        <nuxt-img-stub data-v-b7a042bc="" height="24" loading="lazy" src="/svg/entj-personality.svg" width="24" preload="false" crossorigin="false" placeholder="false" custom="false" aria-hidden="true"></nuxt-img-stub><a data-v-b7a042bc="" href="https://www.16personalities.com/fr/la-personnalite-entj" rel="noopener noreferrer" target="_blank">ENTJ - Commandant <wrapped-font-awesome-icon-stub data-v-b7a042bc="" icon="fa-arrow-up-right-from-square" iconcolor="#12671D" classes=""></wrapped-font-awesome-icon-stub></a>
+      </div>
+    </div>
     <div data-v-b7a042bc="" class="mt-3 row">
       <div data-v-b7a042bc="" class="col-sm-4"><b data-v-b7a042bc="" class="text-uppercase">email :</b></div>
       <div data-v-b7a042bc="" class="col-sm-8"><b data-v-b7a042bc=""><a data-v-b7a042bc="" aria-label="Envoyez-moi un email à john@doe.com" href="mailto:john@doe.com">john@doe.com</a></b></div>

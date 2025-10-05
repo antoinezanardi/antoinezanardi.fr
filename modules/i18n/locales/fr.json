@@ -28,6 +28,8 @@
     "personalInfo": "Informations personnelles",
     "genre": "Sexe",
     "male": "Homme",
+    "personality": "Personnalité",
+    "entj": "ENTJ - Commandant",
     "age": "Age",
     "yearsOld": "{age} ans",
     "email": "email",

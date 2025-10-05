@@ -33,7 +33,7 @@
             <WrappedFontAwesomeIcon
               classes="my-3"
               icon="fa-arrow-up-right-from-square"
-              icon-color="#FFFFFF"
+              :icon-color="WHITE_COLOR"
               size="2x"
             />
           </p>
@@ -46,6 +46,7 @@
 <script setup lang="ts">
 import type { MyProjectProps } from "~/components/MyPortfolio/MyProject/my-project.types";
 import WrappedFontAwesomeIcon from "~/components/shared/Icons/WrappedFontAwesomeIcon/WrappedFontAwesomeIcon.vue";
+import { WHITE_COLOR } from "~/shared/constants/style.constants";
 
 defineProps<MyProjectProps>();
 </script>
