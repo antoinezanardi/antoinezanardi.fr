@@ -1,4 +1,4 @@
-name: "Install project"
+name: "Install project 📦"
 description: "Installs project dependencies using pnpm – uses caching to speed up the process"
 author: "Antoine ZANARDI"
 

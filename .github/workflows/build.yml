@@ -69,7 +69,7 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install project dependencies 📦
+      - name: Install project 📦
         uses: ./.github/actions/install-project
 
   build:
@@ -87,26 +87,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Type check 🪨
         run: pnpm run typecheck
@@ -123,26 +105,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Check and lint code 🔍
         run: pnpm run lint
@@ -160,26 +124,8 @@ jobs:
         id: safe-branch-name
         uses: ./.github/actions/compute-safe-branch-name
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Unit tests 🧪
         id: unit-tests
@@ -217,26 +163,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Mutant tests 👽
         id: mutant-tests
@@ -265,26 +193,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Prepare E2E tests 🧭
         run: pnpm run test:cucumber:prepare
@@ -318,35 +228,10 @@ jobs:
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-
-      - name: Compute safe branch name 🍃
-        id: safe-branch-name
-        uses: ./.github/actions/compute-safe-branch-name
-
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Restore tests coverage from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-unit-tests-coverage
-        with:
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
-          restore-keys: |
-            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
 
       - name: SonarCloud Scan 🌥️
-        uses: SonarSource/sonarqube-scan-action@v6.0.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
+        uses: ./.github/actions/sonarcloud
+        with:
+          UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}
+          UNIT_TESTS_COVERAGE_REPORTS_PATH: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
+          SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
