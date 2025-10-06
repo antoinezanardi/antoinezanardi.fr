@@ -167,7 +167,7 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Acceptance Tests composite action 🥒
+      - name: Acceptance Tests 🥒
         uses: ./.github/actions/acceptance-tests
 
   sonarcloud:

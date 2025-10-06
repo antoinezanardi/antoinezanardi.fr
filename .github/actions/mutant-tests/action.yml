@@ -33,12 +33,12 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: stryker-html-report
-        path: ${{ secrets.STRYKER_REPORT_PATH }}/index.html
+        path: ${{ inputs.STRYKER_REPORT_PATH }}/index.html
         retention-days: 2
 
     - name: Save stryker incremental as artifact 💎
       uses: actions/upload-artifact@v4
       with:
         name: stryker-incremental
-        path: ${{ secrets.STRYKER_INCREMENTAL_PATH }}/incremental.json
+        path: ${{ inputs.STRYKER_INCREMENTAL_PATH }}/incremental.json
         retention-days: 2
