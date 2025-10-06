@@ -3,7 +3,7 @@ description: Run E2E acceptance tests and upload reports.
 author: Antoine ZANARDI
 
 inputs:
-  ACCEPTANCE_TESTS_REPORTS_PATH:
+  acceptance-tests-reports-path:
     description: Path to acceptance tests reports (Cucumber JSON and HTML reports).
     required: true
     default: tests/acceptance/reports
@@ -28,7 +28,7 @@ runs:
       uses: actions/upload-artifact@v4
       with:
         name: acceptance-tests-reports
-        path: ${{ inputs.ACCEPTANCE_TESTS_REPORTS_PATH }}
+        path: ${{ inputs.acceptance-tests-reports-path }}
         retention-days: 2
 
     - name: Exit with error if acceptance tests failed 🚨

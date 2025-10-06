@@ -10,8 +10,6 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
-  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage
   GH_TOKEN: ${{ github.token }}
 
 jobs:
@@ -115,9 +113,6 @@ jobs:
 
       - name: Unit Tests 🧪
         uses: ./.github/actions/unit-tests
-        with:
-          UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}
-          UNIT_TESTS_COVERAGE_REPORTS_PATH: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
 
   mutant-tests:
     name: Mutant Tests 👽
@@ -131,7 +126,7 @@ jobs:
       - name: Mutant Tests 👽
         uses: ./.github/actions/mutant-tests
         with:
-          STRYKER_DASHBOARD_API_KEY: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
+          stryker-dashboard-api-key: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
 
   acceptance-tests:
     name: Acceptance Tests 🥒
@@ -162,6 +157,5 @@ jobs:
       - name: SonarCloud Scan 🌥️
         uses: ./.github/actions/sonarcloud
         with:
-          UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}
-          UNIT_TESTS_COVERAGE_REPORTS_PATH: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
+          unit-tests-coverage-base-cache-key: env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY
+          sonarcloud-token: ${{ secrets.SONAR_TOKEN }}

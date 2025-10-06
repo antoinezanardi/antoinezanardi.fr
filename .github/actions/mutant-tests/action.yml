@@ -3,15 +3,15 @@ description: Run Stryker mutant tests and upload reports.
 author: Antoine ZANARDI
 
 inputs:
-  STRYKER_REPORT_PATH:
+  stryker-report-path:
     description: Path to Stryker HTML report
     required: true
     default: tests/stryker/coverage
-  STRYKER_INCREMENTAL_PATH:
+  stryker-incremental-path:
     description: Path to Stryker incremental report
     required: true
     default: tests/stryker/incremental
-  STRYKER_DASHBOARD_API_KEY:
+  stryker-dashboard-api-key:
     description: Stryker Dashboard API key for authentication
     required: true
 
@@ -26,19 +26,19 @@ runs:
       shell: bash
       run: pnpm run test:stryker
       env:
-        STRYKER_DASHBOARD_API_KEY: ${{ inputs.STRYKER_DASHBOARD_API_KEY }}
+        STRYKER_DASHBOARD_API_KEY: ${{ inputs.stryker-dashboard-api-key }}
         VERSION: ${{ github.head_ref }}
 
     - name: Save stryker report as artifact 💎
       uses: actions/upload-artifact@v4
       with:
         name: stryker-html-report
-        path: ${{ inputs.STRYKER_REPORT_PATH }}/index.html
+        path: ${{ inputs.stryker-report-path }}/index.html
         retention-days: 2
 
     - name: Save stryker incremental as artifact 💎
       uses: actions/upload-artifact@v4
       with:
-        name: stryker-incremental
-        path: ${{ inputs.STRYKER_INCREMENTAL_PATH }}/incremental.json
+        name: stryker-incremental-report
+        path: ${{ inputs.stryker-incremental-path }}
         retention-days: 2
