@@ -45,10 +45,10 @@ runs:
     - name: Save unit tests coverage in cache 🥡
       uses: actions/cache/save@v4
       id: cache-unit-tests-coverage
-      if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
+      if: ${{ hashFiles(format('{0}/lcov.info', inputs.UNIT_TESTS_COVERAGE_REPORTS_PATH)) != '' }}
       with:
         path: ${{ inputs.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-        key: ${{ inputs.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
+        key: ${{ inputs.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-${{ hashFiles(format('{0}/lcov.info', inputs.UNIT_TESTS_COVERAGE_REPORTS_PATH)) }}
 
     - name: Save unit tests coverage report as artifact 💎
       uses: actions/upload-artifact@v4
