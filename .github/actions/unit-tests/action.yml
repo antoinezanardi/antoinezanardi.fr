@@ -1,0 +1,97 @@
+name: Unit Tests 🧪
+description: Run unit tests and upload reports.
+author: Antoine ZANARDI
+
+inputs:
+  unit-tests-coverage-base-cache-key:
+    description: Base cache key for unit tests coverage reports
+    required: true
+    default: unit-tests-coverage
+  unit-tests-coverage-reports-path:
+    description: Path to unit tests coverage reports
+    required: true
+    default: tests/unit/coverage
+
+outputs:
+  vitest-tests-count:
+    description: Number of Vitest tests executed
+    value: ${{ steps.vitest-results.outputs.VITEST_TESTS_COUNT }}
+  vitest-statements-count:
+    description: Number of statements covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_STATEMENTS_COUNT }}
+  vitest-branches-count:
+    description: Number of branches covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_BRANCHES_COUNT }}
+  vitest-functions-count:
+    description: Number of functions covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_FUNCTIONS_COUNT }}
+  vitest-lines-count:
+    description: Number of lines covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_LINES_COUNT }}
+  vitest-statements-percent:
+    description: Percentage of statements covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_STATEMENTS_PERCENT }}
+  vitest-branches-percent:
+    description: Percentage of branches covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_BRANCHES_PERCENT }}
+  vitest-functions-percent:
+    description: Percentage of functions covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_FUNCTIONS_PERCENT }}
+  vitest-lines-percent:
+    description: Percentage of lines covered by Vitest
+    value: ${{ steps.vitest-results.outputs.VITEST_LINES_PERCENT }}
+
+runs:
+  using: composite
+  steps:
+    - name: Compute safe branch name 🍃
+      id: safe-branch-name
+      uses: ./.github/actions/compute-safe-branch-name
+
+    - name: Install project 📦
+      uses: ./.github/actions/install-project
+
+    - name: Unit tests 🧪
+      id: unit-tests
+      shell: bash
+      continue-on-error: true
+      run: |
+        set -o pipefail
+        pnpm run test:unit:cov 2>&1 | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
+
+    - name: Set Vitest Results As Outputs 📝
+      id: vitest-results
+      shell: bash
+      run: |
+        {
+          echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}"
+          echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}"
+          echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}"
+          echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}"
+          echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}"
+          echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}"
+          echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}"
+          echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}"
+          echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}"
+        } >> "$GITHUB_OUTPUT"
+
+    - name: Save unit tests coverage in cache 🥡
+      uses: actions/cache/save@v4
+      id: cache-unit-tests-coverage
+      if: ${{ hashFiles(format('{0}/lcov.info', inputs.unit-tests-coverage-reports-path)) != '' }}
+      with:
+        path: ${{ inputs.unit-tests-coverage-reports-path }}
+        key: ${{ inputs.unit-tests-coverage-base-cache-key }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-${{ hashFiles(format('{0}/lcov.info', inputs.unit-tests-coverage-reports-path)) }}
+
+    - name: Save unit tests coverage report as artifact 💎
+      uses: actions/upload-artifact@v4
+      with:
+        name: unit-tests-coverage-report
+        path: ${{ inputs.unit-tests-coverage-reports-path }}
+        if-no-files-found: ignore
+        retention-days: 2
+
+    - name: Exit with error if unit tests failed 🚨
+      if: steps.unit-tests.outcome != 'success'
+      shell: bash
+      run: exit 1
