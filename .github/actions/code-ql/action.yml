@@ -1,0 +1,17 @@
+name: 'CodeQL Analysis'
+description: 'Run GitHub CodeQL analysis for code scanning.'
+author: "Antoine ZANARDI"
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Initialize CodeQL ⚙️
+      uses: github/codeql-action/init@v3
+      with:
+        languages: 'javascript,typescript'
+
+    - name: AutoBuild 🌡️
+      uses: github/codeql-action/autobuild@v3
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3

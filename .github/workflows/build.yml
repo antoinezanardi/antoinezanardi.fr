@@ -28,21 +28,11 @@ jobs:
       contents: read
       security-events: write
     steps:
-      - name: Checkout GitHub repository 📡
+      - name: Checkout repository 📡
         uses: actions/checkout@v5
 
-      - name: Initialize CodeQL ⚙️
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript
-
-      - name: AutoBuild 🌡️
-        uses: github/codeql-action/autobuild@v3
-
       - name: Perform CodeQL Analysis ❇️
-        uses: github/codeql-action/analyze@v3
-        with:
-          category: "/language:javascript"
+        uses: ./.github/actions/code-ql
 
   lint-workflows:
     name: Lint GitHub Workflows 🐙
