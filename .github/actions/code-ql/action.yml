@@ -1,9 +1,9 @@
-name: 'CodeQL Analysis'
-description: 'Run GitHub CodeQL analysis for code scanning.'
-author: "Antoine ZANARDI"
+name: CodeQL Analysis ❇️
+description: Run GitHub CodeQL analysis for code scanning.
+author: Antoine ZANARDI
 
 runs:
-  using: 'composite'
+  using: composite
   steps:
     - name: Initialize CodeQL ⚙️
       uses: github/codeql-action/init@v3

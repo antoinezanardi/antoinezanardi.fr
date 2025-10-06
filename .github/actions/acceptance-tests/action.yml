@@ -1,0 +1,37 @@
+name: Acceptance Tests 🥒
+description: Run E2E acceptance tests and upload reports.
+author: Antoine ZANARDI
+
+inputs:
+  ACCEPTANCE_TESTS_REPORTS_PATH:
+    description: Path to acceptance tests reports (Cucumber JSON and HTML reports).
+    required: true
+    default: tests/acceptance/reports
+
+runs:
+  using: composite
+  steps:
+    - name: Install project 📦
+      uses: ./.github/actions/install-project
+
+    - name: Prepare acceptance tests 🧭
+      shell: bash
+      run: pnpm run test:cucumber:prepare
+
+    - name: Acceptance tests ⚗️
+      id: acceptance-tests
+      continue-on-error: true
+      shell: bash
+      run: pnpm run test:cucumber
+
+    - name: Save acceptance tests reports as artifact 💎
+      uses: actions/upload-artifact@v4
+      with:
+        name: acceptance-tests-reports
+        path: ${{ inputs.ACCEPTANCE_TESTS_REPORTS_PATH }}
+        retention-days: 2
+
+    - name: Exit with error if acceptance tests failed 🚨
+      if: steps.acceptance-tests.outcome != 'success'
+      shell: bash
+      run: exit 1

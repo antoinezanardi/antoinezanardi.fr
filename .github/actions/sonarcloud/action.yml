@@ -1,20 +1,20 @@
-name: 'SonarCloud Analysis 🌥️'
-description: 'Run SonarCloud analysis with pnpm and Node.js setup.'
-author: "Antoine ZANARDI"
+name: SonarCloud Analysis 🌥️
+description: Run SonarCloud analysis with pnpm and Node.js setup.
+author: Antoine ZANARDI
 
 inputs:
   UNIT_TESTS_COVERAGE_BASE_CACHE_KEY:
-    description: 'Base cache key for unit tests coverage reports'
+    description: Base cache key for unit tests coverage reports
     required: true
   UNIT_TESTS_COVERAGE_REPORTS_PATH:
-    description: 'Path to unit tests coverage reports'
+    description: Path to unit tests coverage reports
     required: true
   SONARCLOUD_TOKEN:
-    description: 'SonarCloud token for authentication'
+    description: SonarCloud token for authentication
     required: true
 
 runs:
-  using: 'composite'
+  using: composite
   steps:
     - name: Compute safe branch name 🍃
       id: safe-branch-name

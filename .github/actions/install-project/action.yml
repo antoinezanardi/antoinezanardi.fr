@@ -1,9 +1,9 @@
-name: "Install project 📦"
-description: "Installs project dependencies using pnpm – uses caching to speed up the process"
-author: "Antoine ZANARDI"
+name: Install project 📦
+description: Installs project dependencies using pnpm – uses caching to speed up the process
+author: Antoine ZANARDI
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - name: Install pnpm 🏗️
       uses: pnpm/action-setup@v4
@@ -25,10 +25,10 @@ runs:
 
     - name: Install project dependencies 📦
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
-      shell: "bash"
+      shell: bash
       run: pnpm install --frozen-lockfile
 
     - name: Create Nuxt types ⛰️
       if: steps.cache-node-modules.outputs.cache-hit == 'true'
-      shell: "bash"
+      shell: bash
       run: pnpm run postinstall
