@@ -40,6 +40,9 @@ jobs:
     name: Install ⚙️
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v5
+
       - name: Install project dependencies 📦
         uses: ./.github/actions/install-project
 

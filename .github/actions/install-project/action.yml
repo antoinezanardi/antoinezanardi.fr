@@ -7,9 +7,6 @@ runs:
   name: Install ⚙️
 
   steps:
-    - name: Checkout GitHub repository 📡
-      uses: actions/checkout@v5
-
     - name: Install pnpm 🏗️
       uses: pnpm/action-setup@v4
       with:
