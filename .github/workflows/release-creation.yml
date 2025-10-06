@@ -82,44 +82,11 @@ jobs:
       - name: Install project 📦
         uses: ./.github/actions/install-project
 
-      - name: Unit tests 🧪
-        id: unit-tests
-        continue-on-error: true
-        run: pnpm run test:unit:cov 2>&1 | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
-
-      - name: Set Vitest Results As Outputs 📝
-        id: outputs
-        run: |
-          {
-            echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}"
-            echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}"
-            echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}"
-            echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}"
-            echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}"
-            echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}"
-            echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}"
-            echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}"
-            echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}"
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Save unit tests coverage in cache 🥡
-        uses: actions/cache/save@v4
-        id: cache-unit-tests-coverage
-        if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
+      - name: Unit Tests 🧪
+        uses: ./.github/actions/unit-tests
         with:
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
-
-      - name: Save unit tests coverage report as artifact 💎
-        uses: actions/upload-artifact@v4
-        with:
-          name: unit-tests-coverage-report
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          retention-days: 2
-
-      - name: Exit with error if unit tests failed 🚨
-        if: steps.unit-tests.outcome != 'success'
-        run: exit 1
+          UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}
+          UNIT_TESTS_COVERAGE_REPORTS_PATH: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
 
   sonarcloud:
     name: SonarCloud Analysis 🌥️
