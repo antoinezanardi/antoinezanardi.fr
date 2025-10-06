@@ -153,9 +153,10 @@ jobs:
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: SonarCloud Scan 🌥️
         uses: ./.github/actions/sonarcloud
         with:
-          unit-tests-coverage-base-cache-key: env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY
           sonarcloud-token: ${{ secrets.SONAR_TOKEN }}

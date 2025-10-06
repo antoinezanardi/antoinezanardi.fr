@@ -27,18 +27,22 @@ runs:
       run: pnpm run test:stryker
       env:
         STRYKER_DASHBOARD_API_KEY: ${{ inputs.stryker-dashboard-api-key }}
-        VERSION: ${{ github.head_ref }}
+        VERSION: ${{ github.head_ref || github.ref_name }}
 
     - name: Save stryker report as artifact 💎
       uses: actions/upload-artifact@v4
+      if: always()
       with:
         name: stryker-html-report
         path: ${{ inputs.stryker-report-path }}/index.html
+        if-no-files-found: ignore
         retention-days: 2
 
     - name: Save stryker incremental as artifact 💎
       uses: actions/upload-artifact@v4
+      if: always()
       with:
         name: stryker-incremental-report
         path: ${{ inputs.stryker-incremental-path }}
+        if-no-files-found: ignore
         retention-days: 2

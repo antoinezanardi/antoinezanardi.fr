@@ -29,6 +29,7 @@ runs:
       with:
         name: acceptance-tests-reports
         path: ${{ inputs.acceptance-tests-reports-path }}
+        if-no-files-found: ignore
         retention-days: 2
 
     - name: Exit with error if acceptance tests failed 🚨

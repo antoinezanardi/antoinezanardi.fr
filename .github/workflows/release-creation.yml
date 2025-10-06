@@ -91,10 +91,10 @@ jobs:
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: SonarCloud Analysis 🌥️
         uses: ./.github/actions/sonarcloud
         with:
-          unit-tests-coverage-base-cache-key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}
-          unit-tests-coverage-reports-path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
           sonarcloud-token: ${{ secrets.SONAR_TOKEN }}

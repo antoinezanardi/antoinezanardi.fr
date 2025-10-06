@@ -6,6 +6,7 @@ inputs:
   unit-tests-coverage-base-cache-key:
     description: Base cache key for unit tests coverage reports
     required: true
+    default: unit-tests-coverage
   unit-tests-coverage-reports-path:
     description: Path to unit tests coverage reports
     required: true
@@ -29,11 +30,14 @@ runs:
       id: cache-unit-tests-coverage
       with:
         path: ${{ inputs.unit-tests-coverage-reports-path }}
-        key: ${{ inputs.unit-tests-coverage-base-cache-key }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
+        key: ${{ inputs.unit-tests-coverage-base-cache-key }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}
         restore-keys: |
-          ${{ inputs.unit-tests-coverage-base-cache-key }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}-
+          ${{ inputs.unit-tests-coverage-base-cache-key }}-${{ steps.safe-branch-name.outputs.safe-branch-name }}
+          ${{ inputs.unit-tests-coverage-base-cache-key }}-
+          ${{ inputs.unit-tests-coverage-base-cache-key }}
 
     - name: SonarCloud Scan 🌥️
       uses: SonarSource/sonarqube-scan-action@v6.0.0
       env:
+        SONAR_HOST_URL: https://sonarcloud.io
         SONAR_TOKEN: ${{ inputs.sonarcloud-token }}

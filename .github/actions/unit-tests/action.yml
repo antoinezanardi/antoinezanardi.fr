@@ -86,6 +86,7 @@ runs:
       with:
         name: unit-tests-coverage-report
         path: ${{ inputs.unit-tests-coverage-reports-path }}
+        if-no-files-found: ignore
         retention-days: 2
 
     - name: Exit with error if unit tests failed 🚨
