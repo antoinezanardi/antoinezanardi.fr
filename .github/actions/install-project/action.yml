@@ -4,8 +4,6 @@ author: "Antoine ZANARDI"
 
 runs:
   using: "composite"
-  name: Install ⚙️
-
   steps:
     - name: Install pnpm 🏗️
       uses: pnpm/action-setup@v4
