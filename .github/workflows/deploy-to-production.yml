@@ -25,30 +25,8 @@ jobs:
       name: Production
       url: ${{ vars.PRODUCTION_URL }}
     steps:
-      - name: Setup GitHub repository 🔧
-        uses: actions/checkout@v5
-
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
       - name: Install project dependencies 📦
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: pnpm install
+        uses: ./.github/actions/install-project
 
       - name: Generate app ✨
         run: pnpm run generate

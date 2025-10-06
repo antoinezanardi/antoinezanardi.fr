@@ -13,30 +13,8 @@ jobs:
     name: Install ⚙️
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub repository 📡
-        uses: actions/checkout@v5
-
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Cache npm dependencies 🥡
-        uses: actions/cache@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
       - name: Install project dependencies 📦
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: pnpm install
+        uses: ./.github/actions/install-project
 
   get-next-release-version:
     name: Get next release version 🏷️
