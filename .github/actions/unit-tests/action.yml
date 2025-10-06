@@ -55,7 +55,9 @@ runs:
       id: unit-tests
       shell: bash
       continue-on-error: true
-      run: pnpm run test:unit:cov 2>&1 | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
+      run: |
+        set -o pipefail
+        pnpm run test:unit:cov 2>&1 | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
 
     - name: Set Vitest Results As Outputs 📝
       id: vitest-results
