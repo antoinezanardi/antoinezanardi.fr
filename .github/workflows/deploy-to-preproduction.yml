@@ -28,7 +28,7 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install project dependencies 📦
+      - name: Install project 📦
         uses: ./.github/actions/install-project
 
       - name: Generate app ✨

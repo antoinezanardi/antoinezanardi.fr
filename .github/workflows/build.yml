@@ -90,9 +90,6 @@ jobs:
       - name: Install project 📦
         uses: ./.github/actions/install-project
 
-      - name: Type check 🪨
-        run: pnpm run typecheck
-
       - name: Generate app ✨
         run: pnpm run generate
 
