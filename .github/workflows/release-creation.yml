@@ -83,6 +83,9 @@ jobs:
     name: Mutant Tests 👽
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    environment:
+      name: Stryker Dashboard
+      url: ${{ needs.mutant-tests.outputs.mutant-tests-dashboard-url }}
     needs:
       - install
     steps:
@@ -90,6 +93,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Mutant Tests 👽
+        id: mutant-tests
         uses: ./.github/actions/mutant-tests
         with:
           stryker-dashboard-api-key: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}

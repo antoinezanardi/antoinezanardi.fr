@@ -15,6 +15,11 @@ inputs:
     description: Stryker Dashboard API key for authentication
     required: true
 
+outputs:
+  mutant-tests-dashboard-url:
+    description: URL to the Stryker Dashboard report
+    value: ${{ steps.stryker-dashboard-url.outputs.MUTANT_TESTS_DASHBOARD_URL }}
+
 runs:
   using: composite
   steps:
@@ -27,7 +32,15 @@ runs:
       env:
         STRYKER_DASHBOARD_API_KEY: ${{ inputs.stryker-dashboard-api-key }}
         STRYKER_DASHBOARD_VERSION: ${{ github.head_ref || github.ref_name }}
-      run: pnpm run test:stryker:ci
+      run: |
+        set -o pipefail
+        pnpm run test:stryker:ci 2>&1 | ./scripts/transform-stryker-results-as-env-variables.sh >> "$GITHUB_ENV"
+
+    - name: Set Stryker Dashboard URL output 📝
+      id: stryker-dashboard-url
+      if: always()
+      shell: bash
+      run: echo "MUTANT_TESTS_DASHBOARD_URL=${{ env.STRYKER_DASHBOARD_URL }}" >> $GITHUB_OUTPUT
 
     - name: Save stryker report as artifact 💎
       uses: actions/upload-artifact@v4
