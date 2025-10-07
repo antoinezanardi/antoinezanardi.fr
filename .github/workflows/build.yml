@@ -123,6 +123,8 @@ jobs:
       url: ${{ steps.mutant-tests.outputs.mutant-tests-dashboard-url }}
     needs:
       - install
+    outputs:
+      mutant-tests-dashboard-url: ${{ steps.mutant-tests.outputs.mutant-tests-dashboard-url }}
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
