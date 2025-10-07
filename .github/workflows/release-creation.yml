@@ -82,6 +82,7 @@ jobs:
   mutant-tests:
     name: Mutant Tests 👽
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     needs:
       - install
     steps:

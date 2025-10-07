@@ -5,7 +5,7 @@ My personal portfolio website, built to showcase my profile, projects, and profe
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 ![Coverage](https://img.shields.io/badge/Coverage-100%25-brightgreen.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fantoinezanardi%2Fantoinezanardi.fr%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/antoinezanardi/antoinezanardi.fr/main)
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fantoinezanardi%2Fantoinezanardi.fr%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/antoinezanardi/antoinezanardi.fr/master)
 
 👉 You can visit the live portfolio here: **[antoinezanardi.fr](https://antoinezanardi.fr)** or check out the staging version at **[antoinezanardi-fr.vercel.app](https://antoinezanardi-fr.vercel.app/)**.
 

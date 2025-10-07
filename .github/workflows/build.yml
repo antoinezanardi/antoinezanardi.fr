@@ -124,6 +124,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Mutant Tests 👽
+        timeout-minutes: 30
         uses: ./.github/actions/mutant-tests
         with:
           stryker-dashboard-api-key: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
