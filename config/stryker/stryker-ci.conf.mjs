@@ -15,7 +15,7 @@ if (process.env.STRYKER_DASHBOARD_API_KEY !== undefined) {
     project: "github.com/antoinezanardi/antoinezanardi.fr",
     baseUrl: "https://dashboard.stryker-mutator.io/api/reports",
     reportType: "full",
-    version: process.env.STRYKER_VERSION,
+    version: process.env.STRYKER_DASHBOARD_VERSION,
   };
 }
 
