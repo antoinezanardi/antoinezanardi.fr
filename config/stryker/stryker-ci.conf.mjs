@@ -6,24 +6,22 @@ const reporters = [
   "json",
 ];
 
-const dashboard = {
-  project: "github.com/antoinezanardi/antoinezanardi.fr",
-  baseUrl: "https://dashboard.stryker-mutator.io/api/reports",
-  reportType: "full",
-};
-const version = process.env.VERSION;
+let dashboard;
 
 if (process.env.STRYKER_DASHBOARD_API_KEY !== undefined) {
   reporters.push("dashboard");
-}
 
-if (process.env.VERSION !== undefined) {
-  dashboard.version = version;
+  dashboard = {
+    project: "github.com/antoinezanardi/antoinezanardi.fr",
+    baseUrl: "https://dashboard.stryker-mutator.io/api/reports",
+    reportType: "full",
+    version: process.env.STRYKER_VERSION,
+  };
 }
 
 export default {
   ...defaultConfig,
   concurrency: 2,
-  dashboard,
   reporters,
+  dashboard,
 };
