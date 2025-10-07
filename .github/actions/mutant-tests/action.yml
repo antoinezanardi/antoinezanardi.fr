@@ -24,7 +24,7 @@ runs:
     - name: Mutant tests 👽
       id: mutant-tests
       shell: bash
-      run: pnpm run test:stryker
+      run: pnpm run test:stryker:ci
       env:
         STRYKER_DASHBOARD_API_KEY: ${{ inputs.stryker-dashboard-api-key }}
         VERSION: ${{ github.head_ref || github.ref_name }}
