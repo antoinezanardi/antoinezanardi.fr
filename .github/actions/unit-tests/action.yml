@@ -58,7 +58,7 @@ runs:
       run: |
         set -o pipefail
         pnpm run test:unit:cov 2>&1 | tee vitest-output.log
-        cat vitest-output.log | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
+        cat vitest-output.log | "${{ github.workspace }}/scripts/transform-vitest-results-as-env-variables.sh" >> "$GITHUB_ENV"
 
     - name: Set Vitest Results As Outputs 📝
       id: vitest-results
