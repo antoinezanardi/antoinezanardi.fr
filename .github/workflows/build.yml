@@ -133,6 +133,18 @@ jobs:
         with:
           stryker-dashboard-api-key: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
 
+  mutant-tests-dashboard-deployment:
+    name: Stryker Dashboard Deployment 🛸
+    runs-on: ubuntu-latest
+    needs:
+      - mutant-tests
+    environment:
+      name: Stryker Dashboard
+      url: ${{ needs.mutant-tests.outputs.mutant-tests-dashboard-url }}
+    steps:
+      - name: Print Stryker Dashboard URL
+        run: echo "Stryker Dashboard has been deployed 🛸"
+
   acceptance-tests:
     name: Acceptance Tests 🥒
     runs-on: ubuntu-latest
