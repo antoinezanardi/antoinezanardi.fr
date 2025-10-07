@@ -34,7 +34,8 @@ runs:
         STRYKER_DASHBOARD_VERSION: ${{ github.head_ref || github.ref_name }}
       run: |
         set -o pipefail
-        pnpm run test:stryker:ci 2>&1 | ./scripts/transform-stryker-results-as-env-variables.sh >> "$GITHUB_ENV"
+        pnpm run test:stryker:ci 2>&1 | tee stryker-output.log
+        cat stryker-output.log | ./scripts/transform-stryker-results-as-env-variables.sh >> "$GITHUB_ENV"
 
     - name: Set Stryker Dashboard URL output 📝
       id: stryker-dashboard-url

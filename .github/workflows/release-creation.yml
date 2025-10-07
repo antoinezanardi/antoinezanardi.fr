@@ -85,7 +85,7 @@ jobs:
     timeout-minutes: 30
     environment:
       name: Stryker Dashboard
-      url: ${{ needs.mutant-tests.outputs.mutant-tests-dashboard-url }}
+      url: ${{ steps.mutant-tests.outputs.mutant-tests-dashboard-url }}
     needs:
       - install
     steps:

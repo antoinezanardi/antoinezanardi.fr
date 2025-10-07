@@ -6,22 +6,27 @@ const reporters = [
   "json",
 ];
 
-let dashboard;
+const ciConfig = {
+  ...defaultConfig,
+  reporters,
+  concurrency: 2,
+};
 
 if (process.env.STRYKER_DASHBOARD_API_KEY !== undefined) {
-  reporters.push("dashboard");
+  ciConfig.reporters.push("dashboard");
 
-  dashboard = {
+  const dashboard = {
     project: "github.com/antoinezanardi/antoinezanardi.fr",
     baseUrl: "https://dashboard.stryker-mutator.io/api/reports",
     reportType: "full",
     version: process.env.STRYKER_DASHBOARD_VERSION,
   };
+
+  if (process.env.STRYKER_DASHBOARD_VERSION !== undefined) {
+    dashboard.version = process.env.STRYKER_DASHBOARD_VERSION;
+  }
+
+  ciConfig.dashboard = dashboard;
 }
 
-export default {
-  ...defaultConfig,
-  concurrency: 2,
-  reporters,
-  dashboard,
-};
+export default ciConfig;

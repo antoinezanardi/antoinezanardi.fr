@@ -17,7 +17,7 @@ if [[ -z "$output" ]]; then
   exit 1
 fi
 
-report_line=$(echo "$output" | grep 'INFO DashboardReporter Report available at:')
+report_line=$(echo "$output" | grep 'INFO DashboardReporter Report available at:' || true)
 dashboard_url=$(echo "$report_line" | awk -F'Report available at: ' '{print $2}')
 
 echo "STRYKER_DASHBOARD_URL=${dashboard_url:-}"
