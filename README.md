@@ -56,6 +56,60 @@ This repository demonstrates how I build reliable software with strong testing s
 - **Code quality and coverage** — [SonarCloud](https://sonarcloud.io/).
 - **CI/CD pipelines** — [GitHub Actions](https://github.com/features/actions).
 
+### 🧪 Robustness
+
+#### 💯 Unit Testing
+
+![Vitest](https://img.shields.io/badge/-Vitest-black?style=for-the-badge&logoColor=yellow&logo=vitest&color=30420a)
+
+[![Tests count](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-count)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-count)
+
+[![Unit Tests Statements Coverage](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-statements)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-statements)
+[![Unit Tests Functions Coverage](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-functions)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-functions)
+
+[![Unit Tests Lines Coverage](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-lines)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-lines)
+[![Unit Tests Branches Coverage](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-branches)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/unit-tests-covered-branches)
+
+This project is designed to be robust and handle various scenarios.
+
+To achieve this, it is 100% unit tested with [Vitest](https://vitest.dev/) and has 100% code coverage.
+
+#### 🎭 End-to-End Testing
+
+![Playwright](https://img.shields.io/badge/-Playwright-black?style=for-the-badge&logoColor=white&logo=playwright&color=1D8D22)
+![Cucumber](https://img.shields.io/badge/-Cucumber-black?style=for-the-badge&logoColor=white&logo=cucumber&color=169652)
+
+[![Scenarios](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/scenarios)](https://byob.yarr.is/antoinezanardi/antoinezanardi.fr/scenarios)
+
+End-to-End tests are implemented using [Playwright](https://playwright.dev/) to ensure the application works as expected from the user's perspective.
+
+#### 🐋 Code Quality Scanner
+
+![SonarCloud](https://img.shields.io/badge/-SonarCloud-black?style=for-the-badge&logoColor=white&logo=sonar&color=4E9BCD)
+![CodeRabbit](https://img.shields.io/badge/-CodeRabbit-black?style=for-the-badge&logoColor=white&logo=coderabbit&color=E94E1B)
+
+The code quality is continuously monitored using [SonarCloud](https://sonarcloud.io/).
+
+You can check the code quality by clicking on one of the badges below:
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=coverage)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=bugs)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=antoinezanardi_antoinezanardi.fr&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=antoinezanardi_antoinezanardi.fr)
+
+Also, [CodeRabbit](https://coderabbit.io/) is used to ensure best practices are followed on each commit.
+
+#### 👽 Mutation Testing
+
+![Stryker](https://img.shields.io/badge/-Stryker-black?style=for-the-badge&logoColor=white&logo=stryker&color=7F1B10)
+
+[StrykerJS](https://stryker-mutator.io/) is used to ensure the code is resilient to mutations.
+
+You can check the mutation testing results by clicking on the badges below:
+
+[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fantoinezanardi%2Fantoinezanardi.fr%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/antoinezanardi/antoinezanardi.fr/master)
+
 ---
 
 ## <a name="deployment-workflow"></a>🔄 Deployment Workflow
