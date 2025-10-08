@@ -112,6 +112,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Unit Tests 🧪
+        id: unit-tests
         uses: ./.github/actions/unit-tests
 
   mutant-tests:
@@ -143,6 +144,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Acceptance Tests 🥒
+        id: acceptance-tests
         uses: ./.github/actions/acceptance-tests
 
   sonarcloud:
