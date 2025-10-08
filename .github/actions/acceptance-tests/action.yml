@@ -8,6 +8,11 @@ inputs:
     required: true
     default: tests/acceptance/reports
 
+outputs:
+  acceptance-tests-count:
+    description: Number of acceptance tests (scenarios) executed.
+    value: ${{ steps.cucumber-results.outputs.acceptance-tests-count }}
+
 runs:
   using: composite
   steps:
@@ -23,6 +28,14 @@ runs:
       continue-on-error: true
       shell: bash
       run: pnpm run test:cucumber
+
+    - name: Set Cucumber Results As Outputs 📝
+      id: cucumber-results
+      continue-on-error: true
+      shell: bash
+      run: | 
+        ${{ github.workspace }}/scripts/transform-cucumber-report-as-env-variables.sh >> "$GITHUB_ENV"
+        echo "acceptance-tests-count=${{ env.CUCUMBER_SCENARIOS_COUNT }}" >> "$GITHUB_OUTPUT"
 
     - name: Save acceptance tests reports as artifact 💎
       uses: actions/upload-artifact@v4

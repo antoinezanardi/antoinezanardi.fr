@@ -15,31 +15,31 @@ inputs:
 outputs:
   vitest-tests-count:
     description: Number of Vitest tests executed
-    value: ${{ steps.vitest-results.outputs.VITEST_TESTS_COUNT }}
+    value: ${{ steps.vitest-results.outputs.vitest-tests-count }}
   vitest-statements-count:
     description: Number of statements covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_STATEMENTS_COUNT }}
+    value: ${{ steps.vitest-results.outputs.vitest-statements-count }}
   vitest-branches-count:
     description: Number of branches covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_BRANCHES_COUNT }}
+    value: ${{ steps.vitest-results.outputs.vitest-branches-count }}
   vitest-functions-count:
     description: Number of functions covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_FUNCTIONS_COUNT }}
+    value: ${{ steps.vitest-results.outputs.vitest-functions-count }}
   vitest-lines-count:
     description: Number of lines covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_LINES_COUNT }}
+    value: ${{ steps.vitest-results.outputs.vitest-lines-count }}
   vitest-statements-percent:
     description: Percentage of statements covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_STATEMENTS_PERCENT }}
+    value: ${{ steps.vitest-results.outputs.vitest-statements-percent }}
   vitest-branches-percent:
     description: Percentage of branches covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_BRANCHES_PERCENT }}
+    value: ${{ steps.vitest-results.outputs.vitest-branches-percent }}
   vitest-functions-percent:
     description: Percentage of functions covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_FUNCTIONS_PERCENT }}
+    value: ${{ steps.vitest-results.outputs.vitest-functions-percent }}
   vitest-lines-percent:
     description: Percentage of lines covered by Vitest
-    value: ${{ steps.vitest-results.outputs.VITEST_LINES_PERCENT }}
+    value: ${{ steps.vitest-results.outputs.vitest-lines-percent }}
 
 runs:
   using: composite
@@ -65,15 +65,15 @@ runs:
       shell: bash
       run: |
         {
-          echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}"
-          echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}"
-          echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}"
-          echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}"
-          echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}"
-          echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}"
-          echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}"
-          echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}"
-          echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}"
+          echo "vitest-tests-count=${{ env.VITEST_TESTS_COUNT }}"
+          echo "vitest-statements-count=${{ env.VITEST_STATEMENTS_COUNT }}"
+          echo "vitest-branches-count=${{ env.VITEST_BRANCHES_COUNT }}"
+          echo "vitest-functions-count=${{ env.VITEST_FUNCTIONS_COUNT }}"
+          echo "vitest-lines-count=${{ env.VITEST_LINES_COUNT }}"
+          echo "vitest-statements-percent=${{ env.VITEST_STATEMENTS_PERCENT }}"
+          echo "vitest-branches-percent=${{ env.VITEST_BRANCHES_PERCENT }}"
+          echo "vitest-functions-percent=${{ env.VITEST_FUNCTIONS_PERCENT }}"
+          echo "vitest-lines-percent=${{ env.VITEST_LINES_PERCENT }}"
         } >> "$GITHUB_OUTPUT"
 
     - name: Save unit tests coverage in cache 🥡

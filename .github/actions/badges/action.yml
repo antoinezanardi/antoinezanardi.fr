@@ -1,5 +1,5 @@
 name: Generate Badges 💠
-description: Generate coverage and scenarios badges based on tests results.
+description: Generate coverage and scenarios badges based on test results.
 author: Antoine ZANARDI
 
 inputs:
