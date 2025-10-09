@@ -1,6 +1,7 @@
 import { fileURLToPath } from "url";
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+import { defineNuxtConfig } from "nuxt/config";
+
 export default defineNuxtConfig({
   alias: {
     "@config": fileURLToPath(new URL("./config", import.meta.url)),
