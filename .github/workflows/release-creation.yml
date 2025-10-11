@@ -5,10 +5,6 @@ on:
     branches:
       - master
 
-env:
-  UNIT_TESTS_COVERAGE_REPORTS_PATH: tests/unit/coverage
-  UNIT_TESTS_COVERAGE_BASE_CACHE_KEY: tests-unit-coverage-master
-
 jobs:
   code-ql:
     name: CodeQL Scan ❇️
@@ -23,18 +19,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Initialize CodeQL ⚙️
-        uses: github/codeql-action/init@v3
-        with:
-          languages: javascript
-
-      - name: AutoBuild 🌡️
-        uses: github/codeql-action/autobuild@v3
-
       - name: Perform CodeQL Analysis ❇️
-        uses: github/codeql-action/analyze@v3
-        with:
-          category: "/language:javascript"
+        uses: ./.github/actions/code-ql
 
   install:
     name: Install ⚙️
@@ -43,27 +29,8 @@ jobs:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Cache pnpm dependencies 🥡
-        uses: actions/cache@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Install project dependencies 📦
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: pnpm install
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
   release:
     name: Release 🏷️
@@ -78,23 +45,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Release 🏷️
         id: release
@@ -110,78 +62,81 @@ jobs:
     needs:
       - install
     outputs:
-      VITEST_TESTS_COUNT: ${{ steps.outputs.outputs.VITEST_TESTS_COUNT }}
-      VITEST_STATEMENTS_COUNT: ${{ steps.outputs.outputs.VITEST_STATEMENTS_COUNT }}
-      VITEST_BRANCHES_COUNT: ${{ steps.outputs.outputs.VITEST_BRANCHES_COUNT }}
-      VITEST_FUNCTIONS_COUNT: ${{ steps.outputs.outputs.VITEST_FUNCTIONS_COUNT }}
-      VITEST_LINES_COUNT: ${{ steps.outputs.outputs.VITEST_LINES_COUNT }}
-      VITEST_STATEMENTS_PERCENT: ${{ steps.outputs.outputs.VITEST_STATEMENTS_PERCENT }}
-      VITEST_BRANCHES_PERCENT: ${{ steps.outputs.outputs.VITEST_BRANCHES_PERCENT }}
-      VITEST_FUNCTIONS_PERCENT: ${{ steps.outputs.outputs.VITEST_FUNCTIONS_PERCENT }}
-      VITEST_LINES_PERCENT: ${{ steps.outputs.outputs.VITEST_LINES_PERCENT }}
+      vitest-tests-count: ${{ steps.unit-tests.outputs.vitest-tests-count }}
+      vitest-statements-count: ${{ steps.unit-tests.outputs.vitest-statements-count }}
+      vitest-branches-count: ${{ steps.unit-tests.outputs.vitest-branches-count }}
+      vitest-functions-count: ${{ steps.unit-tests.outputs.vitest-functions-count }}
+      vitest-lines-count: ${{ steps.unit-tests.outputs.vitest-lines-count }}
+      vitest-statements-percent: ${{ steps.unit-tests.outputs.vitest-statements-percent }}
+      vitest-branches-percent: ${{ steps.unit-tests.outputs.vitest-branches-percent }}
+      vitest-functions-percent: ${{ steps.unit-tests.outputs.vitest-functions-percent }}
+      vitest-lines-percent: ${{ steps.unit-tests.outputs.vitest-lines-percent }}
     steps:
       - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Create Nuxt types ⛰️
-        run: pnpm run postinstall
-
-      - name: Unit tests 🧪
+      - name: Unit Tests 🧪
         id: unit-tests
-        continue-on-error: true
-        run: pnpm run test:unit:cov 2>&1 | ./scripts/transform-vitest-results-as-env-variables.sh >> "$GITHUB_ENV"
+        uses: ./.github/actions/unit-tests
 
-      - name: Set Vitest Results As Outputs 📝
-        id: outputs
-        run: |
-          {
-            echo "VITEST_TESTS_COUNT=${{ env.VITEST_TESTS_COUNT }}"
-            echo "VITEST_STATEMENTS_COUNT=${{ env.VITEST_STATEMENTS_COUNT }}"
-            echo "VITEST_BRANCHES_COUNT=${{ env.VITEST_BRANCHES_COUNT }}"
-            echo "VITEST_FUNCTIONS_COUNT=${{ env.VITEST_FUNCTIONS_COUNT }}"
-            echo "VITEST_LINES_COUNT=${{ env.VITEST_LINES_COUNT }}"
-            echo "VITEST_STATEMENTS_PERCENT=${{ env.VITEST_STATEMENTS_PERCENT }}"
-            echo "VITEST_BRANCHES_PERCENT=${{ env.VITEST_BRANCHES_PERCENT }}"
-            echo "VITEST_FUNCTIONS_PERCENT=${{ env.VITEST_FUNCTIONS_PERCENT }}"
-            echo "VITEST_LINES_PERCENT=${{ env.VITEST_LINES_PERCENT }}"
-          } >> "$GITHUB_OUTPUT"
+  mutant-tests:
+    name: Mutant Tests 👽
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: Stryker Dashboard
+      url: ${{ steps.mutant-tests.outputs.mutant-tests-dashboard-url }}
+    needs:
+      - install
+    steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v5
 
-      - name: Save unit tests coverage in cache 🥡
-        uses: actions/cache/save@v4
-        id: cache-unit-tests-coverage
-        if: ${{ hashFiles('tests/unit/coverage/lcov.info') != '' }}
+      - name: Mutant Tests 👽
+        id: mutant-tests
+        uses: ./.github/actions/mutant-tests
         with:
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-${{ hashFiles('tests/unit/coverage/lcov.info') }}
+          stryker-dashboard-api-key: ${{ secrets.STRYKER_DASHBOARD_API_KEY }}
 
-      - name: Save unit tests coverage report as artifact 💎
-        uses: actions/upload-artifact@v4
+  acceptance-tests:
+    name: Acceptance Tests 🥒
+    runs-on: ubuntu-latest
+    needs:
+      - install
+    outputs:
+      acceptance-tests-count: ${{ steps.acceptance-tests.outputs.acceptance-tests-count }}
+    steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v5
+
+      - name: Acceptance Tests 🥒
+        id: acceptance-tests
+        uses: ./.github/actions/acceptance-tests
+
+  badges:
+    name: Generate Badges 💠
+    runs-on: ubuntu-latest
+    needs:
+      - unit-tests
+      - acceptance-tests
+    steps:
+      - name: Checkout GitHub repository 📡
+        uses: actions/checkout@v5
+
+      - name: Generate Badges 💠
+        uses: ./.github/actions/badges
         with:
-          name: unit-tests-coverage-report
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          retention-days: 2
-
-      - name: Exit with error if unit tests failed 🚨
-        if: steps.unit-tests.outcome != 'success'
-        run: exit 1
+          byob-token: ${{ secrets.BYOB_TOKEN }}
+          unit-tests-count: ${{ needs.unit-tests.outputs.vitest-tests-count }}
+          unit-tests-covered-statements: ${{ needs.unit-tests.outputs.vitest-statements-count }}
+          unit-tests-covered-branches: ${{ needs.unit-tests.outputs.vitest-branches-count }}
+          unit-tests-covered-functions: ${{ needs.unit-tests.outputs.vitest-functions-count }}
+          unit-tests-covered-lines: ${{ needs.unit-tests.outputs.vitest-lines-count }}
+          unit-tests-statements-percent: ${{ needs.unit-tests.outputs.vitest-statements-percent }}
+          unit-tests-branches-percent: ${{ needs.unit-tests.outputs.vitest-branches-percent }}
+          unit-tests-functions-percent: ${{ needs.unit-tests.outputs.vitest-functions-percent }}
+          unit-tests-lines-percent: ${{ needs.unit-tests.outputs.vitest-lines-percent }}
+          acceptance-tests-count: ${{ needs.acceptance-tests.outputs.acceptance-tests-count }}
 
   sonarcloud:
     name: SonarCloud Analysis 🌥️
@@ -198,28 +153,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
+      - name: SonarCloud Analysis 🌥️
+        uses: ./.github/actions/sonarcloud
         with:
-          run_install: false
-
-      - name: Restore pnpm dependencies from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
-
-      - name: Restore tests coverage from cache 🥡
-        uses: actions/cache/restore@v4
-        id: cache-unit-tests-coverage
-        with:
-          path: ${{ env.UNIT_TESTS_COVERAGE_REPORTS_PATH }}
-          key: ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
-          restore-keys: |
-            ${{ env.UNIT_TESTS_COVERAGE_BASE_CACHE_KEY }}-
-
-      - name: SonarCloud Scan 🌥️
-        uses: SonarSource/sonarqube-scan-action@v6.0.0
-        env:
-          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
+          sonarcloud-token: ${{ secrets.SONAR_TOKEN }}
