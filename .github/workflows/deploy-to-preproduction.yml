@@ -25,22 +25,11 @@ jobs:
       name: Staging
       url: ${{ vars.STAGING_URL }}
     steps:
-      - name: Setup GitHub repository 🔧
+      - name: Checkout GitHub repository 📡
         uses: actions/checkout@v5
 
-      - name: Install pnpm 🏗️
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-
-      - name: Setup NodeJS ✨
-        uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: pnpm
-
-      - name: Install project dependencies 📦
-        run: pnpm install --frozen-lockfile
+      - name: Install project 📦
+        uses: ./.github/actions/install-project
 
       - name: Generate app ✨
         run: pnpm run generate
