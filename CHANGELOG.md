@@ -1,5 +1,32 @@
 # 🦜 Antoine ZANARDI's Portfolio Versioning Changelog
 
+## [1.8.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.7.0...v1.8.0) (2025-10-13)
+
+### 🚀 Features
+
+* **badges:** add action to generate coverage and scenarii badges ([#346](https://github.com/antoinezanardi/antoinezanardi.fr/issues/346)) ([533d015](https://github.com/antoinezanardi/antoinezanardi.fr/commit/533d015de881de5267f5dff9bfa6a710e1e73126))
+* **tests:** add CI configuration for Stryker mutation tests and update README ([#343](https://github.com/antoinezanardi/antoinezanardi.fr/issues/343)) ([dd2352b](https://github.com/antoinezanardi/antoinezanardi.fr/commit/dd2352bb80fe59a7498721cd8adc1f55dff428d8))
+
+### 🔁 CI
+
+* **workflows:** add composite actions where needed ([#337](https://github.com/antoinezanardi/antoinezanardi.fr/issues/337)) ([bc01181](https://github.com/antoinezanardi/antoinezanardi.fr/commit/bc0118108bc69c8f87a5327785ecd55fa8a3f8df))
+
+### 🧹 Chore
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.3.16 ([#335](https://github.com/antoinezanardi/antoinezanardi.fr/issues/335)) ([b235e0f](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b235e0f50efe1d41fe960ca2e955eadf492dd3bc))
+* **deps:** update dependency @vitest/eslint-plugin to ^1.3.17 ([#351](https://github.com/antoinezanardi/antoinezanardi.fr/issues/351)) ([5b7663a](https://github.com/antoinezanardi/antoinezanardi.fr/commit/5b7663abc0eb1fdabe8000e125d82b73fede91e2))
+* **deps:** update dependency happy-dom to v20 ([#349](https://github.com/antoinezanardi/antoinezanardi.fr/issues/349)) ([b7c8049](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b7c80494ee81aefe63c21ee082bba12b3811216d))
+* **deps:** update dependency lint-staged to ^16.2.4 ([#350](https://github.com/antoinezanardi/antoinezanardi.fr/issues/350)) ([1211aca](https://github.com/antoinezanardi/antoinezanardi.fr/commit/1211aca59db2bb7760f0722dd6a58abb0042b7ce))
+* **deps:** update dependency nuxt to ^4.1.3 ([#340](https://github.com/antoinezanardi/antoinezanardi.fr/issues/340)) ([e107a57](https://github.com/antoinezanardi/antoinezanardi.fr/commit/e107a5736a64b51e03e7da0e2640868dc67525cd))
+* **deps:** update dependency type-fest to ^5.1.0 ([#352](https://github.com/antoinezanardi/antoinezanardi.fr/issues/352)) ([8069224](https://github.com/antoinezanardi/antoinezanardi.fr/commit/8069224d2ab979bf4f2ff788805b15a0a2fa90a7))
+* **deps:** update dependency vue-tsc to v3.1.1 ([#341](https://github.com/antoinezanardi/antoinezanardi.fr/issues/341)) ([5d8eb41](https://github.com/antoinezanardi/antoinezanardi.fr/commit/5d8eb41ea16120718f8dfd9b9e5b277d64ebaa3e))
+* **deps:** update github/codeql-action action to v4 ([#344](https://github.com/antoinezanardi/antoinezanardi.fr/issues/344)) ([1509b58](https://github.com/antoinezanardi/antoinezanardi.fr/commit/1509b5885c7b1f30d6c99ac38742c36f8c6a5f3a))
+* **deps:** update node.js to v24.10.0 ([#347](https://github.com/antoinezanardi/antoinezanardi.fr/issues/347)) ([28cdc50](https://github.com/antoinezanardi/antoinezanardi.fr/commit/28cdc506f781e7985c887e5541657102deb96b1a))
+* **deps:** update playwright monorepo to ^1.56.0 ([#339](https://github.com/antoinezanardi/antoinezanardi.fr/issues/339)) ([3da1050](https://github.com/antoinezanardi/antoinezanardi.fr/commit/3da105056ac2180742f28ea5cdc136adc7af2ff9))
+* **deps:** update pnpm to v10.18.1 ([#338](https://github.com/antoinezanardi/antoinezanardi.fr/issues/338)) ([09a0928](https://github.com/antoinezanardi/antoinezanardi.fr/commit/09a09287e18146a47995d98a1a31e5acffb5b10b))
+* **deps:** update pnpm to v10.18.2 ([#348](https://github.com/antoinezanardi/antoinezanardi.fr/issues/348)) ([7127ff9](https://github.com/antoinezanardi/antoinezanardi.fr/commit/7127ff9eb049a5666f011c04e126944b9e27db07))
+* **deps:** update typescript-eslint monorepo to ^8.46.0 ([#342](https://github.com/antoinezanardi/antoinezanardi.fr/issues/342)) ([b27fba6](https://github.com/antoinezanardi/antoinezanardi.fr/commit/b27fba67550e2b15167f0e585860c94b1962e22a))
+
 ## [1.7.0](https://github.com/antoinezanardi/antoinezanardi.fr/compare/v1.6.0...v1.7.0) (2025-10-05)
 
 ### 🚀 Features
