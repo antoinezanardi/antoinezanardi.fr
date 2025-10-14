@@ -160,8 +160,8 @@ importers:
         specifier: ^4.1.3
         version: 4.1.3(@parcel/watcher@2.5.1)(@types/node@22.18.8)(@vue/compiler-sfc@3.5.22)(db0@0.3.4)(eslint@9.37.0(jiti@2.6.1))(ioredis@5.8.0)(magicast@0.3.5)(meow@13.2.0)(optionator@0.9.4)(rollup@4.52.4)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(typescript@5.9.3)(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue-tsc@3.1.1(typescript@5.9.3))(yaml@2.8.1)
       nuxt-og-image:
-        specifier: 5.1.11
-        version: 5.1.11(@unhead/vue@2.0.17(vue@3.5.22(typescript@5.9.3)))(h3@1.15.4)(magicast@0.3.5)(unstorage@1.17.1(db0@0.3.4)(ioredis@5.8.0))(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))
+        specifier: 5.1.12
+        version: 5.1.12(@unhead/vue@2.0.17(vue@3.5.22(typescript@5.9.3)))(h3@1.15.4)(magicast@0.3.5)(unstorage@1.17.1(db0@0.3.4)(ioredis@5.8.0))(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3))
       nuxt-schema-org:
         specifier: 5.0.9
         version: 5.0.9(@unhead/vue@2.0.17(vue@3.5.22(typescript@5.9.3)))(h3@1.15.4)(magicast@0.3.5)(unhead@2.0.17)(vue@3.5.22(typescript@5.9.3))
@@ -2462,20 +2462,20 @@ packages:
     peerDependencies:
       vue: '>=3.5.18'
 
-  '@unocss/core@66.5.2':
-    resolution: {integrity: sha512-POSEpwj2FJtrDgzSq6nVhAJbnGIYPqtEMTpzQXfeFqPDMidAXjaH/xZUeTdHDbI9Jg700smrRXJtFJrJFXkmiQ==}
+  '@unocss/core@66.5.3':
+    resolution: {integrity: sha512-sGGBgtIfH3Ch7syIzJvA86iIVhSjfGThHBSDA0kFgGTBiYv2VBaUq0UpDfeMpda3LSg59LfEL5Fqa9kUqju5xQ==}
 
-  '@unocss/extractor-arbitrary-variants@66.5.2':
-    resolution: {integrity: sha512-MNHzhA4RKJJVo6D5Uc+SkPfeugO1KXDt0GFg0FkOUKTTnahxyXNvd9BG9HHYlKSiaYCgUhFmysNhv04Gza+CNg==}
+  '@unocss/extractor-arbitrary-variants@66.5.3':
+    resolution: {integrity: sha512-QBJCCBFfNOyVlXeDh0h1K2ZvreS5UAbPg+EUPngIIT9hVHIeKatXfCpeMYYt5ZmFZbqX3Zf4MKdguxbGZU9xHQ==}
 
-  '@unocss/preset-mini@66.5.2':
-    resolution: {integrity: sha512-YLOuYq7GNoWNgF3P41AtcvnOodSP49x0RNM4PR/ntGddl0BfsFaKeCGzt8DpbvavhQpBn0+kt4GP3RajKooAIQ==}
+  '@unocss/preset-mini@66.5.3':
+    resolution: {integrity: sha512-0WnC4zuyJP3jQQFxFKG7MRUJW5AipdO15yHIkPPWzwNjDSlIcsjhr08v8BJxSFpOsr+XOEgqC3EnHn+CWkv3lg==}
 
-  '@unocss/preset-wind3@66.5.2':
-    resolution: {integrity: sha512-qgzLiPd6CkepLLssBod7ejQ4sKKqAvCOyjqpp0eFmHVUKGBEGPzOI1/WnbrAzvTHDonbSc52kB/XEWlgWmDhhA==}
+  '@unocss/preset-wind3@66.5.3':
+    resolution: {integrity: sha512-AEgidZkpdCFKjXmCUSJgucxz/IqT4atLUQiq8x8fEKSuPo8rH2CtmO4Bllt9uJMS3GrGNqyrtPixjz5mknC0ZQ==}
 
-  '@unocss/rule-utils@66.5.2':
-    resolution: {integrity: sha512-2eR5TBTO+cmPY9ahFjyEu8qP/NFPI02dVpI0rgGKdyDMv/PnO9+yS/9rKgrmXsN3nPYHjOrLutRXkF/xxm/t3w==}
+  '@unocss/rule-utils@66.5.3':
+    resolution: {integrity: sha512-3aDxWw3fBjA2hldu5r126Dxl10nP/1dEx+fetiWEGT6X4J9dvJgNAGAJOVZeKv6tSfhqLyFsRV/cSbApYItCYw==}
     engines: {node: '>=14'}
 
   '@unrs/resolver-binding-android-arm-eabi@1.11.1':
@@ -5428,8 +5428,8 @@ packages:
   nuxt-define@1.0.0:
     resolution: {integrity: sha512-CYZ2WjU+KCyCDVzjYUM4eEpMF0rkPmkpiFrybTqqQCRpUbPt2h3snswWIpFPXTi+osRCY6Og0W/XLAQgDL4FfQ==}
 
-  nuxt-og-image@5.1.11:
-    resolution: {integrity: sha512-LnioM0JsfrSYPo/4TgPBu+ncI6QNCejs0FVu/f/SLeygwrh3senm9MvlBi1tldE1AU0J7030uO8UekOlvFPPXQ==}
+  nuxt-og-image@5.1.12:
+    resolution: {integrity: sha512-BrQI7+g8Jqa7QtN+dDUPCs5WBCQM93YlnMJvyCtCOL0M5WKP7JMHyj51dvi9SxQklVvXpfc8FhUDm290K/OuYw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       '@unhead/vue': ^2.0.5
@@ -6449,6 +6449,9 @@ packages:
   statuses@2.0.2:
     resolution: {integrity: sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==}
     engines: {node: '>= 0.8'}
+
+  std-env@3.10.0:
+    resolution: {integrity: sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==}
 
   std-env@3.9.0:
     resolution: {integrity: sha512-UGvjygr6F6tpH7o2qyqR6QYpwraIjKSdtzyBdyytFOHmPZY917kwdwLG0RbOjWOnKmnm3PeHjaoLLMie7kPLQw==}
@@ -10007,27 +10010,27 @@ snapshots:
       unhead: 2.0.17
       vue: 3.5.22(typescript@5.9.3)
 
-  '@unocss/core@66.5.2': {}
+  '@unocss/core@66.5.3': {}
 
-  '@unocss/extractor-arbitrary-variants@66.5.2':
+  '@unocss/extractor-arbitrary-variants@66.5.3':
     dependencies:
-      '@unocss/core': 66.5.2
+      '@unocss/core': 66.5.3
 
-  '@unocss/preset-mini@66.5.2':
+  '@unocss/preset-mini@66.5.3':
     dependencies:
-      '@unocss/core': 66.5.2
-      '@unocss/extractor-arbitrary-variants': 66.5.2
-      '@unocss/rule-utils': 66.5.2
+      '@unocss/core': 66.5.3
+      '@unocss/extractor-arbitrary-variants': 66.5.3
+      '@unocss/rule-utils': 66.5.3
 
-  '@unocss/preset-wind3@66.5.2':
+  '@unocss/preset-wind3@66.5.3':
     dependencies:
-      '@unocss/core': 66.5.2
-      '@unocss/preset-mini': 66.5.2
-      '@unocss/rule-utils': 66.5.2
+      '@unocss/core': 66.5.3
+      '@unocss/preset-mini': 66.5.3
+      '@unocss/rule-utils': 66.5.3
 
-  '@unocss/rule-utils@66.5.2':
+  '@unocss/rule-utils@66.5.3':
     dependencies:
-      '@unocss/core': 66.5.2
+      '@unocss/core': 66.5.3
       magic-string: 0.30.19
 
   '@unrs/resolver-binding-android-arm-eabi@1.11.1':
@@ -13183,15 +13186,15 @@ snapshots:
 
   nuxt-define@1.0.0: {}
 
-  nuxt-og-image@5.1.11(@unhead/vue@2.0.17(vue@3.5.22(typescript@5.9.3)))(h3@1.15.4)(magicast@0.3.5)(unstorage@1.17.1(db0@0.3.4)(ioredis@5.8.0))(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3)):
+  nuxt-og-image@5.1.12(@unhead/vue@2.0.17(vue@3.5.22(typescript@5.9.3)))(h3@1.15.4)(magicast@0.3.5)(unstorage@1.17.1(db0@0.3.4)(ioredis@5.8.0))(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))(vue@3.5.22(typescript@5.9.3)):
     dependencies:
       '@nuxt/devtools-kit': 2.6.5(magicast@0.3.5)(vite@7.1.10(@types/node@22.18.8)(jiti@2.6.1)(sass@1.93.2)(terser@5.44.0)(tsx@4.20.6)(yaml@2.8.1))
-      '@nuxt/kit': 4.1.2(magicast@0.3.5)
+      '@nuxt/kit': 4.1.3(magicast@0.3.5)
       '@resvg/resvg-js': 2.6.2
       '@resvg/resvg-wasm': 2.6.2
       '@unhead/vue': 2.0.17(vue@3.5.22(typescript@5.9.3))
-      '@unocss/core': 66.5.2
-      '@unocss/preset-wind3': 66.5.2
+      '@unocss/core': 66.5.3
+      '@unocss/preset-wind3': 66.5.3
       chrome-launcher: 1.2.1
       consola: 3.4.2
       defu: 6.1.4
@@ -13210,7 +13213,7 @@ snapshots:
       satori: 0.15.2
       satori-html: 0.3.2
       sirv: 3.0.2
-      std-env: 3.9.0
+      std-env: 3.10.0
       strip-literal: 3.1.0
       ufo: 1.6.1
       unplugin: 2.3.10
@@ -14535,6 +14538,8 @@ snapshots:
   statuses@2.0.1: {}
 
   statuses@2.0.2: {}
+
+  std-env@3.10.0: {}
 
   std-env@3.9.0: {}
 
