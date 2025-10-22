@@ -61,7 +61,7 @@
     "is-ci": "^4.1.0"
   },
   "devDependencies": {
-    "@axe-core/playwright": "^4.10.2",
+    "@axe-core/playwright": "^4.11.0",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@cucumber/cucumber": "^12.2.0",
