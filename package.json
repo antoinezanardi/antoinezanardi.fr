@@ -100,7 +100,7 @@
     "eslint-plugin-vue": "^10.5.1",
     "happy-dom": "^20.0.10",
     "husky": "^9.1.7",
-    "jest-extended": "^6.0.0",
+    "jest-extended": "^7.0.0",
     "jiti": "^2.6.1",
     "lint-staged": "^16.2.6",
     "nuxt": "^4.2.0",
