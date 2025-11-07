@@ -103,7 +103,7 @@
     "jest-extended": "^7.0.0",
     "jiti": "^2.6.1",
     "lint-staged": "^16.2.6",
-    "nuxt": "^4.2.0",
+    "nuxt": "^4.2.1",
     "nuxt-og-image": "5.1.12",
     "nuxt-schema-org": "5.0.9",
     "nuxt-site-config": "^3.2.11",
