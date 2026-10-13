@@ -79,7 +79,7 @@
     "@stryker-mutator/typescript-checker": "^9.3.0",
     "@stryker-mutator/vitest-runner": "^9.3.0",
     "@stylistic/eslint-plugin": "^5.5.0",
-    "@types/aos": "^3.0.7",
+    "@types/aos": "^3.0.8",
     "@types/bootstrap": "^5.2.10",
     "@types/node": "^24.10.0",
     "@types/pngjs": "^6.0.5",
